@@ -20,7 +20,7 @@ const Table = () => {
                         <td>Common Butterfly</td>
                         <td>1000</td>
                         <td>4 AM <br/>7 PM</td>
-                        <td>Sep-Jun (Northern) /<br/> Mar-Dec (Southern)</td>
+                        <td>Sep-Jun (Northern) <br/> Mar-Dec (Southern)</td>
                         <td>River <br/>Big</td>
                     </tr>
                     <tr>
@@ -28,7 +28,7 @@ const Table = () => {
                         <td>Common Butterfly</td>
                         <td>1000</td>
                         <td>4 AM <br/>7 PM</td>
-                        <td>Sep-Jun (Northern) /<br/> Mar-Dec (Southern)</td>
+                        <td>Sep-Jun (Northern) <br/> Mar-Dec (Southern)</td>
                         <td>River <br/>Big</td>
                     </tr>
                     <tr>
@@ -36,7 +36,7 @@ const Table = () => {
                         <td>Common Butterfly</td>
                         <td>1000</td>
                         <td>4 AM <br/>7 PM</td>
-                        <td>Sep-Jun (Northern) /<br/> Mar-Dec (Southern)</td>
+                        <td>Sep-Jun (Northern) <br/> Mar-Dec (Southern)</td>
                         <td>River <br/>Big</td>
                     </tr>
                     <tr>
@@ -44,7 +44,7 @@ const Table = () => {
                         <td>Common Butterfly</td>
                         <td>1000</td>
                         <td>4 AM <br/>7 PM</td>
-                        <td>Sep-Jun (Northern) /<br/> Mar-Dec (Southern)</td>
+                        <td>Sep-Jun (Northern) <br/> Mar-Dec (Southern)</td>
                         <td>River <br/>Big</td>
                     </tr>
                 </tbody>
@@ -54,10 +54,21 @@ const Table = () => {
 }
 const BugsTable = styled.table`
     background-color: skyblue;
-    text-align: center;
+    text-align: left;
     border-collapse: collapse;
+    padding: 5px;
     td {
         height: 60px;
+        min-width: 60px;
+        max-width: 120px;
+     
+        text-align: left;
+    }
+    td, th {
+        padding: 0px 10px 10px 10px;
+    }
+    th {
+        padding-top: 10px;
     }
 `
 
