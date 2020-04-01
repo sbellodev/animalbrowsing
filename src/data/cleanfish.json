@@ -1,0 +1,665 @@
+
+  
+  <table class="p-data-table" width="100%">
+    <thead>
+      <tr>
+        
+          <th>Shadow Size</th>
+        
+          <th>Month (Hemisphere)</th>
+        
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        
+          <th>Shadow Size</th>
+        
+          <th>Month (Hemisphere)</th>
+        
+      </tr>
+    </tfoot>
+    <tbody>
+      
+        <tr>
+          
+            <td>Smallest</td>
+          
+            <td>November-March (Northern) / May-September (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Smallest</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Medium</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Large</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Large</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Smallest</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Smallest</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Smallest</td>
+          
+            <td>April-August (Northern) / October-February (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>April-September (Northern) / October-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Large</td>
+          
+            <td>August-September (Northern) / February-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>X Large</td>
+          
+            <td>April-October (Northern) / October-April (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Smallest</td>
+          
+            <td>March-July (Northern) / September-January (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>May-August (Northern) / November-Feburary (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>March-May (Northern) / September-November (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Large</td>
+          
+            <td>May-October (Northern) / November-April (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>X Large</td>
+          
+            <td>June-August (Northern) / December-February (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Medium</td>
+          
+            <td>October-March (Northern) / April-September (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Large</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Medium</td>
+          
+            <td>June-October (Northern) / December-April (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>X Large</td>
+          
+            <td>September-December (Northern) / March-June (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>December-February (Northern) / June-August (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Medium</td>
+          
+            <td>July-September (Northern) / January-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Medium</td>
+          
+            <td>March-June, September-November (Northern) / March-May, September-December (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Medium</td>
+          
+            <td>March-June, September-November (Northern) / March-May, September-December (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Medium</td>
+          
+            <td>March-June, September-November (Northern) / March-May, September-December (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Largest</td>
+          
+            <td>December-March (Northern) / June-September (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Large</td>
+          
+            <td>September (Northern) / March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Largest</td>
+          
+            <td>September (Northern) / March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>September-November (Northern) / March-May (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Smallest</td>
+          
+            <td>April-November (Northern) / October-May (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>May-September (Northern) / November-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>May-October (Northern) / November-April (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>May-October (Northern) / November-April (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Smallest</td>
+          
+            <td>April-November (Northern) / October-May (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>May-October (Northern) / November-April (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>June-September (Northern) / December-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Large</td>
+          
+            <td>June-September (Northern) / December-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>X Large</td>
+          
+            <td>June-September (Northern) / December-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Largest</td>
+          
+            <td>June-September (Northern) / December-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Largest</td>
+          
+            <td>June-September (Northern) / December-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Large</td>
+          
+            <td>June-September (Northern) / December-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Largest</td>
+          
+            <td>September-March (Northern) / March-September (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Smallest</td>
+          
+            <td>December-March (Northern) / June-September (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Smallest</td>
+          
+            <td>April-November (Northern) / October-May (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Smallest</td>
+          
+            <td>April-September (Northern) / October-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>April-September (Northern) / October-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>April-September (Northern) / October-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Largest</td>
+          
+            <td>July-August (Northern) / January-February (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Medium</td>
+          
+            <td>April-November (Northern) / October-May (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Medium</td>
+          
+            <td>November-February (Northern) / May-August (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Medium</td>
+          
+            <td>July-September (Northern) / January-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Medium</td>
+          
+            <td>March-November (Northern) / September-May (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>X Large</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Large</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Medium</td>
+          
+            <td>October-April (Northern) / April-October (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Large</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Medium</td>
+          
+            <td>December-August (Northern) / June-February (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Narrow</td>
+          
+            <td>August-October (Northern) / February-April (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Narrow</td>
+          
+            <td>June-October (Northern) / December-April (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Largest</td>
+          
+            <td>November-April (Northern) / May-October (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Largest</td>
+          
+            <td>July-September, November-April (Northern) / January-March, May-November (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Large</td>
+          
+            <td>May-October (Northern) / November-April (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Large</td>
+          
+            <td>May-October (Northern) / November-April (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Largest (Fin)</td>
+          
+            <td>July-September (Northern) / January-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>X Large</td>
+          
+            <td>August-November (Northern) / February-May (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Largest (Fin)</td>
+          
+            <td>June-September (Northern) / December-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Largest (Fin)</td>
+          
+            <td>June-September (Northern) / December-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Largest (Fin)</td>
+          
+            <td>June-September (Northern) / December-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Largest (Fin)</td>
+          
+            <td>June-September (Northern) / December-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Large (Fin)</td>
+          
+            <td>June-September (Northern) / December-March (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Large</td>
+          
+            <td>November-March (Northern) / May-September (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Largest</td>
+          
+            <td>December-May (Northern) / June-November (Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Small</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+        <tr>
+          
+            <td>Largest</td>
+          
+            <td>Year-round (Northern and Southern)</td>
+          
+        </tr>
+      
+    </tbody>
+  </table>
