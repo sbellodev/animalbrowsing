@@ -1,7 +1,7 @@
 [
     {
         "Number": "1",
-        "Image": "commonbutterfly.png",
+        "Image": "bitterling.png",
         "Name": "Bitterling",
         "Location": "River",
         "Size": "Smallest",
@@ -12,96 +12,96 @@
     
     {
         "Number": "2",
-        "Image": "yellowbutterfly.png",
-        "Name": "Pale Chub",
+        "Image": "palechub.png",
+        "Name": "Pale chub",
         "Location": "River",
         "Size": "Smallest",
         "Price": "160",
         "Time": "9AM - 4PM",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     },
     
     {
         "Number": "3",
-        "Image": "tigerbutterfly.png",
-        "Name": "Crucian Carp",
+        "Image": "cruciancarp.png",
+        "Name": "Crucian carp",
         "Location": "River",
         "Size": "Small",
         "Price": "160",
         "Time": "All day",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     },
     
     {
+        "Image": "dace.png",
         "Number": "4",
-        "Image": "peacockbutterfly.png",
         "Name": "Dace",
         "Location": "River",
         "Size": "Medium",
         "Price": "240",
         "Time": "4PM - 9AM",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     },
     
     {
+        "Image": "carp.png",
         "Number": "5",
-        "Image": "commonbluebottle.png",
         "Name": "Carp",
         "Location": "Pond",
         "Size": "Large",
         "Price": "300",
         "Time": "All day",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     },
     
     {
+        "Image": "koi.png",
         "Number": "6",
-        "Image": "paperkitebutterfly.png",
         "Name": "Koi",
         "Location": "Pond",
         "Size": "Large",
         "Price": "4,000",
         "Time": "4PM - 9AM",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     },
     
     {
+        "Image": "goldfish.png",
         "Number": "7",
-        "Image": "greatpurpleemperor.png",
         "Name": "Goldfish",
         "Location": "Pond",
         "Size": "Smallest",
         "Price": "1,300",
         "Time": "All day",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     },
     
     {
         "Number": "8",
-        "Image": "monarchbutterfly.png",
-        "Name": "Pop-eyed Goldfish",
+        "Image": "popeyedgoldfish.png",
+        "Name": "Pop-eyed goldfish",
         "Location": "Pond",
         "Size": "Smallest",
         "Price": "1,300",
         "Time": "9AM - 4PM",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     },
     
     {
         "Number": "9",
-        "Image": "emperorbutterfly.png",
-        "Name": "Ranchu Goldfish",
+        "Image": "ranchugoldfish.png",
+        "Name": "Ranchu goldfish",
         "Location": "Pond",
         "Size": "Small",
         "Price": "4,500",
         "Time": "9AM - 4PM",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     },
     
     {
         "Number": "10",
-        "Image": "agriasbutterfly.png",
         "Name": "Killifish",
+        "Image": "killifish.png",
         "Location": "Pond",
         "Size": "Smallest",
         "Price": "300",
@@ -111,7 +111,7 @@
     
     {
         "Number": "11",
-        "Image": "rajahbrookesbirdwing.png",
+        "Image": "crawfish.png",
         "Name": "Crawfish",
         "Location": "Pond",
         "Size": "Small",
@@ -122,8 +122,8 @@
     
     {
         "Number": "12",
-        "Image": "queenalexandrasbirdwing.png",
-        "Name": "Soft-shelled Turtle",
+        "Image": "softshelledturtle.png",
+        "Name": "Soft-shelled turtle",
         "Location": "River",
         "Size": "Large",
         "Price": "3,750",
@@ -133,8 +133,8 @@
     
     {
         "Number": "13",
-        "Image": "moth.png",
-        "Name": "Snapping Turtle",
+        "Image": "snappingturtle.png",
+        "Name": "Snapping turtle",
         "Location": "River",
         "Size": "X Large",
         "Price": "5,000",
@@ -144,7 +144,7 @@
     
     {
         "Number": "14",
-        "Image": "atlasmoth.png",
+        "Image": "tadpole.png",
         "Name": "Tadpole",
         "Location": "Pond",
         "Size": "Smallest",
@@ -155,7 +155,7 @@
     
     {
         "Number": "15",
-        "Image": "madagascansunsetmoth.png",
+        "Image": "frog.png",
         "Name": "Frog",
         "Location": "Pond",
         "Size": "Small",
@@ -166,18 +166,18 @@
     
     {
         "Number": "16",
-        "Image": "longlocust.png",
-        "Name": "Freshwater Goby",
+        "Image": "freshwatergoby.png",
+        "Name": "Freshwater goby",
         "Location": "River",
         "Size": "Small",
         "Price": "400",
         "Time": "4PM - 9AM",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     },
     
     {
         "Number": "17",
-        "Image": "migratorylocust.png",
+        "Image": "loach.png",
         "Name": "Loach",
         "Location": "River",
         "Size": "Small",
@@ -188,7 +188,7 @@
     
     {
         "Number": "18",
-        "Image": "ricegrasshopper.png",
+        "Image": "catfish.png",
         "Name": "Catfish",
         "Location": "Pond",
         "Size": "Large",
@@ -199,8 +199,8 @@
     
     {
         "Number": "19",
-        "Image": "grasshopper.png",
-        "Name": "Giant Snakehead",
+        "Image": "giantsnakehead.png",
+        "Name": "Giant snakehead",
         "Location": "Pond",
         "Size": "X Large",
         "Price": "5,500",
@@ -210,19 +210,19 @@
     
     {
         "Number": "20",
-        "Image": "cricket.png",
+        "Image": "bluegill.png",
         "Name": "Bluegill",
         "Location": "River",
         "Size": "Small",
         "Price": "180",
         "Time": "9AM - 4PM",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     },
     
     {
         "Number": "21",
-        "Image": "bellcricket.png",
-        "Name": "Yellow Perch",
+        "Image": "yellowperch.png",
+        "Name": "Yellow perch",
         "Location": "River",
         "Size": "Medium",
         "Price": "300",
@@ -232,18 +232,18 @@
     
     {
         "Number": "22",
-        "Image": "mantis.png",
-        "Name": "Black Bass",
+        "Image": "blackbass.png",
+        "Name": "Black bass",
         "Location": "River",
         "Size": "Large",
         "Price": "400",
         "Time": "All day",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     },
     
     {
         "Number": "23",
-        "Image": "orchidmantis.png",
+        "Image": "tilapia.png",
         "Name": "Tilapia",
         "Location": "River",
         "Size": "Medium",
@@ -254,7 +254,7 @@
     
     {
         "Number": "24",
-        "Image": "honeybee.png",
+        "Image": "pike.png",
         "Name": "Pike",
         "Location": "River",
         "Size": "X Large",
@@ -265,8 +265,8 @@
     
     {
         "Number": "25",
-        "Image": "wasp.png",
-        "Name": "Pond Smelt",
+        "Image": "pondsmelt.png",
+        "Name": "Pond smelt",
         "Location": "River",
         "Size": "Small",
         "Price": "500",
@@ -276,7 +276,7 @@
     
     {
         "Number": "26",
-        "Image": "browncicada.png",
+        "Image": "sweetfish.png",
         "Name": "Sweetfish",
         "Location": "River",
         "Size": "Medium",
@@ -287,8 +287,8 @@
     
     {
         "Number": "27",
-        "Image": "robustcicada.png",
-        "Name": "Cherry SAMn",
+        "Image": "cherrysalmon.png",
+        "Name": "Cherry salmon",
         "Location": "River (Clifftop)",
         "Size": "Medium",
         "Price": "1,000",
@@ -298,7 +298,7 @@
     
     {
         "Number": "28",
-        "Image": "giantcicada.png",
+        "Image": "char.png",
         "Name": "Char",
         "Location": "River (Clifftop)",
         "Size": "Medium",
@@ -309,8 +309,8 @@
     
     {
         "Number": "29",
-        "Image": "walkercicada.png",
-        "Name": "Golden Trout",
+        "Image": "goldentrout.png",
+        "Name": "Golden trout",
         "Location": "River (Clifftop)",
         "Size": "Medium",
         "Price": "15,000",
@@ -320,7 +320,7 @@
     
     {
         "Number": "30",
-        "Image": "eveningcicada.png",
+        "Image": "stringfish.png",
         "Name": "Stringfish",
         "Location": "River (Clifftop)",
         "Size": "Largest",
@@ -331,8 +331,8 @@
     
     {
         "Number": "31",
-        "Image": "cicadashell.png",
-        "Name": "SAMn",
+        "Image": "salmon.png",
+        "Name": "Salmon",
         "Location": "River (mouth)",
         "Size": "Large",
         "Price": "700",
@@ -341,9 +341,9 @@
     },
     
     {
-        "Image": "reddragonfly.png",
         "Number": "32",
-        "Name": "King SAMn",
+        "Image": "kingsalmon.png",
+        "Name": "King salmon",
         "Location": "River (mouth)",
         "Size": "Largest",
         "Price": "1,800",
@@ -353,7 +353,7 @@
     
     {
         "Number": "33",
-        "Image": "darnerdragonfly.png",
+        "Image": "mittencrab.png",
         "Name": "Mitten Crab",
         "Location": "River",
         "Size": "Small",
@@ -364,7 +364,7 @@
     
     {
         "Number": "34",
-        "Image": "bandeddragonfly.png",
+        "Image": "guppy.png",
         "Name": "Guppy",
         "Location": "River",
         "Size": "Smallest",
@@ -375,8 +375,8 @@
     
     {
         "Number": "35",
-        "Image": "damselfly.png",
-        "Name": "Nibble Fish",
+        "Image": "nibblefish.png",
+        "Name": "Nibble fish",
         "Location": "River",
         "Size": "Small",
         "Price": "1,500",
@@ -386,7 +386,7 @@
     
     {
         "Number": "36",
-        "Image": "firefly.png",
+        "Image": "angelfish.png",
         "Name": "Angelfish",
         "Location": "River",
         "Size": "Small",
@@ -397,7 +397,7 @@
     
     {
         "Number": "37",
-        "Image": "molecricket.png",
+        "Image": "betta.png",
         "Name": "Betta",
         "Location": "River",
         "Size": "Small",
@@ -408,8 +408,8 @@
     
     {
         "Number": "38",
-        "Image": "pondskater.png",
-        "Name": "Neon Tetra",
+        "Image": "neontetra.png",
+        "Name": "Neon tetra",
         "Location": "River",
         "Size": "Smallest",
         "Price": "500",
@@ -419,7 +419,7 @@
     
     {
         "Number": "39",
-        "Image": "divingbeetle.png",
+        "Image": "rainbowfish.png",
         "Name": "Rainbowfish",
         "Location": "River",
         "Size": "Small",
@@ -430,7 +430,7 @@
     
     {
         "Number": "40",
-        "Image": "giantwaterbug.png",
+        "Image": "piranha.png",
         "Name": "Piranha",
         "Location": "River",
         "Size": "Small",
@@ -441,7 +441,7 @@
     
     {
         "Number": "41",
-        "Image": "stinkbug.png",
+        "Image": "arowana.png",
         "Name": "Arowana",
         "Location": "River",
         "Size": "Large",
@@ -452,7 +452,7 @@
     
     {
         "Number": "42",
-        "Image": "manfacedstinkbug.png",
+        "Image": "dorado.png",
         "Name": "Dorado",
         "Location": "River",
         "Size": "X Large",
@@ -463,7 +463,7 @@
     
     {
         "Number": "43",
-        "Image": "ladybug.png",
+        "Image": "gar.png",
         "Name": "Gar",
         "Location": "Pond",
         "Size": "Largest",
@@ -474,8 +474,8 @@
     
     {
         "Number": "44",
-        "Image": "tigerbeetle.png",
-        "Name": "ArapAM",
+        "Image": "arapaima.png",
+        "Name": "Arapaima",
         "Location": "River",
         "Size": "Largest",
         "Price": "10,000",
@@ -485,8 +485,8 @@
     
     {
         "Number": "45",
-        "Image": "jewelbeetle.png",
-        "Name": "Saddled Bichir",
+        "Image": "saddledbichir.png",
+        "Name": "Saddled bichir",
         "Location": "River",
         "Size": "Large",
         "Price": "4,000",
@@ -496,7 +496,7 @@
     
     {
         "Number": "46",
-        "Image": "violinbeetle.png",
+        "Image": "sturgeon.png",
         "Name": "Sturgeon",
         "Location": "River (mouth)",
         "Size": "Largest",
@@ -507,8 +507,8 @@
     
     {
         "Number": "47",
-        "Image": "citruslonghornedbeetle.png",
-        "Name": "Sea Butterfly",
+        "Image": "seabutterfly.png",
+        "Name": "Sea butterfly",
         "Location": "Sea",
         "Size": "Smallest",
         "Price": "1,000",
@@ -518,8 +518,8 @@
     
     {
         "Number": "48",
-        "Image": "rosaliabatesibeetle.png",
-        "Name": "Sea Horse",
+        "Image": "seahorse.png",
+        "Name": "Sea horse",
         "Location": "Sea",
         "Size": "Smallest",
         "Price": "1,100",
@@ -529,8 +529,8 @@
     
     {
         "Number": "49",
-        "Image": "blueweevilbeetle.png",
-        "Name": "Clown Fish",
+        "Image": "clownfish.png",
+        "Name": "Clown fish",
         "Location": "Sea",
         "Size": "Smallest",
         "Price": "650",
@@ -540,7 +540,7 @@
     
     {
         "Number": "50",
-        "Image": "dungbeetle.png",
+        "Image": "surgeonfish.png",
         "Name": "Surgeonfish",
         "Location": "Sea",
         "Size": "Small",
@@ -551,8 +551,8 @@
     
     {
         "Number": "51",
-        "Image": "earthboringdungbeetle.png",
-        "Name": "Butterfly Fish",
+        "Image": "butterflyfish.png",
+        "Name": "Butterfly fish",
         "Location": "Sea",
         "Size": "Small",
         "Price": "1,000",
@@ -562,7 +562,7 @@
     
     {
         "Number": "52",
-        "Image": "scarabbeetle.png",
+        "Image": "napoleonfish.png",
         "Name": "Napoleonfish",
         "Location": "Sea",
         "Size": "Largest",
@@ -573,8 +573,8 @@
     
     {
         "Number": "53",
-        "Image": "dronebeetle.png",
-        "Name": "Zebra Turkeyfish",
+        "Image": "zebraturkeyfish.png",
+        "Name": "Zebra turkeyfish",
         "Location": "Sea",
         "Size": "Medium",
         "Price": "500",
@@ -584,7 +584,7 @@
     
     {
         "Number": "54",
-        "Image": "goliathbeetle.png",
+        "Image": "blowfish.png",
         "Name": "Blowfish",
         "Location": "Sea",
         "Size": "Medium",
@@ -595,8 +595,8 @@
     
     {
         "Number": "55",
-        "Image": "sawstag.png",
-        "Name": "Puffer Fish",
+        "Image": "pufferfish.png",
+        "Name": "Puffer fish",
         "Location": "Sea",
         "Size": "Medium",
         "Price": "250",
@@ -606,30 +606,30 @@
     
     {
         "Number": "56",
-        "Image": "miyamastag.png",
+        "Image": "anchovy.png",
         "Name": "Anchovy",
         "Location": "Sea",
         "Size": "Small",
         "Price": "200",
         "Time": "4AM - 9PM",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     },
     
     {
         "Number": "57",
-        "Image": "giantstag.png",
-        "Name": "Horse Mackerel",
+        "Image": "horsemackerel.png",
+        "Name": "Horse mackerel",
         "Location": "Sea",
         "Size": "Small",
         "Price": "150",
         "Time": "All day",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     },
     
     {
         "Number": "58",
-        "Image": "rainbowstag.png",
-        "Name": "Barred Knifejaw",
+        "Image": "barredknifejaw.png",
+        "Name": "Barred knifejaw",
         "Location": "Sea",
         "Size": "Medium",
         "Price": "5,000",
@@ -639,29 +639,29 @@
     
     {
         "Number": "59",
-        "Image": "cyclommatusstag.png",
-        "Name": "Sea Bass",
+        "Image": "seabass.png",
+        "Name": "Sea bass",
         "Location": "Sea",
         "Size": "X Large",
         "Price": "400",
         "Time": "All day",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     },
     
     {
         "Number": "60",
-        "Image": "goldenstag.png",
+        "Image": "redsnapper.png",
         "Name": "Red Snapper",
         "Location": "Sea",
         "Size": "Large",
         "Price": "3,000",
         "Time": "All day",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     },
     
     {
         "Number": "61",
-        "Image": "giraffestag.png",
+        "Image": "dab.png",
         "Name": "Dab",
         "Location": "Sea",
         "Size": "Medium",
@@ -672,18 +672,18 @@
     
     {
         "Number": "62",
-        "Image": "horneddynastid.png",
-        "Name": "Olive Flounder",
+        "Image": "oliveflounder.png",
+        "Name": "Olive flounder",
         "Location": "Sea",
         "Size": "Large",
         "Price": "800",
         "Time": "All day",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     },
     
     {
         "Number": "63",
-        "Image": "hornedatlas.png",
+        "Image": "squid.png",
         "Name": "Squid",
         "Location": "Sea",
         "Size": "Medium",
@@ -694,8 +694,8 @@
     
     {
         "Number": "64",
-        "Image": "hornedelephant.png",
-        "Name": "Moray Eel",
+        "Image": "morayeel.png",
+        "Name": "Moray eel",
         "Location": "Sea",
         "Size": "Narrow",
         "Price": "2,000",
@@ -705,8 +705,8 @@
     
     {
         "Number": "65",
-        "Image": "hornedhercules.png",
-        "Name": "Ribbon Eel",
+        "Image": "ribboneel.png",
+        "Name": "Ribbon eel",
         "Location": "Sea",
         "Size": "Narrow",
         "Price": "600",
@@ -716,7 +716,7 @@
     
     {
         "Number": "66",
-        "Image": "walkingstick.png",
+        "Image": "tuna.png",
         "Name": "Tuna",
         "Location": "Pier",
         "Size": "Largest",
@@ -727,8 +727,8 @@
     
     {
         "Number": "67",
-        "Image": "walkingleaf.png",
-        "Name": "Blue Marlin",
+        "Image": "bluemarlin.png",
+        "Name": "Blue marlin",
         "Location": "Pier",
         "Size": "Largest",
         "Price": "10,000",
@@ -738,8 +738,8 @@
     
     {
         "Number": "68",
-        "Image": "bagworm.png",
-        "Name": "Giant Trevally",
+        "Image": "gianttrevally.png",
+        "Name": "Giant trevally",
         "Location": "Pier",
         "Size": "Large",
         "Price": "4,500",
@@ -749,7 +749,7 @@
     
     {
         "Number": "69",
-        "Image": "ant.png",
+        "Image": "mahimahi.png",
         "Name": "Mahi-mahi",
         "Location": "Sea",
         "Size": "Large",
@@ -760,8 +760,8 @@
     
     {
         "Number": "70",
-        "Image": "hermitcrab.png",
-        "Name": "Ocean Sunfish",
+        "Image": "oceansunfish.png",
+        "Name": "Ocean sunfish",
         "Location": "Sea",
         "Size": "Largest (Fin)",
         "Price": "4,000",
@@ -771,7 +771,7 @@
     
     {
         "Number": "71",
-        "Image": "wharfroach.png",
+        "Image": "ray.png",
         "Name": "Ray",
         "Location": "Sea",
         "Size": "X Large",
@@ -782,8 +782,8 @@
     
     {
         "Number": "72",
-        "Image": "fly.png",
-        "Name": "Saw Shark",
+        "Image": "sawshark.png",
+        "Name": "Saw shark",
         "Location": "Sea",
         "Size": "Largest (Fin)",
         "Price": "12,000",
@@ -793,8 +793,8 @@
     
     {
         "Number": "73",
-        "Image": "mosquito.png",
-        "Name": "HAMrhead Shark",
+        "Image": "hammerheadshark.png",
+        "Name": "Hammerhead shark",
         "Location": "Sea",
         "Size": "Largest (Fin)",
         "Price": "8,000",
@@ -804,8 +804,8 @@
     
     {
         "Number": "74",
-        "Image": "flea.png",
-        "Name": "Great White Shark",
+        "Image": "greatwhiteshark.png",
+        "Name": "Great White shark",
         "Location": "Sea",
         "Size": "Largest (Fin)",
         "Price": "15,000",
@@ -815,8 +815,8 @@
     
     {
         "Number": "75",
-        "Image": "snail.png",
-        "Name": "Whale Shark",
+        "Image": "whaleshark.png",
+        "Name": "Whale shark",
         "Location": "Sea",
         "Size": "Largest (Fin)",
         "Price": "13,000",
@@ -826,7 +826,7 @@
     
     {
         "Number": "76",
-        "Image": "pillbug.png",
+        "Image": "suckerfish.png",
         "Name": "Suckerfish",
         "Location": "Sea",
         "Size": "Large (Fin)",
@@ -837,8 +837,8 @@
     
     {
         "Number": "77",
-        "Image": "centipede.png",
-        "Name": "Football Fish",
+        "Image": "footballfish.png",
+        "Name": "Football fish",
         "Location": "Sea",
         "Size": "Large",
         "Price": "2,500",
@@ -848,7 +848,7 @@
     
     {
         "Number": "78",
-        "Image": "spider.png",
+        "Image": "oarfish.png",
         "Name": "Oarfish",
         "Location": "Sea",
         "Size": "Largest",
@@ -859,23 +859,23 @@
     
     {
         "Number": "79",
-        "Image": "tarantula.png",
+        "Image": "barreleye.png",
         "Name": "Barreleye",
         "Location": "Sea",
         "Size": "Small",
         "Price": "15,000",
         "Time": "9PM - 4AM",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     },
     
     {
         "Number": "80",
-        "Image": "scorpion.png",
+        "Image": "coelacanth.png",
         "Name": "Coelacanth",
         "Location": "Sea (rainy days)",
         "Size": "Largest",
         "Price": "15,000",
         "Time": "All day",
-        "Season": "Year-round (Northern and Southern)"
+        "Season": "Year-round"
     }
 ]

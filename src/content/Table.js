@@ -1,14 +1,15 @@
 import React from 'react';
 import styled from 'styled-components'
-import bugInfo from '../data/bugs.json'
+import bugInfo from '../data/bug.json'
+import fishInfo from '../data/fish.json'
+//import testdata from '../data/test.json'
 //import image from '../img/bitterling.png'
 
-console.log(bugInfo[0].Image)
 
 const BugMiniTable = () => {
    const row = bugInfo.map(value =>
         <tr key={value.Number}>
-            <td><img src={"../img/bugs/" +value.Image} alt="sudando" /></td>
+            <td><img src={"../img/bug/" +value.Image} alt="sudando" /></td>
             <td>{value.Name}</td>
             <td>{value.Price}</td>
             <td>{value.Time}</td>
@@ -18,8 +19,21 @@ const BugMiniTable = () => {
     )
     return row
 }
+const FishMiniTable = () => {
+    const row = fishInfo.map(value =>
+         <tr key={value.Number}>
+             <td><img src={"../img/fish/" +value.Image} alt="sudando" /></td>
+             <td>{value.Name}</td>
+             <td>{value.Price}</td>
+             <td>{value.Time}</td>
+             <td>{value.Season}</td>
+             <td>{value.Location}</td>
+         </tr>
+     )
+     return row
+ }
 console.log(BugMiniTable())
-
+console.log(FishMiniTable())
 
 const Table = () => {
     return (
@@ -37,6 +51,7 @@ const Table = () => {
                 </thead>
                 <tbody>
                     {BugMiniTable()}
+                    {FishMiniTable()}
                 </tbody>
             </BugsTable>
         </>
