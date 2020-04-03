@@ -1,0 +1,881 @@
+[
+    {
+        "Number": "1",
+        "Image": "commonbutterfly.png",
+        "Name": "Bitterling",
+        "Location": "River",
+        "Size": "Smallest",
+        "Price": "900",
+        "Time": "All day",
+        "Season": "Nov-Mar (Northern) / May-Sep (Southern)"
+    },
+    
+    {
+        "Number": "2",
+        "Image": "yellowbutterfly.png",
+        "Name": "Pale Chub",
+        "Location": "River",
+        "Size": "Smallest",
+        "Price": "160",
+        "Time": "9AM - 4PM",
+        "Season": "Year-round (Northern and Southern)"
+    },
+    
+    {
+        "Number": "3",
+        "Image": "tigerbutterfly.png",
+        "Name": "Crucian Carp",
+        "Location": "River",
+        "Size": "Small",
+        "Price": "160",
+        "Time": "All day",
+        "Season": "Year-round (Northern and Southern)"
+    },
+    
+    {
+        "Number": "4",
+        "Image": "peacockbutterfly.png",
+        "Name": "Dace",
+        "Location": "River",
+        "Size": "Medium",
+        "Price": "240",
+        "Time": "4PM - 9AM",
+        "Season": "Year-round (Northern and Southern)"
+    },
+    
+    {
+        "Number": "5",
+        "Image": "commonbluebottle.png",
+        "Name": "Carp",
+        "Location": "Pond",
+        "Size": "Large",
+        "Price": "300",
+        "Time": "All day",
+        "Season": "Year-round (Northern and Southern)"
+    },
+    
+    {
+        "Number": "6",
+        "Image": "paperkitebutterfly.png",
+        "Name": "Koi",
+        "Location": "Pond",
+        "Size": "Large",
+        "Price": "4,000",
+        "Time": "4PM - 9AM",
+        "Season": "Year-round (Northern and Southern)"
+    },
+    
+    {
+        "Number": "7",
+        "Image": "greatpurpleemperor.png",
+        "Name": "Goldfish",
+        "Location": "Pond",
+        "Size": "Smallest",
+        "Price": "1,300",
+        "Time": "All day",
+        "Season": "Year-round (Northern and Southern)"
+    },
+    
+    {
+        "Number": "8",
+        "Image": "monarchbutterfly.png",
+        "Name": "Pop-eyed Goldfish",
+        "Location": "Pond",
+        "Size": "Smallest",
+        "Price": "1,300",
+        "Time": "9AM - 4PM",
+        "Season": "Year-round (Northern and Southern)"
+    },
+    
+    {
+        "Number": "9",
+        "Image": "emperorbutterfly.png",
+        "Name": "Ranchu Goldfish",
+        "Location": "Pond",
+        "Size": "Small",
+        "Price": "4,500",
+        "Time": "9AM - 4PM",
+        "Season": "Year-round (Northern and Southern)"
+    },
+    
+    {
+        "Number": "10",
+        "Image": "agriasbutterfly.png",
+        "Name": "Killifish",
+        "Location": "Pond",
+        "Size": "Smallest",
+        "Price": "300",
+        "Time": "All day",
+        "Season": "Apr-Aug (Northern) / Oct-Feb (Southern)"
+    },
+    
+    {
+        "Number": "11",
+        "Image": "rajahbrookesbirdwing.png",
+        "Name": "Crawfish",
+        "Location": "Pond",
+        "Size": "Small",
+        "Price": "200",
+        "Time": "All day",
+        "Season": "Apr-Sep (Northern) / Oct-Mar (Southern)"
+    },
+    
+    {
+        "Number": "12",
+        "Image": "queenalexandrasbirdwing.png",
+        "Name": "Soft-shelled Turtle",
+        "Location": "River",
+        "Size": "Large",
+        "Price": "3,750",
+        "Time": "4PM - 9AM",
+        "Season": "Aug-Sep (Northern) / Feb-Mar (Southern)"
+    },
+    
+    {
+        "Number": "13",
+        "Image": "moth.png",
+        "Name": "Snapping Turtle",
+        "Location": "River",
+        "Size": "X Large",
+        "Price": "5,000",
+        "Time": "9PM - 4AM",
+        "Season": "Apr-Oct (Northern) / Oct-Apr (Southern)"
+    },
+    
+    {
+        "Number": "14",
+        "Image": "atlasmoth.png",
+        "Name": "Tadpole",
+        "Location": "Pond",
+        "Size": "Smallest",
+        "Price": "100",
+        "Time": "All day",
+        "Season": "Mar-Jul (Northern) / Sep-Jan (Southern)"
+    },
+    
+    {
+        "Number": "15",
+        "Image": "madagascansunsetmoth.png",
+        "Name": "Frog",
+        "Location": "Pond",
+        "Size": "Small",
+        "Price": "120",
+        "Time": "All day",
+        "Season": "May-Aug (Northern) / Nov-Feburary (Southern)"
+    },
+    
+    {
+        "Number": "16",
+        "Image": "longlocust.png",
+        "Name": "Freshwater Goby",
+        "Location": "River",
+        "Size": "Small",
+        "Price": "400",
+        "Time": "4PM - 9AM",
+        "Season": "Year-round (Northern and Southern)"
+    },
+    
+    {
+        "Number": "17",
+        "Image": "migratorylocust.png",
+        "Name": "Loach",
+        "Location": "River",
+        "Size": "Small",
+        "Price": "400",
+        "Time": "All day",
+        "Season": "Mar-May (Northern) / Sep-Nov (Southern)"
+    },
+    
+    {
+        "Number": "18",
+        "Image": "ricegrasshopper.png",
+        "Name": "Catfish",
+        "Location": "Pond",
+        "Size": "Large",
+        "Price": "800",
+        "Time": "4PM - 9AM",
+        "Season": "May-Oct (Northern) / Nov-Apr (Southern)"
+    },
+    
+    {
+        "Number": "19",
+        "Image": "grasshopper.png",
+        "Name": "Giant Snakehead",
+        "Location": "Pond",
+        "Size": "X Large",
+        "Price": "5,500",
+        "Time": "9AM - 4PM",
+        "Season": "Jun-Aug (Northern) / Dec-Feb (Southern)"
+    },
+    
+    {
+        "Number": "20",
+        "Image": "cricket.png",
+        "Name": "Bluegill",
+        "Location": "River",
+        "Size": "Small",
+        "Price": "180",
+        "Time": "9AM - 4PM",
+        "Season": "Year-round (Northern and Southern)"
+    },
+    
+    {
+        "Number": "21",
+        "Image": "bellcricket.png",
+        "Name": "Yellow Perch",
+        "Location": "River",
+        "Size": "Medium",
+        "Price": "300",
+        "Time": "All day",
+        "Season": "Oct-Mar (Northern) / Apr-Sep (Southern)"
+    },
+    
+    {
+        "Number": "22",
+        "Image": "mantis.png",
+        "Name": "Black Bass",
+        "Location": "River",
+        "Size": "Large",
+        "Price": "400",
+        "Time": "All day",
+        "Season": "Year-round (Northern and Southern)"
+    },
+    
+    {
+        "Number": "23",
+        "Image": "orchidmantis.png",
+        "Name": "Tilapia",
+        "Location": "River",
+        "Size": "Medium",
+        "Price": "800",
+        "Time": "All day",
+        "Season": "Jun-Oct (Northern) / Dec-Apr (Southern)"
+    },
+    
+    {
+        "Number": "24",
+        "Image": "honeybee.png",
+        "Name": "Pike",
+        "Location": "River",
+        "Size": "X Large",
+        "Price": "1,800",
+        "Time": "All day",
+        "Season": "Sep-Dec (Northern) / Mar-Jun (Southern)"
+    },
+    
+    {
+        "Number": "25",
+        "Image": "wasp.png",
+        "Name": "Pond Smelt",
+        "Location": "River",
+        "Size": "Small",
+        "Price": "500",
+        "Time": "All day",
+        "Season": "Dec-Feb (Northern) / Jun-Aug (Southern)"
+    },
+    
+    {
+        "Number": "26",
+        "Image": "browncicada.png",
+        "Name": "Sweetfish",
+        "Location": "River",
+        "Size": "Medium",
+        "Price": "900",
+        "Time": "All day",
+        "Season": "Jul-Sep (Northern) / Jan-Mar (Southern)"
+    },
+    
+    {
+        "Number": "27",
+        "Image": "robustcicada.png",
+        "Name": "Cherry SAMn",
+        "Location": "River (Clifftop)",
+        "Size": "Medium",
+        "Price": "1,000",
+        "Time": "4PM - 9AM",
+        "Season": "Mar-Jun, Sep-Nov (Northern) / Mar-May, Sep-Dec (Southern)"
+    },
+    
+    {
+        "Number": "28",
+        "Image": "giantcicada.png",
+        "Name": "Char",
+        "Location": "River (Clifftop)",
+        "Size": "Medium",
+        "Price": "3,800",
+        "Time": "4PM - 9AM",
+        "Season": "Mar-Jun, Sep-Nov (Northern) / Mar-May, Sep-Dec (Southern)"
+    },
+    
+    {
+        "Number": "29",
+        "Image": "walkercicada.png",
+        "Name": "Golden Trout",
+        "Location": "River (Clifftop)",
+        "Size": "Medium",
+        "Price": "15,000",
+        "Time": "4PM - 9AM",
+        "Season": "Mar-Jun, Sep-Nov (Northern) / Mar-May, Sep-Dec (Southern)"
+    },
+    
+    {
+        "Number": "30",
+        "Image": "eveningcicada.png",
+        "Name": "Stringfish",
+        "Location": "River (Clifftop)",
+        "Size": "Largest",
+        "Price": "15,000",
+        "Time": "4PM - 9AM",
+        "Season": "Dec-Mar (Northern) / Jun-Sep (Southern)"
+    },
+    
+    {
+        "Number": "31",
+        "Image": "cicadashell.png",
+        "Name": "SAMn",
+        "Location": "River (mouth)",
+        "Size": "Large",
+        "Price": "700",
+        "Time": "All day",
+        "Season": "Sep (Northern) / Mar (Southern)"
+    },
+    
+    {
+        "Image": "reddragonfly.png",
+        "Number": "32",
+        "Name": "King SAMn",
+        "Location": "River (mouth)",
+        "Size": "Largest",
+        "Price": "1,800",
+        "Time": "All day",
+        "Season": "Sep (Northern) / Mar (Southern)"
+    },
+    
+    {
+        "Number": "33",
+        "Image": "darnerdragonfly.png",
+        "Name": "Mitten Crab",
+        "Location": "River",
+        "Size": "Small",
+        "Price": "2,000",
+        "Time": "4PM - 9AM",
+        "Season": "Sep-Nov (Northern) / Mar-May (Southern)"
+    },
+    
+    {
+        "Number": "34",
+        "Image": "bandeddragonfly.png",
+        "Name": "Guppy",
+        "Location": "River",
+        "Size": "Smallest",
+        "Price": "1,300",
+        "Time": "9AM - 4PM",
+        "Season": "Apr-Nov (Northern) / Oct-May (Southern)"
+    },
+    
+    {
+        "Number": "35",
+        "Image": "damselfly.png",
+        "Name": "Nibble Fish",
+        "Location": "River",
+        "Size": "Small",
+        "Price": "1,500",
+        "Time": "9AM - 4PM",
+        "Season": "May-Sep (Northern) / Nov-Mar (Southern)"
+    },
+    
+    {
+        "Number": "36",
+        "Image": "firefly.png",
+        "Name": "Angelfish",
+        "Location": "River",
+        "Size": "Small",
+        "Price": "3,000",
+        "Time": "4PM - 9AM",
+        "Season": "May-Oct (Northern) / Nov-Apr (Southern)"
+    },
+    
+    {
+        "Number": "37",
+        "Image": "molecricket.png",
+        "Name": "Betta",
+        "Location": "River",
+        "Size": "Small",
+        "Price": "2,500",
+        "Time": "9AM - 4PM",
+        "Season": "May-Oct (Northern) / Nov-Apr (Southern)"
+    },
+    
+    {
+        "Number": "38",
+        "Image": "pondskater.png",
+        "Name": "Neon Tetra",
+        "Location": "River",
+        "Size": "Smallest",
+        "Price": "500",
+        "Time": "9AM - 4PM",
+        "Season": "Apr-Nov (Northern) / Oct-May (Southern)"
+    },
+    
+    {
+        "Number": "39",
+        "Image": "divingbeetle.png",
+        "Name": "Rainbowfish",
+        "Location": "River",
+        "Size": "Small",
+        "Price": "800",
+        "Time": "9AM - 4PM",
+        "Season": "May-Oct (Northern) / Nov-Apr (Southern)"
+    },
+    
+    {
+        "Number": "40",
+        "Image": "giantwaterbug.png",
+        "Name": "Piranha",
+        "Location": "River",
+        "Size": "Small",
+        "Price": "2,500",
+        "Time": "9AM - 4PM, 9PM - 4AM",
+        "Season": "Jun-Sep (Northern) / Dec-Mar (Southern)"
+    },
+    
+    {
+        "Number": "41",
+        "Image": "stinkbug.png",
+        "Name": "Arowana",
+        "Location": "River",
+        "Size": "Large",
+        "Price": "10,000",
+        "Time": "4PM - 9AM",
+        "Season": "Jun-Sep (Northern) / Dec-Mar (Southern)"
+    },
+    
+    {
+        "Number": "42",
+        "Image": "manfacedstinkbug.png",
+        "Name": "Dorado",
+        "Location": "River",
+        "Size": "X Large",
+        "Price": "15,000",
+        "Time": "4AM - 9PM",
+        "Season": "Jun-Sep (Northern) / Dec-Mar (Southern)"
+    },
+    
+    {
+        "Number": "43",
+        "Image": "ladybug.png",
+        "Name": "Gar",
+        "Location": "Pond",
+        "Size": "Largest",
+        "Price": "6,000",
+        "Time": "4PM - 9AM",
+        "Season": "Jun-Sep (Northern) / Dec-Mar (Southern)"
+    },
+    
+    {
+        "Number": "44",
+        "Image": "tigerbeetle.png",
+        "Name": "ArapAM",
+        "Location": "River",
+        "Size": "Largest",
+        "Price": "10,000",
+        "Time": "4PM - 9AM",
+        "Season": "Jun-Sep (Northern) / Dec-Mar (Southern)"
+    },
+    
+    {
+        "Number": "45",
+        "Image": "jewelbeetle.png",
+        "Name": "Saddled Bichir",
+        "Location": "River",
+        "Size": "Large",
+        "Price": "4,000",
+        "Time": "9PM - 4AM",
+        "Season": "Jun-Sep (Northern) / Dec-Mar (Southern)"
+    },
+    
+    {
+        "Number": "46",
+        "Image": "violinbeetle.png",
+        "Name": "Sturgeon",
+        "Location": "River (mouth)",
+        "Size": "Largest",
+        "Price": "10,000",
+        "Time": "All day",
+        "Season": "Sep-Mar (Northern) / Mar-Sep (Southern)"
+    },
+    
+    {
+        "Number": "47",
+        "Image": "citruslonghornedbeetle.png",
+        "Name": "Sea Butterfly",
+        "Location": "Sea",
+        "Size": "Smallest",
+        "Price": "1,000",
+        "Time": "All day",
+        "Season": "Dec-Mar (Northern) / Jun-Sep (Southern)"
+    },
+    
+    {
+        "Number": "48",
+        "Image": "rosaliabatesibeetle.png",
+        "Name": "Sea Horse",
+        "Location": "Sea",
+        "Size": "Smallest",
+        "Price": "1,100",
+        "Time": "All day",
+        "Season": "Apr-Nov (Northern) / Oct-May (Southern)"
+    },
+    
+    {
+        "Number": "49",
+        "Image": "blueweevilbeetle.png",
+        "Name": "Clown Fish",
+        "Location": "Sea",
+        "Size": "Smallest",
+        "Price": "650",
+        "Time": "All day",
+        "Season": "Apr-Sep (Northern) / Oct-Mar (Southern)"
+    },
+    
+    {
+        "Number": "50",
+        "Image": "dungbeetle.png",
+        "Name": "Surgeonfish",
+        "Location": "Sea",
+        "Size": "Small",
+        "Price": "1,000",
+        "Time": "All day",
+        "Season": "Apr-Sep (Northern) / Oct-Mar (Southern)"
+    },
+    
+    {
+        "Number": "51",
+        "Image": "earthboringdungbeetle.png",
+        "Name": "Butterfly Fish",
+        "Location": "Sea",
+        "Size": "Small",
+        "Price": "1,000",
+        "Time": "All day",
+        "Season": "Apr-Sep (Northern) / Oct-Mar (Southern)"
+    },
+    
+    {
+        "Number": "52",
+        "Image": "scarabbeetle.png",
+        "Name": "Napoleonfish",
+        "Location": "Sea",
+        "Size": "Largest",
+        "Price": "10,000",
+        "Time": "4AM - 9PM",
+        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)"
+    },
+    
+    {
+        "Number": "53",
+        "Image": "dronebeetle.png",
+        "Name": "Zebra Turkeyfish",
+        "Location": "Sea",
+        "Size": "Medium",
+        "Price": "500",
+        "Time": "All day",
+        "Season": "Apr-Nov (Northern) / Oct-May (Southern)"
+    },
+    
+    {
+        "Number": "54",
+        "Image": "goliathbeetle.png",
+        "Name": "Blowfish",
+        "Location": "Sea",
+        "Size": "Medium",
+        "Price": "5,000",
+        "Time": "6PM - 4AM",
+        "Season": "Nov-Feb (Northern) / May-Aug (Southern)"
+    },
+    
+    {
+        "Number": "55",
+        "Image": "sawstag.png",
+        "Name": "Puffer Fish",
+        "Location": "Sea",
+        "Size": "Medium",
+        "Price": "250",
+        "Time": "All day",
+        "Season": "Jul-Sep (Northern) / Jan-Mar (Southern)"
+    },
+    
+    {
+        "Number": "56",
+        "Image": "miyamastag.png",
+        "Name": "Anchovy",
+        "Location": "Sea",
+        "Size": "Small",
+        "Price": "200",
+        "Time": "4AM - 9PM",
+        "Season": "Year-round (Northern and Southern)"
+    },
+    
+    {
+        "Number": "57",
+        "Image": "giantstag.png",
+        "Name": "Horse Mackerel",
+        "Location": "Sea",
+        "Size": "Small",
+        "Price": "150",
+        "Time": "All day",
+        "Season": "Year-round (Northern and Southern)"
+    },
+    
+    {
+        "Number": "58",
+        "Image": "rainbowstag.png",
+        "Name": "Barred Knifejaw",
+        "Location": "Sea",
+        "Size": "Medium",
+        "Price": "5,000",
+        "Time": "All day",
+        "Season": "Mar-Nov (Northern) / Sep-May (Southern)"
+    },
+    
+    {
+        "Number": "59",
+        "Image": "cyclommatusstag.png",
+        "Name": "Sea Bass",
+        "Location": "Sea",
+        "Size": "X Large",
+        "Price": "400",
+        "Time": "All day",
+        "Season": "Year-round (Northern and Southern)"
+    },
+    
+    {
+        "Number": "60",
+        "Image": "goldenstag.png",
+        "Name": "Red Snapper",
+        "Location": "Sea",
+        "Size": "Large",
+        "Price": "3,000",
+        "Time": "All day",
+        "Season": "Year-round (Northern and Southern)"
+    },
+    
+    {
+        "Number": "61",
+        "Image": "giraffestag.png",
+        "Name": "Dab",
+        "Location": "Sea",
+        "Size": "Medium",
+        "Price": "300",
+        "Time": "All day",
+        "Season": "Oct-Apr (Northern) / Apr-Oct (Southern)"
+    },
+    
+    {
+        "Number": "62",
+        "Image": "horneddynastid.png",
+        "Name": "Olive Flounder",
+        "Location": "Sea",
+        "Size": "Large",
+        "Price": "800",
+        "Time": "All day",
+        "Season": "Year-round (Northern and Southern)"
+    },
+    
+    {
+        "Number": "63",
+        "Image": "hornedatlas.png",
+        "Name": "Squid",
+        "Location": "Sea",
+        "Size": "Medium",
+        "Price": "500",
+        "Time": "All day",
+        "Season": "Dec-Aug (Northern) / Jun-Feb (Southern)"
+    },
+    
+    {
+        "Number": "64",
+        "Image": "hornedelephant.png",
+        "Name": "Moray Eel",
+        "Location": "Sea",
+        "Size": "Narrow",
+        "Price": "2,000",
+        "Time": "All day",
+        "Season": "Aug-Oct (Northern) / Feb-Apr (Southern)"
+    },
+    
+    {
+        "Number": "65",
+        "Image": "hornedhercules.png",
+        "Name": "Ribbon Eel",
+        "Location": "Sea",
+        "Size": "Narrow",
+        "Price": "600",
+        "Time": "All day",
+        "Season": "Jun-Oct (Northern) / Dec-Apr (Southern)"
+    },
+    
+    {
+        "Number": "66",
+        "Image": "walkingstick.png",
+        "Name": "Tuna",
+        "Location": "Pier",
+        "Size": "Largest",
+        "Price": "7,000",
+        "Time": "All day",
+        "Season": "Nov-Apr (Northern) / May-Oct (Southern)"
+    },
+    
+    {
+        "Number": "67",
+        "Image": "walkingleaf.png",
+        "Name": "Blue Marlin",
+        "Location": "Pier",
+        "Size": "Largest",
+        "Price": "10,000",
+        "Time": "All day",
+        "Season": "Jul-Sep, Nov-Apr (Northern) / Jan-Mar, May-Nov (Southern)"
+    },
+    
+    {
+        "Number": "68",
+        "Image": "bagworm.png",
+        "Name": "Giant Trevally",
+        "Location": "Pier",
+        "Size": "Large",
+        "Price": "4,500",
+        "Time": "All day",
+        "Season": "May-Oct (Northern) / Nov-Apr (Southern)"
+    },
+    
+    {
+        "Number": "69",
+        "Image": "ant.png",
+        "Name": "Mahi-mahi",
+        "Location": "Sea",
+        "Size": "Large",
+        "Price": "6,000",
+        "Time": "All day",
+        "Season": "May-Oct (Northern) / Nov-Apr (Southern)"
+    },
+    
+    {
+        "Number": "70",
+        "Image": "hermitcrab.png",
+        "Name": "Ocean Sunfish",
+        "Location": "Sea",
+        "Size": "Largest (Fin)",
+        "Price": "4,000",
+        "Time": "4AM - 9PM",
+        "Season": "Jul-Sep (Northern) / Jan-Mar (Southern)"
+    },
+    
+    {
+        "Number": "71",
+        "Image": "wharfroach.png",
+        "Name": "Ray",
+        "Location": "Sea",
+        "Size": "X Large",
+        "Price": "3,000",
+        "Time": "4AM - 9PM",
+        "Season": "Aug-Nov (Northern) / Feb-May (Southern)"
+    },
+    
+    {
+        "Number": "72",
+        "Image": "fly.png",
+        "Name": "Saw Shark",
+        "Location": "Sea",
+        "Size": "Largest (Fin)",
+        "Price": "12,000",
+        "Time": "4PM - 9AM",
+        "Season": "Jun-Sep (Northern) / Dec-Mar (Southern)"
+    },
+    
+    {
+        "Number": "73",
+        "Image": "mosquito.png",
+        "Name": "HAMrhead Shark",
+        "Location": "Sea",
+        "Size": "Largest (Fin)",
+        "Price": "8,000",
+        "Time": "4PM - 9AM",
+        "Season": "Jun-Sep (Northern) / Dec-Mar (Southern)"
+    },
+    
+    {
+        "Number": "74",
+        "Image": "flea.png",
+        "Name": "Great White Shark",
+        "Location": "Sea",
+        "Size": "Largest (Fin)",
+        "Price": "15,000",
+        "Time": "4PM - 9AM",
+        "Season": "Jun-Sep (Northern) / Dec-Mar (Southern)"
+    },
+    
+    {
+        "Number": "75",
+        "Image": "snail.png",
+        "Name": "Whale Shark",
+        "Location": "Sea",
+        "Size": "Largest (Fin)",
+        "Price": "13,000",
+        "Time": "All day",
+        "Season": "Jun-Sep (Northern) / Dec-Mar (Southern)"
+    },
+    
+    {
+        "Number": "76",
+        "Image": "pillbug.png",
+        "Name": "Suckerfish",
+        "Location": "Sea",
+        "Size": "Large (Fin)",
+        "Price": "1,500",
+        "Time": "All day",
+        "Season": "Jun-Sep (Northern) / Dec-Mar (Southern)"
+    },
+    
+    {
+        "Number": "77",
+        "Image": "centipede.png",
+        "Name": "Football Fish",
+        "Location": "Sea",
+        "Size": "Large",
+        "Price": "2,500",
+        "Time": "4PM - 9AM",
+        "Season": "Nov-Mar (Northern) / May-Sep (Southern)"
+    },
+    
+    {
+        "Number": "78",
+        "Image": "spider.png",
+        "Name": "Oarfish",
+        "Location": "Sea",
+        "Size": "Largest",
+        "Price": "9,000",
+        "Time": "All day",
+        "Season": "Dec-May (Northern) / Jun-Nov (Southern)"
+    },
+    
+    {
+        "Number": "79",
+        "Image": "tarantula.png",
+        "Name": "Barreleye",
+        "Location": "Sea",
+        "Size": "Small",
+        "Price": "15,000",
+        "Time": "9PM - 4AM",
+        "Season": "Year-round (Northern and Southern)"
+    },
+    
+    {
+        "Number": "80",
+        "Image": "scorpion.png",
+        "Name": "Coelacanth",
+        "Location": "Sea (rainy days)",
+        "Size": "Largest",
+        "Price": "15,000",
+        "Time": "All day",
+        "Season": "Year-round (Northern and Southern)"
+    }
+]

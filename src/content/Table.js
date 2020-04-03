@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components'
 import bugInfo from '../data/bugs.json'
+//import image from '../img/bitterling.png'
 
 console.log(bugInfo[0].Image)
 
 const BugMiniTable = () => {
    const row = bugInfo.map(value =>
         <tr key={value.Number}>
-            <td>{value.Image}</td>
+            <td><img src={"../img/bugs/" +value.Image} alt="sudando" /></td>
             <td>{value.Name}</td>
             <td>{value.Price}</td>
             <td>{value.Time}</td>
@@ -58,6 +59,10 @@ const BugsTable = styled.table`
     }
     th {
         padding-top: 10px;
+    }
+    img {
+        width: 64px;
+        height: 64px;
     }
 `
 
