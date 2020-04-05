@@ -5,7 +5,7 @@
         "Name": "Common butterfly",
         "Price": "160",
         "Location": "Flying",
-        "Season": "Sep-Jun (Northern) / Mar-Dec (Southern)",
+        "Season": "Sep-Jun (North)<br/>Mar-Dec (South)",
         "Time": "4 AM - 7 PM"
     },
 
@@ -15,7 +15,7 @@
         "Name": "Yellow butterfly",
         "Price": "160",
         "Location": "Flying",
-        "Season": "Mar-Jun, Sep-Oct (Northern) / Mar-Apr, Sep-Dec (Southern)",
+        "Season": "Mar-Jun, Sep-Oct (North)<br/>Mar-Apr, Sep-Dec (South)",
         "Time": "4 AM - 7 PM"
     },
 
@@ -25,7 +25,7 @@
         "Name": "Tiger butterfly",
         "Price": "240",
         "Location": "Flying",
-        "Season": "Mar-Sep (Northern) / Sep-Mar (Southern)",
+        "Season": "Mar-Sep (North)<br/>Sep-Mar (South)",
         "Time": "4 AM - 7 PM"
     },
 
@@ -34,8 +34,8 @@
         "Image": "peacockbutterfly.png", 	 	 
         "Name": "Peacock butterfly",
         "Price": "2,500",
-        "Location": "Flying by, Hybrid Flowers",
-        "Season": "Mar-Jun (Northern) / Sep-Dec (Southern)",
+        "Location": "Flying by Flowers",
+        "Season": "Mar-Jun (North)<br/>Sep-Dec (South)",
         "Time": "4 AM - 7 PM"
     },
 
@@ -45,7 +45,7 @@
         "Name": "Common bluebottle",
         "Price": "300",
         "Location": "Flying",
-        "Season": "Apr-Aug (Northern) / Oct-Feb (Southern)",
+        "Season": "Apr-Aug (North)<br/>Oct-Feb (South)",
         "Time": "4 AM - 7 PM"
     },
 
@@ -65,7 +65,7 @@
         "Name": "Great purple emperor",
         "Price": "3,000",
         "Location": "Flying",
-        "Season": "May-Aug (Northern) / Nov-Feb (Southern)",
+        "Season": "May-Aug (North)<br/>Nov-Feb (South)",
         "Time": "4 AM - 7 PM"
     },
 
@@ -75,7 +75,7 @@
         "Name": "Monach butterfly",
         "Price": "140",
         "Location": "Flying",
-        "Season": "Sep-Nov (Northern) / Mar-May (Southern)",
+        "Season": "Sep-Nov (North)<br/>Mar-May (South)",
         "Time": "4 AM - 5 PM"
     },
 
@@ -85,7 +85,7 @@
         "Name": "Emperor butterfly",
         "Price": "4,000",
         "Location": "Flying",
-        "Season": "Jun-Sep, Dec-Mar (Northern) / Dec-Mar, Jun-Sep (Southern)",
+        "Season": "Jun-Sep, Dec-Mar (North)<br/>Dec-Mar, Jun-Sep (South)",
         "Time": "5 PM - 8 AM"
     },
 
@@ -95,7 +95,7 @@
         "Name": "Agrias butterfly",
         "Price": "3,000",
         "Location": "Flying",
-        "Season": "Apr-Sep (Northern) / Nov-Mar (Southern)",
+        "Season": "Apr-Sep (North)<br/>Nov-Mar (South)",
         "Time": "8 AM - 5 PM"
     },
 
@@ -105,7 +105,7 @@
         "Name": "Raja Brooke's birdwing",
         "Price": "2,500",
         "Location": "Flying by Flowers",
-        "Season": "Apr-Sep, Dec-Feb (Northern) / Nov-Mar, Jun-Aug (Southern)",
+        "Season": "Apr-Sep, Dec-Feb (North)<br/>Nov-Mar, Jun-Aug (South)",
         "Time": "8 AM - 5 PM"
     },
 
@@ -115,7 +115,7 @@
         "Name": "Queen Alexandra's birdwing",
         "Price": "4,000",
         "Location": "Flying",
-        "Season": "May-Sep (Northern) / Nov-Mar (Southern)",
+        "Season": "May-Sep (North)<br/>Nov-Mar (South)",
         "Time": "8 AM - 4 PM"
     },
 
@@ -135,7 +135,7 @@
         "Name": "Atlas moth",
         "Price": "3,000",
         "Location": "On Trees",
-        "Season": "Apr-Sep (Northern) / Oct-Mar (Southern)",
+        "Season": "Apr-Sep (North)<br/>Oct-Mar (South)",
         "Time": "7 PM - 4 AM"
     },
 
@@ -145,7 +145,7 @@
         "Name": "Madagascan sunset moth",
         "Price": "2,500",
         "Location": "Flying",
-        "Season": "Apr-Sep (Northern) / Oct-Mar (Southern)",
+        "Season": "Apr-Sep (North)<br/>Oct-Mar (South)",
         "Time": "8 AM - 4 PM"
     },
 
@@ -155,7 +155,7 @@
         "Name": "Long locust",
         "Price": "200",
         "Location": "On the Ground",
-        "Season": "Apr-Nov (Northern) / Nov-May (Southern)",
+        "Season": "Apr-Nov (North)<br/>Nov-May (South)",
         "Time": "8 AM - 7 PM"
     },
 
@@ -165,7 +165,7 @@
         "Name": "Migratory locust",
         "Price": "600",
         "Location": "On the Ground",
-        "Season": "Aug-Nov (Northern) / Feb-May (Southern)",
+        "Season": "Aug-Nov (North)<br/>Feb-May (South)",
         "Time": "8 AM - 7 PM"
     },
 
@@ -175,7 +175,7 @@
         "Name": "Rice grasshopper",
         "Price": "160",
         "Location": "On the Ground",
-        "Season": "Aug-Nov (Northern) / Feb-May (Southern)",
+        "Season": "Aug-Nov (North)<br/>Feb-May (South)",
         "Time": "8 AM - 7 PM"
     },
 
@@ -185,7 +185,7 @@
         "Name": "Grasshopper",
         "Price": "160",
         "Location": "On the Ground",
-        "Season": "Jul-Sep (Northern) / Jan-Mar (Southern)",
+        "Season": "Jul-Sep (North)<br/>Jan-Mar (South)",
         "Time": "8 AM - 5 PM"
     },
 
@@ -195,7 +195,7 @@
         "Name": "Cricket",
         "Price": "130",
         "Location": "On the Ground",
-        "Season": "Sep-Nov (Northern) / Mar-May (Southern)",
+        "Season": "Sep-Nov (North)<br/>Mar-May (South)",
         "Time": "5 PM - 8 AM"
     },
 
@@ -205,7 +205,7 @@
         "Name": "Bell cricket",
         "Price": "430",
         "Location": "On the Ground",
-        "Season": "Sep-Oct (Northern) / Mar-Apr (Southern)",
+        "Season": "Sep-Oct (North)<br/>Mar-Apr (South)",
         "Time": "5 PM - 8 AM"
     },
 
@@ -215,7 +215,7 @@
         "Name": "Mantis",
         "Price": "430",
         "Location": "On Flowers",
-        "Season": "Mar-Nov (Northern) / Sep-May (Southern)",
+        "Season": "Mar-Nov (North)<br/>Sep-May (South)",
         "Time": "8 AM - 5 PM"
     },
 
@@ -225,7 +225,7 @@
         "Name": "Orchid mantis",
         "Price": "2,400",
         "Location": "On Flowers (White)",
-        "Season": "Mar-Nov (Northern) / Sep-May (Southern)",
+        "Season": "Mar-Nov (North)<br/>Sep-May (South)",
         "Time": "8 AM - 5 PM"
     },
 
@@ -235,7 +235,7 @@
         "Name": "Honeybee",
         "Price": "200",
         "Location": "Flying",
-        "Season": "Mar-Jul (Northern) / Mar-Jul (Southern)",
+        "Season": "Mar-Jul (North)<br/>Mar-Jul (South)",
         "Time": "8 AM - 5 PM"
     },
 
@@ -255,7 +255,7 @@
         "Name": "Brown cicada",
         "Price": "250",
         "Location": "On Trees",
-        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "8 AM - 5 PM"
     },
 
@@ -265,7 +265,7 @@
         "Name": "Robust cicada",
         "Price": "300",
         "Location": "On Trees",
-        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "8 AM - 5 PM"
     },
 
@@ -275,7 +275,7 @@
         "Name": "Giant cicada",
         "Price": "500",
         "Location": "On Trees",
-        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "8 AM - 5 PM"
     },
 
@@ -285,7 +285,7 @@
         "Name": "Walker cicada",
         "Price": "400",
         "Location": "On Trees",
-        "Season": "Aug-Sep (Northern) / Feb-Mar (Southern)",
+        "Season": "Aug-Sep (North)<br/>Feb-Mar (South)",
         "Time": "8 AM - 5 PM"
     },
 
@@ -295,7 +295,7 @@
         "Name": "Evening cicada",
         "Price": "550",
         "Location": "On Trees",
-        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "4 AM - 8 AM -&amp; 4 PM - 7 PM"
     },
 
@@ -305,7 +305,7 @@
         "Name": "Cicada shell",
         "Price": "10",
         "Location": "On Trees",
-        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "All day"
     },
 
@@ -315,7 +315,7 @@
         "Name": "Red dragonfly",
         "Price": "180",
         "Location": "Flying",
-        "Season": "Sep-Oct (Northern) / Mar-Apr (Southern)",
+        "Season": "Sep-Oct (North)<br/>Mar-Apr (South)",
         "Time": "8 AM - 7 PM"
     },
 
@@ -325,7 +325,7 @@
         "Name": "Darner dragonfly",
         "Price": "230",
         "Location": "Flying",
-        "Season": "Apr-Oct (Northern) / Oct-Apr (Southern)",
+        "Season": "Apr-Oct (North)<br/>Oct-Apr (South)",
         "Time": "8 AM - 5 PM"
     },
 
@@ -335,7 +335,7 @@
         "Name": "Banded dragonfly",
         "Price": "4,500",
         "Location": "Flying",
-        "Season": "May-Oct (Northern) / Nov-Apr (Southern)",
+        "Season": "May-Oct (North)<br/>Nov-Apr (South)",
         "Time": "8 AM - 5 PM"
     },
 
@@ -345,7 +345,7 @@
         "Name": "Damselfly",
         "Price": "500",
         "Location": "Flying",
-        "Season": "Nov-Feb (Northern) / May-Aug (Southern)",
+        "Season": "Nov-Feb (North)<br/>May-Aug (South)",
         "Time": "All day"
     },
 
@@ -355,7 +355,7 @@
         "Name": "Firefly",
         "Price": "300",
         "Location": "Flying",
-        "Season": "Jun (Northern) / Dec (Southern)",
+        "Season": "Jun (North)<br/>Dec (South)",
         "Time": "7 PM - 4 AM"
     },
 
@@ -365,7 +365,7 @@
         "Name": "Mole cricket",
         "Price": "500",
         "Location": "Underground",
-        "Season": "Nov-May (Northern) / May-Nov (Southern)",
+        "Season": "Nov-May (North)<br/>May-Nov (South)",
         "Time": "All day"
     },
 
@@ -375,7 +375,7 @@
         "Name": "Pondskater",
         "Price": "130",
         "Location": "On Ponds and Rivers",
-        "Season": "May-Sep (Northern) / Nov-Mar (Southern)",
+        "Season": "May-Sep (North)<br/>Nov-Mar (South)",
         "Time": "8 AM - 7 PM"
     },
 
@@ -385,7 +385,7 @@
         "Name": "Diving b",
         "Price": "800",
         "Location": "On Pond,s and Rivers",
-        "Season": "May-Sep (Northern) / Nov-Mar (Southern)",
+        "Season": "May-Sep (North)<br/>Nov-Mar (South)",
         "Time": "8 AM - 7 PM"
     },
 
@@ -395,7 +395,7 @@
         "Name": "Giant water bug",
         "Price": "2,000",
         "Location": "On Ponds and Rivers",
-        "Season": "Apr-Sep (Northern) / Oct-Mar (Southern)",
+        "Season": "Apr-Sep (North)<br/>Oct-Mar (South)",
         "Time": "7 PM - 8 AM"
     },
 
@@ -405,7 +405,7 @@
         "Name": "Stinkbug",
         "Price": "120",
         "Location": "On Flowers",
-        "Season": "Mar-Nov (Northern) / Sep-May (Southern)",
+        "Season": "Mar-Nov (North)<br/>Sep-May (South)",
         "Time": "All day"
     },
 
@@ -415,7 +415,7 @@
         "Name": "Man-faced stink bug",
         "Price": "1,000",
         "Location": "On Flowers",
-        "Season": "Mar-Nov (Northern) / Sep-May (Southern)",
+        "Season": "Mar-Nov (North)<br/>Sep-May (South)",
         "Time": "7 PM - 8 AM"
     },
 
@@ -425,7 +425,7 @@
         "Name": "Ladybug",
         "Price": "200",
         "Location": "On Flowers",
-        "Season": "Mar-Jun, Oct (Northern) / Sep-Dec, Apr (Southern)",
+        "Season": "Mar-Jun, Oct (North)<br/>Sep-Dec, Apr (South)",
         "Time": "8 AM - 5 PM"
     },
 
@@ -435,7 +435,7 @@
         "Name": "Tiger beetle",
         "Price": "1,500",
         "Location": "On the Ground",
-        "Season": "Feb-Nov (Northern) / Aug-May (Southern)",
+        "Season": "Feb-Nov (North)<br/>Aug-May (South)",
         "Time": "All day"
     },
 
@@ -445,7 +445,7 @@
         "Name": "Jewel beetle",
         "Price": "2,400",
         "Location": "On Tree Stumps",
-        "Season": "Apr-Aug (Northern) / Oct-Feb (Southern)",
+        "Season": "Apr-Aug (North)<br/>Oct-Feb (South)",
         "Time": "All day"
     },
 
@@ -455,7 +455,7 @@
         "Name": "Violin beetle",
         "Price": "450",
         "Location": "On Tree Stumps",
-        "Season": "May-Jun, Sep-Nov (Northern) / Nov-Dec, Mar-Apr (Southern)",
+        "Season": "May-Jun, Sep-Nov (North)<br/>Nov-Dec, Mar-Apr (South)",
         "Time": "All day"
     },
 
@@ -475,7 +475,7 @@
         "Name": "Rosalia batesi beetle",
         "Price": "3,000",
         "Location": "On Tree Stumps",
-        "Season": "May-Sep (Northern) / Nov-Mar (Southern)",
+        "Season": "May-Sep (North)<br/>Nov-Mar (South)",
         "Time": "All day"
     },
 
@@ -485,7 +485,7 @@
         "Name": "Blue weevil beetle",
         "Price": "800",
         "Location": "On Trees",
-        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "All day"
     },
 
@@ -495,7 +495,7 @@
         "Name": "Dung beetle",
         "Price": "3,000",
         "Location": "On the Ground (rolling snowballs)",
-        "Season": "Dec-Feb (Northern) / Jun-Aug (Southern)",
+        "Season": "Dec-Feb (North)<br/>Jun-Aug (South)",
         "Time": "All day"
     },
 
@@ -505,7 +505,7 @@
         "Name": "Earth-boring dung beetle",
         "Price": "300",
         "Location": "On the Ground",
-        "Season": "Jul-Sep (Northern) / Jan-Mar (Southern)",
+        "Season": "Jul-Sep (North)<br/>Jan-Mar (South)",
         "Time": "All day"
     },
 
@@ -515,7 +515,7 @@
         "Name": "Scarab beetle",
         "Price": "10,000",
         "Location": "On Trees",
-        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "11 PM - 8 AM"
     },
 
@@ -525,7 +525,7 @@
         "Name": "Drone beetle",
         "Price": "200",
         "Location": "On Trees",
-        "Season": "Jun-Aug (Northern) / Dec-Feb (Southern)",
+        "Season": "Jun-Aug (North)<br/>Dec-Feb (South)",
         "Time": "All day"
     },
 
@@ -535,7 +535,7 @@
         "Name": "Goliath beetle",
         "Price": "8,000",
         "Location": "On Trees (Coconut)",
-        "Season": "Jun-Sep (Northern) / Dec-Mar (Southern)",
+        "Season": "Jun-Sep (North)<br/>Dec-Mar (South)",
         "Time": "5 PM - 8 AM"
     },
 
@@ -545,7 +545,7 @@
         "Name": "Saw stag",
         "Price": "2,000",
         "Location": "On Trees",
-        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "All day"
     },
 
@@ -555,7 +555,7 @@
         "Name": "Miyama stag",
         "Price": "1,000",
         "Location": "On Trees",
-        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "All day"
     },
 
@@ -565,7 +565,7 @@
         "Name": "Giant stag",
         "Price": "10,000",
         "Location": "On Trees",
-        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "11 PM - 8 AM"
     },
 
@@ -575,7 +575,7 @@
         "Name": "Rainbow stag",
         "Price": "6,000",
         "Location": "On Trees",
-        "Season": "Jun-Sep (Northern) / Dec-Mar (Southern)",
+        "Season": "Jun-Sep (North)<br/>Dec-Mar (South)",
         "Time": "7 PM - 8 AM"
     },
 
@@ -585,7 +585,7 @@
         "Name": "Cyclommatus stag",
         "Price": "8,000",
         "Location": "On Trees",
-        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "5 PM - 8 AM"
     },
 
@@ -595,7 +595,7 @@
         "Name": "Golden stag",
         "Price": "?",
         "Location": "On Trees",
-        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "5 PM - 8 AM"
     },
 
@@ -605,7 +605,7 @@
         "Name": "Giraffe stag",
         "Price": "?",
         "Location": "On Trees",
-        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "5 PM - 8 AM"
     },
 
@@ -615,7 +615,7 @@
         "Name": "Horned dynastid",
         "Price": "1,350",
         "Location": "On Trees",
-        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "5 PM - 8 AM"
     },
 
@@ -625,7 +625,7 @@
         "Name": "Horned atlas",
         "Price": "8,000",
         "Location": "On Trees",
-        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "5 PM - 8 AM"
     },
 
@@ -635,7 +635,7 @@
         "Name": "Horned elephant",
         "Price": "8,000",
         "Location": "On Trees",
-        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "5 PM - 8 AM"
     },
 
@@ -645,7 +645,7 @@
         "Name": "Horned herucles",
         "Price": "?",
         "Location": "On Trees",
-        "Season": "Jul-Aug (Northern) / Jan-Feb (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "5 PM - 8 AM"
     },
 
@@ -655,7 +655,7 @@
         "Name": "Walking stick",
         "Price": "600",
         "Location": "On Trees",
-        "Season": "Jul-Nov (Northern) / Jan-May (Southern)",
+        "Season": "Jul-Nov (North)<br/>Jan-May (South)",
         "Time": "4 AM - 8 AM -&amp; 5 PM - 7 PM"
     },
 
@@ -665,7 +665,7 @@
         "Name": "Walking leaf",
         "Price": "600",
         "Location": "Under Trees Disguised as Leafs",
-        "Season": "Jul-Aug (Northern) / Jan-Mar (Southern)",
+        "Season": "Jul-Aug (North)<br/>Jan-Mar (South)",
         "Time": "All day"
     },
 
@@ -725,7 +725,7 @@
         "Name": "Mosquito",
         "Price": "130",
         "Location": "Flying",
-        "Season": "Jun-Sep (Northern) / Dec-Mar (Southern)",
+        "Season": "Jun-Sep (North)<br/>Dec-Mar (South)",
         "Time": "5 PM - 4 AM"
     },
 
@@ -734,8 +734,8 @@
         "Image": "flea.png", 	 	   	 
         "Name": "Flea",
         "Price": "70",
-        "Location": "Villger's Heads",
-        "Season": "Apr-Nov (Northern) / Oct-May (Southern)",
+        "Location": "Villger'sads",
+        "Season": "Apr-Nov (North)<br/>Oct-May (South)",
         "Time": "All day"
     },
 
@@ -755,7 +755,7 @@
         "Name": "Pill bug",
         "Price": "250",
         "Location": "Hitting Rocks",
-        "Season": "Sep-Jun (Northern) / Mar-Dec (Southern)",
+        "Season": "Sep-Jun (North)<br/>Mar-Dec (South)",
         "Time": "11 PM - 4 PM"
     },
 
@@ -765,7 +765,7 @@
         "Name": "Centipede",
         "Price": "300",
         "Location": "Hitting Rocks",
-        "Season": "Sep-Jun (Northern) / Mar-Dec (Southern)",
+        "Season": "Sep-Jun (North)<br/>Mar-Dec (South)",
         "Time": "4 PM - 11 PM"
     },
 
@@ -785,7 +785,7 @@
         "Name": "Tarantula",
         "Price": "8,000",
         "Location": "On the Ground",
-        "Season": "Nov-Apr (Northern) / May-Oct (Southern)",
+        "Season": "Nov-Apr (North)<br/>May-Oct (South)",
         "Time": "7 PM - 4 AM"
     },
 
@@ -795,7 +795,7 @@
         "Name": "Scorpion",
         "Location": "On the Ground",
         "Price": "8,000",
-        "Season": "May-Oct (Northern) / Nov-Apr (Southern)",
+        "Season": "May-Oct (North)<br/>Nov-Apr (South)",
         "Time": "7 PM - 4 AM"
     }
 ]

@@ -5,7 +5,9 @@ import { Table } from './content/Table'
 
 const App = () => {
   return (
-    <div className="App">
+    <div>
+      <div>Navegador</div>
+      <div>Titulo seccion</div>
       <Table />
     </div>
   );
