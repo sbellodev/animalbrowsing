@@ -26,8 +26,8 @@ const BugMiniTable = () => {
          <tr key={value.Number}>
             <td><img src={"../img/bug/" +value.Image} alt="sudando" /></td>
             <td>{value.Name}<br/>{value.Price}</td>
-            <td dangerouslySetInnerHTML={{ __html: value.Season}}></td>
             <td> {value.Time} <br/> {value.Location}</td>
+            <td dangerouslySetInnerHTML={{ __html: value.Season}}></td>
          </tr>
      )
      return row
@@ -59,8 +59,8 @@ const Table = () => {
                 <tr>
                     <th>Image</th>
                     <th>Name <br/> Price</th>
-                    <th>Season <br/> (Hemi.)</th>
                     <th>Time <br/>Location</th>
+                    <th>Season <br/> (Hemi.)</th>
                 </tr>
             </thead>
             <tbody>
@@ -113,8 +113,8 @@ const BugTable = styled.table`
         td:first-child, th:first-child {
             padding-left: 0px;
         }
-        td:last-child, th-last:child{
-            width: 30px;
+        td:last-child, th:last-child{
+            width: 80px;
         }
         img {
             width: 50px;
