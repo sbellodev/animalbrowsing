@@ -110,6 +110,9 @@ const BugTable = styled.table`
             text-align: center;
             vertical-align: top;
         }
+        th{
+            padding-top: 40px;
+        }
         td:first-child, th:first-child {
             padding-left: 0px;
         }
