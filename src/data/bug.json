@@ -6,7 +6,7 @@
         "Price": "160",
         "Location": "Flying",
         "Season": "Sep-Jun (North)<br/>Mar-Dec (South)",
-        "Time": "4 AM - 7 PM"
+        "Time": "4AM - 7PM"
     },
 
     {
@@ -16,7 +16,7 @@
         "Price": "160",
         "Location": "Flying",
         "Season": "Mar-Jun, Sep-Oct (North)<br/>Mar-Apr, Sep-Dec (South)",
-        "Time": "4 AM - 7 PM"
+        "Time": "4AM - 7PM"
     },
 
     {
@@ -26,7 +26,7 @@
         "Price": "240",
         "Location": "Flying",
         "Season": "Mar-Sep (North)<br/>Sep-Mar (South)",
-        "Time": "4 AM - 7 PM"
+        "Time": "4AM - 7PM"
     },
 
     {
@@ -36,7 +36,7 @@
         "Price": "2,500",
         "Location": "Flying by Flowers",
         "Season": "Mar-Jun (North)<br/>Sep-Dec (South)",
-        "Time": "4 AM - 7 PM"
+        "Time": "4AM - 7PM"
     },
 
     {
@@ -46,7 +46,7 @@
         "Price": "300",
         "Location": "Flying",
         "Season": "Apr-Aug (North)<br/>Oct-Feb (South)",
-        "Time": "4 AM - 7 PM"
+        "Time": "4AM - 7PM"
     },
 
     {
@@ -56,7 +56,7 @@
         "Price": "1,000",
         "Location": "Flying",
         "Season": "Year-round",
-        "Time": "8 AM - 7 PM"
+        "Time": "8AM - 7PM"
     },
 
     {
@@ -66,7 +66,7 @@
         "Price": "3,000",
         "Location": "Flying",
         "Season": "May-Aug (North)<br/>Nov-Feb (South)",
-        "Time": "4 AM - 7 PM"
+        "Time": "4AM - 7PM"
     },
 
     {
@@ -76,7 +76,7 @@
         "Price": "140",
         "Location": "Flying",
         "Season": "Sep-Nov (North)<br/>Mar-May (South)",
-        "Time": "4 AM - 5 PM"
+        "Time": "4AM - 5PM"
     },
 
     {
@@ -86,7 +86,7 @@
         "Price": "4,000",
         "Location": "Flying",
         "Season": "Jun-Sep, Dec-Mar (North)<br/>Dec-Mar, Jun-Sep (South)",
-        "Time": "5 PM - 8 AM"
+        "Time": "5PM - 8AM"
     },
 
     {
@@ -96,7 +96,7 @@
         "Price": "3,000",
         "Location": "Flying",
         "Season": "Apr-Sep (North)<br/>Nov-Mar (South)",
-        "Time": "8 AM - 5 PM"
+        "Time": "8AM - 5PM"
     },
 
     {
@@ -106,7 +106,7 @@
         "Price": "2,500",
         "Location": "Flying by Flowers",
         "Season": "Apr-Sep, Dec-Feb (North)<br/>Nov-Mar, Jun-Aug (South)",
-        "Time": "8 AM - 5 PM"
+        "Time": "8AM - 5PM"
     },
 
     {
@@ -116,7 +116,7 @@
         "Price": "4,000",
         "Location": "Flying",
         "Season": "May-Sep (North)<br/>Nov-Mar (South)",
-        "Time": "8 AM - 4 PM"
+        "Time": "8AM - 4PM"
     },
 
     {
@@ -126,7 +126,7 @@
         "Price": "130",
         "Location": "Flying by Light",
         "Season": "Year-round",
-        "Time": "7 PM - 4 AM"
+        "Time": "7PM - 4AM"
     },
 
     {
@@ -136,7 +136,7 @@
         "Price": "3,000",
         "Location": "On Trees",
         "Season": "Apr-Sep (North)<br/>Oct-Mar (South)",
-        "Time": "7 PM - 4 AM"
+        "Time": "7PM - 4AM"
     },
 
     {
@@ -146,7 +146,7 @@
         "Price": "2,500",
         "Location": "Flying",
         "Season": "Apr-Sep (North)<br/>Oct-Mar (South)",
-        "Time": "8 AM - 4 PM"
+        "Time": "8AM - 4PM"
     },
 
     {
@@ -156,7 +156,7 @@
         "Price": "200",
         "Location": "On the Ground",
         "Season": "Apr-Nov (North)<br/>Nov-May (South)",
-        "Time": "8 AM - 7 PM"
+        "Time": "8AM - 7PM"
     },
 
     {
@@ -166,7 +166,7 @@
         "Price": "600",
         "Location": "On the Ground",
         "Season": "Aug-Nov (North)<br/>Feb-May (South)",
-        "Time": "8 AM - 7 PM"
+        "Time": "8AM - 7PM"
     },
 
     {
@@ -176,7 +176,7 @@
         "Price": "160",
         "Location": "On the Ground",
         "Season": "Aug-Nov (North)<br/>Feb-May (South)",
-        "Time": "8 AM - 7 PM"
+        "Time": "8AM - 7PM"
     },
 
     {
@@ -186,7 +186,7 @@
         "Price": "160",
         "Location": "On the Ground",
         "Season": "Jul-Sep (North)<br/>Jan-Mar (South)",
-        "Time": "8 AM - 5 PM"
+        "Time": "8AM - 5PM"
     },
 
     {
@@ -196,7 +196,7 @@
         "Price": "130",
         "Location": "On the Ground",
         "Season": "Sep-Nov (North)<br/>Mar-May (South)",
-        "Time": "5 PM - 8 AM"
+        "Time": "5PM - 8AM"
     },
 
     {
@@ -206,7 +206,7 @@
         "Price": "430",
         "Location": "On the Ground",
         "Season": "Sep-Oct (North)<br/>Mar-Apr (South)",
-        "Time": "5 PM - 8 AM"
+        "Time": "5PM - 8AM"
     },
 
     {
@@ -216,7 +216,7 @@
         "Price": "430",
         "Location": "On Flowers",
         "Season": "Mar-Nov (North)<br/>Sep-May (South)",
-        "Time": "8 AM - 5 PM"
+        "Time": "8AM - 5PM"
     },
 
     {
@@ -226,7 +226,7 @@
         "Price": "2,400",
         "Location": "On Flowers (White)",
         "Season": "Mar-Nov (North)<br/>Sep-May (South)",
-        "Time": "8 AM - 5 PM"
+        "Time": "8AM - 5PM"
     },
 
     {
@@ -236,7 +236,7 @@
         "Price": "200",
         "Location": "Flying",
         "Season": "Mar-Jul (North)<br/>Mar-Jul (South)",
-        "Time": "8 AM - 5 PM"
+        "Time": "8AM - 5PM"
     },
 
     {
@@ -256,7 +256,7 @@
         "Price": "250",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "8 AM - 5 PM"
+        "Time": "8AM - 5PM"
     },
 
     {
@@ -266,7 +266,7 @@
         "Price": "300",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "8 AM - 5 PM"
+        "Time": "8AM - 5PM"
     },
 
     {
@@ -276,7 +276,7 @@
         "Price": "500",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "8 AM - 5 PM"
+        "Time": "8AM - 5PM"
     },
 
     {
@@ -286,7 +286,7 @@
         "Price": "400",
         "Location": "On Trees",
         "Season": "Aug-Sep (North)<br/>Feb-Mar (South)",
-        "Time": "8 AM - 5 PM"
+        "Time": "8AM - 5PM"
     },
 
     {
@@ -296,7 +296,7 @@
         "Price": "550",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "4 AM - 8 AM -&amp; 4 PM - 7 PM"
+        "Time": "4AM - 8AM \n 4PM - 7PM"
     },
 
     {
@@ -316,7 +316,7 @@
         "Price": "180",
         "Location": "Flying",
         "Season": "Sep-Oct (North)<br/>Mar-Apr (South)",
-        "Time": "8 AM - 7 PM"
+        "Time": "8AM - 7PM"
     },
 
     {
@@ -326,7 +326,7 @@
         "Price": "230",
         "Location": "Flying",
         "Season": "Apr-Oct (North)<br/>Oct-Apr (South)",
-        "Time": "8 AM - 5 PM"
+        "Time": "8AM - 5PM"
     },
 
     {
@@ -336,7 +336,7 @@
         "Price": "4,500",
         "Location": "Flying",
         "Season": "May-Oct (North)<br/>Nov-Apr (South)",
-        "Time": "8 AM - 5 PM"
+        "Time": "8AM - 5PM"
     },
 
     {
@@ -356,7 +356,7 @@
         "Price": "300",
         "Location": "Flying",
         "Season": "Jun (North)<br/>Dec (South)",
-        "Time": "7 PM - 4 AM"
+        "Time": "7PM - 4AM"
     },
 
     {
@@ -376,7 +376,7 @@
         "Price": "130",
         "Location": "On Ponds and Rivers",
         "Season": "May-Sep (North)<br/>Nov-Mar (South)",
-        "Time": "8 AM - 7 PM"
+        "Time": "8AM - 7PM"
     },
 
     {
@@ -386,7 +386,7 @@
         "Price": "800",
         "Location": "On Pond,s and Rivers",
         "Season": "May-Sep (North)<br/>Nov-Mar (South)",
-        "Time": "8 AM - 7 PM"
+        "Time": "8AM - 7PM"
     },
 
     {
@@ -396,7 +396,7 @@
         "Price": "2,000",
         "Location": "On Ponds and Rivers",
         "Season": "Apr-Sep (North)<br/>Oct-Mar (South)",
-        "Time": "7 PM - 8 AM"
+        "Time": "7PM - 8AM"
     },
 
     {
@@ -416,7 +416,7 @@
         "Price": "1,000",
         "Location": "On Flowers",
         "Season": "Mar-Nov (North)<br/>Sep-May (South)",
-        "Time": "7 PM - 8 AM"
+        "Time": "7PM - 8AM"
     },
 
     {
@@ -426,7 +426,7 @@
         "Price": "200",
         "Location": "On Flowers",
         "Season": "Mar-Jun, Oct (North)<br/>Sep-Dec, Apr (South)",
-        "Time": "8 AM - 5 PM"
+        "Time": "8AM - 5PM"
     },
 
     {
@@ -516,7 +516,7 @@
         "Price": "10,000",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "11 PM - 8 AM"
+        "Time": "11PM - 8AM"
     },
 
     {
@@ -536,7 +536,7 @@
         "Price": "8,000",
         "Location": "On Trees (Coconut)",
         "Season": "Jun-Sep (North)<br/>Dec-Mar (South)",
-        "Time": "5 PM - 8 AM"
+        "Time": "5PM - 8AM"
     },
 
     {
@@ -566,7 +566,7 @@
         "Price": "10,000",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "11 PM - 8 AM"
+        "Time": "11PM - 8AM"
     },
 
     {
@@ -576,7 +576,7 @@
         "Price": "6,000",
         "Location": "On Trees",
         "Season": "Jun-Sep (North)<br/>Dec-Mar (South)",
-        "Time": "7 PM - 8 AM"
+        "Time": "7PM - 8AM"
     },
 
     {
@@ -586,7 +586,7 @@
         "Price": "8,000",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "5 PM - 8 AM"
+        "Time": "5PM - 8AM"
     },
 
     {
@@ -596,7 +596,7 @@
         "Price": "?",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "5 PM - 8 AM"
+        "Time": "5PM - 8AM"
     },
 
     {
@@ -606,7 +606,7 @@
         "Price": "?",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "5 PM - 8 AM"
+        "Time": "5PM - 8AM"
     },
 
     {
@@ -616,7 +616,7 @@
         "Price": "1,350",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "5 PM - 8 AM"
+        "Time": "5PM - 8AM"
     },
 
     {
@@ -626,7 +626,7 @@
         "Price": "8,000",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "5 PM - 8 AM"
+        "Time": "5PM - 8AM"
     },
 
     {
@@ -636,7 +636,7 @@
         "Price": "8,000",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "5 PM - 8 AM"
+        "Time": "5PM - 8AM"
     },
 
     {
@@ -646,7 +646,7 @@
         "Price": "?",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "5 PM - 8 AM"
+        "Time": "5PM - 8AM"
     },
 
     {
@@ -656,7 +656,7 @@
         "Price": "600",
         "Location": "On Trees",
         "Season": "Jul-Nov (North)<br/>Jan-May (South)",
-        "Time": "4 AM - 8 AM -&amp; 5 PM - 7 PM"
+        "Time": "4AM - 8AM \n 5PM - 7PM"
     },
 
     {
@@ -696,7 +696,7 @@
         "Price": "1,000",
         "Location": "Beach disguised as Shells",
         "Season": "Year-round",
-        "Time": "7 PM - 8 AM"
+        "Time": "7PM - 8AM"
     },
 
     {
@@ -726,7 +726,7 @@
         "Price": "130",
         "Location": "Flying",
         "Season": "Jun-Sep (North)<br/>Dec-Mar (South)",
-        "Time": "5 PM - 4 AM"
+        "Time": "5PM - 4AM"
     },
 
     {
@@ -756,7 +756,7 @@
         "Price": "250",
         "Location": "Hitting Rocks",
         "Season": "Sep-Jun (North)<br/>Mar-Dec (South)",
-        "Time": "11 PM - 4 PM"
+        "Time": "11PM - 4PM"
     },
 
     {
@@ -766,7 +766,7 @@
         "Price": "300",
         "Location": "Hitting Rocks",
         "Season": "Sep-Jun (North)<br/>Mar-Dec (South)",
-        "Time": "4 PM - 11 PM"
+        "Time": "4PM - 11PM"
     },
 
     {
@@ -776,7 +776,7 @@
         "Price": "480",
         "Location": "Shaking Trees",
         "Season": "Year-round",
-        "Time": "7 PM - 8 AM"
+        "Time": "7PM - 8AM"
     },
 
     {
@@ -786,7 +786,7 @@
         "Price": "8,000",
         "Location": "On the Ground",
         "Season": "Nov-Apr (North)<br/>May-Oct (South)",
-        "Time": "7 PM - 4 AM"
+        "Time": "7PM - 4AM"
     },
 
     {
@@ -796,6 +796,6 @@
         "Location": "On the Ground",
         "Price": "8,000",
         "Season": "May-Oct (North)<br/>Nov-Apr (South)",
-        "Time": "7 PM - 4 AM"
+        "Time": "7PM - 4AM"
     }
 ]
