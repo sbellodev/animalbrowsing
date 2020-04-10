@@ -108,6 +108,7 @@ const Table = ({actualIndex}) => {
 }
 
 const HomeTable = styled.div`
+    font-family: afont;
     background-color: #A0D0E7;
     width: 100%;
     height: 99vh;
