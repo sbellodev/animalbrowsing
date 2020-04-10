@@ -3,22 +3,29 @@ import React from 'react';
 //import './App.css';
 import styled from 'styled-components'
 import { Table } from './content/Table'
+//import imgPrice from '../img/icons/price1.jpg'
 
+const imageURL = {
+  Price: "/img/icons/price1.jpg", 
+  ABC: "/img/icons/abc.png", 
+  Search: "/img/icons/search1.jpg", 
+  Reset: "/img/icons/reset1.png"
+}
 const App = () => {
   return (
     <AppContainer>
       <NavBar>
-        <HomeIndex><p>Home</p></HomeIndex>
-        <BugIndex><p>Insects</p></BugIndex>
-        <FishIndex><p>Fishes</p></FishIndex>
+        <HomeIndex>Home</HomeIndex>
+        <BugIndex>Insects</BugIndex>
+        <FishIndex>Fishes</FishIndex>
       </NavBar>
       <Section>
         <h2>Insects</h2>
         <Ellipsis>
-          <SearchButton></SearchButton>
-          <ABCButton></ABCButton>
-          <PriceButton></PriceButton>
-          <ResetButton></ResetButton>
+          <SearchButton><img src={imageURL.Search} width={"30px"} alt="Search" /></SearchButton>
+          <ABCButton><img src={imageURL.ABC} width={"100%"} alt="ABC" /></ABCButton>
+          <PriceButton><img src={imageURL.Price} width={"100%"} alt="price" /></PriceButton>
+          <ResetButton><img src={imageURL.Reset} width={"100%"} alt="Reset" /></ResetButton>
         </Ellipsis>
       </Section>
       
@@ -40,7 +47,7 @@ const NavBar = styled.div`
   background-color: tomato;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   p {
     display: inline-block;
@@ -48,27 +55,19 @@ const NavBar = styled.div`
     line-height: 2em;
   }
 `
-const HomeIndex = styled.div`
-  width: 65px;
-  height: 40px;
-  background-color: #E89E9E;
-  margin-right: 25px;
-  border-radius: 5px;
+const HomeIndex = styled.p`
+  color: #fbeded;
+  font-weight: bold;
   text-align: center;
 `
-const BugIndex = styled.div`
-  width: 65px;
-  height: 40px;
-  background-color: #E89E9E;
-  margin-right: 25px;
-  border-radius: 5px;
+const BugIndex = styled.p`
+  color: #fbeded;
+  font-weight: bold;
   text-align: center;
 `
-const FishIndex = styled.div`
-  width: 65px;
-  height: 40px;
-  background-color: #E89E9E;
-  border-radius: 5px;
+const FishIndex = styled.p`
+  color: #fbeded;
+  font-weight: bold;
   text-align: center;
 `
 
@@ -101,6 +100,9 @@ const SearchButton = styled.button`
   height: 40px;
   margin-top: 45px;
   border-radius: 30px;
+  img {
+    float: right;
+  }
 `
 const ABCButton = styled.button`
   width: 40px;

@@ -83,8 +83,10 @@ const BugTable = styled.table`
     border-collapse: collapse;
     padding: 5px;
     max-width: 800px;
+    tr {
+        bgcolor: white;
+    }
     td {
-   
         text-align: left;
     }
     td, th {
