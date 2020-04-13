@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components'
+import { Table } from '../content/Table'
 
 const imageURL = {
     Price: "/img/icons/price1.jpg", 
@@ -9,14 +10,19 @@ const imageURL = {
     Return: "/img/icons/return1.png"
 }
   
-const TableButtons = () => {
+const TableButtons = ({actualIndex}) => {
+    const [sortBy, setSortBy] = useState("");
+
     return (    
-        <Ellipsis>
-            <SearchButton onClick={() => console.log("Buttone Search pulsao")}><SearchImage src={imageURL.Search}  alt="Search" /></SearchButton>
-            <ABCButton onClick={() => console.log("Buttone ABC pulsao")}><ABCImage src={imageURL.ABC}  alt="ABC" /></ABCButton>
-            <PriceButton onClick={() => console.log("Buttone Price pulsao")}><PriceImage src={imageURL.Price}  alt="price" /></PriceButton>
-            <ResetButton onClick={() => console.log("Buttone Reset pulsao")}><ResetImage src={imageURL.Reset}  alt="Reset" /></ResetButton>
-        </Ellipsis>
+        <>
+            <Ellipsis>
+                <SearchButton onClick={() => console.log("searchbuttonepressed")}><SearchImage src={imageURL.Search}  alt="Search" /></SearchButton>
+                <ABCButton onClick={() => setSortBy("ABC")}><ABCImage src={imageURL.ABC}  alt="ABC" /></ABCButton>
+                <PriceButton onClick={() => setSortBy("Price")}><PriceImage src={imageURL.Price}  alt="price" /></PriceButton>
+                <ResetButton onClick={() => setSortBy("Reset")}><ResetImage src={imageURL.Reset}  alt="Reset" /></ResetButton>
+            </Ellipsis>
+            <Table actualIndex={actualIndex} sortBy={sortBy} />
+        </>
     )
 } 
 
@@ -69,4 +75,4 @@ const SearchImage = styled.img`
 const ResetImage = styled.img`
   width: 100%;
 `
-export { TableButtons }
+export { TableButtons } 

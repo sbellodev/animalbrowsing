@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import bugInfo from '../data/bug.json'
 import fishInfo from '../data/fish.json'
-import { TableButtons } from '../content/TableButtons'
+import { TableButtons, sortBy } from '../content/TableButtons'
 // const BugDesktopTable = () => {
 //    const row = bugInfo.map(value =>
 //         <tr key={value.Number}>
@@ -64,56 +64,84 @@ const Table = ({actualIndex, sortBy}) => {
     //cambiar por if sortBy
     const timeToSort = true
     if(timeToSort) {
+        
         const sortByPrice = (table) => {
             return table.sort((a, b) => b.PriceSort - a.PriceSort)
         }
-        
-        if(actualIndex === "Bugs"){
-            sortByPrice(bugInfo)
+        const sortByABC = (table) => {
+             table.sort((a, b) => {
+                if (b.Name > a.Name) {
+                    return -1;
+                }
+                if (a.Name > b.Name) {
+                    return 1;
+                }
+                return 0;
+            })
+
         }
-        if(actualIndex === "Fishes") {
-            sortByPrice(fishInfo)
+        const sortByReset = (table) => {
+            return table.sort((a, b) => a.Number - b.Number)
         }
+
+
+        if(actualIndex === "Bugs") {
+            if(sortBy === "Price") {
+                sortByPrice(bugInfo)
+            }
+            else if (sortBy === "ABC") {
+                sortByABC(bugInfo)
+            }
+            else if("Reset") {
+                sortByReset(bugInfo)
+            }
+        }
+        else if(actualIndex === "Fish") {
+            if(sortBy === "Price") {
+                sortByPrice(fishInfo)
+            }
+            else if (sortBy === "ABC") {
+                sortByABC(fishInfo)
+            }
+            else if("Reset") {
+                sortByReset(fishInfo)
+            }
+        }
+
     }
       
     switch(actualIndex) {
         case "Bugs":
-            return (
-                <>
-                    <TableButtons />
-                    <TableContainer>
-                        <thead>            
-                            <tr>
-                                <th>Image</th>
-                                <th>Name<br/>Price</th>
-                                <th>Time<br/>Location</th>
-                                <th>Season<br/>(Hemi.)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <BugMobileTable />
-                        </tbody>
-                    </TableContainer>
-                </>
+            return (         
+                <TableContainer>
+                    <thead>            
+                        <tr>
+                            <th>Image</th>
+                            <th>Name<br/>Price</th>
+                            <th>Time<br/>Location</th>
+                            <th>Season<br/>(Hemi.)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <BugMobileTable />
+                    </tbody>
+                </TableContainer>
             )
         case "Fish":
             return (
-                <>
-                    <TableButtons />
-                    <TableContainer>
-                        <thead>            
-                            <tr>
-                                <th>Image</th>
-                                <th>Name<br/>Price</th>
-                                <th>Time<br/>Location<br/>Size</th>
-                                <th>Season<br/>(Hemi.)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <FishMobileTable />
-                        </tbody>
-                    </TableContainer>
-                </>
+                <TableContainer>
+                    <thead>            
+                        <tr>
+                            <th>Image</th>
+                            <th>Name<br/>Price</th>
+                            <th>Time<br/>Location<br/>Size</th>
+                            <th>Season<br/>(Hemi.)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <FishMobileTable />
+                    </tbody>
+                </TableContainer>
             )          
         default: 
                 return <div>Error. Table not rendered.</div>
@@ -155,15 +183,14 @@ const TableContainer = styled.table`
     }
     @media (max-width: 320px) {
         font-size: 14px;
-        td {
-            padding-bottom: 18px;
-        }
         td, th {
-            padding: 0;
-            
+            padding: 0;            
             padding-top: 18px;
             text-align: center;
             vertical-align: top;
+        }
+        td {
+            padding-bottom: 18px;
         }
         th {
          background-color: #A0D0E7;

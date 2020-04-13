@@ -6,6 +6,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 import { Description } from './content/Description'
 import { Home } from './content/Home'
 import { Table } from './content/Table'
+import { TableButtons } from './content/TableButtons'
 import comicsans1 from './font/comic.TTF'
 import comicsans2 from './font/comici.ttf'
 import comicsans3 from './font/comicmsgras.ttf'
@@ -64,7 +65,7 @@ const App = () => {
     switch (index) {
       case "Bugs":
       case "Fish":
-        return <Table actualIndex={index} />
+        return <TableButtons actualIndex={index} />
       case "Home":
         return <Home />
       default:
@@ -78,7 +79,7 @@ const App = () => {
       <NavBar>
         <HomeIndex onClick={() => {setIndex("Home")}}>Home</HomeIndex>
         <BugIndex onClick={() => {setIndex("Bugs")}}>Bugs</BugIndex>
-        <FishIndex onClick={() => {setIndex("Fish")}}>Fishes</FishIndex>
+        <FishIndex onClick={() => {setIndex("Fish")}}>Fish</FishIndex>
       </NavBar>
       <Description actualIndex={index} />
       {showContent(index)}
