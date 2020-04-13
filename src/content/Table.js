@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
-import bugInfo from '../data/bug.json'
-import fishInfo from '../data/fish.json'
-import { TableButtons, sortBy } from '../content/TableButtons'
+import bugInfo from '../data/bug-EN.json'
+import fishInfo from '../data/fish-EN.json'
 // const BugDesktopTable = () => {
 //    const row = bugInfo.map(value =>
 //         <tr key={value.Number}>
