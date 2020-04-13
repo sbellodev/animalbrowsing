@@ -66,7 +66,7 @@ const Table = ({actualIndex, sortBy}) => {
     if(timeToSort) {
         
         const sortByPrice = (table) => {
-            return table.sort((a, b) => b.PriceSort - a.PriceSort)
+            return table.sort((a, b) => b.PriceInt - a.PriceInt)
         }
         const sortByABC = (table) => {
              table.sort((a, b) => {
@@ -172,6 +172,7 @@ const TableContainer = styled.table`
     }
     th {
         padding-top: 15px;
+        font-family: afont;
     }
     td:first-child, th:first-child {
         padding-left: 10px;
