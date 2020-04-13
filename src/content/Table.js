@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import bugInfo from '../data/bug.json'
 import fishInfo from '../data/fish.json'
-
+import { TableButtons } from '../content/TableButtons'
 // const BugDesktopTable = () => {
 //    const row = bugInfo.map(value =>
 //         <tr key={value.Number}>
@@ -19,6 +19,9 @@ import fishInfo from '../data/fish.json'
 //     )
 // }
 
+
+
+//sortByPrice(fishInfo)
 const BugMobileTable = () => {
     const row = bugInfo.map(value =>
          <tr key={value.Number}>
@@ -56,66 +59,69 @@ const FishMobileTable = () => {
 //      return row
 //  }
 
-const Table = ({actualIndex}) => {
-    // todo
-    //if desktop return
-    // code
-
-    //if mobile return
+const Table = ({actualIndex, sortBy}) => {
+    
+    //cambiar por if sortBy
+    const timeToSort = true
+    if(timeToSort) {
+        const sortByPrice = (table) => {
+            return table.sort((a, b) => b.PriceSort - a.PriceSort)
+        }
+        
+        if(actualIndex === "Bugs"){
+            sortByPrice(bugInfo)
+        }
+        if(actualIndex === "Fishes") {
+            sortByPrice(fishInfo)
+        }
+    }
+      
     switch(actualIndex) {
         case "Bugs":
             return (
-                <BugTable>
-                    <thead>            
-                        <tr>
-                            <th>Image</th>
-                            <th>Name<br/>Price</th>
-                            <th>Time<br/>Location</th>
-                            <th>Season<br/>(Hemi.)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <BugMobileTable />
-                    </tbody>
-                </BugTable>
+                <>
+                    <TableButtons />
+                    <TableContainer>
+                        <thead>            
+                            <tr>
+                                <th>Image</th>
+                                <th>Name<br/>Price</th>
+                                <th>Time<br/>Location</th>
+                                <th>Season<br/>(Hemi.)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <BugMobileTable />
+                        </tbody>
+                    </TableContainer>
+                </>
             )
         case "Fish":
             return (
-                <BugTable>
-                    <thead>            
-                        <tr>
-                            <th>Image</th>
-                            <th>Name<br/>Price</th>
-                            <th>Time<br/>Location<br/>Size</th>
-                            <th>Season<br/>(Hemi.)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <FishMobileTable />
-                    </tbody>
-                </BugTable>
-            )   
-        case "Home":
-            return (
-                <HomeTable>
-                    <p>This is gatto from gattoalaparato</p>
-                    <p>thanx <a href={"www.twitter.com/gattoalaparato"}>@gattoalaparato</a></p>
-                </HomeTable>
-            )         
+                <>
+                    <TableButtons />
+                    <TableContainer>
+                        <thead>            
+                            <tr>
+                                <th>Image</th>
+                                <th>Name<br/>Price</th>
+                                <th>Time<br/>Location<br/>Size</th>
+                                <th>Season<br/>(Hemi.)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <FishMobileTable />
+                        </tbody>
+                    </TableContainer>
+                </>
+            )          
         default: 
                 return <div>Error. Table not rendered.</div>
     }
 }
 
-const HomeTable = styled.div`
-    font-family: afont;
-    background-color: #A0D0E7;
-    width: 100%;
-    height: 99vh;
-    padding-top: 10%;
-    padding-left: 5%;
-`
-const BugTable = styled.table`
+
+const TableContainer = styled.table`
     background-color: #F5F2E3;
     text-align: left;
     border-collapse: collapse;
@@ -149,15 +155,17 @@ const BugTable = styled.table`
     }
     @media (max-width: 320px) {
         font-size: 14px;
-
+        td {
+            padding-bottom: 18px;
+        }
         td, th {
             padding: 0;
-            padding-bottom: 18px;
+            
             padding-top: 18px;
             text-align: center;
             vertical-align: top;
         }
-        th{
+        th {
          background-color: #A0D0E7;
         }
         td:first-child, th:first-child {
@@ -172,5 +180,4 @@ const BugTable = styled.table`
         };
     }
 `
-
 export { Table }
