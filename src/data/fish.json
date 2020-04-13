@@ -6,6 +6,7 @@
         "Location": "River",
         "Size": "Smallest",
         "Price": "900",
+        "PriceSort": "900",
         "Time": "All day",
         "Season": "Nov-Mar (North) / May-Sep (South)"
     },
@@ -17,6 +18,7 @@
         "Location": "River",
         "Size": "Smallest",
         "Price": "160",
+        "PriceSort": "160",
         "Time": "9AM - 4PM",
         "Season": "Year-round"
     },
@@ -28,6 +30,7 @@
         "Location": "River",
         "Size": "Small",
         "Price": "160",
+        "PriceSort": "160",
         "Time": "All day",
         "Season": "Year-round"
     },
@@ -39,6 +42,7 @@
         "Location": "River",
         "Size": "Medium",
         "Price": "240",
+        "PriceSort": "240",
         "Time": "4PM - 9AM",
         "Season": "Year-round"
     },
@@ -50,6 +54,7 @@
         "Location": "Pond",
         "Size": "Large",
         "Price": "300",
+        "PriceSort": "300",
         "Time": "All day",
         "Season": "Year-round"
     },
@@ -61,6 +66,7 @@
         "Location": "Pond",
         "Size": "Large",
         "Price": "4,000",
+        "PriceSort": "4000",
         "Time": "4PM - 9AM",
         "Season": "Year-round"
     },
@@ -72,6 +78,7 @@
         "Location": "Pond",
         "Size": "Smallest",
         "Price": "1,300",
+        "PriceSort": "1300",
         "Time": "All day",
         "Season": "Year-round"
     },
@@ -83,6 +90,7 @@
         "Location": "Pond",
         "Size": "Smallest",
         "Price": "1,300",
+        "PriceSort": "1300",
         "Time": "9AM - 4PM",
         "Season": "Year-round"
     },
@@ -94,6 +102,7 @@
         "Location": "Pond",
         "Size": "Small",
         "Price": "4,500",
+        "PriceSort": "4500",
         "Time": "9AM - 4PM",
         "Season": "Year-round"
     },
@@ -105,6 +114,7 @@
         "Location": "Pond",
         "Size": "Smallest",
         "Price": "300",
+        "PriceSort": "300",
         "Time": "All day",
         "Season": "Apr-Aug (North) / Oct-Feb (South)"
     },
@@ -116,6 +126,7 @@
         "Location": "Pond",
         "Size": "Small",
         "Price": "200",
+        "PriceSort": "200",
         "Time": "All day",
         "Season": "Apr-Sep (North) / Oct-Mar (South)"
     },
@@ -127,6 +138,7 @@
         "Location": "River",
         "Size": "Large",
         "Price": "3,750",
+        "PriceSort": "3750",
         "Time": "4PM - 9AM",
         "Season": "Aug-Sep (North) / Feb-Mar (South)"
     },
@@ -138,6 +150,7 @@
         "Location": "River",
         "Size": "X Large",
         "Price": "5,000",
+        "PriceSort": "5000",
         "Time": "9PM - 4AM",
         "Season": "Apr-Oct (North) / Oct-Apr (South)"
     },
@@ -149,6 +162,7 @@
         "Location": "Pond",
         "Size": "Smallest",
         "Price": "100",
+        "PriceSort": "100",
         "Time": "All day",
         "Season": "Mar-Jul (North) / Sep-Jan (South)"
     },
@@ -160,6 +174,7 @@
         "Location": "Pond",
         "Size": "Small",
         "Price": "120",
+        "PriceSort": "120",
         "Time": "All day",
         "Season": "May-Aug (North) / Nov-Feburary (South)"
     },
@@ -171,6 +186,7 @@
         "Location": "River",
         "Size": "Small",
         "Price": "400",
+        "PriceSort": "400",
         "Time": "4PM - 9AM",
         "Season": "Year-round"
     },
@@ -182,6 +198,7 @@
         "Location": "River",
         "Size": "Small",
         "Price": "400",
+        "PriceSort": "400",
         "Time": "All day",
         "Season": "Mar-May (North) / Sep-Nov (South)"
     },
@@ -193,6 +210,7 @@
         "Location": "Pond",
         "Size": "Large",
         "Price": "800",
+        "PriceSort": "800",
         "Time": "4PM - 9AM",
         "Season": "May-Oct (North) / Nov-Apr (South)"
     },
@@ -204,6 +222,7 @@
         "Location": "Pond",
         "Size": "X Large",
         "Price": "5,500",
+        "PriceSort": "5500",
         "Time": "9AM - 4PM",
         "Season": "Jun-Aug (North) / Dec-Feb (South)"
     },
@@ -215,6 +234,7 @@
         "Location": "River",
         "Size": "Small",
         "Price": "180",
+        "PriceSort": "180",
         "Time": "9AM - 4PM",
         "Season": "Year-round"
     },
@@ -226,6 +246,7 @@
         "Location": "River",
         "Size": "Medium",
         "Price": "300",
+        "PriceSort": "300",
         "Time": "All day",
         "Season": "Oct-Mar (North) / Apr-Sep (South)"
     },
@@ -237,6 +258,7 @@
         "Location": "River",
         "Size": "Large",
         "Price": "400",
+        "PriceSort": "400",
         "Time": "All day",
         "Season": "Year-round"
     },
@@ -248,6 +270,7 @@
         "Location": "River",
         "Size": "Medium",
         "Price": "800",
+        "PriceSort": "800",
         "Time": "All day",
         "Season": "Jun-Oct (North) / Dec-Apr (South)"
     },
@@ -259,6 +282,7 @@
         "Location": "River",
         "Size": "X Large",
         "Price": "1,800",
+        "PriceSort": "1800",
         "Time": "All day",
         "Season": "Sep-Dec (North) / Mar-Jun (South)"
     },
@@ -270,6 +294,7 @@
         "Location": "River",
         "Size": "Small",
         "Price": "500",
+        "PriceSort": "500",
         "Time": "All day",
         "Season": "Dec-Feb (North) / Jun-Aug (South)"
     },
@@ -281,6 +306,7 @@
         "Location": "River",
         "Size": "Medium",
         "Price": "900",
+        "PriceSort": "900",
         "Time": "All day",
         "Season": "Jul-Sep (North) / Jan-Mar (South)"
     },
@@ -292,6 +318,7 @@
         "Location": "River (Clifftop)",
         "Size": "Medium",
         "Price": "1,000",
+        "PriceSort": "1000",
         "Time": "4PM - 9AM",
         "Season": "Mar-Jun, Sep-Nov (North) / Mar-May, Sep-Dec (South)"
     },
@@ -303,6 +330,7 @@
         "Location": "River (Clifftop)",
         "Size": "Medium",
         "Price": "3,800",
+        "PriceSort": "3800",
         "Time": "4PM - 9AM",
         "Season": "Mar-Jun, Sep-Nov (North) / Mar-May, Sep-Dec (South)"
     },
@@ -314,6 +342,7 @@
         "Location": "River (Clifftop)",
         "Size": "Medium",
         "Price": "15,000",
+        "PriceSort": "15000",
         "Time": "4PM - 9AM",
         "Season": "Mar-Jun, Sep-Nov (North) / Mar-May, Sep-Dec (South)"
     },
@@ -325,6 +354,7 @@
         "Location": "River (Clifftop)",
         "Size": "Largest",
         "Price": "15,000",
+        "PriceSort": "15000",
         "Time": "4PM - 9AM",
         "Season": "Dec-Mar (North) / Jun-Sep (South)"
     },
@@ -336,6 +366,7 @@
         "Location": "River (mouth)",
         "Size": "Large",
         "Price": "700",
+        "PriceSort": "700",
         "Time": "All day",
         "Season": "Sep (North) / Mar (South)"
     },
@@ -347,6 +378,7 @@
         "Location": "River (mouth)",
         "Size": "Largest",
         "Price": "1,800",
+        "PriceSort": "1800",
         "Time": "All day",
         "Season": "Sep (North) / Mar (South)"
     },
@@ -358,6 +390,7 @@
         "Location": "River",
         "Size": "Small",
         "Price": "2,000",
+        "PriceSort": "2000",
         "Time": "4PM - 9AM",
         "Season": "Sep-Nov (North) / Mar-May (South)"
     },
@@ -369,6 +402,7 @@
         "Location": "River",
         "Size": "Smallest",
         "Price": "1,300",
+        "PriceSort": "1300",
         "Time": "9AM - 4PM",
         "Season": "Apr-Nov (North) / Oct-May (South)"
     },
@@ -380,6 +414,7 @@
         "Location": "River",
         "Size": "Small",
         "Price": "1,500",
+        "PriceSort": "1500",
         "Time": "9AM - 4PM",
         "Season": "May-Sep (North) / Nov-Mar (South)"
     },
@@ -391,6 +426,7 @@
         "Location": "River",
         "Size": "Small",
         "Price": "3,000",
+        "PriceSort": "3000",
         "Time": "4PM - 9AM",
         "Season": "May-Oct (North) / Nov-Apr (South)"
     },
@@ -402,6 +438,7 @@
         "Location": "River",
         "Size": "Small",
         "Price": "2,500",
+        "PriceSort": "2500",
         "Time": "9AM - 4PM",
         "Season": "May-Oct (North) / Nov-Apr (South)"
     },
@@ -413,6 +450,7 @@
         "Location": "River",
         "Size": "Smallest",
         "Price": "500",
+        "PriceSort": "500",
         "Time": "9AM - 4PM",
         "Season": "Apr-Nov (North) / Oct-May (South)"
     },
@@ -424,6 +462,7 @@
         "Location": "River",
         "Size": "Small",
         "Price": "800",
+        "PriceSort": "800",
         "Time": "9AM - 4PM",
         "Season": "May-Oct (North) / Nov-Apr (South)"
     },
@@ -435,6 +474,7 @@
         "Location": "River",
         "Size": "Small",
         "Price": "2,500",
+        "PriceSort": "2500",
         "Time": "9AM - 4PM, 9PM - 4AM",
         "Season": "Jun-Sep (North) / Dec-Mar (South)"
     },
@@ -446,6 +486,7 @@
         "Location": "River",
         "Size": "Large",
         "Price": "10,000",
+        "PriceSort": "10000",
         "Time": "4PM - 9AM",
         "Season": "Jun-Sep (North) / Dec-Mar (South)"
     },
@@ -457,6 +498,7 @@
         "Location": "River",
         "Size": "X Large",
         "Price": "15,000",
+        "PriceSort": "15000",
         "Time": "4AM - 9PM",
         "Season": "Jun-Sep (North) / Dec-Mar (South)"
     },
@@ -468,6 +510,7 @@
         "Location": "Pond",
         "Size": "Largest",
         "Price": "6,000",
+        "PriceSort": "6000",
         "Time": "4PM - 9AM",
         "Season": "Jun-Sep (North) / Dec-Mar (South)"
     },
@@ -479,6 +522,7 @@
         "Location": "River",
         "Size": "Largest",
         "Price": "10,000",
+        "PriceSort": "10000",
         "Time": "4PM - 9AM",
         "Season": "Jun-Sep (North) / Dec-Mar (South)"
     },
@@ -490,6 +534,7 @@
         "Location": "River",
         "Size": "Large",
         "Price": "4,000",
+        "PriceSort": "4000",
         "Time": "9PM - 4AM",
         "Season": "Jun-Sep (North) / Dec-Mar (South)"
     },
@@ -501,6 +546,7 @@
         "Location": "River (mouth)",
         "Size": "Largest",
         "Price": "10,000",
+        "PriceSort": "10000",
         "Time": "All day",
         "Season": "Sep-Mar (North) / Mar-Sep (South)"
     },
@@ -512,6 +558,7 @@
         "Location": "Sea",
         "Size": "Smallest",
         "Price": "1,000",
+        "PriceSort": "1000",
         "Time": "All day",
         "Season": "Dec-Mar (North) / Jun-Sep (South)"
     },
@@ -522,7 +569,8 @@
         "Name": "Sea horse",
         "Location": "Sea",
         "Size": "Smallest",
-        "Price": "1,100",
+        "Price": "1100",
+        "PriceSort": "1100",
         "Time": "All day",
         "Season": "Apr-Nov (North) / Oct-May (South)"
     },
@@ -534,6 +582,7 @@
         "Location": "Sea",
         "Size": "Smallest",
         "Price": "650",
+        "PriceSort": "650",
         "Time": "All day",
         "Season": "Apr-Sep (North) / Oct-Mar (South)"
     },
@@ -545,6 +594,7 @@
         "Location": "Sea",
         "Size": "Small",
         "Price": "1,000",
+        "PriceSort": "1000",
         "Time": "All day",
         "Season": "Apr-Sep (North) / Oct-Mar (South)"
     },
@@ -556,6 +606,7 @@
         "Location": "Sea",
         "Size": "Small",
         "Price": "1,000",
+        "PriceSort": "1000",
         "Time": "All day",
         "Season": "Apr-Sep (North) / Oct-Mar (South)"
     },
@@ -567,6 +618,7 @@
         "Location": "Sea",
         "Size": "Largest",
         "Price": "10,000",
+        "PriceSort": "10000",
         "Time": "4AM - 9PM",
         "Season": "Jul-Aug (North) / Jan-Feb (South)"
     },
@@ -578,6 +630,7 @@
         "Location": "Sea",
         "Size": "Medium",
         "Price": "500",
+        "PriceSort": "500",
         "Time": "All day",
         "Season": "Apr-Nov (North) / Oct-May (South)"
     },
@@ -589,6 +642,7 @@
         "Location": "Sea",
         "Size": "Medium",
         "Price": "5,000",
+        "PriceSort": "5000",
         "Time": "6PM - 4AM",
         "Season": "Nov-Feb (North) / May-Aug (South)"
     },
@@ -600,6 +654,7 @@
         "Location": "Sea",
         "Size": "Medium",
         "Price": "250",
+        "PriceSort": "250",
         "Time": "All day",
         "Season": "Jul-Sep (North) / Jan-Mar (South)"
     },
@@ -611,6 +666,7 @@
         "Location": "Sea",
         "Size": "Small",
         "Price": "200",
+        "PriceSort": "200",
         "Time": "4AM - 9PM",
         "Season": "Year-round"
     },
@@ -622,6 +678,7 @@
         "Location": "Sea",
         "Size": "Small",
         "Price": "150",
+        "PriceSort": "150",
         "Time": "All day",
         "Season": "Year-round"
     },
@@ -633,6 +690,7 @@
         "Location": "Sea",
         "Size": "Medium",
         "Price": "5,000",
+        "PriceSort": "5000",
         "Time": "All day",
         "Season": "Mar-Nov (North) / Sep-May (South)"
     },
@@ -644,6 +702,7 @@
         "Location": "Sea",
         "Size": "X Large",
         "Price": "400",
+        "PriceSort": "400",
         "Time": "All day",
         "Season": "Year-round"
     },
@@ -655,6 +714,7 @@
         "Location": "Sea",
         "Size": "Large",
         "Price": "3,000",
+        "PriceSort": "3000",
         "Time": "All day",
         "Season": "Year-round"
     },
@@ -666,6 +726,7 @@
         "Location": "Sea",
         "Size": "Medium",
         "Price": "300",
+        "PriceSort": "300",
         "Time": "All day",
         "Season": "Oct-Apr (North) / Apr-Oct (South)"
     },
@@ -677,6 +738,7 @@
         "Location": "Sea",
         "Size": "Large",
         "Price": "800",
+        "PriceSort": "800",
         "Time": "All day",
         "Season": "Year-round"
     },
@@ -688,6 +750,7 @@
         "Location": "Sea",
         "Size": "Medium",
         "Price": "500",
+        "PriceSort": "500",
         "Time": "All day",
         "Season": "Dec-Aug (North) / Jun-Feb (South)"
     },
@@ -699,6 +762,7 @@
         "Location": "Sea",
         "Size": "Narrow",
         "Price": "2,000",
+        "PriceSort": "2000",
         "Time": "All day",
         "Season": "Aug-Oct (North) / Feb-Apr (South)"
     },
@@ -710,6 +774,7 @@
         "Location": "Sea",
         "Size": "Narrow",
         "Price": "600",
+        "PriceSort": "600",
         "Time": "All day",
         "Season": "Jun-Oct (North) / Dec-Apr (South)"
     },
@@ -721,6 +786,7 @@
         "Location": "Pier",
         "Size": "Largest",
         "Price": "7,000",
+        "PriceSort": "7000",
         "Time": "All day",
         "Season": "Nov-Apr (North) / May-Oct (South)"
     },
@@ -732,6 +798,7 @@
         "Location": "Pier",
         "Size": "Largest",
         "Price": "10,000",
+        "PriceSort": "10000",
         "Time": "All day",
         "Season": "Jul-Sep, Nov-Apr (North) / Jan-Mar, May-Nov (South)"
     },
@@ -743,6 +810,7 @@
         "Location": "Pier",
         "Size": "Large",
         "Price": "4,500",
+        "PriceSort": "4500",
         "Time": "All day",
         "Season": "May-Oct (North) / Nov-Apr (South)"
     },
@@ -754,6 +822,7 @@
         "Location": "Sea",
         "Size": "Large",
         "Price": "6,000",
+        "PriceSort": "6000",
         "Time": "All day",
         "Season": "May-Oct (North) / Nov-Apr (South)"
     },
@@ -765,6 +834,7 @@
         "Location": "Sea",
         "Size": "Largest (Fin)",
         "Price": "4,000",
+        "PriceSort": "4000",
         "Time": "4AM - 9PM",
         "Season": "Jul-Sep (North) / Jan-Mar (South)"
     },
@@ -776,6 +846,7 @@
         "Location": "Sea",
         "Size": "X Large",
         "Price": "3,000",
+        "PriceSort": "3000",
         "Time": "4AM - 9PM",
         "Season": "Aug-Nov (North) / Feb-May (South)"
     },
@@ -787,6 +858,7 @@
         "Location": "Sea",
         "Size": "Largest (Fin)",
         "Price": "12,000",
+        "PriceSort": "12000",
         "Time": "4PM - 9AM",
         "Season": "Jun-Sep (North) / Dec-Mar (South)"
     },
@@ -798,6 +870,7 @@
         "Location": "Sea",
         "Size": "Largest (Fin)",
         "Price": "8,000",
+        "PriceSort": "8000",
         "Time": "4PM - 9AM",
         "Season": "Jun-Sep (North) / Dec-Mar (South)"
     },
@@ -809,6 +882,7 @@
         "Location": "Sea",
         "Size": "Largest (Fin)",
         "Price": "15,000",
+        "PriceSort": "15000",
         "Time": "4PM - 9AM",
         "Season": "Jun-Sep (North) / Dec-Mar (South)"
     },
@@ -820,6 +894,7 @@
         "Location": "Sea",
         "Size": "Largest (Fin)",
         "Price": "13,000",
+        "PriceSort": "13000",
         "Time": "All day",
         "Season": "Jun-Sep (North) / Dec-Mar (South)"
     },
@@ -831,6 +906,7 @@
         "Location": "Sea",
         "Size": "Large (Fin)",
         "Price": "1,500",
+        "PriceSort": "1500",
         "Time": "All day",
         "Season": "Jun-Sep (North) / Dec-Mar (South)"
     },
@@ -842,6 +918,7 @@
         "Location": "Sea",
         "Size": "Large",
         "Price": "2,500",
+        "PriceSort": "2500",
         "Time": "4PM - 9AM",
         "Season": "Nov-Mar (North) / May-Sep (South)"
     },
@@ -853,6 +930,7 @@
         "Location": "Sea",
         "Size": "Largest",
         "Price": "9,000",
+        "PriceSort": "9000",
         "Time": "All day",
         "Season": "Dec-May (North) / Jun-Nov (South)"
     },
@@ -864,6 +942,7 @@
         "Location": "Sea",
         "Size": "Small",
         "Price": "15,000",
+        "PriceSort": "15000",
         "Time": "9PM - 4AM",
         "Season": "Year-round"
     },
@@ -875,6 +954,7 @@
         "Location": "Sea (rainy days)",
         "Size": "Largest",
         "Price": "15,000",
+        "PriceSort": "15000",
         "Time": "All day",
         "Season": "Year-round"
     }

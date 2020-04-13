@@ -4,6 +4,7 @@
         "Image": "commonbutterfly.png",
         "Name": "Common butterfly",
         "Price": "160",
+        "PriceSort": "160",
         "Location": "Flying",
         "Season": "Sep-Jun (North)<br/>Mar-Dec (South)",
         "Time": "4AM - 7PM"
@@ -14,6 +15,7 @@
         "Image": "yellowbutterfly.png", 	 	 
         "Name": "Yellow butterfly",
         "Price": "160",
+        "PriceSort": "160",
         "Location": "Flying",
         "Season": "Mar-Jun, Sep-Oct (North)<br/>Mar-Apr, Sep-Dec (South)",
         "Time": "4AM - 7PM"
@@ -24,6 +26,7 @@
         "Image": "tigerbutterfly.png", 	 	 
         "Name": "Tiger butterfly",
         "Price": "240",
+        "PriceSort": "240",
         "Location": "Flying",
         "Season": "Mar-Sep (North)<br/>Sep-Mar (South)",
         "Time": "4AM - 7PM"
@@ -34,6 +37,7 @@
         "Image": "peacockbutterfly.png", 	 	 
         "Name": "Peacock butterfly",
         "Price": "2,500",
+        "PriceSort": "2500",
         "Location": "Flying by Flowers",
         "Season": "Mar-Jun (North)<br/>Sep-Dec (South)",
         "Time": "4AM - 7PM"
@@ -44,6 +48,7 @@
         "Image": "commonbluebottle.png", 	 	 
         "Name": "Common bluebottle",
         "Price": "300",
+        "PriceSort": "300",
         "Location": "Flying",
         "Season": "Apr-Aug (North)<br/>Oct-Feb (South)",
         "Time": "4AM - 7PM"
@@ -54,6 +59,7 @@
         "Image": "paperkitebutterfly.png", 	 	 
         "Name": "Paper kite butterfly",
         "Price": "1,000",
+        "PriceSort": "1000",
         "Location": "Flying",
         "Season": "Year-round",
         "Time": "8AM - 7PM"
@@ -64,6 +70,7 @@
         "Image": "greatpurpleemperor.png", 	 	 
         "Name": "Great purple emperor",
         "Price": "3,000",
+        "PriceSort": "3000",
         "Location": "Flying",
         "Season": "May-Aug (North)<br/>Nov-Feb (South)",
         "Time": "4AM - 7PM"
@@ -74,6 +81,7 @@
         "Image": "monarchbutterfly.png", 	 	 
         "Name": "Monach butterfly",
         "Price": "140",
+        "PriceSort": "140",
         "Location": "Flying",
         "Season": "Sep-Nov (North)<br/>Mar-May (South)",
         "Time": "4AM - 5PM"
@@ -84,6 +92,7 @@
         "Image": "emperorbutterfly.png", 	 	 
         "Name": "Emperor butterfly",
         "Price": "4,000",
+        "PriceSort": "4000",
         "Location": "Flying",
         "Season": "Jun-Sep, Dec-Mar (North)<br/>Dec-Mar, Jun-Sep (South)",
         "Time": "5PM - 8AM"
@@ -94,6 +103,7 @@
         "Image": "agriasbutterfly.png", 	 	 
         "Name": "Agrias butterfly",
         "Price": "3,000",
+        "PriceSort": "3000",
         "Location": "Flying",
         "Season": "Apr-Sep (North)<br/>Nov-Mar (South)",
         "Time": "8AM - 5PM"
@@ -104,6 +114,7 @@
         "Image": "rajahbrookesbirdwing.png", 	 	 
         "Name": "Raja Brooke's birdwing",
         "Price": "2,500",
+        "PriceSort": "2500",
         "Location": "Flying by Flowers",
         "Season": "Apr-Sep, Dec-Feb (North)<br/>Nov-Mar, Jun-Aug (South)",
         "Time": "8AM - 5PM"
@@ -114,6 +125,7 @@
         "Image": "queenalexandrasbirdwing.png", 	 	 
         "Name": "Queen Alexandra's birdwing",
         "Price": "4,000",
+        "PriceSort": "4000",
         "Location": "Flying",
         "Season": "May-Sep (North)<br/>Nov-Mar (South)",
         "Time": "8AM - 4PM"
@@ -124,6 +136,7 @@
         "Image": "moth.png", 	 	 
         "Name": "Moth",
         "Price": "130",
+        "PriceSort": "130",
         "Location": "Flying by Light",
         "Season": "Year-round",
         "Time": "7PM - 4AM"
@@ -134,6 +147,7 @@
         "Image": "atlasmoth.png", 	 	 
         "Name": "Atlas moth",
         "Price": "3,000",
+        "PriceSort": "3000",
         "Location": "On Trees",
         "Season": "Apr-Sep (North)<br/>Oct-Mar (South)",
         "Time": "7PM - 4AM"
@@ -144,6 +158,7 @@
         "Image": "madagascansunsetmoth.png", 	 	 
         "Name": "Madagascan sunset moth",
         "Price": "2,500",
+        "PriceSort": "2500",
         "Location": "Flying",
         "Season": "Apr-Sep (North)<br/>Oct-Mar (South)",
         "Time": "8AM - 4PM"
@@ -154,6 +169,7 @@
         "Image": "longlocust.png", 	 	 
         "Name": "Long locust",
         "Price": "200",
+        "PriceSort": "200",
         "Location": "On the Ground",
         "Season": "Apr-Nov (North)<br/>Nov-May (South)",
         "Time": "8AM - 7PM"
@@ -164,6 +180,7 @@
         "Image": "migratorylocust.png", 	 	 
         "Name": "Migratory locust",
         "Price": "600",
+        "PriceSort": "600",
         "Location": "On the Ground",
         "Season": "Aug-Nov (North)<br/>Feb-May (South)",
         "Time": "8AM - 7PM"
@@ -174,6 +191,7 @@
         "Image": "ricegrasshopper.png", 	 	 
         "Name": "Rice grasshopper",
         "Price": "160",
+        "PriceSort": "160",
         "Location": "On the Ground",
         "Season": "Aug-Nov (North)<br/>Feb-May (South)",
         "Time": "8AM - 7PM"
@@ -184,6 +202,7 @@
         "Image": "grasshopper.png", 	 	 
         "Name": "Grasshopper",
         "Price": "160",
+        "PriceSort": "160",
         "Location": "On the Ground",
         "Season": "Jul-Sep (North)<br/>Jan-Mar (South)",
         "Time": "8AM - 5PM"
@@ -194,6 +213,7 @@
         "Image": "cricket.png", 	 	 
         "Name": "Cricket",
         "Price": "130",
+        "PriceSort": "130",
         "Location": "On the Ground",
         "Season": "Sep-Nov (North)<br/>Mar-May (South)",
         "Time": "5PM - 8AM"
@@ -204,6 +224,7 @@
         "Image": "bellcricket.png", 	 	 
         "Name": "Bell cricket",
         "Price": "430",
+        "PriceSort": "430",
         "Location": "On the Ground",
         "Season": "Sep-Oct (North)<br/>Mar-Apr (South)",
         "Time": "5PM - 8AM"
@@ -214,6 +235,7 @@
         "Image": "mantis.png", 	 	 
         "Name": "Mantis",
         "Price": "430",
+        "PriceSort": "430",
         "Location": "On Flowers",
         "Season": "Mar-Nov (North)<br/>Sep-May (South)",
         "Time": "8AM - 5PM"
@@ -224,6 +246,7 @@
         "Image": "orchidmantis.png", 	 	 
         "Name": "Orchid mantis",
         "Price": "2,400",
+        "PriceSort": "2400",
         "Location": "On Flowers (White)",
         "Season": "Mar-Nov (North)<br/>Sep-May (South)",
         "Time": "8AM - 5PM"
@@ -234,6 +257,7 @@
         "Image": "honeybee.png", 	 	 
         "Name": "Honeybee",
         "Price": "200",
+        "PriceSort": "200",
         "Location": "Flying",
         "Season": "Mar-Jul (North)<br/>Mar-Jul (South)",
         "Time": "8AM - 5PM"
@@ -244,6 +268,7 @@
         "Image": "wasp.png", 	 	 
         "Name": "Wasp",
         "Price": "2,500",
+        "PriceSort": "2500",
         "Location": "Shaking Trees",
         "Season": "Year-round",
         "Time": "All day"
@@ -254,6 +279,7 @@
         "Image": "browncicada.png", 	 	 
         "Name": "Brown cicada",
         "Price": "250",
+        "PriceSort": "250",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "8AM - 5PM"
@@ -264,6 +290,7 @@
         "Image": "robustcicada.png", 	 	 
         "Name": "Robust cicada",
         "Price": "300",
+        "PriceSort": "300",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "8AM - 5PM"
@@ -274,6 +301,7 @@
         "Image": "giantcicada.png", 	 	 
         "Name": "Giant cicada",
         "Price": "500",
+        "PriceSort": "500",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "8AM - 5PM"
@@ -284,6 +312,7 @@
         "Image": "walkercicada.png", 	 	 
         "Name": "Walker cicada",
         "Price": "400",
+        "PriceSort": "400",
         "Location": "On Trees",
         "Season": "Aug-Sep (North)<br/>Feb-Mar (South)",
         "Time": "8AM - 5PM"
@@ -294,6 +323,7 @@
         "Image": "eveningcicada.png", 	 	 
         "Name": "Evening cicada",
         "Price": "550",
+        "PriceSort": "550",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "4AM - 8AM \n 4PM - 7PM"
@@ -304,6 +334,7 @@
         "Image": "cicadashell.png", 	 	 
         "Name": "Cicada shell",
         "Price": "10",
+        "PriceSort": "10",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "All day"
@@ -314,6 +345,7 @@
         "Image": "reddragonfly.png", 	 	 
         "Name": "Red dragonfly",
         "Price": "180",
+        "PriceSort": "180",
         "Location": "Flying",
         "Season": "Sep-Oct (North)<br/>Mar-Apr (South)",
         "Time": "8AM - 7PM"
@@ -324,6 +356,7 @@
         "Image": "darnerdragonfly.png", 	 	 
         "Name": "Darner dragonfly",
         "Price": "230",
+        "PriceSort": "230",
         "Location": "Flying",
         "Season": "Apr-Oct (North)<br/>Oct-Apr (South)",
         "Time": "8AM - 5PM"
@@ -334,6 +367,7 @@
         "Image": "bandeddragonfly.png", 	 	 
         "Name": "Banded dragonfly",
         "Price": "4,500",
+        "PriceSort": "4500",
         "Location": "Flying",
         "Season": "May-Oct (North)<br/>Nov-Apr (South)",
         "Time": "8AM - 5PM"
@@ -344,6 +378,7 @@
         "Image": "damselfly.png", 	 	 
         "Name": "Damselfly",
         "Price": "500",
+        "PriceSort": "500",
         "Location": "Flying",
         "Season": "Nov-Feb (North)<br/>May-Aug (South)",
         "Time": "All day"
@@ -354,6 +389,7 @@
         "Image": "firefly.png", 	 	 
         "Name": "Firefly",
         "Price": "300",
+        "PriceSort": "300",
         "Location": "Flying",
         "Season": "Jun (North)<br/>Dec (South)",
         "Time": "7PM - 4AM"
@@ -364,6 +400,7 @@
         "Image": "molecricket.png", 	 	 
         "Name": "Mole cricket",
         "Price": "500",
+        "PriceSort": "500",
         "Location": "Underground",
         "Season": "Nov-May (North)<br/>May-Nov (South)",
         "Time": "All day"
@@ -374,6 +411,7 @@
         "Image": "pondskater.png", 	 	 
         "Name": "Pondskater",
         "Price": "130",
+        "PriceSort": "130",
         "Location": "On Ponds and Rivers",
         "Season": "May-Sep (North)<br/>Nov-Mar (South)",
         "Time": "8AM - 7PM"
@@ -384,6 +422,7 @@
         "Image": "divingbeetle.png", 	 	 
         "Name": "Diving b",
         "Price": "800",
+        "PriceSort": "800",
         "Location": "On Pond,s and Rivers",
         "Season": "May-Sep (North)<br/>Nov-Mar (South)",
         "Time": "8AM - 7PM"
@@ -394,6 +433,7 @@
         "Image": "giantwaterbug.png", 	 	 
         "Name": "Giant water bug",
         "Price": "2,000",
+        "PriceSort": "2000",
         "Location": "On Ponds and Rivers",
         "Season": "Apr-Sep (North)<br/>Oct-Mar (South)",
         "Time": "7PM - 8AM"
@@ -404,6 +444,7 @@
         "Image": "stinkbug.png", 	 	 
         "Name": "Stinkbug",
         "Price": "120",
+        "PriceSort": "120",
         "Location": "On Flowers",
         "Season": "Mar-Nov (North)<br/>Sep-May (South)",
         "Time": "All day"
@@ -414,6 +455,7 @@
         "Image": "manfacedstinkbug.png", 	 	 
         "Name": "Man-faced stink bug",
         "Price": "1,000",
+        "PriceSort": "1000",
         "Location": "On Flowers",
         "Season": "Mar-Nov (North)<br/>Sep-May (South)",
         "Time": "7PM - 8AM"
@@ -424,6 +466,7 @@
         "Image": "ladybug.png", 	 	 
         "Name": "Ladybug",
         "Price": "200",
+        "PriceSort": "200",
         "Location": "On Flowers",
         "Season": "Mar-Jun, Oct (North)<br/>Sep-Dec, Apr (South)",
         "Time": "8AM - 5PM"
@@ -434,6 +477,7 @@
         "Image": "tigerbeetle.png", 	 	 
         "Name": "Tiger beetle",
         "Price": "1,500",
+        "PriceSort": "1500",
         "Location": "On the Ground",
         "Season": "Feb-Nov (North)<br/>Aug-May (South)",
         "Time": "All day"
@@ -444,6 +488,7 @@
         "Image": "jewelbeetle.png", 	 	 
         "Name": "Jewel beetle",
         "Price": "2,400",
+        "PriceSort": "2400",
         "Location": "On Tree Stumps",
         "Season": "Apr-Aug (North)<br/>Oct-Feb (South)",
         "Time": "All day"
@@ -454,6 +499,7 @@
         "Image": "violinbeetle.png", 	 	 
         "Name": "Violin beetle",
         "Price": "450",
+        "PriceSort": "450",
         "Location": "On Tree Stumps",
         "Season": "May-Jun, Sep-Nov (North)<br/>Nov-Dec, Mar-Apr (South)",
         "Time": "All day"
@@ -464,6 +510,7 @@
         "Image": "citruslonghornedbeetle.png", 	 	 
         "Name": "Citrus long-horned beetle",
         "Price": "350",
+        "PriceSort": "350",
         "Location": "On Tree Stumps",
         "Season": "Year-round",
         "Time": "All day"
@@ -474,6 +521,7 @@
         "Image": "rosaliabatesibeetle.png", 	 	 
         "Name": "Rosalia batesi beetle",
         "Price": "3,000",
+        "PriceSort": "3000",
         "Location": "On Tree Stumps",
         "Season": "May-Sep (North)<br/>Nov-Mar (South)",
         "Time": "All day"
@@ -484,6 +532,7 @@
         "Image": "blueweevilbeetle.png", 	 	 
         "Name": "Blue weevil beetle",
         "Price": "800",
+        "PriceSort": "800",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "All day"
@@ -494,6 +543,7 @@
         "Image": "dungbeetle.png", 	 	 
         "Name": "Dung beetle",
         "Price": "3,000",
+        "PriceSort": "3000",
         "Location": "On the Ground (rolling snowballs)",
         "Season": "Dec-Feb (North)<br/>Jun-Aug (South)",
         "Time": "All day"
@@ -504,6 +554,7 @@
         "Image": "earthboringdungbeetle.png", 	 	 
         "Name": "Earth-boring dung beetle",
         "Price": "300",
+        "PriceSort": "300",
         "Location": "On the Ground",
         "Season": "Jul-Sep (North)<br/>Jan-Mar (South)",
         "Time": "All day"
@@ -514,6 +565,7 @@
         "Image": "scarabbeetle.png", 	 	 
         "Name": "Scarab beetle",
         "Price": "10,000",
+        "PriceSort": "10000",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "11PM - 8AM"
@@ -524,6 +576,7 @@
         "Image": "dronebeetle.png", 	 	 
         "Name": "Drone beetle",
         "Price": "200",
+        "PriceSort": "200",
         "Location": "On Trees",
         "Season": "Jun-Aug (North)<br/>Dec-Feb (South)",
         "Time": "All day"
@@ -534,6 +587,7 @@
         "Image": "goliathbeetle.png", 	 	 
         "Name": "Goliath beetle",
         "Price": "8,000",
+        "PriceSort": "8000",
         "Location": "On Trees (Coconut)",
         "Season": "Jun-Sep (North)<br/>Dec-Mar (South)",
         "Time": "5PM - 8AM"
@@ -544,6 +598,7 @@
         "Image": "sawstag.png", 	 	 
         "Name": "Saw stag",
         "Price": "2,000",
+        "PriceSort": "2000",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "All day"
@@ -554,6 +609,7 @@
         "Image": "miyamastag.png", 	 	 
         "Name": "Miyama stag",
         "Price": "1,000",
+        "PriceSort": "1000",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "All day"
@@ -564,6 +620,7 @@
         "Image": "giantstag.png", 	 	 
         "Name": "Giant stag",
         "Price": "10,000",
+        "PriceSort": "10000",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "11PM - 8AM"
@@ -574,6 +631,7 @@
         "Image": "rainbowstag.png", 	 	 
         "Name": "Rainbow stag",
         "Price": "6,000",
+        "PriceSort": "6000",
         "Location": "On Trees",
         "Season": "Jun-Sep (North)<br/>Dec-Mar (South)",
         "Time": "7PM - 8AM"
@@ -584,6 +642,7 @@
         "Image": "cyclommatusstag.png", 	 	 
         "Name": "Cyclommatus stag",
         "Price": "8,000",
+        "PriceSort": "8000",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "5PM - 8AM"
@@ -594,6 +653,7 @@
         "Image": "goldenstag.png", 	 	 
         "Name": "Golden stag",
         "Price": "?",
+        "PriceSort": "?",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "5PM - 8AM"
@@ -604,6 +664,7 @@
         "Image": "giraffestag.png", 	 	 
         "Name": "Giraffe stag",
         "Price": "?",
+        "PriceSort": "?",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "5PM - 8AM"
@@ -614,6 +675,7 @@
         "Image": "horneddynastid.png", 	 	 
         "Name": "Horned dynastid",
         "Price": "1,350",
+        "PriceSort": "1350",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "5PM - 8AM"
@@ -624,6 +686,7 @@
         "Image": "hornedatlas.png", 	 	 
         "Name": "Horned atlas",
         "Price": "8,000",
+        "PriceSort": "8000",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "5PM - 8AM"
@@ -634,6 +697,7 @@
         "Image": "hornedelephant.png", 	 	 
         "Name": "Horned elephant",
         "Price": "8,000",
+        "PriceSort": "8000",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "5PM - 8AM"
@@ -644,6 +708,7 @@
         "Image": "hornedhercules.png", 	 	 
         "Name": "Horned herucles",
         "Price": "?",
+        "PriceSort": "?",
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "Time": "5PM - 8AM"
@@ -654,6 +719,7 @@
         "Image": "walkingstick.png", 	 	 
         "Name": "Walking stick",
         "Price": "600",
+        "PriceSort": "600",
         "Location": "On Trees",
         "Season": "Jul-Nov (North)<br/>Jan-May (South)",
         "Time": "4AM - 8AM \n 5PM - 7PM"
@@ -664,6 +730,7 @@
         "Image": "walkingleaf.png", 	 	 
         "Name": "Walking leaf",
         "Price": "600",
+        "PriceSort": "600",
         "Location": "Under Trees Disguised as Leafs",
         "Season": "Jul-Aug (North)<br/>Jan-Mar (South)",
         "Time": "All day"
@@ -674,6 +741,7 @@
         "Image": "bagworm.png", 	 	 
         "Name": "Bagworm",
         "Price": "600",
+        "PriceSort": "600",
         "Location": "Shaking Trees",
         "Season": "Year-round",
         "Time": "All day"
@@ -684,6 +752,7 @@
         "Image": "ant.png", 	 	 
         "Name": "Ant",
         "Price": "80",
+        "PriceSort": "80",
         "Location": "On rotten food",
         "Season": "Year-round",
         "Time": "All day"
@@ -694,6 +763,7 @@
         "Image": "hermitcrab.png", 	 	 
         "Name": "Hermit crab",
         "Price": "1,000",
+        "PriceSort": "1000",
         "Location": "Beach disguised as Shells",
         "Season": "Year-round",
         "Time": "7PM - 8AM"
@@ -704,6 +774,7 @@
         "Image": "wharfroach.png", 	 	 
         "Name": "Wharf roach",
         "Price": "200",
+        "PriceSort": "200",
         "Location": "On Beach Rocks",
         "Season": "Year-round",
         "Time": "All day"
@@ -714,6 +785,7 @@
         "Image": "fly.png", 	 	   	 
         "Name": "Fly",
         "Price": "60",
+        "PriceSort": "60",
         "Location": "On Trash Items",
         "Season": "Year-round",
         "Time": "All day"
@@ -724,6 +796,7 @@
         "Image": "mosquito.png", 	 	   	 
         "Name": "Mosquito",
         "Price": "130",
+        "PriceSort": "130",
         "Location": "Flying",
         "Season": "Jun-Sep (North)<br/>Dec-Mar (South)",
         "Time": "5PM - 4AM"
@@ -734,6 +807,7 @@
         "Image": "flea.png", 	 	   	 
         "Name": "Flea",
         "Price": "70",
+        "PriceSort": "70",
         "Location": "Villger'sads",
         "Season": "Apr-Nov (North)<br/>Oct-May (South)",
         "Time": "All day"
@@ -744,6 +818,7 @@
         "Image": "snail.png", 	 	   	 
         "Name": "Snail",
         "Price": "250",
+        "PriceSort": "250",
         "Location": "On Rocks (Rain)",
         "Season": "Year-round",
         "Time": "All day"
@@ -754,6 +829,7 @@
         "Image": "pillbug.png", 	 	   	 
         "Name": "Pill bug",
         "Price": "250",
+        "PriceSort": "250",
         "Location": "Hitting Rocks",
         "Season": "Sep-Jun (North)<br/>Mar-Dec (South)",
         "Time": "11PM - 4PM"
@@ -764,6 +840,7 @@
         "Image": "centipede.png", 	 	   	 
         "Name": "Centipede",
         "Price": "300",
+        "PriceSort": "300",
         "Location": "Hitting Rocks",
         "Season": "Sep-Jun (North)<br/>Mar-Dec (South)",
         "Time": "4PM - 11PM"
@@ -774,6 +851,7 @@
         "Image": "spider.png", 	 	   	 
         "Name": "Spider",
         "Price": "480",
+        "PriceSort": "480",
         "Location": "Shaking Trees",
         "Season": "Year-round",
         "Time": "7PM - 8AM"
@@ -784,6 +862,7 @@
         "Image": "tarantula.png", 	 	   	 
         "Name": "Tarantula",
         "Price": "8,000",
+        "PriceSort": "8000",
         "Location": "On the Ground",
         "Season": "Nov-Apr (North)<br/>May-Oct (South)",
         "Time": "7PM - 4AM"
@@ -795,6 +874,7 @@
         "Name": "Scorpion",
         "Location": "On the Ground",
         "Price": "8,000",
+        "PriceSort": "8000",
         "Season": "May-Oct (North)<br/>Nov-Apr (South)",
         "Time": "7PM - 4AM"
     }
