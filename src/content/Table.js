@@ -60,52 +60,38 @@ const FishMobileTable = () => {
 
 const Table = ({actualIndex, sortBy}) => {
     
-    //cambiar por if sortBy
-    const timeToSort = true
-    if(timeToSort) {
+    if(sortBy) {
+        const sortBySearch = (table) => {
+            console.log("henlo this is search")
+        }
+        const sortByPrice = (table) => table.sort((a, b) => b.PriceInt - a.PriceInt)
         
-        const sortByPrice = (table) => {
-            return table.sort((a, b) => b.PriceInt - a.PriceInt)
-        }
-        const sortByABC = (table) => {
-             table.sort((a, b) => {
-                if (b.Name > a.Name) {
-                    return -1;
-                }
-                if (a.Name > b.Name) {
-                    return 1;
-                }
-                return 0;
-            })
+        const sortByABC = (table) => table.sort((a, b) => 
+                                        a.Name > b.Name ? 1 :
+                                        a.Name < b.Name ? -1 : 0)
 
-        }
-        const sortByReset = (table) => {
-            return table.sort((a, b) => a.Number - b.Number)
-        }
+        const sortByReset = (table) => table.sort((a, b) => a.Number - b.Number)
 
+        const actualTable = actualIndex === "Bugs" ? bugInfo :
+                            actualIndex === "Fish" ? fishInfo : ""
 
-        if(actualIndex === "Bugs") {
-            if(sortBy === "Price") {
-                sortByPrice(bugInfo)
-            }
-            else if (sortBy === "ABC") {
-                sortByABC(bugInfo)
-            }
-            else if("Reset") {
-                sortByReset(bugInfo)
-            }
+        switch (sortBy) {
+            case "Search":
+                sortBySearch(actualTable)
+                break
+            case "Price":
+                sortByPrice(actualTable)
+                break
+            case "ABC":
+                sortByABC(actualTable)
+                break
+            case "Reset":
+                sortByReset(actualTable)
+                break
+            default:
+                console.log("Error on table's buttons")
         }
-        else if(actualIndex === "Fish") {
-            if(sortBy === "Price") {
-                sortByPrice(fishInfo)
-            }
-            else if (sortBy === "ABC") {
-                sortByABC(fishInfo)
-            }
-            else if("Reset") {
-                sortByReset(fishInfo)
-            }
-        }
+    
 
     }
       
