@@ -16,7 +16,7 @@ const TableButtons = ({actualIndex}) => {
     return (    
         <>
             <Ellipsis>
-                <SearchButton onClick={() => console.log("searchbuttonepressed")}><SearchImage src={imageURL.Search}  alt="Search" /></SearchButton>
+                <SearchButton onClick={() => setSortBy("Search")}><SearchImage src={imageURL.Search}  alt="Search" /></SearchButton>
                 <ABCButton onClick={() => setSortBy("ABC")}><ABCImage src={imageURL.ABC}  alt="ABC" /></ABCButton>
                 <PriceButton onClick={() => setSortBy("Price")}><PriceImage src={imageURL.Price}  alt="price" /></PriceButton>
                 <ResetButton onClick={() => setSortBy("Reset")}><ResetImage src={imageURL.Reset}  alt="Reset" /></ResetButton>
