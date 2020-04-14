@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components'
-import bugInfo from '../data/bug-EN.json'
-import fishInfo from '../data/fish-EN.json'
+import bugJSON from '../data/bug-EN.json'
+import fishJSON from '../data/fish-EN.json'
 // const BugDesktopTable = () => {
-//    const row = bugInfo.map(value =>
+//    const row = bugJSON.map(value =>
 //         <tr key={value.Number}>
 //             <td><img src={"../img/bug/" +value.Image} alt="sudando" /></td>
 //             <td>{value.Name}</td>
@@ -20,9 +20,9 @@ import fishInfo from '../data/fish-EN.json'
 
 
 
-//sortByPrice(fishInfo)
+//sortByPrice(fishJSON)
 const BugMobileTable = () => {
-    const row = bugInfo.map(value =>
+    const row = bugJSON.map(value =>
          <tr key={value.Number}>
             <td><img src={"../img/bug/" + value.Image} alt={value.Name} /></td>
             <td>{value.Name} <br/> {value.Price}</td>
@@ -33,7 +33,7 @@ const BugMobileTable = () => {
      return row
 }
 const FishMobileTable = () => {
-    const row = fishInfo.map(value =>
+    const row = fishJSON.map(value =>
          <tr key={value.Number}>
             <td><img src={"../img/fish/" + value.Image} alt={value.Name} /></td>
             <td>{value.Name}<br/>{value.Price}</td>
@@ -45,7 +45,7 @@ const FishMobileTable = () => {
 }
 // const FishDesktopTable = () => {
     
-//     const row = fishInfo.map(value =>
+//     const row = fishJSON.map(value =>
 //          <tr key={value.Number}>
 //              <td><img src={"../img/fish/" +value.Image} alt="sudando" /></td>
 //              <td>{value.Name}</td>
@@ -65,16 +65,13 @@ const Table = ({actualIndex, sortBy}) => {
             console.log("henlo this is search")
         }
         const sortByPrice = (table) => table.sort((a, b) => b.PriceInt - a.PriceInt)
-        
         const sortByABC = (table) => table.sort((a, b) => 
                                         a.Name > b.Name ? 1 :
                                         a.Name < b.Name ? -1 : 0)
-
         const sortByReset = (table) => table.sort((a, b) => a.Number - b.Number)
 
-        const actualTable = actualIndex === "Bugs" ? bugInfo :
-                            actualIndex === "Fish" ? fishInfo : ""
-
+        const actualTable = actualIndex === "Bugs" ? bugJSON :
+                            actualIndex === "Fish" ? fishJSON : ""
         switch (sortBy) {
             case "Search":
                 sortBySearch(actualTable)
@@ -91,8 +88,6 @@ const Table = ({actualIndex, sortBy}) => {
             default:
                 console.log("Error on table's buttons")
         }
-    
-
     }
       
     switch(actualIndex) {
