@@ -10,27 +10,60 @@ const imageURL = {
     Reset: "/img/icons/reset1.png", 
     Return: "/img/icons/return1.png"
 }
-  
-const TableButtons = ({actualIndex}) => {
-    const [sortBy, setSortBy] = useState("");
+
+// simple search 
+// https://dev.to/asimdahall/simple-search-form-in-react-using-hooks-42pg
+const SearchEngine = ({actualIndex}) => {
     const [searchTerm, setSearchTerm] = React.useState("");
+    const [searchResults, setSearchResults] = React.useState([]);
+
     const handleChange = event => {
       setSearchTerm(event.target.value);
     };
+    
+    const people = ["A", "B", "C"]
+    React.useEffect(() => {
+        const results = people.filter(person =>
+          person.toLowerCase().includes(searchTerm)
+        );
+        setSearchResults(results);
+      }, [searchTerm]);
 
+      return (
+        <>
+            <SearchInput type="text" placeholder="Search" value={searchTerm} onChange={handleChange} />
+            {/* <ul>
+                {searchResults.map(item => (
+                <li>{item}</li>
+                ))}
+            </ul> */}
+        </>
+      )
+
+}
+const TableButtons = ({actualIndex}) => {
+    const [sortBy, setSortBy] = useState("");
+    const [inputSearch, setInputSearch] = useState("")
+
+    const setInput = (e) => {
+        setSortBy("Search")
+        e.preventDefault();
+        setInputSearch(e.target.value)
+        console.log(e.target.value)
+    }
     // Search Image
     // <SearchImage src={imageURL.Search}  alt="Search" />
+    const actualTable = actualIndex === "Bugs" ? bugJSON :
+    actualIndex === "Fish" ? fishJSON : ""
     return (    
         <>
             <Ellipsis>
-                <SearchInput type="text" placeholder="Search" value={searchTerm} onChange={handleChange}>
-
-                </SearchInput>
+                <SearchInput onChange={setInput} />
                 <ABCButton onClick={() => setSortBy("ABC")}><ABCImage src={imageURL.ABC}  alt="ABC" /></ABCButton>
                 <PriceButton onClick={() => setSortBy("Price")}><PriceImage src={imageURL.Price}  alt="price" /></PriceButton>
                 <ResetButton onClick={() => setSortBy("Reset")}><ResetImage src={imageURL.Reset}  alt="Reset" /></ResetButton>
             </Ellipsis>
-            <Table actualIndex={actualIndex} sortBy={sortBy} />
+            <Table actualIndex={actualIndex} sortBy={sortBy} actualTable={actualTable} inputSearch={inputSearch} />
         </>
     )
 } 
@@ -140,23 +173,20 @@ const FishMobileTable = () => {
 //      return row
 //  }
 
-const Table = ({actualIndex, sortBy}) => {
+const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
     
     if(sortBy) {
-        const sortBySearch = (table) => {
-            console.log("henlo this is search")
-        }
+        const sortBySearch = (table, inputSearch) => table.map((v, i, a) => 
+                                        console.log(v.Image.match(inputSearch.toLowerCase()) ? v : ""))
         const sortByPrice = (table) => table.sort((a, b) => b.PriceInt - a.PriceInt)
         const sortByABC = (table) => table.sort((a, b) => 
                                         a.Name > b.Name ? 1 :
                                         a.Name < b.Name ? -1 : 0)
         const sortByReset = (table) => table.sort((a, b) => a.Number - b.Number)
 
-        const actualTable = actualIndex === "Bugs" ? bugJSON :
-                            actualIndex === "Fish" ? fishJSON : ""
         switch (sortBy) {
             case "Search":
-                sortBySearch(actualTable)
+                sortBySearch(actualTable, inputSearch)
                 break
             case "Price":
                 sortByPrice(actualTable)
