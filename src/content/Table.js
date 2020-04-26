@@ -136,8 +136,8 @@ const ResetImage = styled.img`
 
 
 //sortByPrice(fishJSON)
-const BugMobileTable = () => {
-    const row = bugJSON.map(value =>
+const BugMobileTable = ({actualTable}) => {
+    const row = actualTable.map(value =>
          <tr key={value.Number}>
             <td><img src={"../img/bug/" + value.Image} alt={value.Name} /></td>
             <td>{value.Name} <br/> {value.Price}</td>
@@ -147,8 +147,8 @@ const BugMobileTable = () => {
      )
      return row
 }
-const FishMobileTable = () => {
-    const row = fishJSON.map(value =>
+const FishMobileTable = ({actualTable}) => {
+    const row = actualTable.map(value =>
          <tr key={value.Number}>
             <td><img src={"../img/fish/" + value.Image} alt={value.Name} /></td>
             <td>{value.Name}<br/>{value.Price}</td>
@@ -174,10 +174,11 @@ const FishMobileTable = () => {
 //  }
 
 const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
-    
+   
     if(sortBy) {
-        const sortBySearch = (table, inputSearch) => table.map((v, i, a) => 
-                                        console.log(v.Image.match(inputSearch.toLowerCase()) ? v : ""))
+        const sortBySearch = (table, inputSearch) => table.filter((v) => 
+                                        v.Image.match(inputSearch.toLowerCase()))
+
         const sortByPrice = (table) => table.sort((a, b) => b.PriceInt - a.PriceInt)
         const sortByABC = (table) => table.sort((a, b) => 
                                         a.Name > b.Name ? 1 :
@@ -186,7 +187,7 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
 
         switch (sortBy) {
             case "Search":
-                sortBySearch(actualTable, inputSearch)
+                actualTable = sortBySearch(actualTable, inputSearch)
                 break
             case "Price":
                 sortByPrice(actualTable)
@@ -215,7 +216,7 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
                         </tr>
                     </thead>
                     <tbody>
-                        <BugMobileTable />
+                        <BugMobileTable actualTable={actualTable} />
                     </tbody>
                 </TableContainer>
             )
@@ -231,7 +232,7 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
                         </tr>
                     </thead>
                     <tbody>
-                        <FishMobileTable />
+                        <FishMobileTable actualTable={actualTable} />
                     </tbody>
                 </TableContainer>
             )          
