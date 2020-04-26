@@ -1,14 +1,6 @@
 import React, {useState} from 'react';
 import styled from 'styled-components'
 
-const imageURL = {
-    Price: "/img/icons/price1.jpg", 
-    ABC: "/img/icons/abc.png", 
-    Search: "/img/icons/search1.jpg", 
-    Reset: "/img/icons/reset1.png", 
-    Return: "/img/icons/return1.png"
-}
-
 // const BugDesktopTable = () => {
 //    const row = actualTable.map(value =>
 //         <tr key={value.Number}>
@@ -25,16 +17,17 @@ const imageURL = {
 //     )
 // }
 
-
 const BugMobileTable = ({actualTable}) => {
-    const row = actualTable.map(value =>
+    console.log("this is actual table")
+    console.log(actualTable)
+    const row = actualTable.length ? actualTable.map(value =>
          <tr key={value.Number}>
             <td><img src={"../img/bug/" + value.Image} alt={value.Name} /></td>
             <td>{value.Name} <br/> {value.Price}</td>
             <td>{value.Time} <br/> {value.Location}</td>
             <td dangerouslySetInnerHTML={{ __html: value.Season}}></td>
          </tr>
-     )
+     ) : emptyRow
      return row
 }
 const FishMobileTable = ({actualTable}) => {
@@ -63,6 +56,14 @@ const FishMobileTable = ({actualTable}) => {
 //      return row
 //  }
 
+const emptyRow =
+    <tr>
+        <td><img src={"../img/notfound.png"} /></td>
+        <td>Anything was found :(</td>
+        <td></td>
+        <td></td>
+    </tr>
+    
 const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
    
     if(sortBy) {
@@ -174,6 +175,7 @@ const TableContainer = styled.table`
         }
         td {
             padding-bottom: 18px;
+            min-width: 25%;
         }
         th {
          background-color: #A0D0E7;
