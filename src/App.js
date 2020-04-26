@@ -5,7 +5,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 //import { NavBar } from './content/navbar'
 import { Description } from './content/Description'
 import { Home } from './content/Home'
-import { TableButtons } from './content/Table'
+import { TableButtons } from './content/TableButtons'
 import comicsans1 from './font/comic.TTF'
 import comicsans2 from './font/comici.ttf'
 import comicsans3 from './font/comicmsgras.ttf'
@@ -68,7 +68,7 @@ const App = () => {
       case "Home":
         return <Home />
       default:
-        return <div>Rendering error. Please wait or try later...</div>
+        return <div>Content Rendering error. Please try later or contact the administrator...</div>
     }
   }
 

@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
 import styled from 'styled-components'
-import bugJSON from '../data/bug-EN.json'
-import fishJSON from '../data/fish-EN.json'
 
 const imageURL = {
     Price: "/img/icons/price1.jpg", 
@@ -11,114 +9,8 @@ const imageURL = {
     Return: "/img/icons/return1.png"
 }
 
-// simple search 
-// https://dev.to/asimdahall/simple-search-form-in-react-using-hooks-42pg
-const SearchEngine = ({actualIndex}) => {
-    const [searchTerm, setSearchTerm] = React.useState("");
-    const [searchResults, setSearchResults] = React.useState([]);
-
-    const handleChange = event => {
-      setSearchTerm(event.target.value);
-    };
-    
-    const people = ["A", "B", "C"]
-    React.useEffect(() => {
-        const results = people.filter(person =>
-          person.toLowerCase().includes(searchTerm)
-        );
-        setSearchResults(results);
-      }, [searchTerm]);
-
-      return (
-        <>
-            <SearchInput type="text" placeholder="Search" value={searchTerm} onChange={handleChange} />
-            {/* <ul>
-                {searchResults.map(item => (
-                <li>{item}</li>
-                ))}
-            </ul> */}
-        </>
-      )
-
-}
-const TableButtons = ({actualIndex}) => {
-    const [sortBy, setSortBy] = useState("");
-    const [inputSearch, setInputSearch] = useState("")
-
-    const setInput = (e) => {
-        setSortBy("Search")
-        e.preventDefault();
-        setInputSearch(e.target.value)
-        console.log(e.target.value)
-    }
-    // Search Image
-    // <SearchImage src={imageURL.Search}  alt="Search" />
-    const actualTable = actualIndex === "Bugs" ? bugJSON :
-    actualIndex === "Fish" ? fishJSON : ""
-    return (    
-        <>
-            <Ellipsis>
-                <SearchInput onChange={setInput} />
-                <ABCButton onClick={() => setSortBy("ABC")}><ABCImage src={imageURL.ABC}  alt="ABC" /></ABCButton>
-                <PriceButton onClick={() => setSortBy("Price")}><PriceImage src={imageURL.Price}  alt="price" /></PriceButton>
-                <ResetButton onClick={() => setSortBy("Reset")}><ResetImage src={imageURL.Reset}  alt="Reset" /></ResetButton>
-            </Ellipsis>
-            <Table actualIndex={actualIndex} sortBy={sortBy} actualTable={actualTable} inputSearch={inputSearch} />
-        </>
-    )
-} 
-
-const Ellipsis = styled.div`
-  width: 100%;
-  height: 90px;
-  border-top-left-radius: 100%;
-  border-top-right-radius: 100%;
-  background-color: #A0D0E7;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-`
-const SearchInput = styled.input`
-  width: 100px;
-  height: 40px;
-  margin-top: 45px;
-  border-radius: 30px;
-  img {
-    float: right;
-  }
-`
-const ABCButton = styled.button`
-  width: 40px;
-  height: 40px;
-  margin-top: 45px;
-  border-radius: 10px;
-`
-const PriceButton = styled.button`
-  width: 40px;
-  height: 40px;
-  margin-top: 45px;
-  border-radius: 10px;
-`
-const ResetButton = styled.button`
-  width: 30px;
-  height: 30px;
-  margin-top: 45px;
-  border-radius: 50%;
-`
-const PriceImage = styled.img`
-  width: 100%;
-`
-const ABCImage = styled.img`
-  width: 100%;
-`
-const SearchImage = styled.img`
-  width: 30px;
-`
-const ResetImage = styled.img`
-  width: 100%;
-`
 // const BugDesktopTable = () => {
-//    const row = bugJSON.map(value =>
+//    const row = actualTable.map(value =>
 //         <tr key={value.Number}>
 //             <td><img src={"../img/bug/" +value.Image} alt="sudando" /></td>
 //             <td>{value.Name}</td>
@@ -134,8 +26,6 @@ const ResetImage = styled.img`
 // }
 
 
-
-//sortByPrice(fishJSON)
 const BugMobileTable = ({actualTable}) => {
     const row = actualTable.map(value =>
          <tr key={value.Number}>
@@ -160,7 +50,7 @@ const FishMobileTable = ({actualTable}) => {
 }
 // const FishDesktopTable = () => {
     
-//     const row = fishJSON.map(value =>
+//     const row = actualTable.map(value =>
 //          <tr key={value.Number}>
 //              <td><img src={"../img/fish/" +value.Image} alt="sudando" /></td>
 //              <td>{value.Name}</td>
@@ -178,7 +68,6 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
     if(sortBy) {
         const sortBySearch = (table, inputSearch) => table.filter((v) => 
                                         v.Image.match(inputSearch.toLowerCase()))
-
         const sortByPrice = (table) => table.sort((a, b) => b.PriceInt - a.PriceInt)
         const sortByABC = (table) => table.sort((a, b) => 
                                         a.Name > b.Name ? 1 :
@@ -301,4 +190,4 @@ const TableContainer = styled.table`
         };
     }
 `
-export { TableButtons }
+export { Table }
