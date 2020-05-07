@@ -5,6 +5,8 @@ const Turnip = () => {
     return (
         <TurnipContainer>
             <p>Hello, this is Turnip</p>
+            <br/>
+            <a className="twitter-timeline" style={{textAlign: "center"}} data-width="90%" data-theme="dark" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> 
         </TurnipContainer>
     )
 }
@@ -14,7 +16,7 @@ const TurnipContainer = styled.div`
     width: 100%;
     height: 99vh;
     padding-top: 10%;
-    padding-left: 5%;
+    text-align: center;
     a, a:visited {
         color: blue;
     }

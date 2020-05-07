@@ -29,7 +29,7 @@ const Description = ({actualIndex}) => {
                     </Container>
                 )
             default: 
-                return <div>Error loading description.</div>
+                return <div>Error loading description. Please contact the web's administrator</div>
     }
 }
 

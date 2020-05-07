@@ -59,7 +59,7 @@ const primaryColor = {
 }
 
 const App = () => {
-  const [index, setIndex] = useState("Bugs");
+  const [index, setIndex] = useState("Turnips");
 
   const showContent = (index) => {
     switch (index) {
