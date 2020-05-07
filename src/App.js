@@ -5,6 +5,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 //import { NavBar } from './content/navbar'
 import { Description } from './content/Description'
 import { Home } from './content/Home'
+import { Turnip } from './content/Turnip'
 import { TableButtons } from './content/TableButtons'
 import comicsans1 from './font/comic.TTF'
 import comicsans2 from './font/comici.ttf'
@@ -62,11 +63,13 @@ const App = () => {
 
   const showContent = (index) => {
     switch (index) {
+      case "Home":
+        return <Home />
+      case "Turnips":
+        return <Turnip />
       case "Bugs":
       case "Fish":
         return <TableButtons actualIndex={index} />
-      case "Home":
-        return <Home />
       default:
         return <div>Content Rendering error. Please try later or contact the administrator...</div>
     }
@@ -77,6 +80,7 @@ const App = () => {
       <GlobalStyles />
       <NavBar>
         <HomeIndex onClick={() => {setIndex("Home")}}>Home</HomeIndex>
+        <TurnipIndex onClick={() => {setIndex("Turnips")}}>Turnips</TurnipIndex>
         <BugIndex onClick={() => {setIndex("Bugs")}}>Bugs</BugIndex>
         <FishIndex onClick={() => {setIndex("Fish")}}>Fish</FishIndex>
       </NavBar>
@@ -105,6 +109,11 @@ const NavBar = styled.div`
   }
 `
 const HomeIndex = styled.p`
+  color: #F5F2E3;
+  font-weight: bold;
+  text-align: center;
+`
+const TurnipIndex = styled.p`
   color: #F5F2E3;
   font-weight: bold;
   text-align: center;
