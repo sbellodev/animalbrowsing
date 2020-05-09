@@ -24,12 +24,13 @@ router.get('/', (req, res, next) => {
       * Good luck future me or other degenerates
       *  9/5/2020
       */
-
+      
       //console.log(data.statuses)
-      data.statuses.filter(tweet => !tweet.retweeted_status) // No RTs
-      data.statuses.length = 10 // Max number of tweets
-
-      const tweets = data.statuses
+      //data.statuses.length = 10 // Max number of tweets
+      
+      //data.statuses
+      let tweets = data.statuses
+        .filter(tweet => !tweet.retweeted_status) // No RTs
         .map((tweet, i, a ) => {
           const getData = [ // Gets tweet attributes we want
             user = tweet.user.name,
@@ -39,6 +40,7 @@ router.get('/', (req, res, next) => {
         })
       console.log(tweets)
       console.log(tweets.length)
+      if(tweets.length > 10) {tweets.length = 10}
       res.send(tweets)
     })
 })
