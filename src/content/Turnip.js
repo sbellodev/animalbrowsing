@@ -1,36 +1,26 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
 
 const Turnip = () => {
-    const [Response, setResponse] = useState('Default Response')
-    
-    // useContext doc - https://upmostly.com/tutorials/how-to-use-the-usecontext-hook-in-react
-    const TestContext = React.createContext(Response)
-    const DisplayContext = useContext(TestContext)
+    const [Response, setResponse] = useState('Loading tweets... please wait...')
     
     const callServerAPI = () => {
-        console.log("Calling Server API")
         const URL = 'http://localhost:9000/twitter'
         fetch(URL)
             .then(res => res.text())
             .then(json => setResponse(json))
     }
-    
     useEffect(() => {
-        console.log("Turnip content Updated")
         callServerAPI()
-        const intervalId = setInterval(callServerAPI, 15000)
-        
+        const intervalId = setInterval(callServerAPI, 10000)
         return () => clearInterval(intervalId)
-
-    }, [URL, useState])
+    }, [])
 
     return (
         <TurnipContainer>
             <p>Hello, this is Turnip</p>
-            {DisplayContext}
+            {Response}
             <br/>
-            {/* <a className="twitter-timeline" style={{textAlign: "center"}} data-width="90%" data-theme="dark" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>  */}
         </TurnipContainer>
     )
 }
