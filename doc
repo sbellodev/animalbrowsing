@@ -1,0 +1,14 @@
+Requirements
+
+Specifications
+
+Functional Structure
+
+
+
+Twitter API module
+    Client React      
+        useContext - https://upmostly.com/tutorials/how-to-use-the-usecontext-hook-in-react
+
+    Server Node.js - https://github.com/tombaranowicz/TwitterMonitoringJavaScript/blob/master/index.js
+
