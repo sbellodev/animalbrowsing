@@ -7,7 +7,7 @@ const Turnip = () => {
     const callServerAPI = () => {
         const URL = 'http://localhost:9000/twitter'
         fetch(URL)
-            .then(res => res.text())
+            .then(res => res.json())
             .then(json => setResponse(json))
     }
     useEffect(() => {
@@ -15,11 +15,21 @@ const Turnip = () => {
         const intervalId = setInterval(callServerAPI, 10000)
         return () => clearInterval(intervalId)
     }, [])
-
+    
+    // const showAPI = () => {
+    //     console.log(typeof Response)
+    //     return Response.map(v => v)
+    // }
+    //const newResponse = JSON.parse(Response)
+    // const stResponse = JSON.stringify(Response)
+    // const newResponse = JSON.parse(stResponse)
     return (
         <TurnipContainer>
             <p>Hello, this is Turnip</p>
-            {Response}
+            {console.log(Response[0][0])}
+            {Response[0][0]}
+            <br/>
+            {Response[0][1]}
             <br/>
         </TurnipContainer>
     )

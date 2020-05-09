@@ -16,13 +16,30 @@ var T = new Twit({
 });
 
 router.get('/', (req, res, next) => {
-  T.get('search/tweets', { q: '#AnimalCrossing turnip', count: 5 }, (err, data, response) => {
-    const tweets = data.statuses
-      .map(tweet => tweet.text)
-      // .map(tweet => `LANG: ${franc(tweet.text)} : ${tweet.text}`) //CHECK LANGUAGE
-      //   .filter(tweet => tweet.toLowerCase().includes('elon'));
+  T.get('search/tweets', { q: '#AnimalCrossing turnip', result_type: "recent", count: 50,}, 
+    (err, data, response) => {
+      /*
+      * Time to be "That guy":
+      * Not sure how to refactor this efficiently so I'm leaving this for now.
+      * Good luck future me or other degenerates
+      *  9/5/2020
+      */
+
+      //console.log(data.statuses)
+      data.statuses.filter(tweet => !tweet.retweeted_status) // No RTs
+      data.statuses.length = 10 // Max number of tweets
+
+      const tweets = data.statuses
+        .map((tweet, i, a ) => {
+          const getData = [ // Gets tweet attributes we want
+            user = tweet.user.name,
+            text = tweet.text
+          ]
+          return getData
+        })
       console.log(tweets)
+      console.log(tweets.length)
       res.send(tweets)
-  })
+    })
 })
 module.exports = router;
