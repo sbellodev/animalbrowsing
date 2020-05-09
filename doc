@@ -7,6 +7,8 @@ Functional Structure
 
 
 Twitter API module
+    Twitter Standard Search API - https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets
+    Twit API - https://github.com/ttezel/twit
     Client React      
         useContext - https://upmostly.com/tutorials/how-to-use-the-usecontext-hook-in-react
 
