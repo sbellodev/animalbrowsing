@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import styled from 'styled-components'
 
 const Turnip = () => {
@@ -8,10 +8,22 @@ const Turnip = () => {
     const TestContext = React.createContext(Response)
     const DisplayContext = useContext(TestContext)
     
-    const URL = 'http://localhost:9000/twitter'
-    fetch(URL)
-        .then(res => res.text())
-        .then(json => setResponse(json))
+    const callServerAPI = () => {
+        console.log("Calling Server API")
+        const URL = 'http://localhost:9000/twitter'
+        fetch(URL)
+            .then(res => res.text())
+            .then(json => setResponse(json))
+    }
+    
+    useEffect(() => {
+        console.log("Turnip content Updated")
+        callServerAPI()
+        const intervalId = setInterval(callServerAPI, 15000)
+        
+        return () => clearInterval(intervalId)
+
+    }, [URL, useState])
 
     return (
         <TurnipContainer>
