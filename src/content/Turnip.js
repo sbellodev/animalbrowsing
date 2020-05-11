@@ -17,8 +17,17 @@ const Turnip = () => {
     }, [])
     
     const renderTwitterAPIContent = (res) =>  {
+
         let showRes = ""
         for (let i = 0; i < res.length; i++) {
+            if(res[i].entities && res[i].entities.urls && res[i].entities.urls[0]){
+                let urlStr = JSON.stringify(res[i].entities.urls[0].url).replace(/\"/g, '') // url acortada
+                let textHref = "<a href='"+urlStr+"' target='_blank' rel='noopener'>"+urlStr+"</a>"
+                if(urlStr === res[i].text.substr(-23)){
+                    res[i].text = res[i].text.replace(res[i].text.substr(-23), textHref)
+                    console.log(res[i].text)
+                }
+            }
             showRes +=
                 "<p>"+res[i].user+"</p>"+
                 "<p>"+res[i].text+"</p>"+

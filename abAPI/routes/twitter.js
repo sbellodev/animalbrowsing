@@ -2,10 +2,10 @@ var express = require("express")
 var router = express.Router()
 var Twit = require('twit')
 
-const consumer_key =       "1UC2bP9BteFaqAh7QTBSxIitz"
-const consumer_secret =    "cTZ2MH8z7keQaWtjClvSuevDlWGWSMl6QG0xd5iv8Tn8xjWuV1"
-const access_token =       "1258491948396150789-7Y64qbxKDgs0quQ5EOYaGiVGEcfPLV" 
-const access_token_secret ="9x3amlTkGFef8CPlxhs3RoQ3n5wYIeijTyxN1F7eDcalq"
+const consumer_key =        "1UC2bP9BteFaqAh7QTBSxIitz"
+const consumer_secret =     "cTZ2MH8z7keQaWtjClvSuevDlWGWSMl6QG0xd5iv8Tn8xjWuV1"
+const access_token =        "1258491948396150789-7Y64qbxKDgs0quQ5EOYaGiVGEcfPLV" 
+const access_token_secret = "9x3amlTkGFef8CPlxhs3RoQ3n5wYIeijTyxN1F7eDcalq"
 
 // documentation - https://github.com/tombaranowicz/TwitterMonitoringJavaScript
 var T = new Twit({
@@ -24,22 +24,43 @@ router.get('/', (req, res, next) => {
       * Good luck future me or other degenerates
       *  9/5/2020
       */
-      
-      //console.log(data.statuses)
-      //data.statuses.length = 10 // Max number of tweets
-      
-      //data.statuses
       let tweets = data.statuses
         .filter(tweet => !tweet.retweeted_status) // No RTs
         .map((tweet, i, a ) => {
-          const getData = [ // Gets tweet attributes we want
-            user = tweet.user.name,
-            text = tweet.text
-          ]
-          return getData
+          return { // Gets tweet's attributes we want
+            user : tweet.user.name,
+            text : tweet.text,
+            entities : tweet.entities
+          }
         })
-      console.log(tweets)
-      console.log(tweets.length)
+      tweets.map(tw => console.log(tw.user))
+      // // If I enable this, We end not getting the Tweets properties (like user, text or entities)
+      // // this = the map
+      // tweets = tweets.map(tweet => {
+
+      //   if(tweet.entities && tweet.entities.urls && tweet.entities.urls[0]){
+      //     let urlStr = JSON.stringify(tweet.entities.urls[0].url).replace(/\"/g, '') // url acortada
+      //     //console.log(urlStr) 
+      //     //console.log(tweet.text)
+      //     if(tweet.text.includes(urlStr)){
+      //       console.log("we did it guys")
+      //       tweet.text.replace(urlStr, "<a href='"+urlStr+"'>"+urlStr+"</a>")
+      //       console.log("Post-Replace!")
+      //       console.log(tweet.text)
+      //     }
+      //   }
+      // })
+
+      //tweets.map(tw => console.log(tw.entities.urls)) 
+      /*
+        url: 'https://t.co/oRnlm1RERf',
+        expanded_url: 'https://twitter.com/i/web/status/1259891412440678400',
+        display_url: 'twitter.com/i/web/status/1…',
+        indices: [ 109, 132 ]
+
+      */
+     //console.log(tweets)
+      //console.log(tweets.length)
       if(tweets.length > 10) {tweets.length = 10}
       res.send(tweets)
     })
