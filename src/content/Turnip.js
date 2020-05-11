@@ -16,22 +16,21 @@ const Turnip = () => {
         return () => clearInterval(intervalId)
     }, [])
     
-    const showAPI = (res) => {
-        let contentAPI = ""
-        for (var i = 0; i < res.length; i++) {
-            for (var a = 0; a < res[0].length; a++) {
-                if(a+1 < res[0].length){
-                    contentAPI += "<p>"+ res[i][a] +"</p><p>"+ res[i][a+1] + "</p><br/>"
-                }
-            }
+    const renderTwitterAPIContent = (res) =>  {
+        let showRes = ""
+        for (let i = 0; i < res.length; i++) {
+            showRes +=
+                "<p>"+res[i].user+"</p>"+
+                "<p>"+res[i].text+"</p>"+
+                "<br/>"    
         }
-        // TODO - Review anti-dangerouslyinnerHTML security
-        return {__html: contentAPI}
+        return {__html: showRes}                
     }
 
     return (
         <TurnipContainer>
-            <TwitterContent dangerouslySetInnerHTML={showAPI(Response)}/>
+            <TwitterContent dangerouslySetInnerHTML={renderTwitterAPIContent(Response)}>
+            </TwitterContent>
         </TurnipContainer>
     )
 }
