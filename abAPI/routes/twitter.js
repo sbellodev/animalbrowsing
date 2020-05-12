@@ -24,6 +24,7 @@ router.get('/', (req, res, next) => {
       * Good luck future me or other degenerates
       *  9/5/2020
       */
+     console.log(data.statuses)
       let tweets = data.statuses
         .filter(tweet => !tweet.retweeted_status) // No RTs
         .map((tweet, i, a ) => {
@@ -34,22 +35,7 @@ router.get('/', (req, res, next) => {
           }
         })
       tweets.map(tw => console.log(tw.user))
-      // // If I enable this, We end not getting the Tweets properties (like user, text or entities)
-      // // this = the map
-      // tweets = tweets.map(tweet => {
-
-      //   if(tweet.entities && tweet.entities.urls && tweet.entities.urls[0]){
-      //     let urlStr = JSON.stringify(tweet.entities.urls[0].url).replace(/\"/g, '') // url acortada
-      //     //console.log(urlStr) 
-      //     //console.log(tweet.text)
-      //     if(tweet.text.includes(urlStr)){
-      //       console.log("we did it guys")
-      //       tweet.text.replace(urlStr, "<a href='"+urlStr+"'>"+urlStr+"</a>")
-      //       console.log("Post-Replace!")
-      //       console.log(tweet.text)
-      //     }
-      //   }
-      // })
+      // Todo - Replace Client-URL logic to Server-URL logic
 
       //tweets.map(tw => console.log(tw.entities.urls)) 
       /*
