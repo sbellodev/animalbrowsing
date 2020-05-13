@@ -29,6 +29,7 @@ router.get('/', (req, res, next) => {
         .filter(tweet => !tweet.retweeted_status) // No RTs
         .map((tweet, i, a ) => {
           return { // Gets tweet's attributes we want
+            id   : tweet.id_str,
             user : tweet.user.name,
             text : tweet.text,
             entities : tweet.entities

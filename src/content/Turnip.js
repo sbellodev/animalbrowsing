@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
 
 const Turnip = () => {
-    const [Response, setResponse] = useState('Loading tweets... please wait...')
+    const [Response, setResponse] = useState("")
     
     const callServerAPI = () => {
         const URL = 'http://192.168.0.100:9000/twitter'
@@ -17,63 +17,52 @@ const Turnip = () => {
     }, [])
     
     const renderTwitterAPIContent = (res) =>  {
+        // About URLs - What to show
+        // Display IMG and urls not related to "reached limit... click here to read more"
+        // Add "read more" link with a url (consumed by API, an URL like "tweet.url")
 
         let showRes = ''
         for (let i = 0; i < res.length; i++) {
-            //let shortUrl = /https:\/\/t\.co\/+.{10}/g
-            console.log(res[i].entities)
-            if(res[i].text){
-                if(res[i].entities && res[i].entities.media && res[i].entities.media[0].url){
-                    let hrex = new RegExp(res[i].entities.media[0].url, "g")
-                    res[i].text = res[i].text.replace(hrex, "<img width='150px' src='"+res[i].entities.media[0].media_url_https+"' />")
+            if(res[i].text && res[i].entities){
+                if(res[i].entities.media){
+                    let urlRegExp = res[i].entities.media[0].url
+                    res[i].text = res[i].text.replace(urlRegExp, "<img src='" +res[i].entities.media[0].media_url_https+ "' />")
                 }
-                if(res[i].entities && res[i].entities.urls && res[i].entities.urls[0]){
-                    let hrex = new RegExp(res[i].entities.urls[0].url, "g")
-                    res[i].text = res[i].text.replace(hrex, "<a href='"+res[i].entities.urls[0].expanded_url+"'>"+res[i].entities.urls[0].expanded_url+"</a>")
+                if(res[i].entities.urls && res[i].entities.urls[0]){
+                    let urlRegExp = res[i].entities.urls[0].url
+                    if(res[i].entities.urls[0].expanded_url.includes("/i/web/status")){
+                        res[i].text = res[i].text.replace(urlRegExp, "")
+                    }
+                    else {
+                        res[i].text = res[i].text.replace(urlRegExp, "<a href='" +res[i].entities.urls[0].expanded_url+ "'>" +res[i].entities.urls[0].expanded_url+ "</a>")
+                    }
                 }
-                console.log(res[i].text)
+                //console.log(res[i].text)
             }
-
-            // if(res[i].entities && res[i].entities.urls && res[i].entities.urls[0]){
-            //     let urlStr = JSON.stringify(res[i].entities.urls[0].url).replace(/\"/g, '') // url acortada
-            //     let textHref = "<a href='"+urlStr+"' target='_blank' rel='noopener'>"+urlStr+"</a>"
-            //     //  https://t.co/
-                // /http:\/\/t|.co/.{10}/g
-                // let httpIndex = res[i].text.indexOf("http")
-                // console.log('this is http index' + httpIndex)
-                // if(urlStr == res[i].text.substr(-23)){
-                //     res[i].text = res[i].text.replace(res[i].text.substr(-23), textHref)
-                //     console.log(res[i].text)
-                // }
-                // else {
-                //     console.log("Not replaced")
-                //     console.log(urlStr)
-                //     console.log(res[i].text.substr(-23))
-                // }
-            // }
-            // else {
-            //     // Bug : Algunas url no pasan por el IF anterior, luego no son reemplazadas, luego no funciona su link
-            //                     // buscar en res[i].entities.medua.iulr
-
-            // }
+            console.log(res[i].user)
+            console.log(res[i].text)
+            console.log(res[i].id)
+            
+            //console.log(res[i].id)
             showRes +=
-                '<p>'+res[i].user+'</p>'+
-                '<p>'+res[i].text+'</p>'+
-                '<br/>'    
+                  '<div class="tweet_individual">'
+                + '<p>' +res[i].user+ '</p>'
+                + '<p>' +res[i].text+ '</p>'
+                + '<p><a href="https://twitter.com/i/web/status/'+res[i].id+'" target="_blank" rel="noopener noreferrer">View Tweet</a></p>'
+                + '<br/>'  
+                + '</div>'
         }
         return showRes                
     }
 
     return (
         <TurnipContainer>
-            <TwitterContent dangerouslySetInnerHTML={{__html:renderTwitterAPIContent(Response)}}>
-                
-            </TwitterContent>
+            {!Response && <div>Loading tweets... please wait...</div>}
+            {Response && <TwitterContent dangerouslySetInnerHTML={{__html: renderTwitterAPIContent(Response)}} />}
         </TurnipContainer>
     )
 }
 
-const TwitterContent = styled.div``
 const TurnipContainer = styled.div`
     font-family: afont;
     background-color: #A0D0E7;
@@ -82,8 +71,20 @@ const TurnipContainer = styled.div`
     padding-top: 10%;
     text-align: center;
     white-space: pre-wrap;
+`
+const TwitterContent = styled.div`
+    display: grid;
+    justify-items: center;
     a, a:visited {
         color: blue;
+    }
+    img {
+        display: block;
+        margin: auto;
+        width: 150px;
+    }
+    .tweet_individual {
+        width: 80%;
     }
 `
 export { Turnip }

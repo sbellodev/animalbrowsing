@@ -1,26 +1,28 @@
 TODO -
- [!!] Create href logic
-  { Need to diferenciate types or urls (images, external links, link to tweet...)}
-  {Need to deferenciate what we need (link to tweet, image?)}
- [!!] Href replace logic Client(turnips.js) to server(twitter.js)
- Review DangerouslyInnerHTML in Client turnips.js
- 
+ [!!] Move Href-replace logic Client(turnips.js) to server(twitter.js)
+ Review alternatives to DangerouslyInnerHTML in Client turnips.js
+ Enhance logic from Server -> Twitter API -> Tweet fetch 
 
-Requirements
+Folder Structure
 
-Specifications
+    /root
+        /backend
+        /public
+            /img
+                /All web images and icon
+        /src
+            /content
+                React-Components
+        /data
+            Bugs and Fish JSONs
 
-Functional Structure
-
-Beware
-    Twitter Client -
-        Cuando se reemplaza la url (https://t.co...) por <a...>https... crea un fallo:
-        Reemplaza como resultado <a href="<a href>"
-        Hay que tener cuidado al hacer setDangerouslyInnerHTML pues parece que el enlace "htts...tco" tiene implicito un <a>, el cual ha sido imposible que se manifestase en el buscador (osea, hacer que el strign en cuestion sea clicable)
 
 Twitter API module
     Twitter Standard Search API - https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets
     Twit API - https://github.com/ttezel/twit
     Client React      
     Server Node.js - https://github.com/tombaranowicz/TwitterMonitoringJavaScript/blob/master/index.js
+
+Hunting Table module
+
 
