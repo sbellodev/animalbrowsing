@@ -18,31 +18,33 @@ const Turnip = () => {
     }, [])
     
     const renderTwitterAPIContent = (res) =>  {
-        let showRes = ''
-        for (let i = 0; i < res.length; i++) {
-            if(res[i].text && res[i].entities){
-                if(res[i].entities.media){
-                    let urlRegExp = res[i].entities.media[0].url
-                    res[i].text = res[i].text.replace(urlRegExp, "<img src='" +res[i].entities.media[0].media_url_https+ "' />")
+        console.log(res)
+        let shortUrl = /https:\/\/t\.co\/+.{10}/g
+        let showRes = res.map(tweet => {
+            if(tweet.text){
+                if(tweet.entities.media){
+                    tweet.text = tweet.text.replace(tweet.entities.media[0].url, "<img src='" +tweet.entities.media[0].media_url_https+ "' />")
                 }
-                if(res[i].entities.urls && res[i].entities.urls[0]){
-                    let urlRegExp = res[i].entities.urls[0].url
-                    if(res[i].entities.urls[0].expanded_url.includes("/i/web/status")){
-                        res[i].text = res[i].text.replace(urlRegExp, "")
+                if(tweet.entities.urls && tweet.entities.urls[0]){
+                    let num_of_urls = tweet.entities.urls.length 
+                    let last_url = num_of_urls - 1
+                    if(tweet.entities.urls[last_url].expanded_url.includes("/i/web/status")){
+                        tweet.text = tweet.text.replace(tweet.entities.urls[last_url].url, "")
                     }
-                    else {
-                        res[i].text = res[i].text.replace(urlRegExp, "<a href='" +res[i].entities.urls[0].expanded_url+ "'>" +res[i].entities.urls[0].expanded_url+ "</a>")
-                    }
+                    tweet.entities.urls.map(url => {
+                        tweet.text = tweet.text.replace(shortUrl, "<a href='" +url.expanded_url+ "'>" +url.expanded_url+ "</a>")
+                    })
                 }
             }
-            showRes +=
-                  '<div class="tweet_individual">'
-                + '<p>' +res[i].user+ '</p>'
-                + '<p>' +res[i].text+ '</p>'
-                + '<p><a href="https://twitter.com/i/web/status/'+res[i].id+'" target="_blank" rel="noopener noreferrer">View Tweet</a></p>'
-                + '<br/>'  
-                + '</div>'
-        }
+            return  '<div class="tweet_individual">'
+                     + '<p>' +tweet.user+ '</p>'
+                     + '<p>' +tweet.text+ '</p>'
+                     + '<p><a href="https://twitter.com/i/web/status/'+tweet.id+'" target="_blank" rel="noopener noreferrer">View Tweet</a></p>'
+                     + '<br/>'  
+                     + '</div>'
+            }
+        ).join('')
+
         return showRes                
     }
 
