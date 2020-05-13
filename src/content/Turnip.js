@@ -2,14 +2,15 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
 
 const Turnip = () => {
-    const [Response, setResponse] = useState("")
+    const [APIResponse, setAPIResponse] = useState("")
     
     const callServerAPI = () => {
         const URL = 'http://192.168.0.100:9000/twitter'
         fetch(URL)
             .then(res => res.json())
-            .then(json => setResponse(json))
+            .then(json => setAPIResponse(json))
     }
+
     useEffect(() => {
         callServerAPI()
         const intervalId = setInterval(callServerAPI, 10000)
@@ -17,10 +18,6 @@ const Turnip = () => {
     }, [])
     
     const renderTwitterAPIContent = (res) =>  {
-        // About URLs - What to show
-        // Display IMG and urls not related to "reached limit... click here to read more"
-        // Add "read more" link with a url (consumed by API, an URL like "tweet.url")
-
         let showRes = ''
         for (let i = 0; i < res.length; i++) {
             if(res[i].text && res[i].entities){
@@ -37,13 +34,7 @@ const Turnip = () => {
                         res[i].text = res[i].text.replace(urlRegExp, "<a href='" +res[i].entities.urls[0].expanded_url+ "'>" +res[i].entities.urls[0].expanded_url+ "</a>")
                     }
                 }
-                //console.log(res[i].text)
             }
-            console.log(res[i].user)
-            console.log(res[i].text)
-            console.log(res[i].id)
-            
-            //console.log(res[i].id)
             showRes +=
                   '<div class="tweet_individual">'
                 + '<p>' +res[i].user+ '</p>'
@@ -57,8 +48,8 @@ const Turnip = () => {
 
     return (
         <TurnipContainer>
-            {!Response && <div>Loading tweets... please wait...</div>}
-            {Response && <TwitterContent dangerouslySetInnerHTML={{__html: renderTwitterAPIContent(Response)}} />}
+            {!APIResponse && <div>Loading tweets... please wait...</div>}
+            {APIResponse && <TwitterContent dangerouslySetInnerHTML={{__html: renderTwitterAPIContent(APIResponse)}} />}
         </TurnipContainer>
     )
 }
@@ -82,6 +73,7 @@ const TwitterContent = styled.div`
         display: block;
         margin: auto;
         width: 150px;
+        border-radius: 12px;
     }
     .tweet_individual {
         width: 80%;
