@@ -26,10 +26,12 @@ const TableButtons = ({actualIndex}) => {
     return (    
         <>
             <Ellipsis>
-                <SearchInput onChange={setInput} placeholder={" Search"} />
-                <ABCButton onClick={() => setSortBy("ABC")}><ABCImage src={imageURL.ABC}  alt="ABC" /></ABCButton>
-                <PriceButton onClick={() => setSortBy("Price")}><PriceImage src={imageURL.Price}  alt="price" /></PriceButton>
-                <ResetButton onClick={() => setSortBy("Reset")}><ResetImage src={imageURL.Reset}  alt="Reset" /></ResetButton>
+            <ButtonsContainer>
+              <SearchInput onChange={setInput} placeholder={" Search"} />
+              <ABCButton onClick={() => setSortBy("ABC")}><ABCImage src={imageURL.ABC}  alt="ABC" /></ABCButton>
+              <PriceButton onClick={() => setSortBy("Price")}><PriceImage src={imageURL.Price}  alt="price" /></PriceButton>
+              <ResetButton onClick={() => setSortBy("Reset")}><ResetImage src={imageURL.Reset}  alt="Reset" /></ResetButton>
+            </ButtonsContainer>    
             </Ellipsis>
             <Table actualIndex={actualIndex} sortBy={sortBy} actualTable={actualTable} inputSearch={inputSearch} />
         </>
@@ -39,18 +41,25 @@ const TableButtons = ({actualIndex}) => {
 const Ellipsis = styled.div`
   width: 100%;
   height: 90px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
   background-color: #A0D0E7;
+`
+
+const ButtonsContainer = styled.div`
+  max-width: 380px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+
 `
 const SearchInput = styled.input`
   width: 100px;
   height: 45px;
-  margin-top: 45px;
+  margin: 10px 25px 10px 0;
   border-radius: 25px;
   img {
     float: right;
@@ -59,20 +68,20 @@ const SearchInput = styled.input`
 const ABCButton = styled.button`
   width: 45px;
   height: 45px;
-  margin-top: 45px;
+  margin: 10px 25px 10px 0;
   border-radius: 10px;
 `
 const PriceButton = styled.button`
   width: 45px;
   height: 45px;
-  margin-top: 45px;
+  margin: 10px 25px 10px 0;
   border-radius: 10px;
   background-color: #FDDD5C;
 `
 const ResetButton = styled.button`
   width: 30px;
   height: 30px;
-  margin-top: 45px;
+  margin: 10px 25px 10px 0;
   border-radius: 50%;
 `
 const PriceImage = styled.img`
