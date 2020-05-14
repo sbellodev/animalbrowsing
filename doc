@@ -1,7 +1,4 @@
 TODO -
- [!!] Move Href-replace logic Client(turnips.js) to server(twitter.js)
- Review alternatives to DangerouslyInnerHTML in Client turnips.js
- Enhance logic from Server -> Twitter API -> Tweet fetch 
 
 Folder Structure
 
@@ -18,11 +15,9 @@ Folder Structure
 
 
 Twitter API module
-    Twitter Standard Search API - https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets
+    Twitter Official Standard Search API - https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets
     Twit API - https://github.com/ttezel/twit
     Client React      
     Server Node.js - https://github.com/tombaranowicz/TwitterMonitoringJavaScript/blob/master/index.js
-
-Hunting Table module
 
 
