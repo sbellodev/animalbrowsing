@@ -35,7 +35,6 @@ const Description = ({actualIndex}) => {
 
 const Container = styled.div`
     position: relative;
-    max-width: 800px;
     height: 155px;
     background-color: #F5F2E3;
     display: grid;

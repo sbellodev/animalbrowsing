@@ -58,7 +58,7 @@ const FishMobileTable = ({actualTable}) => {
 
 const emptyRow =
     <tr>
-        <td><img src={"../img/notfound.png"} alt=""/></td>
+        <td><img src={"../img/icons/notfound.jpg"} alt=""/></td>
         <td>Anything was found :(</td>
         <td></td>
         <td></td>
@@ -134,12 +134,16 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
 
 const TableContainer = styled.table`
     font-size: 14px;
+    width: 100%;
     background-color: #F5F2E3;
     border-collapse: collapse;
     padding: 5px;
-
+    thead {
+        width: 100%;
+    }
     tbody {
         font-family: sans-serif;
+        width: 100%;
     }
     th {
         padding-top: 15px;

@@ -32,6 +32,7 @@ Twitter API module
     Twitter Official Standard Search API - https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets
     Twit API - https://github.com/ttezel/twit
     Client React      
+        Update with useEffect - https://reactjs.org/docs/hooks-effect.html
     Server Node.js - https://github.com/tombaranowicz/TwitterMonitoringJavaScript/blob/master/index.js
 
 

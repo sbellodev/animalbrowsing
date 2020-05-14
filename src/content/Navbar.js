@@ -22,7 +22,6 @@ const Navbar = () => {
 }
 
 const NavbarContent = styled.div`
-  max-width: 800px;
   height: 60px;
   background-color: tomato;
   display: flex;

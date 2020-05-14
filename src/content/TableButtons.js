@@ -5,11 +5,11 @@ import bugJSON from '../data/bug-EN.json'
 import fishJSON from '../data/fish-EN.json'
   
 const imageURL = {
-    Price: "/img/icons/price1.jpg", 
+    Price: "/img/icons/star.svg", 
     ABC: "/img/icons/abc.png", 
     Search: "/img/icons/search1.jpg", 
     Reset: "/img/icons/reset1.png", 
-    Return: "/img/icons/return1.png"
+    Return: "/img/icons/return1.png", 
 }
 
 const TableButtons = ({actualIndex}) => {
@@ -26,7 +26,7 @@ const TableButtons = ({actualIndex}) => {
     return (    
         <>
             <Ellipsis>
-                <SearchInput onChange={setInput} />
+                <SearchInput onChange={setInput} placeholder={" Search"} />
                 <ABCButton onClick={() => setSortBy("ABC")}><ABCImage src={imageURL.ABC}  alt="ABC" /></ABCButton>
                 <PriceButton onClick={() => setSortBy("Price")}><PriceImage src={imageURL.Price}  alt="price" /></PriceButton>
                 <ResetButton onClick={() => setSortBy("Reset")}><ResetImage src={imageURL.Reset}  alt="Reset" /></ResetButton>
@@ -45,27 +45,29 @@ const Ellipsis = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 `
 const SearchInput = styled.input`
   width: 100px;
-  height: 40px;
+  height: 45px;
   margin-top: 45px;
-  border-radius: 30px;
+  border-radius: 25px;
   img {
     float: right;
   }
 `
 const ABCButton = styled.button`
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   margin-top: 45px;
   border-radius: 10px;
 `
 const PriceButton = styled.button`
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   margin-top: 45px;
   border-radius: 10px;
+  background-color: #FDDD5C;
 `
 const ResetButton = styled.button`
   width: 30px;
@@ -75,9 +77,13 @@ const ResetButton = styled.button`
 `
 const PriceImage = styled.img`
   width: 100%;
+  display: block;
+  margin: auto;
 `
 const ABCImage = styled.img`
   width: 100%;
+  display: block;
+  margin: auto;
 `
 // const SearchImage = styled.img`
 //   width: 30px;
@@ -85,6 +91,8 @@ const ABCImage = styled.img`
 // `
 const ResetImage = styled.img`
   width: 100%;
+  display: block;
+  margin: auto;
 `
 
 export { TableButtons } 
