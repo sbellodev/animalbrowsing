@@ -46,18 +46,6 @@ const GlobalStyles = createGlobalStyle`
   }
  ` 
 
-const primaryColor = {
-  NavBackground: "#FFFFFF",
-  BackgroundPrimary: "#F5F2E3", 
-  LetterPrimary: "FFFFFF", 
-  Orange: "#FFFFFF", 
-  TableBackground: "#FFFFFF", 
-  TableSecondary: "#FFFFFF", 
-  ButtonPrimary: "#FFFFFF", 
-  Skyblue: "#A0D0E7", 
-  Orangered: "#FFB347"
-}
-
 const App = () => {
   const [index, setIndex] = useState("Bugs");
 

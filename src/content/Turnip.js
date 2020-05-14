@@ -31,7 +31,7 @@ const Turnip = () => {
                     if(tweet.entities.urls[last_url].expanded_url.includes("/i/web/status")){
                         tweet.text = tweet.text.replace(tweet.entities.urls[last_url].url, "")
                     }
-                    tweet.entities.urls.map(url => {
+                    tweet.entities.urls.forEach((url)=>{
                         tweet.text = tweet.text.replace(shortUrl, "<a href='" +url.expanded_url+ "'>" +url.expanded_url+ "</a>")
                     })
                 }

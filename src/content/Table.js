@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styled from 'styled-components'
 
 // const BugDesktopTable = () => {
@@ -31,14 +31,14 @@ const BugMobileTable = ({actualTable}) => {
      return row
 }
 const FishMobileTable = ({actualTable}) => {
-    const row = actualTable.map(value =>
+    const row = actualTable.length ? actualTable.map(value =>
          <tr key={value.Number}>
             <td><img src={"../img/fish/" + value.Image} alt={value.Name} /></td>
             <td>{value.Name}<br/>{value.Price}</td>
             <td>{value.Time}<br/>{value.Location}<br/>{value.Size}</td>
             <td dangerouslySetInnerHTML={{ __html: value.Season}}></td>
          </tr>
-     )
+     ) : emptyRow
      return row
 }
 // const FishDesktopTable = () => {
@@ -58,7 +58,7 @@ const FishMobileTable = ({actualTable}) => {
 
 const emptyRow =
     <tr>
-        <td><img src={"../img/notfound.png"} /></td>
+        <td><img src={"../img/notfound.png"} alt=""/></td>
         <td>Anything was found :(</td>
         <td></td>
         <td></td>
