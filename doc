@@ -1,5 +1,19 @@
 TODO -
 
+Colors and widths -
+
+const primaryColor = {
+  NavBackground: "#FFFFFF",
+  BackgroundPrimary: "#F5F2E3", 
+  LetterPrimary: "FFFFFF", 
+  Orange: "#FFFFFF", 
+  TableBackground: "#FFFFFF", 
+  TableSecondary: "#FFFFFF", 
+  ButtonPrimary: "#FFFFFF", 
+  Skyblue: "#A0D0E7", 
+  Orangered: "#FFB347"
+}
+
 Folder Structure
 
     /root

@@ -17,12 +17,12 @@ const TableButtons = ({actualIndex}) => {
     const [inputSearch, setInputSearch] = useState("")
 
     const setInput = (e) => {
+      e.preventDefault()
         setSortBy("Search")
         setInputSearch(e.target.value)
     }
     const actualTable = actualIndex === "Bugs" ? bugJSON :
-    actualIndex === "Fish" ? fishJSON : ""
-
+                        actualIndex === "Fish" ? fishJSON : ""
     return (    
         <>
             <Ellipsis>
@@ -79,9 +79,10 @@ const PriceImage = styled.img`
 const ABCImage = styled.img`
   width: 100%;
 `
-const SearchImage = styled.img`
-  width: 30px;
-`
+// const SearchImage = styled.img`
+//   width: 30px;
+//   height: 30px;
+// `
 const ResetImage = styled.img`
   width: 100%;
 `
