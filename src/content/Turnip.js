@@ -15,24 +15,26 @@ const Turnip = () => {
         callServerAPI()
         const intervalId = setInterval(callServerAPI, 10000)
         return () => clearInterval(intervalId)
-    }, [])
+    }, []) //TODO - Add Response for only to update when 'Response' changes
+    // https://reactjs.org/docs/hooks-effect.html
     
     const renderTwitterAPIContent = (res) =>  {
         console.log(res)
         let shortUrl = /https:\/\/t\.co\/+.{10}/g
         let showResponse = res.map(tweet => {
             if(tweet.text){
+                tweet.text = tweet.text.replace(/\n/,  "")
                 if(tweet.entities.media){
                     tweet.text = tweet.text.replace(tweet.entities.media[0].url, "<img src='" +tweet.entities.media[0].media_url_https+ "' />")
                 }
-                if(tweet.entities.urls && tweet.entities.urls[0]){
+                if(tweet.entities.urls && tweet.entities.urls[0]){ // urls[0] needed because API structure
                     let num_of_urls = tweet.entities.urls.length 
                     let last_url = num_of_urls - 1
                     if(tweet.entities.urls[last_url].expanded_url.includes("/i/web/status")){
                         tweet.text = tweet.text.replace(tweet.entities.urls[last_url].url, "")
                     }
                     tweet.entities.urls.forEach((url)=>{
-                        tweet.text = tweet.text.replace(shortUrl, "<a href='" +url.expanded_url+ "'>" +url.expanded_url+ "</a>")
+                        tweet.text = tweet.text.replace(shortUrl, "<br/><a href='" +url.expanded_url+ "'>" +url.expanded_url+ "</a><br/>")
                     })
                 }
             }
