@@ -15,15 +15,14 @@ const Turnip = () => {
         callServerAPI()
         const intervalId = setInterval(callServerAPI, 10000)
         return () => clearInterval(intervalId)
-    }, []) //TODO - Add Response for only to update when 'Response' changes
-    // https://reactjs.org/docs/hooks-effect.html
+    }, [Response]) 
     
     const renderTwitterAPIContent = (res) =>  {
         console.log(res)
         let shortUrl = /https:\/\/t\.co\/+.{10}/g
         let showResponse = res.map(tweet => {
             if(tweet.text){
-                tweet.text = tweet.text.replace(/\n/,  "")
+                tweet.text = tweet.text.replace("'\n' +",  "")
                 if(tweet.entities.media){
                     tweet.text = tweet.text.replace(tweet.entities.media[0].url, "<img src='" +tweet.entities.media[0].media_url_https+ "' />")
                 }
@@ -38,8 +37,9 @@ const Turnip = () => {
                     })
                 }
             }
+
             return  '<div class="tweet_individual">'
-                     + '<p><a href="https://twitter.com/'+tweet.screen_name+'">' +tweet.user+ '</a></p>'
+                     + '<p><a href="https://twitter.com/'+tweet.screen_name+'">@' +tweet.screen_name+ '</a></p>'
                      + '<p>' +tweet.text+ '</p>'
                      + '<p><a href="https://twitter.com/i/web/status/'+tweet.id+'" target="_blank" rel="noopener noreferrer">View Tweet</a></p>'
                      + '<br/>'  
@@ -60,7 +60,6 @@ const Turnip = () => {
 
 const TurnipContainer = styled.div`
     font-family: afont;
-    background-color: #A0D0E7;
     width: 100%;
     height: 99vh;
     padding-top: 10%;
@@ -76,11 +75,14 @@ const TwitterContent = styled.div`
     img {
         display: block;
         margin: auto;
-        width: 150px;
+        width: 100%;
+        max-height: 230px;
         border-radius: 12px;
     }
     .tweet_individual {
         width: 80%;
+        padding-top: 25px;
+        border-bottom: 3px solid skyblue;
     }
 `
 export { Turnip }

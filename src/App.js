@@ -47,7 +47,7 @@ const GlobalStyles = createGlobalStyle`
  ` 
 
 const App = () => {
-  const [index, setIndex] = useState("Bugs");
+  const [index, setIndex] = useState("Turnips");
 
   const showContent = (index) => {
     switch (index) {
@@ -74,7 +74,6 @@ const App = () => {
       </NavBar>
       <Description actualIndex={index} />
       {showContent(index)}
-      <ReturnImage src={"/img/icons/return1.png"} alt="Back to top" />
     </AppContainer>
   );
 }
