@@ -20,7 +20,7 @@ const Turnip = () => {
     const renderTwitterAPIContent = (res) =>  {
         console.log(res)
         let shortUrl = /https:\/\/t\.co\/+.{10}/g
-        let showResponse = res.map(tweet => {
+        let showRes = res.map(tweet => {
             if(tweet.text){
                 if(tweet.entities.media){
                     tweet.text = tweet.text.replace(tweet.entities.media[0].url, "<img src='" +tweet.entities.media[0].media_url_https+ "' />")
@@ -45,7 +45,7 @@ const Turnip = () => {
             }
         ).join('')
 
-        return showResponse                
+        return showRes                
     }
 
     return (

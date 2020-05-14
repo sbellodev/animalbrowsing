@@ -31,14 +31,14 @@ const BugMobileTable = ({actualTable}) => {
      return row
 }
 const FishMobileTable = ({actualTable}) => {
-    const row = actualTable.map(value =>
+    const row = actualTable.length ? actualTable.map(value =>
          <tr key={value.Number}>
             <td><img src={"../img/fish/" + value.Image} alt={value.Name} /></td>
             <td>{value.Name}<br/>{value.Price}</td>
             <td>{value.Time}<br/>{value.Location}<br/>{value.Size}</td>
             <td dangerouslySetInnerHTML={{ __html: value.Season}}></td>
          </tr>
-     )
+     ) : emptyRow
      return row
 }
 // const FishDesktopTable = () => {
@@ -133,34 +133,63 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
 
 
 const TableContainer = styled.table`
-    font-size: 14px;
     background-color: #F5F2E3;
+    text-align: left;
     border-collapse: collapse;
     padding: 5px;
+    max-width: 800px;
 
-    th {
-        font-family: afont;
-        padding-top: 15px;
-        background-color: #A0D0E7;
+    td {
+        text-align: left;
     }
     tr {
+        background-color: #F5F2E3;
         border-bottom: 16px solid #A0D0E7;
         border-top: 16px solid #A0D0E7;
         border-radius: 50%;
     }
-    td {
-        min-width: 25%;
-        text-align: left;
-        padding-bottom: 18px;
+    tr:nth-child(odd) {
     }
     td, th {
-        text-align: center;
-        padding-top: 18px;
-        vertical-align: top;
+        padding: 0px 10px 10px 0px;
     }
+    th {
+        padding-top: 15px;
+        font-family: afont;
+    }
+    td:first-child, th:first-child {
+        padding-left: 10px;
+    }
+
     img {
-        width: 50px;
-        height: 50px;
+        width: 64px;
+        height: 64px;
+    }
+    @media (max-width: 320px) {
+        font-size: 14px;
+        td, th {
+            padding: 0;            
+            padding-top: 18px;
+            text-align: center;
+            vertical-align: top;
+        }
+        td {
+            padding-bottom: 18px;
+            min-width: 25%;
+        }
+        th {
+         background-color: #A0D0E7;
+        }
+        td:first-child, th:first-child {
+            padding-left: 0px;
+        }
+        td:last-child, th:last-child{
+            width: 80px;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        };
     }
 `
 export { Table }
