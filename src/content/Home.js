@@ -8,7 +8,7 @@ const Home = () => {
             <Ellipsis />
             <HomeContainer>
                 <p>This is gatto from gattoalaparato</p>
-                <p>thanx <a href={"https://www.twitter.com/gattoalaparato"}>@gattoalaparato</a></p>
+                <p>thanx <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" >@gattoalaparato</a></p>
             </HomeContainer>
         </>
     )

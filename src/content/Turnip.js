@@ -33,13 +33,13 @@ const Turnip = () => {
                         tweet.text = tweet.text.replace(tweet.entities.urls[last_url].url, "")
                     }
                     tweet.entities.urls.forEach((url)=>{
-                        tweet.text = tweet.text.replace(shortUrl, "<br/><a href='" +url.expanded_url+ "'>" +url.expanded_url+ "</a><br/>")
+                        tweet.text = tweet.text.replace(shortUrl, "<br/><a href='" +url.expanded_url+ "' target='_blank' rel='noopener noreferrer' >" +url.expanded_url+ "</a><br/>")
                     })
                 }
             }
 
             return  '<div class="tweet_individual">'
-                     + '<p><a href="https://twitter.com/'+tweet.screen_name+'">@' +tweet.screen_name+ '</a></p>'
+                     + '<p><a href="https://twitter.com/'+tweet.screen_name+'" target="_blank" rel="noopener noreferrer">@' +tweet.screen_name+ '</a></p>'
                      + '<p>' +tweet.text+ '</p>'
                      + '<p><a href="https://twitter.com/i/web/status/'+tweet.id+'" target="_blank" rel="noopener noreferrer">View Tweet</a></p>'
                      + '<br/>'  

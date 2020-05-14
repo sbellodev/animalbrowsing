@@ -138,6 +138,9 @@ const TableContainer = styled.table`
     border-collapse: collapse;
     padding: 5px;
 
+    tbody {
+        font-family: sans-serif;
+    }
     th {
         padding-top: 15px;
         background-color: #A0D0E7;
