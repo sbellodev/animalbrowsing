@@ -24,6 +24,7 @@ router.get('/', (req, res, next) => {
           return { // Gets tweet's attributes we want
             id   : tweet.id_str,
             user : tweet.user.name,
+            screen_name : tweet.user.screen_name,
             text : tweet.text,
             entities : tweet.entities
           }
