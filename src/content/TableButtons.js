@@ -39,8 +39,8 @@ const TableButtons = ({actualIndex}) => {
 const Ellipsis = styled.div`
   width: 100%;
   height: 90px;
-  border-top-left-radius: 100%;
-  border-top-right-radius: 100%;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
   background-color: #A0D0E7;
   display: flex;
   flex-direction: row;

@@ -51,17 +51,29 @@ const Turnip = () => {
     }
 
     return (
+        <>
+        <Ellipsis />
         <TurnipContainer>
             {!APIResponse && <div>Loading tweets... please wait...</div>}
             {APIResponse && <TwitterContent dangerouslySetInnerHTML={{__html: renderTwitterAPIContent(APIResponse)}} />}
         </TurnipContainer>
+        </>
     )
 }
 
+const Ellipsis = styled.div`
+  width: 100%;
+  height: 30px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  background-color: #A0D0E7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+`
 const TurnipContainer = styled.div`
-    font-family: afont;
+    background-color: #A0D0E7;
     width: 100%;
-    height: 99vh;
     padding-top: 10%;
     text-align: center;
     white-space: pre-wrap;
@@ -82,7 +94,7 @@ const TwitterContent = styled.div`
     .tweet_individual {
         width: 80%;
         padding-top: 25px;
-        border-bottom: 3px solid skyblue;
+        border-bottom: 3px solid #F5F2E3;
     }
 `
 export { Turnip }

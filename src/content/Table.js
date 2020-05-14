@@ -139,7 +139,6 @@ const TableContainer = styled.table`
     padding: 5px;
 
     th {
-        font-family: afont;
         padding-top: 15px;
         background-color: #A0D0E7;
     }

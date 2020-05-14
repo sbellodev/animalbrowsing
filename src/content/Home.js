@@ -24,14 +24,11 @@ const Ellipsis = styled.div`
   justify-content: space-around;
 `
 const HomeContainer = styled.div`
-    font-family: afont;
     background-color: #A0D0E7;
     width: 100%;
     height: 99vh;
     padding-top: 10%;
     padding-left: 5%;
-    a, a:visited {
-        color: blue;
-    }
+
 `
 export { Home }

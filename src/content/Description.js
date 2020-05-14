@@ -41,7 +41,6 @@ const Container = styled.div`
     display: grid;
     align-content: center; 
     padding: 0 3% 0 3%;
-    font-family: afont;
     text-align: center;
 `
 export { Description }
