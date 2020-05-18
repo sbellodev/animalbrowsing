@@ -5,7 +5,7 @@ const Turnip = () => {
     const [APIResponse, setAPIResponse] = useState("")
     
     const callServerAPI = () => {
-        const URL = 'http://192.168.0.100:9000/twitter'
+        const URL = 'http://192.168.0.21:9000/twitter'
         fetch(URL)
             .then(res => res.json())
             .then(json => setAPIResponse(json))
@@ -15,7 +15,7 @@ const Turnip = () => {
         callServerAPI()
         const intervalId = setInterval(callServerAPI, 10000)
         return () => clearInterval(intervalId)
-    }, [Response]) 
+    },[]) 
     
     const renderTwitterAPIContent = (res) =>  {
         console.log(res)
@@ -52,7 +52,6 @@ const Turnip = () => {
 
     return (
         <>
-        <Ellipsis />
         <TurnipContainer>
             {!APIResponse && <div>Loading tweets... please wait...</div>}
             {APIResponse && <TwitterContent dangerouslySetInnerHTML={{__html: renderTwitterAPIContent(APIResponse)}} />}
@@ -61,16 +60,6 @@ const Turnip = () => {
     )
 }
 
-const Ellipsis = styled.div`
-  width: 100%;
-  height: 30px;
-  border-top-left-radius: 100%;
-  border-top-right-radius: 100%;
-  background-color: #A0D0E7;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-`
 const TurnipContainer = styled.div`
     background-color: #A0D0E7;
     width: 100%;

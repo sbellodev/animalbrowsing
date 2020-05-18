@@ -6,26 +6,28 @@ const Description = ({actualIndex}) => {
             case "Home":
                 return (
                     <Container>
-                        <h2>{actualIndex}</h2>
-                        <h5>Welcome to HOME.</h5>
-                        <h5>Hi</h5>
+                        <h5>Henlo! Welcome to ABBA!!1</h5>
+                        <h5>Freel free to consult turnip prices </h5>
+                        <h5>or see bugs & fishes info tables</h5>
+                        <h5>¡Good luck! and take care</h5>
+                        <Ellipsis />
                     </Container>
                 )
             case "Turnips":
                 return (
                     <Container>
-                        <h2>{actualIndex}</h2>
                         <h5>Here is where you can find good prices for turnips</h5> 
                         <h5>or buying from Daisy Mae</h5>
+                        <Ellipsis />
                     </Container>
                 )
             case "Bugs":
             case "Fish":
                 return (
                     <Container>
-                        <h2>{actualIndex}</h2>
                         <h5>If needed, you can use the search option or order by price / alphabetically.</h5>
                         <h5>¡Good luck! And take care</h5>
+                        <Ellipsis />
                     </Container>
                 )
             default: 
@@ -35,11 +37,25 @@ const Description = ({actualIndex}) => {
 
 const Container = styled.div`
     position: relative;
-    height: 155px;
     background-color: #F5F2E3;
     display: grid;
-    align-content: center; 
-    padding: 0 3% 0 3%;
+    padding-top: 20px;
     text-align: center;
+    max-height: 180px;
+    h5 {
+        width: 80%;
+        margin: 0 auto;
+    }
+`
+const Ellipsis = styled.div`
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    background-color: #A0D0E7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 `
 export { Description }

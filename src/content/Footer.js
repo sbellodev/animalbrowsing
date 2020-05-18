@@ -5,7 +5,12 @@ import styled from 'styled-components'
 const Footer = () => {
     return (
         <FooterContainer>
+            <br/>
             <a href="#top">Back to top</a>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <br/><br/>
             <p>Created by <a href="https://twitter.com/gattoalaparato" target="_blank" rel="noopener noreferrer">@Gattoalaparato</a></p>
             <p>2020</p>

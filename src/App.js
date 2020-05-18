@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components'
 import { Navbar } from './content/Navbar'
 import { Footer } from './content/Footer'
@@ -10,12 +10,12 @@ const GlobalStyles = createGlobalStyle`
     src: url(${afont}) format('opentype');
   }
   body {
-    background-color: #F5F2E3;
+    background-color: white;
 
     p, h1, h2, h3, h4, h5, h6 {
       margin: 0;
     }
-    a, a:hover, a:visited {
+    a {
       text-decoration: none;
       color: blue;
     }
@@ -37,6 +37,8 @@ const App = () => {
 }
 
 const AppContainer = styled.div`
+  max-width: 800px;
+  margin: auto;
   font-family: afont;
 `
 export default App;

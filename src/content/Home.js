@@ -5,30 +5,31 @@ const Home = () => {
 
     return (
         <>
-            <Ellipsis />
             <HomeContainer>
-                <p>This is gatto from gattoalaparato</p>
-                <p>thanx <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" >@gattoalaparato</a></p>
+                <HomeContent>
+                    <h4>Inaugurating ABBA - 5/18/2020</h4>
+                    <h4>EN</h4>
+                    <p>This is <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" >@Gattoalaparato</a></p>
+                    <p>I make this easily cool stuff about turnips prices and bugs (also more things incoming?)</p>
+                    <p>Any suggestion, yelling or just to say Hi feel free to reach me at <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" >twitter</a></p>
+                    <p>See ya! Have a good one</p>
+                    <br/>
+
+                    <h4>ES</h4>
+                    <p>This is <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" >@Gattoalaparato</a></p>
+                    <p>I make this eas... digoo todo esto es para encontrar nabos a buen precio e info sobre bichos (y espero que más cosas en el futuro?)</p>
+                    <p>Cualquier sugerencia o incluso saludarme, podéis contactarme en <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" >twitter</a></p>
+                    <p>Nos vemos bebés</p>
+                </HomeContent>
             </HomeContainer>
         </>
     )
 }
-const Ellipsis = styled.div`
-  width: 100%;
-  height: 30px;
-  border-top-left-radius: 100%;
-  border-top-right-radius: 100%;
-  background-color: #A0D0E7;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-`
 const HomeContainer = styled.div`
-    background-color: #A0D0E7;
-    width: 100%;
-    height: 99vh;
-    padding-top: 10%;
-    padding-left: 5%;
-
+    background-color:  #A0D0E7;
+`
+const HomeContent = styled.div`
+    width: 80%;
+    margin: auto;
 `
 export { Home }
