@@ -41,8 +41,8 @@ const ButtonsContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: end;
-
+  float:right;
+  padding-bottom: 18px;
 `
 const SearchInput = styled.input`
   font-size: 12px;

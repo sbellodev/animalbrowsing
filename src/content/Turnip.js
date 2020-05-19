@@ -63,25 +63,26 @@ const Turnip = () => {
 const TurnipContainer = styled.div`
     background-color: #A0D0E7;
     width: 100%;
-    padding-top: 10%;
     text-align: center;
     white-space: pre-wrap;
+    font-size: 14px;
 `
 const TwitterContent = styled.div`
-    display: grid;
-    justify-items: center;
+
     a, a:visited {
         color: blue;
     }
     img {
         display: block;
-        margin: auto;
+        margin: 18px auto;
         width: 100%;
         max-height: 230px;
         border-radius: 12px;
     }
     .tweet_individual {
         width: 80%;
+        max-width: 350px;
+        margin: 0 auto;
         padding-top: 25px;
         border-bottom: 3px solid #F5F2E3;
     }

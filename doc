@@ -3,16 +3,24 @@ TODO -
 Colors and widths -
 
 const primaryColor = {
+  Blue-sh: "#A0D0E7", 
+  White-sh: #F5F2E3
+
   NavBackground: "#FFFFFF",
   BackgroundPrimary: "#F5F2E3", 
-  LetterPrimary: "FFFFFF", 
-  Orange: "#FFFFFF", 
-  TableBackground: "#FFFFFF", 
-  TableSecondary: "#FFFFFF", 
-  ButtonPrimary: "#FFFFFF", 
-  Skyblue: "#A0D0E7", 
   Orangered: "#FFB347"
 }
+margins: 18px;
+
+font: 16px and 14px
+
+
+Media Queries - 
+320, 380, 420, 480, 540, 600, 660, 720, 768, 1024
+doc - https://stackoverflow.com/questions/13637106/what-are-the-best-width-ranges-for-media-queries
+
+
+
 
 Folder Structure
 

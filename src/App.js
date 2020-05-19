@@ -15,6 +15,9 @@ const GlobalStyles = createGlobalStyle`
     p, h1, h2, h3, h4, h5, h6 {
       margin: 0;
     }
+    h5 {
+      font-size: 14px;
+    }
     a {
       text-decoration: none;
       color: blue;
@@ -23,6 +26,7 @@ const GlobalStyles = createGlobalStyle`
       border: 0;
     }
   }
+
  ` 
 
 const App = () => {
@@ -38,7 +42,8 @@ const App = () => {
 
 const AppContainer = styled.div`
   max-width: 800px;
-  margin: auto;
+  background-color: #A0D0E7;
+  margin: 0 auto;
   font-family: afont;
 `
 export default App;

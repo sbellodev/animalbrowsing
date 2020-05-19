@@ -135,7 +135,7 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
 const TableContainer = styled.table`
     font-size: 14px;
     width: 100%;
-    background-color: #F5F2E3;
+    background-color: #A0D0E7;
     border-collapse: collapse;
     padding: 5px;
     thead {
@@ -146,23 +146,27 @@ const TableContainer = styled.table`
         width: 100%;
     }
     th {
-        padding-top: 15px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        width: 25%;
         background-color: #A0D0E7;
+        border-top: 3px solid #F5F2E3;
+        text-align: center;
+        vertical-align: top;
     }
     tr {
-        border-bottom: 16px solid #A0D0E7;
-        border-top: 16px solid #A0D0E7;
+        border-bottom: 3px solid #F5F2E3;
         border-radius: 50%;
     }
     td {
         min-width: 25%;
-        text-align: left;
+        text-align: center;
         padding-bottom: 18px;
+        padding-top: 18px;        
+        vertical-align: top;
     }
     td, th {
-        text-align: center;
-        padding-top: 18px;
-        vertical-align: top;
+
     }
     img {
         width: 50px;

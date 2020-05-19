@@ -7,8 +7,7 @@ const Description = ({actualIndex}) => {
                 return (
                     <Container>
                         <h5>Henlo! Welcome to ABBA!!1</h5>
-                        <h5>Freel free to consult turnip prices </h5>
-                        <h5>or see bugs & fishes info tables</h5>
+                        <h5>Freel free to consult turnip prices, bugs info... </h5>
                         <h5>¡Good luck! and take care</h5>
                         <Ellipsis />
                     </Container>
@@ -16,8 +15,9 @@ const Description = ({actualIndex}) => {
             case "Turnips":
                 return (
                     <Container>
-                        <h5>Here is where you can find good prices for turnips</h5> 
-                        <h5>or buying from Daisy Mae</h5>
+                        <h5>Here you can find good prices for turnips. </h5>
+                        <h5>Believing is seeing</h5>
+                        <h5>The power of... things? bells stonks goody</h5>
                         <Ellipsis />
                     </Container>
                 )
@@ -25,8 +25,7 @@ const Description = ({actualIndex}) => {
             case "Fish":
                 return (
                     <Container>
-                        <h5>If needed, you can use the search option or order by price / alphabetically.</h5>
-                        <h5>¡Good luck! And take care</h5>
+                        <h5>If needed, you can use the search option or order by price / alphabetically</h5>
                         <Ellipsis />
                     </Container>
                 )
@@ -41,7 +40,7 @@ const Container = styled.div`
     display: grid;
     padding-top: 20px;
     text-align: center;
-    max-height: 180px;
+    max-height: 220px;
     h5 {
         width: 80%;
         margin: 0 auto;
@@ -54,8 +53,5 @@ const Ellipsis = styled.div`
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
     background-color: #A0D0E7;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 `
 export { Description }
