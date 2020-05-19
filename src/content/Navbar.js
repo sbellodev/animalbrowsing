@@ -11,11 +11,13 @@ const Navbar = () => {
       let turnipsClass = document.getElementsByClassName("Turnips")[0]
       let bugsClass = document.getElementsByClassName("Bugs")[0]
       let fishClass = document.getElementsByClassName("Fish")[0]
-      homeClass.style.color = "#F5F2E3"
-      turnipsClass.style.color = "#F5F2E3"
-      bugsClass.style.color = "#F5F2E3"
-      fishClass.style.color = "#F5F2E3"
-      event.target.style.color = "blue"
+      let activeColor = "#A05E2B"
+      let inactiveColor = "#F5F2E3"
+      homeClass.style.color = inactiveColor
+      turnipsClass.style.color = inactiveColor
+      bugsClass.style.color = inactiveColor
+      fishClass.style.color = inactiveColor
+      event.target.style.color = activeColor
     }
     return (
         <>
