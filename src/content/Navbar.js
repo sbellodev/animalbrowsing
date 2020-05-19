@@ -4,7 +4,7 @@ import { Description } from './Description'
 import { BodyContent } from './BodyContent.js'
 
 const Navbar = () => {
-    const [index, setIndex] = useState("Turnips");
+    const [index, setIndex] = useState("Bugs");
 
     function activeLink(event){
       let homeClass = document.getElementsByClassName("Home")[0]

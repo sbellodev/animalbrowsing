@@ -65,7 +65,10 @@ const TurnipContainer = styled.div`
     width: 100%;
     text-align: center;
     white-space: pre-wrap;
-    font-size: 14px;
+    font-size: 16px;
+    @media (max-width: 570px) {
+        font-size: 14px;
+    }
 `
 const TwitterContent = styled.div`
 

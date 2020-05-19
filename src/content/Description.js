@@ -35,15 +35,25 @@ const Description = ({actualIndex}) => {
 }
 
 const Container = styled.div`
-    position: relative;
     background-color: #F5F2E3;
     display: grid;
     padding-top: 20px;
     text-align: center;
     max-height: 220px;
     h5 {
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
+        font-size: 16px;
+    }
+    @media (max-width: 420px) {
+        h5 {
+            width: 80%;
+        }
+      }
+    @media (max-width: 570px) {
+        h5 {
+            font-size: 14px;
+        }
     }
 `
 const Ellipsis = styled.div`

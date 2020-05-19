@@ -133,7 +133,7 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
 
 
 const TableContainer = styled.table`
-    font-size: 14px;
+    font-size: 16px;
     width: 100%;
     background-color: #A0D0E7;
     border-collapse: collapse;
@@ -145,6 +145,11 @@ const TableContainer = styled.table`
         font-family: sans-serif;
         width: 100%;
     }
+    
+    tr {
+        border-bottom: 3px solid #F5F2E3;
+        border-radius: 50%;
+    }
     th {
         padding-top: 12px;
         padding-bottom: 12px;
@@ -154,23 +159,22 @@ const TableContainer = styled.table`
         text-align: center;
         vertical-align: top;
     }
-    tr {
-        border-bottom: 3px solid #F5F2E3;
-        border-radius: 50%;
-    }
     td {
-        min-width: 25%;
         text-align: center;
         padding-bottom: 18px;
         padding-top: 18px;        
         vertical-align: top;
     }
-    td, th {
-
+    td:last-child {
+        text-align: left;
     }
+
     img {
         width: 50px;
         height: 50px;
+    }
+    @media (max-width: 570px) {
+        font-size: 14px;
     }
 `
 export { Table }
