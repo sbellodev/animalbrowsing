@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components'
 import { Navbar } from './content/Navbar'
-import { Footer } from './content/Footer'
+//import { Footer } from './content/Footer'
 import afont from './font/afont.otf'
 //import bk_image from './img/bckground1.jpg'
 
@@ -41,7 +41,6 @@ const App = () => {
     <AppContainer>
       <GlobalStyles />
       <Navbar />
-      <Footer/>
     </AppContainer>
   );
 }

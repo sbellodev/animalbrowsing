@@ -2,24 +2,24 @@ import React, { useState } from 'react';
 import styled from 'styled-components'
 import { Description } from './Description' 
 import { BodyContent } from './BodyContent.js'
+import { Footer } from './Footer'
 
 const Navbar = () => {
     const [index, setIndex] = useState("Home");
+    console.log("default localstorage is " + localStorage.getItem("language"))
     const [language, setLanguage] = useState(localStorage.getItem("language"))
-    //let switch_language = "en"
-    //setLanguage(localStorage.getItem(actual_language))
+
     function switchLanguage() {
-      //console.log("switch language is " + switch_language )
       localStorage.setItem("language", language)
-      console.log(localStorage.getItem("language"))
+      console.log("navbar localstorage is: "+localStorage.getItem("language"))
       if(language === "es"){
         setLanguage("en")
       }
       else if(language === "en"){
         setLanguage("es")
       }
-      //window.location.reload(false)
-      //switch_language = switch_language === "es" ? "en" : "es"
+      //window.location.reload(false);
+
     }
     function activeLink(event) {
       let homeClass = document.getElementsByClassName("Home")[0]
@@ -45,6 +45,7 @@ const Navbar = () => {
             </NavbarContent>
             <Description actualIndex={index} />
             <BodyContent index={index}/>
+            <Footer/>
         </>
     )
 }

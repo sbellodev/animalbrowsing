@@ -2,6 +2,39 @@ import React from 'react';
 import styled from 'styled-components'
 
 const Description = ({actualIndex}) => {
+    if(localStorage.getItem("language") === "es") {
+        switch (actualIndex) {
+            case "Home":
+                return (
+                    <Container>
+                        <h5>Bienvenido a ABBA!11</h5>
+                        <h5>Consulta precios de nabos, datos de insectos... </h5>
+                        <h5>¡Buena suerte! y cuídate</h5>
+                        <Ellipsis />
+                    </Container>
+                )
+            case "Turnips":
+                return (
+                    <Container>
+                        <h5>Ultimos, nuevos y recién salidos precios de nabos</h5>
+                        <h5>Poder es creer</h5>
+                        <h5>El poder de... cosas! bayas nabos... bueno... </h5>
+                        <Ellipsis />
+                    </Container>
+                )
+            case "Bugs":
+            case "Fish":
+                return (
+                    <Container>
+                        <h5>Tablas de bichos... usa los botones con la responsabilidad que tal poder conlleva</h5>
+                        <Ellipsis />
+                    </Container>
+                )
+            default: 
+                return <div>Ha habido un fallo en la Matrix. Por favor, contacta al webmaster</div>
+        }
+    }
+    else {
         switch (actualIndex) {
             case "Home":
                 return (
@@ -30,7 +63,8 @@ const Description = ({actualIndex}) => {
                     </Container>
                 )
             default: 
-                return <div>Error loading description. Please contact the web's administrator</div>
+                return <div>Error loading description. Please contact the webmaster</div>
+        }
     }
 }
 
