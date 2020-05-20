@@ -25,7 +25,7 @@ const FishMobileTable = ({actualTable}) => {
 }
 
 const emptyRow = <tr>
-                    <td><img src={""} alt=":("/></td>
+                    <td>:(</td>
                     <td>Not a thing was found...</td>
                     <td></td>
                     <td></td>
@@ -34,8 +34,16 @@ const emptyRow = <tr>
 const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
 
     if(sortBy) {
-        const sortBySearch = (table, inputSearch) => table.filter((v) => 
-                                        v.Image.match(inputSearch.toLowerCase()))
+        const sortBySearch = (table, inputSearch) => 
+            table.filter((v, i, a) => {
+                return (
+                    v.Image.match(inputSearch.toLowerCase()) ||
+                    v.PriceInt.toString().match(inputSearch) ||
+                    v.Location.toLowerCase().match(inputSearch) ||
+                    v.Season.toLowerCase().match(inputSearch) ||
+                    v.Time.toLowerCase().match(inputSearch) 
+                )
+            })
         const sortByPrice = (table) => table.sort((a, b) => b.PriceInt - a.PriceInt)
         const sortByABC = (table) => table.sort((a, b) => 
                                         a.Name > b.Name ? 1 :
@@ -44,7 +52,7 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
 
         switch (sortBy) {
             case "Search":
-                actualTable = sortBySearch(actualTable, inputSearch)
+                actualTable = sortBySearch(actualTable, inputSearch.toLowerCase())
                 break
             case "Price":
                 sortByPrice(actualTable)
