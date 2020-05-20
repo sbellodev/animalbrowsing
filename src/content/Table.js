@@ -18,8 +18,6 @@ import styled from 'styled-components'
 // }
 
 const BugMobileTable = ({actualTable}) => {
-    console.log("this is actual table")
-    console.log(actualTable)
     const row = actualTable.length ? actualTable.map(value =>
          <tr key={value.Number}>
             <td><img src={"../img/bug/" + value.Image} alt={value.Name} /></td>
@@ -58,8 +56,8 @@ const FishMobileTable = ({actualTable}) => {
 
 const emptyRow =
     <tr>
-        <td><img src={"../img/icons/notfound.jpg"} alt=""/></td>
-        <td>Anything was found :(</td>
+        <td><img src={""} alt=":("/></td>
+        <td>Not a thing was found...</td>
         <td></td>
         <td></td>
     </tr>
@@ -89,7 +87,6 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
                 sortByReset(actualTable)
                 break
             default:
-                console.log("Error on table's buttons")
         }
     }
       

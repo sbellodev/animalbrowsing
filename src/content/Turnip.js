@@ -18,7 +18,6 @@ const Turnip = () => {
     },[]) 
     
     const renderTwitterAPIContent = (res) =>  {
-        console.log(res)
         let shortUrl = /https:\/\/t\.co\/+.{10}/g
         let showResponse = res.map(tweet => {
             if(tweet.text){
