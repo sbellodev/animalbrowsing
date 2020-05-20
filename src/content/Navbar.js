@@ -6,7 +6,7 @@ import { BodyContent } from './BodyContent.js'
 const Navbar = () => {
     const [index, setIndex] = useState("Bugs");
 
-    function activeLink(event){
+    function activeLink(event) {
       let homeClass = document.getElementsByClassName("Home")[0]
       let turnipsClass = document.getElementsByClassName("Turnips")[0]
       let bugsClass = document.getElementsByClassName("Bugs")[0]
@@ -41,9 +41,6 @@ const NavbarContent = styled.div`
   justify-content: space-around;
   align-items: center;
   
-  a {
-    color: #F5F2E3;
-  }
   p {
     display: inline-block;
     vertical-align: middle;
@@ -53,18 +50,21 @@ const NavbarContent = styled.div`
 const HomeIndex = styled.a`
   font-weight: bold;
   text-align: center;
-
+  color: #A05E2B;
 `
 const TurnipIndex = styled.a`
   font-weight: bold;
   text-align: center;
+  color: #F5F2E3;
 `
 const BugIndex = styled.a`
   font-weight: bold;
   text-align: center;
+  color: #F5F2E3;
 `
 const FishIndex = styled.a`
   font-weight: bold;
   text-align: center;
+  color: #F5F2E3;
 `
 export { Navbar }

@@ -1,22 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
 
-// const BugDesktopTable = () => {
-//    const row = actualTable.map(value =>
-//         <tr key={value.Number}>
-//             <td><img src={"../img/bug/" +value.Image} alt="sudando" /></td>
-//             <td>{value.Name}</td>
-//             <td>{value.Price}</td>
-//             <td>{value.Time}</td>
-//             <td>{value.Season}</td>
-//             <td>{value.Location}</td>
-//         </tr>
-//     )
-//     return (
-//         {row}
-//     )
-// }
-
 const BugMobileTable = ({actualTable}) => {
     const row = actualTable.length ? actualTable.map(value =>
          <tr key={value.Number}>
@@ -39,31 +23,16 @@ const FishMobileTable = ({actualTable}) => {
      ) : emptyRow
      return row
 }
-// const FishDesktopTable = () => {
-    
-//     const row = actualTable.map(value =>
-//          <tr key={value.Number}>
-//              <td><img src={"../img/fish/" +value.Image} alt="sudando" /></td>
-//              <td>{value.Name}</td>
-//              <td>{value.Price}</td>
-//              <td>{value.Time}</td>
-//              <td>{value.Season}</td>
-//              <td>{value.Location}</td>
-//          </tr>
-//      )
-//      return row
-//  }
 
-const emptyRow =
-    <tr>
-        <td><img src={""} alt=":("/></td>
-        <td>Not a thing was found...</td>
-        <td></td>
-        <td></td>
-    </tr>
+const emptyRow = <tr>
+                    <td><img src={""} alt=":("/></td>
+                    <td>Not a thing was found...</td>
+                    <td></td>
+                    <td></td>
+                </tr>
     
 const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
-   
+
     if(sortBy) {
         const sortBySearch = (table, inputSearch) => table.filter((v) => 
                                         v.Image.match(inputSearch.toLowerCase()))
@@ -92,7 +61,7 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
       
     switch(actualIndex) {
         case "Bugs":
-            return (         
+            return ( 
                 <TableContainer>
                     <thead>            
                         <tr>
@@ -105,10 +74,10 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
                     <tbody>
                         <BugMobileTable actualTable={actualTable} />
                     </tbody>
-                </TableContainer>
+                </TableContainer> 
             )
         case "Fish":
-            return (
+            return ( 
                 <TableContainer>
                     <thead>            
                         <tr>
@@ -121,10 +90,10 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
                     <tbody>
                         <FishMobileTable actualTable={actualTable} />
                     </tbody>
-                </TableContainer>
+                </TableContainer> 
             )          
         default: 
-                return <div>Error. Table not rendered.</div>
+            return <div>Error. Table not rendered.</div>
     }
 }
 

@@ -28,7 +28,6 @@ const GlobalStyles = createGlobalStyle`
       border: 0;
     }
   }
-
  ` 
 
 const App = () => {
@@ -43,7 +42,7 @@ const App = () => {
 }
 
 const AppContainer = styled.div`
-  max-width: 700px;
+  max-width: 650px;
   background-color: #A0D0E7;
   margin: 0 auto;
   font-family: afont;

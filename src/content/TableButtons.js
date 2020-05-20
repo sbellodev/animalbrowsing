@@ -26,7 +26,7 @@ const TableButtons = ({actualIndex}) => {
     return (    
         <>
             <ButtonsContainer>
-              <SearchInput onChange={setInput} placeholder={" Search"} />
+              <SearchInput onChange={setInput} placeholder={"Name"} />
               <ABCButton onClick={() => setSortBy("ABC")}><ABCImage src={imageURL.ABC}  alt="ABC" /></ABCButton>
               <PriceButton onClick={() => setSortBy("Price")}><PriceImage src={imageURL.Price}  alt="price" /></PriceButton>
               <ResetButton onClick={() => setSortBy("Reset")}><ResetImage src={imageURL.Reset}  alt="Reset" /></ResetButton>
@@ -50,6 +50,7 @@ const SearchInput = styled.input`
   height: 35px;
   margin: 10px 25px 10px 0;
   border-radius: 25px;
+  padding-left: 10px;
   img {
     float: right;
   }
@@ -83,10 +84,7 @@ const ABCImage = styled.img`
   display: block;
   margin: auto;
 `
-// const SearchImage = styled.img`
-//   width: 30px;
-//   height: 30px;
-// `
+
 const ResetImage = styled.img`
   width: 100%;
   display: block;
