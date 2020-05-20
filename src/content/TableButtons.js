@@ -5,7 +5,8 @@ import bugJSON from '../data/bug-EN.json'
 import fishJSON from '../data/fish-EN.json'
   
 const imageURL = {
-    Price: "/img/icons/star.svg", 
+    Price: "/img/icons/star.svg",
+    Hour: "/img/icons/hour.svg", 
     ABC: "/img/icons/abc.png", 
     Search: "/img/icons/search1.jpg", 
     Reset: "/img/icons/reset1.png", 
@@ -27,37 +28,43 @@ const TableButtons = ({actualIndex}) => {
         <>
             <ButtonsContainer>
               <SearchInput onChange={setInput} placeholder={"Name"} />
-              <ABCButton onClick={() => setSortBy("ABC")}><ABCImage src={imageURL.ABC}  alt="ABC" /></ABCButton>
-              <PriceButton onClick={() => setSortBy("Price")}><PriceImage src={imageURL.Price}  alt="price" /></PriceButton>
-              <ResetButton onClick={() => setSortBy("Reset")}><ResetImage src={imageURL.Reset}  alt="Reset" /></ResetButton>
+              <HourButton onClick={() => setSortBy("Hour")}><IconImage src={imageURL.Hour} alt="Hour" /></HourButton>
+              <ABCButton onClick={() => setSortBy("ABC")}><IconImage src={imageURL.ABC}  alt="ABC" /></ABCButton>
+              <PriceButton onClick={() => setSortBy("Price")}><IconImage src={imageURL.Price}  alt="price" /></PriceButton>
+              <ResetButton onClick={() => setSortBy("Reset")}><IconImage src={imageURL.Reset}  alt="Reset" /></ResetButton>
             </ButtonsContainer>    
             <Table actualIndex={actualIndex} sortBy={sortBy} actualTable={actualTable} inputSearch={inputSearch} />
         </>
     )
 } 
-
 const ButtonsContainer = styled.div`
-  background-color: #A0D0E7;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  float:right;
-  padding-bottom: 18px;
+background-color: #A0D0E7;
+display: flex;
+flex-direction: row;
+align-items: center;
+float:right;
+padding-bottom: 18px;
 `
 const SearchInput = styled.input`
-  font-size: 12px;
-  width: 80px;
-  height: 35px;
-  margin: 10px 25px 10px 0;
-  border-radius: 25px;
-  padding-left: 10px;
-  img {
-    float: right;
-  }
+font-size: 12px;
+width: 80px;
+height: 35px;
+margin: 10px 25px 10px 0;
+border-radius: 25px;
+padding-left: 10px;
+img {
+  float: right;
+}
 `
-const ABCButton = styled.button`
+const HourButton = styled.button`
   width: 35px;
   height: 35px;
+  margin: 10px 25px 10px 0;
+  border-radius: 10px;
+`
+const ABCButton = styled.button`
+width: 35px;
+height: 35px;
   margin: 10px 25px 10px 0;
   border-radius: 10px;
 `
@@ -74,18 +81,7 @@ const ResetButton = styled.button`
   margin: 10px 25px 10px 0;
   border-radius: 50%;
 `
-const PriceImage = styled.img`
-  width: 100%;
-  display: block;
-  margin: auto;
-`
-const ABCImage = styled.img`
-  width: 100%;
-  display: block;
-  margin: auto;
-`
-
-const ResetImage = styled.img`
+const IconImage = styled.img`
   width: 100%;
   display: block;
   margin: auto;

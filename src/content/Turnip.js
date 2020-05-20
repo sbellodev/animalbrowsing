@@ -52,7 +52,7 @@ const Turnip = () => {
     return (
         <>
         <TurnipContainer>
-            {!APIResponse && <div>Loading tweets... please wait...</div>}
+            {!APIResponse && <div style={{height: "99vh"}}>Loading tweets... please wait...</div>}
             {APIResponse && <TwitterContent dangerouslySetInnerHTML={{__html: renderTwitterAPIContent(APIResponse)}} />}
         </TurnipContainer>
         </>

@@ -44,6 +44,30 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
                     v.Time.toLowerCase().match(inputSearch) 
                 )
             })
+        const sortByHour = (table) => {
+            var time = new Date();
+            let currentTime = time.getHours() // i.e 18 (from 18:00)
+
+            return table.filter((v, i, a) => {
+                /* i.e. case time interval A: 4AM to 17PM, case time interval B: 17PM to 4AM
+                *  with var 2AM
+                */
+                if(v.TimeInterval[0] > v.TimeInterval[1]){ // A dont, B pass
+                    if(currentTime >=  v.TimeInterval[0]){ //  B dont
+                        return (currentTime >=  v.TimeInterval[0])
+                    }
+                    if(currentTime <=  v.TimeInterval[1]){ //  B pass
+                        return (currentTime <=  v.TimeInterval[1])
+                    }
+                }
+                else {
+                    if(currentTime >=  v.TimeInterval[0] && currentTime <=  v.TimeInterval[1]){ //  A pass, B dont
+                        return (currentTime >=  v.TimeInterval[0] && currentTime <=  v.TimeInterval[1])
+                    }
+                }
+                return false
+            })
+        } 
         const sortByPrice = (table) => table.sort((a, b) => b.PriceInt - a.PriceInt)
         const sortByABC = (table) => table.sort((a, b) => 
                                         a.Name > b.Name ? 1 :
@@ -53,6 +77,9 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
         switch (sortBy) {
             case "Search":
                 actualTable = sortBySearch(actualTable, inputSearch.toLowerCase())
+                break
+            case "Hour":
+                actualTable = sortByHour(actualTable)
                 break
             case "Price":
                 sortByPrice(actualTable)
