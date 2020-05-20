@@ -7,7 +7,8 @@
         "PriceInt": 160,
         "Location": "Flying",
         "Season": "Sep-Jun (North)<br/>Mar-Dec (South)",
-        "Time": "4AM - 7PM"
+        "Time": "4AM - 7PM",
+        "TimeInterval": [4, 19]
     },
 
     {
@@ -18,7 +19,8 @@
         "PriceInt": 160,
         "Location": "Flying",
         "Season": "Mar-Jun, Sep-Oct (North)<br/>Mar-Apr, Sep-Dec (South)",
-        "Time": "4AM - 7PM"
+        "Time": "4AM - 7PM",
+        "TimeInterval": [4, 19]
     },
 
     {
@@ -29,7 +31,8 @@
         "PriceInt": 240,
         "Location": "Flying",
         "Season": "Mar-Sep (North)<br/>Sep-Mar (South)",
-        "Time": "4AM - 7PM"
+        "Time": "4AM - 7PM",
+        "TimeInterval": [4, 19]
     },
 
     {
@@ -40,7 +43,8 @@
         "PriceInt": 2500,
         "Location": "Flying by Flowers",
         "Season": "Mar-Jun (North)<br/>Sep-Dec (South)",
-        "Time": "4AM - 7PM"
+        "Time": "4AM - 7PM",
+        "TimeInterval": [4, 19]
     },
 
     {
@@ -51,7 +55,8 @@
         "PriceInt": 300,
         "Location": "Flying",
         "Season": "Apr-Aug (North)<br/>Oct-Feb (South)",
-        "Time": "4AM - 7PM"
+        "Time": "4AM - 7PM",
+        "TimeInterval": [4, 19]
     },
 
     {
@@ -62,7 +67,8 @@
         "PriceInt": 1000,
         "Location": "Flying",
         "Season": "Year-round",
-        "Time": "8AM - 7PM"
+        "Time": "8AM - 7PM",
+        "TimeInterval": [8, 19]
     },
 
     {
@@ -73,7 +79,8 @@
         "PriceInt": 3000,
         "Location": "Flying",
         "Season": "May-Aug (North)<br/>Nov-Feb (South)",
-        "Time": "4AM - 7PM"
+        "Time": "4AM - 7PM",
+        "TimeInterval": [4, 19]
     },
 
     {
@@ -84,7 +91,8 @@
         "PriceInt": 140,
         "Location": "Flying",
         "Season": "Sep-Nov (North)<br/>Mar-May (South)",
-        "Time": "4AM - 5PM"
+        "Time": "4AM - 5PM",
+        "TimeInterval": [4, 17]
     },
 
     {
@@ -95,7 +103,8 @@
         "PriceInt": 4000,
         "Location": "Flying",
         "Season": "Jun-Sep, Dec-Mar (North)<br/>Dec-Mar, Jun-Sep (South)",
-        "Time": "5PM - 8AM"
+        "Time": "5PM - 8AM",
+        "TimeInterval": [17, 8]
     },
 
     {
@@ -106,7 +115,8 @@
         "PriceInt": 3000,
         "Location": "Flying",
         "Season": "Apr-Sep (North)<br/>Nov-Mar (South)",
-        "Time": "8AM - 5PM"
+        "Time": "8AM - 5PM",
+        "TimeInterval": [8, 17]
     },
 
     {
@@ -117,7 +127,8 @@
         "PriceInt": 2500,
         "Location": "Flying by Flowers",
         "Season": "Apr-Sep, Dec-Feb (North)<br/>Nov-Mar, Jun-Aug (South)",
-        "Time": "8AM - 5PM"
+        "Time": "8AM - 5PM",
+        "TimeInterval": [8, 17]
     },
 
     {
@@ -128,7 +139,8 @@
         "PriceInt": 4000,
         "Location": "Flying",
         "Season": "May-Sep (North)<br/>Nov-Mar (South)",
-        "Time": "8AM - 4PM"
+        "Time": "8AM - 4PM",
+        "TimeInterval": [8, 16]
     },
 
     {
@@ -139,7 +151,8 @@
         "PriceInt": 130,
         "Location": "Flying by Light",
         "Season": "Year-round",
-        "Time": "7PM - 4AM"
+        "Time": "7PM - 4AM",
+        "TimeInterval": [19, 4]
     },
 
     {
@@ -150,7 +163,8 @@
         "PriceInt": 3000,
         "Location": "On Trees",
         "Season": "Apr-Sep (North)<br/>Oct-Mar (South)",
-        "Time": "7PM - 4AM"
+        "Time": "7PM - 4AM",
+        "TimeInterval": [19, 4]
     },
 
     {
@@ -161,7 +175,8 @@
         "PriceInt": 2500,
         "Location": "Flying",
         "Season": "Apr-Sep (North)<br/>Oct-Mar (South)",
-        "Time": "8AM - 4PM"
+        "Time": "8AM - 4PM",
+        "TimeInterval": [8, 16]
     },
 
     {
@@ -172,7 +187,8 @@
         "PriceInt": 200,
         "Location": "On the Ground",
         "Season": "Apr-Nov (North)<br/>Nov-May (South)",
-        "Time": "8AM - 7PM"
+        "Time": "8AM - 7PM",
+        "TimeInterval": [8, 19]
     },
 
     {
@@ -183,7 +199,8 @@
         "PriceInt": 600,
         "Location": "On the Ground",
         "Season": "Aug-Nov (North)<br/>Feb-May (South)",
-        "Time": "8AM - 7PM"
+        "Time": "8AM - 7PM",
+        "TimeInterval": [8, 19]
     },
 
     {
@@ -194,7 +211,8 @@
         "PriceInt": 160,
         "Location": "On the Ground",
         "Season": "Aug-Nov (North)<br/>Feb-May (South)",
-        "Time": "8AM - 7PM"
+        "Time": "8AM - 7PM",
+        "TimeInterval": [8, 19]
     },
 
     {
@@ -205,7 +223,8 @@
         "PriceInt": 160,
         "Location": "On the Ground",
         "Season": "Jul-Sep (North)<br/>Jan-Mar (South)",
-        "Time": "8AM - 5PM"
+        "Time": "8AM - 5PM",
+        "TimeInterval": [8, 17]
     },
 
     {
@@ -216,7 +235,8 @@
         "PriceInt": 130,
         "Location": "On the Ground",
         "Season": "Sep-Nov (North)<br/>Mar-May (South)",
-        "Time": "5PM - 8AM"
+        "Time": "5PM - 8AM",
+        "TimeInterval": [17, 8]
     },
 
     {
@@ -227,7 +247,8 @@
         "PriceInt": 430,
         "Location": "On the Ground",
         "Season": "Sep-Oct (North)<br/>Mar-Apr (South)",
-        "Time": "5PM - 8AM"
+        "Time": "5PM - 8AM",
+        "TimeInterval": [17, 8]
     },
 
     {
@@ -238,7 +259,8 @@
         "PriceInt": 430,
         "Location": "On Flowers",
         "Season": "Mar-Nov (North)<br/>Sep-May (South)",
-        "Time": "8AM - 5PM"
+        "Time": "8AM - 5PM",
+        "TimeInterval": [8, 17]
     },
 
     {
@@ -249,7 +271,8 @@
         "PriceInt": 2400,
         "Location": "On Flowers (White)",
         "Season": "Mar-Nov (North)<br/>Sep-May (South)",
-        "Time": "8AM - 5PM"
+        "Time": "8AM - 5PM",
+        "TimeInterval": [8, 17]
     },
 
     {
@@ -260,7 +283,8 @@
         "PriceInt": 200,
         "Location": "Flying",
         "Season": "Mar-Jul (North)<br/>Mar-Jul (South)",
-        "Time": "8AM - 5PM"
+        "Time": "8AM - 5PM",
+        "TimeInterval": [8, 17]
     },
 
     {
@@ -271,7 +295,8 @@
         "PriceInt": 2500,
         "Location": "Shaking Trees",
         "Season": "Year-round",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -282,7 +307,8 @@
         "PriceInt": 250,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "8AM - 5PM"
+        "Time": "8AM - 5PM",
+        "TimeInterval": [8, 17]
     },
 
     {
@@ -293,7 +319,8 @@
         "PriceInt": 300,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "8AM - 5PM"
+        "Time": "8AM - 5PM",
+        "TimeInterval": [8, 17]
     },
 
     {
@@ -304,7 +331,8 @@
         "PriceInt": 500,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "8AM - 5PM"
+        "Time": "8AM - 5PM",
+        "TimeInterval": [8, 17]
     },
 
     {
@@ -315,7 +343,8 @@
         "PriceInt": 400,
         "Location": "On Trees",
         "Season": "Aug-Sep (North)<br/>Feb-Mar (South)",
-        "Time": "8AM - 5PM"
+        "Time": "8AM - 5PM",
+        "TimeInterval": [8, 17]
     },
 
     {
@@ -326,7 +355,8 @@
         "PriceInt": 550,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "4AM - 8AM \n 4PM - 7PM"
+        "Time": "4AM - 8AM \n 4PM - 7PM",
+        "TimeInterval": [4, 8, 16, 19]
     },
 
     {
@@ -337,7 +367,8 @@
         "PriceInt": 10,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -348,7 +379,8 @@
         "PriceInt": 180,
         "Location": "Flying",
         "Season": "Sep-Oct (North)<br/>Mar-Apr (South)",
-        "Time": "8AM - 7PM"
+        "Time": "8AM - 7PM",
+        "TimeInterval": [8, 19]
     },
 
     {
@@ -359,7 +391,8 @@
         "PriceInt": 230,
         "Location": "Flying",
         "Season": "Apr-Oct (North)<br/>Oct-Apr (South)",
-        "Time": "8AM - 5PM"
+        "Time": "8AM - 5PM",
+        "TimeInterval": [8, 17]
     },
 
     {
@@ -370,7 +403,8 @@
         "PriceInt": 4500,
         "Location": "Flying",
         "Season": "May-Oct (North)<br/>Nov-Apr (South)",
-        "Time": "8AM - 5PM"
+        "Time": "8AM - 5PM",
+        "TimeInterval": [8, 17]
     },
 
     {
@@ -381,7 +415,8 @@
         "PriceInt": 500,
         "Location": "Flying",
         "Season": "Nov-Feb (North)<br/>May-Aug (South)",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -392,7 +427,8 @@
         "PriceInt": 300,
         "Location": "Flying",
         "Season": "Jun (North)<br/>Dec (South)",
-        "Time": "7PM - 4AM"
+        "Time": "7PM - 4AM",
+        "TimeInterval": [19, 4]
     },
 
     {
@@ -403,7 +439,8 @@
         "PriceInt": 500,
         "Location": "Underground",
         "Season": "Nov-May (North)<br/>May-Nov (South)",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -414,7 +451,8 @@
         "PriceInt": 130,
         "Location": "On Ponds and Rivers",
         "Season": "May-Sep (North)<br/>Nov-Mar (South)",
-        "Time": "8AM - 7PM"
+        "Time": "8AM - 7PM",
+        "TimeInterval": [8, 19]
     },
 
     {
@@ -425,7 +463,8 @@
         "PriceInt": 800,
         "Location": "On Pond,s and Rivers",
         "Season": "May-Sep (North)<br/>Nov-Mar (South)",
-        "Time": "8AM - 7PM"
+        "Time": "8AM - 7PM",
+        "TimeInterval": [8, 19]
     },
 
     {
@@ -436,7 +475,8 @@
         "PriceInt": 2000,
         "Location": "On Ponds and Rivers",
         "Season": "Apr-Sep (North)<br/>Oct-Mar (South)",
-        "Time": "7PM - 8AM"
+        "Time": "7PM - 8AM",
+        "TimeInterval": [19, 8]
     },
 
     {
@@ -447,7 +487,8 @@
         "PriceInt": 120,
         "Location": "On Flowers",
         "Season": "Mar-Nov (North)<br/>Sep-May (South)",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -458,7 +499,8 @@
         "PriceInt": 1000,
         "Location": "On Flowers",
         "Season": "Mar-Nov (North)<br/>Sep-May (South)",
-        "Time": "7PM - 8AM"
+        "Time": "7PM - 8AM",
+        "TimeInterval": [19, 8]
     },
 
     {
@@ -469,7 +511,8 @@
         "PriceInt": 200,
         "Location": "On Flowers",
         "Season": "Mar-Jun, Oct (North)<br/>Sep-Dec, Apr (South)",
-        "Time": "8AM - 5PM"
+        "Time": "8AM - 5PM",
+        "TimeInterval": [8, 17]
     },
 
     {
@@ -480,7 +523,8 @@
         "PriceInt": 1500,
         "Location": "On the Ground",
         "Season": "Feb-Nov (North)<br/>Aug-May (South)",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -491,7 +535,8 @@
         "PriceInt": 2400,
         "Location": "On Tree Stumps",
         "Season": "Apr-Aug (North)<br/>Oct-Feb (South)",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -502,7 +547,8 @@
         "PriceInt": 450,
         "Location": "On Tree Stumps",
         "Season": "May-Jun, Sep-Nov (North)<br/>Nov-Dec, Mar-Apr (South)",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -513,7 +559,8 @@
         "PriceInt": 350,
         "Location": "On Tree Stumps",
         "Season": "Year-round",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -524,7 +571,8 @@
         "PriceInt": 3000,
         "Location": "On Tree Stumps",
         "Season": "May-Sep (North)<br/>Nov-Mar (South)",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -535,7 +583,8 @@
         "PriceInt": 800,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -546,7 +595,8 @@
         "PriceInt": 3000,
         "Location": "On the Ground (rolling snowballs)",
         "Season": "Dec-Feb (North)<br/>Jun-Aug (South)",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -557,7 +607,8 @@
         "PriceInt": 300,
         "Location": "On the Ground",
         "Season": "Jul-Sep (North)<br/>Jan-Mar (South)",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -568,7 +619,8 @@
         "PriceInt": 10000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "11PM - 8AM"
+        "Time": "11PM - 8AM",
+        "TimeInterval": [23, 8]
     },
 
     {
@@ -579,7 +631,8 @@
         "PriceInt": 200,
         "Location": "On Trees",
         "Season": "Jun-Aug (North)<br/>Dec-Feb (South)",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -590,7 +643,8 @@
         "PriceInt": 8000,
         "Location": "On Trees (Coconut)",
         "Season": "Jun-Sep (North)<br/>Dec-Mar (South)",
-        "Time": "5PM - 8AM"
+        "Time": "5PM - 8AM",
+        "TimeInterval": [17, 8]
     },
 
     {
@@ -601,7 +655,8 @@
         "PriceInt": 2000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -612,7 +667,8 @@
         "PriceInt": 1000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -623,7 +679,8 @@
         "PriceInt": 10000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "11PM - 8AM"
+        "Time": "11PM - 8AM",
+        "TimeInterval": [23, 8]
     },
 
     {
@@ -634,7 +691,8 @@
         "PriceInt": 6000,
         "Location": "On Trees",
         "Season": "Jun-Sep (North)<br/>Dec-Mar (South)",
-        "Time": "7PM - 8AM"
+        "Time": "7PM - 8AM",
+        "TimeInterval": [19, 8]
     },
 
     {
@@ -645,7 +703,8 @@
         "PriceInt": 8000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "5PM - 8AM"
+        "Time": "5PM - 8AM",
+        "TimeInterval": [17, 8]
     },
 
     {
@@ -656,7 +715,8 @@
         "PriceInt": 12000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "5PM - 8AM"
+        "Time": "5PM - 8AM",
+        "TimeInterval": [17, 8]
     },
 
     {
@@ -667,7 +727,8 @@
         "PriceInt": 12000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "5PM - 8AM"
+        "Time": "5PM - 8AM",
+        "TimeInterval": [17, 8]
     },
 
     {
@@ -678,7 +739,8 @@
         "PriceInt": 1350,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "5PM - 8AM"
+        "Time": "5PM - 8AM",
+        "TimeInterval": [17, 8]
     },
 
     {
@@ -689,7 +751,8 @@
         "PriceInt": 8000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "5PM - 8AM"
+        "Time": "5PM - 8AM",
+        "TimeInterval": [17, 8]
     },
 
     {
@@ -700,7 +763,8 @@
         "PriceInt": 8000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "5PM - 8AM"
+        "Time": "5PM - 8AM",
+        "TimeInterval": [17, 8]
     },
 
     {
@@ -711,7 +775,8 @@
         "PriceInt": 12000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
-        "Time": "5PM - 8AM"
+        "Time": "5PM - 8AM",
+        "TimeInterval": [17, 8]
     },
 
     {
@@ -722,7 +787,8 @@
         "PriceInt": 600,
         "Location": "On Trees",
         "Season": "Jul-Nov (North)<br/>Jan-May (South)",
-        "Time": "4AM - 8AM \n 5PM - 7PM"
+        "Time": "4AM - 8AM \n 5PM - 7PM",
+        "TimeInterval": [4, 8, 17, 19]
     },
 
     {
@@ -733,7 +799,8 @@
         "PriceInt": 600,
         "Location": "Under Trees Disguised as Leafs",
         "Season": "Jul-Aug (North)<br/>Jan-Mar (South)",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -744,7 +811,8 @@
         "PriceInt": 600,
         "Location": "Shaking Trees",
         "Season": "Year-round",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -755,7 +823,8 @@
         "PriceInt": 80,
         "Location": "On rotten food",
         "Season": "Year-round",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -766,7 +835,8 @@
         "PriceInt": 1000,
         "Location": "Beach disguised as Shells",
         "Season": "Year-round",
-        "Time": "7PM - 8AM"
+        "Time": "7PM - 8AM",
+        "TimeInterval": [19, 8]
     },
 
     {
@@ -777,7 +847,8 @@
         "PriceInt": 200,
         "Location": "On Beach Rocks",
         "Season": "Year-round",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -788,7 +859,8 @@
         "PriceInt": 60,
         "Location": "On Trash Items",
         "Season": "Year-round",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -799,7 +871,8 @@
         "PriceInt": 130,
         "Location": "Flying",
         "Season": "Jun-Sep (North)<br/>Dec-Mar (South)",
-        "Time": "5PM - 4AM"
+        "Time": "5PM - 4AM",
+        "TimeInterval": [17, 4]
     },
 
     {
@@ -810,7 +883,8 @@
         "PriceInt": 70,
         "Location": "Villger'sads",
         "Season": "Apr-Nov (North)<br/>Oct-May (South)",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -821,7 +895,8 @@
         "PriceInt": 250,
         "Location": "On Rocks (Rain)",
         "Season": "Year-round",
-        "Time": "All day"
+        "Time": "All day",
+        "TimeInterval": [0, 23]
     },
 
     {
@@ -832,7 +907,8 @@
         "PriceInt": 250,
         "Location": "Hitting Rocks",
         "Season": "Sep-Jun (North)<br/>Mar-Dec (South)",
-        "Time": "11PM - 4PM"
+        "Time": "11PM - 4PM",
+        "TimeInterval": [23, 16]
     },
 
     {
@@ -843,7 +919,8 @@
         "PriceInt": 300,
         "Location": "Hitting Rocks",
         "Season": "Sep-Jun (North)<br/>Mar-Dec (South)",
-        "Time": "4PM - 11PM"
+        "Time": "4PM - 11PM",
+        "TimeInterval": [16, 23]
     },
 
     {
@@ -854,7 +931,8 @@
         "PriceInt": 480,
         "Location": "Shaking Trees",
         "Season": "Year-round",
-        "Time": "7PM - 8AM"
+        "Time": "7PM - 8AM",
+        "TimeInterval": [19, 8]
     },
 
     {
@@ -865,7 +943,8 @@
         "PriceInt": 8000,
         "Location": "On the Ground",
         "Season": "Nov-Apr (North)<br/>May-Oct (South)",
-        "Time": "7PM - 4AM"
+        "Time": "7PM - 4AM",
+        "TimeInterval": [19, 4]
     },
 
     {
@@ -876,6 +955,7 @@
         "PriceInt": 8000,
         "Location": "On the Ground",
         "Season": "May-Oct (North)<br/>Nov-Apr (South)",
-        "Time": "7PM - 4AM"
+        "Time": "7PM - 4AM",
+        "TimeInterval": [19, 4]
     }
 ]
