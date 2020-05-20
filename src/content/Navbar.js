@@ -4,8 +4,23 @@ import { Description } from './Description'
 import { BodyContent } from './BodyContent.js'
 
 const Navbar = () => {
-    const [index, setIndex] = useState("Bugs");
-
+    const [index, setIndex] = useState("Home");
+    const [language, setLanguage] = useState(localStorage.getItem("language"))
+    //let switch_language = "en"
+    //setLanguage(localStorage.getItem(actual_language))
+    function switchLanguage() {
+      //console.log("switch language is " + switch_language )
+      localStorage.setItem("language", language)
+      console.log(localStorage.getItem("language"))
+      if(language === "es"){
+        setLanguage("en")
+      }
+      else if(language === "en"){
+        setLanguage("es")
+      }
+      //window.location.reload(false)
+      //switch_language = switch_language === "es" ? "en" : "es"
+    }
     function activeLink(event) {
       let homeClass = document.getElementsByClassName("Home")[0]
       let turnipsClass = document.getElementsByClassName("Turnips")[0]
@@ -22,6 +37,7 @@ const Navbar = () => {
     return (
         <>
             <NavbarContent id={"top"}>
+                <LangIndex className="Language" onClick={() => {switchLanguage()}} href="#Lang">Lang</LangIndex>
                 <HomeIndex  className="Home" onMouseDown={activeLink} onClick={() => setIndex("Home")} href="#Home">Home</HomeIndex>
                 <TurnipIndex className="Turnips" onMouseDown={activeLink} onClick={() => setIndex("Turnips")} href="#Turnips">Turnips</TurnipIndex>
                 <BugIndex  className="Bugs" onMouseDown={activeLink} onClick={() => setIndex("Bugs")} href="#Bugs">Bugs</BugIndex>
@@ -46,6 +62,11 @@ const NavbarContent = styled.div`
     vertical-align: middle;
     line-height: 2em;
   }
+`
+const LangIndex = styled.a`
+  font-weight: bold;
+  text-align: center;
+  color: #A05E2B;
 `
 const HomeIndex = styled.a`
   font-weight: bold;
