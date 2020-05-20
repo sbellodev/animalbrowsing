@@ -40,7 +40,10 @@ const NavbarContent = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
+  
+  a {
+    color: #F5F2E3;
+  }
   p {
     display: inline-block;
     vertical-align: middle;
@@ -50,21 +53,18 @@ const NavbarContent = styled.div`
 const HomeIndex = styled.a`
   font-weight: bold;
   text-align: center;
-  color: #A05E2B;
+
 `
 const TurnipIndex = styled.a`
   font-weight: bold;
   text-align: center;
-  color: #F5F2E3;
 `
 const BugIndex = styled.a`
   font-weight: bold;
   text-align: center;
-  color: #F5F2E3;
 `
 const FishIndex = styled.a`
   font-weight: bold;
   text-align: center;
-  color: #F5F2E3;
 `
 export { Navbar }
