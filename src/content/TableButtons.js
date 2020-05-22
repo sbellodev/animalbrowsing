@@ -1,12 +1,10 @@
 import React, {useState} from 'react';
 import styled from 'styled-components'
 import { Table } from '../content/Table'
-import bugJSON from '../data/bug-ES.json'
-import fishJSON from '../data/fish-ES.json'
-// import bugList-EN from '../data/bug-EN.json'
-// import fishList-EN from '../data/fish-EN.json'
-// import bugList-ES from '../data/bug-ES.json'
-// import fishList-ES from '../data/fish-ES.json'
+import bugListEN from '../data/bug-EN.json'
+import fishListEN from '../data/fish-EN.json'
+import bugListES from '../data/bug-ES.json'
+import fishListES from '../data/fish-ES.json'
   
 const imageURL = {
     Price: "/img/icons/star.svg",
@@ -26,23 +24,31 @@ const TableButtons = ({actualIndex}) => {
         setSortBy("Search")
         setInputSearch(e.target.value)
     }
-    const actualTable = actualIndex === "Bugs" ? bugJSON :
-                        actualIndex === "Fish" ? fishJSON : ""
-    let search_placeholder = "Find..."
+
+    let search_placeholder = ""
+    let actualTable = ""
     if(localStorage.getItem("language") === "es") {
       search_placeholder = "Encuentra..."
+      actualTable = actualIndex === "Bugs" ? bugListES :
+                          actualIndex === "Fish" ? fishListES: ""
     }
+    else {
+      search_placeholder = "Find..."
+      actualTable = actualIndex === "Bugs" ? bugListEN :
+                          actualIndex === "Fish" ? fishListEN: ""
+    }
+
     return (    
-        <>
-            <ButtonsContainer>
-              <SearchInput onChange={setInput} placeholder={search_placeholder} />
-              <HourButton onClick={() => setSortBy("Hour")}><IconImage src={imageURL.Hour} alt="Hour" /></HourButton>
-              <ABCButton onClick={() => setSortBy("ABC")}><IconImage src={imageURL.ABC}  alt="ABC" /></ABCButton>
-              <PriceButton onClick={() => setSortBy("Price")}><IconImage src={imageURL.Price}  alt="price" /></PriceButton>
-              <ResetButton onClick={() => setSortBy("Reset")}><IconImage src={imageURL.Reset}  alt="Reset" /></ResetButton>
-            </ButtonsContainer>    
-            <Table actualIndex={actualIndex} sortBy={sortBy} actualTable={actualTable} inputSearch={inputSearch} />
-        </>
+      <>
+        <ButtonsContainer>
+          <SearchInput onChange={setInput} placeholder={search_placeholder} />
+          <HourButton onClick={() => setSortBy("Hour")}><IconImage src={imageURL.Hour} alt="Hour" /></HourButton>
+          <ABCButton onClick={() => setSortBy("ABC")}><IconImage src={imageURL.ABC}  alt="ABC" /></ABCButton>
+          <PriceButton onClick={() => setSortBy("Price")}><IconImage src={imageURL.Price}  alt="price" /></PriceButton>
+          <ResetButton onClick={() => setSortBy("Reset")}><IconImage src={imageURL.Reset}  alt="Reset" /></ResetButton>
+        </ButtonsContainer>    
+        <Table actualIndex={actualIndex} sortBy={sortBy} actualTable={actualTable} inputSearch={inputSearch} />
+      </>
     )
 } 
 const ButtonsContainer = styled.div`

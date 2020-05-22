@@ -17,7 +17,6 @@ const Home = () => {
         )
     }
     else {
-        
         return (
             <HomeContainer>
                 <HomeContent>
