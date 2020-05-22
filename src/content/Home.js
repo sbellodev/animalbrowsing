@@ -1,8 +1,11 @@
 import React from 'react';
 import styled from 'styled-components'
+import { useLocation} from "react-router";
 
 const Home = () => {
+    let location = useLocation();
     if(localStorage.getItem("language") === "es") {
+        document.title = 'Inicio - ABBA';
         return (
             <HomeContainer>
                 <HomeContent>
@@ -17,6 +20,7 @@ const Home = () => {
         )
     }
     else {
+        document.title = 'Home - ABBA';
         return (
             <HomeContainer>
                 <HomeContent>

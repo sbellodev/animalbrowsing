@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { FishTable } from '../content/FishTable'
 import fishListEN from '../data/fish-EN.json'
 import fishListES from '../data/fish-ES.json'
+import { useLocation} from "react-router";
   
 const imageURL = {
     Price: "/img/icons/star.svg",
@@ -14,6 +15,8 @@ const imageURL = {
 }
 
 const FishButtons = () => {
+    let location = useLocation();
+    console.log(location);
     const [sortBy, setSortBy] = useState("");
     const [inputSearch, setInputSearch] = useState("")
 
@@ -28,10 +31,12 @@ const FishButtons = () => {
     if(localStorage.getItem("language") === "es") {
       search_placeholder = "Buscas..."
       actualTable = fishListES 
+      document.title = 'Lista de peces - ABBA';
     }
     else {
       search_placeholder = "Find..."
       actualTable = fishListEN 
+      document.title = 'Fish list - ABBA';
     }
     return (    
       <>

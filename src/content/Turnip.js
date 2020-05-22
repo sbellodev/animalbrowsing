@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
+import { useLocation} from "react-router";
 
 const Turnip = () => {
+    let location = useLocation();
     const [APIResponse, setAPIResponse] = useState("")
     
     const callServerAPI = () => {
@@ -17,6 +19,12 @@ const Turnip = () => {
         return () => clearInterval(intervalId)
     },[]) 
     
+    if(localStorage.getItem("language") === "es") {
+        document.title = 'Precio de nabos - ABBA';
+    }
+    else {
+        document.title = 'Turnips Prices - ABBA';
+    }
     const renderTwitterAPIContent = (res) =>  {
         let shortUrl = /https:\/\/t\.co\/+.{10}/g
         let showResponse = res.map(tweet => {

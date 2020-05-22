@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { BugsTable } from '../content/BugsTable'
 import bugListEN from '../data/bug-EN.json'
 import bugListES from '../data/bug-ES.json'
+import { useLocation} from "react-router";
   
 const imageURL = {
     Price: "/img/icons/star.svg",
@@ -14,6 +15,9 @@ const imageURL = {
 }
 
 const BugsButtons = () => {
+    let location = useLocation();
+    console.log(location);
+  
     const [sortBy, setSortBy] = useState("");
     const [inputSearch, setInputSearch] = useState("")
 
@@ -26,10 +30,12 @@ const BugsButtons = () => {
     let search_placeholder = ""
     let actualTable = ""
     if(localStorage.getItem("language") === "es") {
+      document.title = 'Lista de bichos - ABBA';
       search_placeholder = "Buscas..."
       actualTable = bugListES 
     }
     else {
+      document.title = 'Bugs List - ABBA';
       search_placeholder = "Find..."
       actualTable = bugListEN 
     }
