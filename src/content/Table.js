@@ -37,7 +37,7 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
         const sortBySearch = (table, inputSearch) => 
             table.filter((v, i, a) => {
                 return (
-                    v.Image.match(inputSearch.toLowerCase()) ||
+                    v.Name.toLowerCase().match(inputSearch.toLowerCase()) ||
                     v.PriceInt.toString().match(inputSearch) ||
                     v.Location.toLowerCase().match(inputSearch) ||
                     v.Season.toLowerCase().match(inputSearch) ||
@@ -76,7 +76,7 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
 
         switch (sortBy) {
             case "Search":
-                actualTable = sortBySearch(actualTable, inputSearch.toLowerCase())
+                actualTable = sortBySearch(actualTable, inputSearch)
                 break
             case "Hour":
                 actualTable = sortByHour(actualTable)
