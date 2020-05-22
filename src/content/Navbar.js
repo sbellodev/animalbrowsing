@@ -4,23 +4,28 @@ import { Description } from './Description'
 import { BodyContent } from './BodyContent.js'
 import { Footer } from './Footer'
 
+if(navigator.language.slice(("es" || "en"))){ // Supported languages
+  localStorage.setItem("language", navigator.language.slice(0, 2))
+}
+else {
+  localStorage.setItem("language", "en") // set en as default
+}
+
 const Navbar = () => {
     const [index, setIndex] = useState("Home");
-    console.log("default localstorage is " + localStorage.getItem("language"))
     const [language, setLanguage] = useState(localStorage.getItem("language"))
 
     function switchLanguage() {
-      localStorage.setItem("language", language)
-      console.log("navbar localstorage is: "+localStorage.getItem("language"))
       if(language === "es"){
         setLanguage("en")
+        localStorage.setItem("language", "en")
       }
       else if(language === "en"){
         setLanguage("es")
+        localStorage.setItem("language", "es")
       }
-      //window.location.reload(false);
-
     }
+
     function activeLink(event) {
       let homeClass = document.getElementsByClassName("Home")[0]
       let turnipsClass = document.getElementsByClassName("Turnips")[0]
@@ -34,6 +39,7 @@ const Navbar = () => {
       fishClass.style.color = inactiveColor
       event.target.style.color = activeColor
     }
+
     let section_names = ["EN/ES", "Home", "Turnips", "Bugs", "Fish"]
     if(localStorage.getItem("language") === "es") {
       section_names = ["EN/ES", "Inicio", "Nabos", "Bichos", "Peces"]

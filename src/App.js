@@ -31,12 +31,6 @@ const GlobalStyles = createGlobalStyle`
  ` 
 
 const App = () => {
-  if(!localStorage.getItem("language") || localStorage.getItem("language") !== ("es" || "en")){
-    localStorage.setItem("language", "en")
-  }
-  else {
-    localStorage.setItem("language", navigator.language.slice(0, 2))
-  }
   return (
     <AppContainer>
       <GlobalStyles />
