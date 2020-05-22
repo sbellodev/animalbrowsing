@@ -3,37 +3,23 @@ import styled from 'styled-components'
 
 
 const Footer = () => {
-    console.log(localStorage.getItem("language"))
+    let backTo_str = "Back to top"
     if(localStorage.getItem("language") === "es") {
-        return (
-            <FooterContainer>
-                <br/>
-                <a href="#top">Vuelta pa'rriba</a>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/><br/>
-                <p>Created by <a href="https://twitter.com/gattoalaparato" target="_blank" rel="noopener noreferrer">@Gattoalaparato</a></p>
-                <p>2020</p>
-            </FooterContainer>
-        )
-    } 
-    else {
-        return (
-            <FooterContainer>
-                <br/>
-                <a href="#top">Back to top</a>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/><br/>
-                <p>Created by <a href="https://twitter.com/gattoalaparato" target="_blank" rel="noopener noreferrer">@Gattoalaparato</a></p>
-                <p>2020</p>
-            </FooterContainer>
-        )
+        backTo_str = "Vuelta pa'rriba"
     }
+        return (
+            <FooterContainer>
+                <br/>
+                <a href="#top">{backTo_str}</a>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/><br/>
+                <p>Created by <a href="https://twitter.com/gattoalaparato" target="_blank" rel="noopener noreferrer">@Gattoalaparato</a></p>
+                <p>2020</p>
+            </FooterContainer>
+        )
 }
 const FooterContainer = styled.div`
     font-size: 14px;

@@ -6,8 +6,7 @@ const Home = () => {
         return (
             <HomeContainer>
                 <HomeContent>
-                    <h4>Inauguración ABBA - 5/18/2020</h4>
-                    <h4>~ES~</h4>
+                    <h4>5/18/2020 - Inauguración ABBA</h4>
                     <p>This is <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" >@Gattoalaparato</a></p>
                     <p>I make this eas... digoo todo esto es para encontrar nabos a buen precio e info sobre bichos (y espero que más cosas en el futuro?)</p>
                     <p>Cualquier sugerencia o incluso saludarme, podéis contactarme en <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" >twitter</a></p>
@@ -23,7 +22,6 @@ const Home = () => {
             <HomeContainer>
                 <HomeContent>
                     <h4>Inaugurating ABBA - 5/18/2020</h4>
-                    <h4>~EN~</h4>
                     <p>This is <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" >@Gattoalaparato</a></p>
                     <p>I make this easily cool stuff about turnips prices and bugs (also more things incoming?)</p>
                     <p>Any suggestion, yelling or just to say Hi feel free to reach me at <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" >twitter</a></p>

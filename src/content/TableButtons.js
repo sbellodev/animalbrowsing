@@ -28,10 +28,14 @@ const TableButtons = ({actualIndex}) => {
     }
     const actualTable = actualIndex === "Bugs" ? bugJSON :
                         actualIndex === "Fish" ? fishJSON : ""
+    let search_placeholder = "Find..."
+    if(localStorage.getItem("language") === "es") {
+      search_placeholder = "Encuentra..."
+    }
     return (    
         <>
             <ButtonsContainer>
-              <SearchInput onChange={setInput} placeholder={"Name"} />
+              <SearchInput onChange={setInput} placeholder={search_placeholder} />
               <HourButton onClick={() => setSortBy("Hour")}><IconImage src={imageURL.Hour} alt="Hour" /></HourButton>
               <ABCButton onClick={() => setSortBy("ABC")}><IconImage src={imageURL.ABC}  alt="ABC" /></ABCButton>
               <PriceButton onClick={() => setSortBy("Price")}><IconImage src={imageURL.Price}  alt="price" /></PriceButton>
@@ -50,27 +54,32 @@ float:right;
 padding-bottom: 18px;
 `
 const SearchInput = styled.input`
-font-size: 12px;
-width: 80px;
-height: 35px;
-margin: 10px 25px 10px 0;
-border-radius: 25px;
-padding-left: 10px;
-img {
-  float: right;
-}
+  font-size: 12px;
+  width: 80px;
+  height: 35px;
+  margin: 10px 25px 10px 0;
+  border-radius: 25px;
+  padding-left: 10px;
+  border: 1px solid white;
+  box-shadow: 2px 2px black;
+
+  img {
+    float: right;
+  }
 `
 const HourButton = styled.button`
   width: 35px;
   height: 35px;
   margin: 10px 25px 10px 0;
   border-radius: 10px;
+  box-shadow: 1px 1px #888888;
 `
 const ABCButton = styled.button`
-width: 35px;
-height: 35px;
+  width: 35px;
+  height: 35px;
   margin: 10px 25px 10px 0;
   border-radius: 10px;
+  box-shadow: 1px 1px #888888;
 `
 const PriceButton = styled.button`
   width: 35px;
@@ -78,12 +87,14 @@ const PriceButton = styled.button`
   margin: 10px 25px 10px 0;
   border-radius: 10px;
   background-color: #FDDD5C;
+  box-shadow: 1px 1px #888888;
 `
 const ResetButton = styled.button`
   width: 30px;
   height: 30px;
   margin: 10px 25px 10px 0;
   border-radius: 50%;
+  box-shadow: 1px 1px #888888;
 `
 const IconImage = styled.img`
   width: 100%;

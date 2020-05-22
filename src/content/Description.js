@@ -8,7 +8,7 @@ const Description = ({actualIndex}) => {
                 return (
                     <Container>
                         <h5>Bienvenido a ABBA!11</h5>
-                        <h5>Consulta precios de nabos, datos de insectos... </h5>
+                        <h5>Encuentra tablas de peces, bichos, lista de precios de nabos... en Animal Crossing: New Horizons</h5>
                         <h5>¡Buena suerte! y cuídate</h5>
                         <Ellipsis />
                     </Container>
@@ -23,10 +23,16 @@ const Description = ({actualIndex}) => {
                     </Container>
                 )
             case "Bugs":
+                return (
+                    <Container>
+                        <h5>Tabla de bichos... usa los botones con la responsabilidad que tal poder conlleva</h5>
+                        <Ellipsis />
+                    </Container>
+                )
             case "Fish":
                 return (
                     <Container>
-                        <h5>Tablas de bichos... usa los botones con la responsabilidad que tal poder conlleva</h5>
+                        <h5>Tabla de peces... usa los botones con la responsabilidad que tal poder conlleva</h5>
                         <Ellipsis />
                     </Container>
                 )

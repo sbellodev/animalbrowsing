@@ -93,43 +93,28 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
             default:
         }
     }
-      
-    switch(actualIndex) {
-        case "Bugs":
-            return ( 
-                <TableContainer>
-                    <thead>            
-                        <tr>
-                            <th>Image</th>
-                            <th>Name<br/>Price</th>
-                            <th>Time<br/>Location</th>
-                            <th>Season<br/>(Hemi.)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <BugMobileTable actualTable={actualTable} />
-                    </tbody>
-                </TableContainer> 
-            )
-        case "Fish":
-            return ( 
-                <TableContainer>
-                    <thead>            
-                        <tr>
-                            <th>Image</th>
-                            <th>Name<br/>Price</th>
-                            <th>Time<br/>Location<br/>Size</th>
-                            <th>Season<br/>(Hemi.)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <FishMobileTable actualTable={actualTable} />
-                    </tbody>
-                </TableContainer> 
-            )          
-        default: 
-            return <div>Error. Table not rendered.</div>
+
+    let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)", "Size"]
+    if(localStorage.getItem("language") === "es") {
+        table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)", "Tamaño"]
     }
+
+    return ( 
+        <TableContainer>
+            <thead>            
+                <tr>
+                    <th>{table_head[0]}</th>
+                    <th>{table_head[1]}<br/>{table_head[2]}</th>
+                    <th>{table_head[3]}<br/>{table_head[4]}<br/>{actualIndex === "Fish" && table_head[7]}</th>
+                    <th>{table_head[5]}<br/>{table_head[6]}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {actualIndex === "Fish" && <FishMobileTable actualTable={actualTable} />}
+                {actualIndex === "Bugs" && <BugMobileTable actualTable={actualTable} />}
+            </tbody>
+        </TableContainer> 
+    )
 }
 
 
