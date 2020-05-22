@@ -3,9 +3,8 @@ import styled, { createGlobalStyle } from 'styled-components'
 import afont from './font/afont.otf'
 import { Home } from './content/Home'
 import { Turnip } from './content/Turnip'
-import { TableButtons } from './content/TableButtons'
 import { BugsButtons } from './content/BugsButtons'
-
+import { FishButtons } from './content/FishButtons'
 import { Description } from './content/Description' 
 import { Footer } from './content/Footer'
 import { Router, Route, Link, Switch } from "react-router-dom";
@@ -105,7 +104,7 @@ const App = () => {
           </Route>
           <Route path="/fish">
             <Description actualIndex={"Fish"} />
-            <TableButtons actualIndex={"Fish"}/>
+            <FishButtons/>
             <Footer/>
             </Route>
           <Route path="/">
@@ -139,7 +138,6 @@ const NavbarContent = styled.nav`
     color: #F5F2E3;
   }
 `
-
 const LangIndex = styled.a`
   font-weight: bold;
   text-align: center;

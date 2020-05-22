@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components'
 
-const BugMobileTable = ({actualTable}) => {
+const FishMobileTable = ({actualTable}) => {
     const row = actualTable.length ? actualTable.map(value =>
          <tr key={value.Number}>
-            <td><img src={"../img/bug/" + value.Image} alt={value.Name} /></td>
+            <td><img src={"../img/fish/" + value.Image} alt={value.Name} /></td>
             <td>{value.Name} <br/> {value.Price}</td>
             <td>{value.Time} <br/> {value.Location}</td>
             <td dangerouslySetInnerHTML={{ __html: value.Season}}></td>
@@ -20,7 +20,7 @@ const emptyRow = <tr>
                     <td></td>
                 </tr>
     
-const BugsTable = ({sortBy, actualTable, inputSearch}) => {
+const FishTable = ({sortBy, actualTable, inputSearch}) => {
     if(sortBy) {
         const sortBySearch = (table, inputSearch) => 
             table.filter((v, i, a) => {
@@ -83,9 +83,9 @@ const BugsTable = ({sortBy, actualTable, inputSearch}) => {
         }
     }
 
-    let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)"]
+    let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)", "Size"]
     if(localStorage.getItem("language") === "es") {
-        table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)"]
+        table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)", "Tamaño"]
     }
     return ( 
         <TableContainer>
@@ -93,12 +93,12 @@ const BugsTable = ({sortBy, actualTable, inputSearch}) => {
                 <tr>
                     <th>{table_head[0]}</th>
                     <th>{table_head[1]}<br/>{table_head[2]}</th>
-                    <th>{table_head[3]}<br/>{table_head[4]}</th>
+                    <th>{table_head[3]}<br/>{table_head[4]}<br/>{table_head[7]}</th>
                     <th>{table_head[5]}<br/>{table_head[6]}</th>
                 </tr>
             </thead>
             <tbody>
-                <BugMobileTable actualTable={actualTable}/>
+                <FishMobileTable actualTable={actualTable}/>
             </tbody>
         </TableContainer> 
     )
@@ -150,4 +150,4 @@ const TableContainer = styled.table`
         font-size: 14px;
     }
 `
-export { BugsTable }
+export { FishTable }
