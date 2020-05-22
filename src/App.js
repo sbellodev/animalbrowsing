@@ -4,9 +4,11 @@ import afont from './font/afont.otf'
 import { Home } from './content/Home'
 import { Turnip } from './content/Turnip'
 import { TableButtons } from './content/TableButtons'
+import { BugsButtons } from './content/BugsButtons'
+
 import { Description } from './content/Description' 
 import { Footer } from './content/Footer'
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Router, Route, Link, Switch } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
 const history = createBrowserHistory();
@@ -42,13 +44,9 @@ else {
 }
 
 const App = () => {
-  const [index, setIndex] = useState("Home");
   const [language, setLanguage] = useState(localStorage.getItem("language"))
-
   let section_names = ["Home", "Turnips", "Bugs", "Fish", "EN/ES"]
-  if(localStorage.getItem("language") === "es") {
-    
-  }
+
   function switchLanguage() {
     if(language === "es"){
       setLanguage("en")
@@ -60,7 +58,6 @@ const App = () => {
       section_names = ["Inicio", "Nabos", "Bichos", "Peces", "EN/ES"]
     }
   }
-  
   function activeLink(event) {
     let homeClass = document.getElementsByClassName("Home")[0]
     let turnipsClass = document.getElementsByClassName("Turnips")[0]
@@ -80,39 +77,39 @@ const App = () => {
       <GlobalStyles/>
       <Router history={history}>
         <NavbarContent id={"top"}>
-          <Link to="/">
-            <HomeIndex className="Home" onMouseDown={activeLink}>{section_names[0]}</HomeIndex>
+          <Link to="/" className="Home" onMouseDown={activeLink}>
+            {section_names[0]}
           </Link>
-          <Link to="/turnips">
-            <TurnipIndex className="Turnips" onMouseDown={activeLink}>{section_names[1]}</TurnipIndex>
+          <Link to="/turnips" className="Turnips" onMouseDown={activeLink}>
+            {section_names[1]}
           </Link>
-          <Link to="/Bugs">
-            <BugIndex className="Bugs" onMouseDown={activeLink} onClick={() => setIndex("Bugs")}>{section_names[2]}</BugIndex>
+          <Link to="/Bugs" className="Bugs" onMouseDown={activeLink}>
+            {section_names[2]}
           </Link>
-          <Link to="/Fish">
-            <FishIndex className="Fish" onMouseDown={activeLink} onClick={() => setIndex("Fish")}>{section_names[3]}</FishIndex>
+          <Link to="/Fish" className="Fish" onMouseDown={activeLink}>
+            {section_names[3]}
           </Link>
           <LangIndex className="Language" onClick={() => {switchLanguage()}} href={"#"}>{section_names[4]}</LangIndex>
         </NavbarContent> 
 
         <Switch>
           <Route path="/turnips">
-            <Description actualIndex={index} />
+            <Description actualIndex={"Turnips"} />
             <Turnip />
             <Footer/>
           </Route>
           <Route path="/bugs">
-            <Description actualIndex={index} />
-            <TableButtons actualIndex={index}/>
+            <Description actualIndex={"Bugs"} />
+            <BugsButtons />
             <Footer/>
           </Route>
           <Route path="/fish">
-            <Description actualIndex={index} />
-            <TableButtons actualIndex={index}/>
+            <Description actualIndex={"Fish"} />
+            <TableButtons actualIndex={"Fish"}/>
             <Footer/>
             </Route>
           <Route path="/">
-            <Description actualIndex={index} />
+            <Description actualIndex={"Home"} />
             <Home />
             <Footer/>
           </Route>
@@ -135,32 +132,19 @@ const NavbarContent = styled.nav`
     vertical-align: middle;
     line-height: 2em;
   }
+
+  a {
+    font-weight: bold;
+    text-align: center;
+    color: #F5F2E3;
+  }
 `
+
 const LangIndex = styled.a`
   font-weight: bold;
   text-align: center;
   color: #F5F2E3;
   font-size: 10px;
-`
-const HomeIndex = styled.a`
-  font-weight: bold;
-  text-align: center;
-  color: #A05E2B;
-`
-const TurnipIndex = styled.a`
-  font-weight: bold;
-  text-align: center;
-  color: #F5F2E3;
-`
-const BugIndex = styled.a`
-  font-weight: bold;
-  text-align: center;
-  color: #F5F2E3;
-`
-const FishIndex = styled.a`
-  font-weight: bold;
-  text-align: center;
-  color: #F5F2E3;
 `
 const AppContainer = styled.div`
   max-width: 650px;

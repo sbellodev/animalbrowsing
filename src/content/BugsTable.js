@@ -12,17 +12,6 @@ const BugMobileTable = ({actualTable}) => {
      ) : emptyRow
      return row
 }
-const FishMobileTable = ({actualTable}) => {
-    const row = actualTable.length ? actualTable.map(value =>
-         <tr key={value.Number}>
-            <td><img src={"../img/fish/" + value.Image} alt={value.Name} /></td>
-            <td>{value.Name}<br/>{value.Price}</td>
-            <td>{value.Time}<br/>{value.Location}<br/>{value.Size}</td>
-            <td dangerouslySetInnerHTML={{ __html: value.Season}}></td>
-         </tr>
-     ) : emptyRow
-     return row
-}
 
 const emptyRow = <tr>
                     <td>:(</td>
@@ -31,8 +20,7 @@ const emptyRow = <tr>
                     <td></td>
                 </tr>
     
-const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
-
+const BugsTable = ({sortBy, actualTable, inputSearch}) => {
     if(sortBy) {
         const sortBySearch = (table, inputSearch) => 
             table.filter((v, i, a) => {
@@ -95,24 +83,22 @@ const Table = ({actualIndex, sortBy, actualTable, inputSearch}) => {
         }
     }
 
-    let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)", "Size"]
+    let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)"]
     if(localStorage.getItem("language") === "es") {
-        table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)", "Tamaño"]
+        table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)"]
     }
-
     return ( 
         <TableContainer>
             <thead>            
                 <tr>
                     <th>{table_head[0]}</th>
                     <th>{table_head[1]}<br/>{table_head[2]}</th>
-                    <th>{table_head[3]}<br/>{table_head[4]}<br/>{actualIndex === "Fish" && table_head[7]}</th>
+                    <th>{table_head[3]}<br/>{table_head[4]}</th>
                     <th>{table_head[5]}<br/>{table_head[6]}</th>
                 </tr>
             </thead>
             <tbody>
-                {actualIndex === "Fish" && <FishMobileTable actualTable={actualTable} />}
-                {actualIndex === "Bugs" && <BugMobileTable actualTable={actualTable} />}
+                <BugMobileTable actualTable={actualTable}/>
             </tbody>
         </TableContainer> 
     )
@@ -164,4 +150,4 @@ const TableContainer = styled.table`
         font-size: 14px;
     }
 `
-export { Table }
+export { BugsTable }
