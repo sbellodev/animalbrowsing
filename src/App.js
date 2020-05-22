@@ -58,19 +58,7 @@ const App = () => {
       section_names = ["Inicio", "Nabos", "Bichos", "Peces", "EN/ES"]
     }
   }
-  // function activeLink(event) {
-  //   let homeClass = document.getElementsByClassName("Home")[0]
-  //   let turnipsClass = document.getElementsByClassName("Turnips")[0]
-  //   let bugsClass = document.getElementsByClassName("Bugs")[0]
-  //   let fishClass = document.getElementsByClassName("Fish")[0]
-  //   let activeColor = "#A05E2B"
-  //   let inactiveColor = "#F5F2E3"
-  //   homeClass.style.color = inactiveColor
-  //   turnipsClass.style.color = inactiveColor
-  //   bugsClass.style.color = inactiveColor
-  //   fishClass.style.color = inactiveColor
-  //   event.target.style.color = activeColor
-  // }
+
   function historyPush(url) {
     console.log(history)
     if(history) history.push(url)
