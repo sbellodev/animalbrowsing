@@ -9,6 +9,7 @@ const primaryColor = {
   NavBackground: "#FFFFFF",
   BackgroundPrimary: "#F5F2E3", 
   Orangered: "#FFB347"
+  Brown: #A05E2B,
 }
 margins: 18px;
 

@@ -7,7 +7,7 @@ import { BugsButtons } from './content/BugsButtons'
 import { FishButtons } from './content/FishButtons'
 import { Description } from './content/Description' 
 import { Footer } from './content/Footer'
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, NavLink, Switch } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 const GlobalStyles = createGlobalStyle`
@@ -34,7 +34,7 @@ const GlobalStyles = createGlobalStyle`
     }
   }
  ` 
- 
+
 if(navigator.language.slice(("es" || "en"))){ // Supported languages
   localStorage.setItem("language", navigator.language.slice(0, 2))
 }
@@ -74,25 +74,24 @@ const App = () => {
   function historyPush(url) {
     console.log(history)
     if(history) history.push(url)
-
   }
   return (
     <AppContainer>
       <GlobalStyles/>
       <Router history={history}>
         <NavbarContent id={"top"}>
-          <Link to="/" className="Home" onClick={() => historyPush("/")}>
+          <NavLink to="/" exact activeClassName="active" onClick={() => historyPush("/")}>
             {section_names[0]}
-          </Link>
-          <Link to="/turnips" name="Turnips" className="Turnips" onClick={() => {historyPush("/turnips")}}>
+          </NavLink>
+          <NavLink to="/turnips" name="Turnips" exact activeClassName="active" onClick={() => {historyPush("/turnips")}}>
             {section_names[1]}
-          </Link>
-          <Link to="/bugs" name="Bugs" className="Bugs" onClick={() => historyPush("/bugs")}>
+          </NavLink>
+          <NavLink to="/bugs" name="Bugs" exact activeClassName="active" onClick={() => historyPush("/bugs")}>
             {section_names[2]}
-          </Link>
-          <Link to="/fish" className="Fish" onClick={() => historyPush("/fish")}>
+          </NavLink>
+          <NavLink to="/fish" exact activeClassName="active" onClick={() => historyPush("/fish")}>
             {section_names[3]}
-          </Link>
+          </NavLink>
           <LangIndex className="Language" onClick={() => {switchLanguage()}} href={"#"}>{section_names[4]}</LangIndex>
         </NavbarContent> 
 
@@ -136,11 +135,13 @@ const NavbarContent = styled.nav`
     vertical-align: middle;
     line-height: 2em;
   }
-
   a {
     font-weight: bold;
     text-align: center;
     color: #F5F2E3;
+  }
+  a.active {
+    color: #A05E2B;
   }
 `
 const LangIndex = styled.a`
