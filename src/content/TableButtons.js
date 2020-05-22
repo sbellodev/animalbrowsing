@@ -67,7 +67,7 @@ const SearchInput = styled.input`
   border-radius: 25px;
   padding-left: 10px;
   border: 1px solid white;
-  box-shadow: 2px 2px black;
+  box-shadow: 1px 1px black;
 
   img {
     float: right;
