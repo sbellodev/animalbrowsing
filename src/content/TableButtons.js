@@ -28,7 +28,7 @@ const TableButtons = ({actualIndex}) => {
     let search_placeholder = ""
     let actualTable = ""
     if(localStorage.getItem("language") === "es") {
-      search_placeholder = "Encuentra..."
+      search_placeholder = "Buscas..."
       actualTable = actualIndex === "Bugs" ? bugListES :
                           actualIndex === "Fish" ? fishListES: ""
     }
