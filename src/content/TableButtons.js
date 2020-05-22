@@ -1,8 +1,12 @@
 import React, {useState} from 'react';
 import styled from 'styled-components'
 import { Table } from '../content/Table'
-import bugJSON from '../data/bug-EN.json'
-import fishJSON from '../data/fish-EN.json'
+import bugJSON from '../data/bug-ES.json'
+import fishJSON from '../data/fish-ES.json'
+// import bugList-EN from '../data/bug-EN.json'
+// import fishList-EN from '../data/fish-EN.json'
+// import bugList-ES from '../data/bug-ES.json'
+// import fishList-ES from '../data/fish-ES.json'
   
 const imageURL = {
     Price: "/img/icons/star.svg",
