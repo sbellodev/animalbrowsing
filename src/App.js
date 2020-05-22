@@ -34,7 +34,8 @@ const GlobalStyles = createGlobalStyle`
     }
   }
  ` 
- if(navigator.language.slice(("es" || "en"))){ // Supported languages
+ 
+if(navigator.language.slice(("es" || "en"))){ // Supported languages
   localStorage.setItem("language", navigator.language.slice(0, 2))
 }
 else {
@@ -71,6 +72,7 @@ const App = () => {
   //   event.target.style.color = activeColor
   // }
   function historyPush(url) {
+    console.log(history)
     if(history) history.push(url)
 
   }

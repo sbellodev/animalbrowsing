@@ -35,6 +35,9 @@ Folder Structure
         /data
             Bugs and Fish JSONs
 
+Overall
+    React Router - Router, Route, Switch, Location, History, UseHistory...  
+        https://reacttraining.com/react-router/web/api/history
 
 Twitter API module
     Twitter Official Standard Search API - https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets
