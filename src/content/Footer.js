@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <FooterContainer>
             <br/>
-            <a href="#top">{backTo_str}</a>
+            <BackToTop href="#top">{backTo_str}</BackToTop>
             <br/>
             <br/>
             <br/><br/>
@@ -22,8 +22,11 @@ const Footer = () => {
     )
 }
 const FooterContainer = styled.div`
-    font-size: 14px;
-    padding-top: 15px;
+font-size: 14px;
+padding-top: 15px;
+`
+const BackToTop = styled.a`
+    padding-left: 15px;
 `
 const Disclaimer = styled.div`
     background-color: #F5F2E3;
