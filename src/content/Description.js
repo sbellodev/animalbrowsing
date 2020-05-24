@@ -7,8 +7,8 @@ const Description = ({actualIndex}) => {
             case "Home":
                 return (
                     <Container>
-                        <h5>Bienvenido a ABBA!11</h5>
-                        <h5>Encuentra tablas de peces, bichos, lista de precios de nabos... en Animal Crossing: New Horizons</h5>
+                        <h5>Bienvenido a Animal Browsing!!1</h5>
+                        <h5>Todo lo que necesitas acerca de lista de peces, bichos, precios de nabos y más ... en Animal Crossing: New Horizons</h5>
                         <h5>¡Buena suerte! y cuídate</h5>
                         <Ellipsis />
                     </Container>
@@ -16,28 +16,34 @@ const Description = ({actualIndex}) => {
             case "Turnips":
                 return (
                     <Container>
-                        <h5>Ultimos, nuevos y recién salidos precios de nabos</h5>
-                        <h5>Poder es creer</h5>
-                        <h5>El poder de... cosas! bayas nabos... bueno... </h5>
+                        <h5>Recibe de forma inmediata los precios de nabos más actuales del mercado de Twitter</h5>
+                        <h5>¡No tienes que hacer nada! Sólo observa...</h5>
+                        <h5>Se actualiza automáticamente</h5>
+                        <br/>
                         <Ellipsis />
                     </Container>
                 )
             case "Bugs":
                 return (
                     <Container>
-                        <h5>Tabla de bichos... usa los botones con la responsabilidad que tal poder conlleva</h5>
+                        <h5>Lista Definitiva de bichos e insectos.</h5>
+                        <h5>Si ves que no es tan Definivita, no dudes en enviarme una <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" >sugerencia</a> </h5>
+                        <h5>¡Suerte!</h5>
+                        <br/>
                         <Ellipsis />
                     </Container>
                 )
             case "Fish":
                 return (
                     <Container>
-                        <h5>Tabla de peces... usa los botones con la responsabilidad que tal poder conlleva</h5>
+                        <h5>Lista Definitiva chulísima de peces</h5>
+                        <h5>¡Mucha suerte en tu pesca!</h5>
+                        <br/>
                         <Ellipsis />
                     </Container>
                 )
             default: 
-                return <div>Ha habido un fallo en la Matrix. Por favor, contacta al webmaster</div>
+                return <div>Hubo un fallo en la Matrix. Por favor, contacta al webmaster.</div>
         }
     }
     else {
@@ -45,26 +51,35 @@ const Description = ({actualIndex}) => {
             case "Home":
                 return (
                     <Container>
-                        <h5>Henlo! Welcome to ABBA!!1</h5>
-                        <h5>Freel free to consult turnip prices, bugs info... </h5>
-                        <h5>¡Good luck! and take care</h5>
+                        <h5>Henlo! Welcome to Animal Browsing! -also known as AniBro-</h5>
+                        <h5>All you need about bugs and fish's list, turnips prices on Twitter... about Animal Crossing: New Horizons </h5>
+                        <h5>¡Have a good one! And take care</h5>
                         <Ellipsis />
                     </Container>
                 )
             case "Turnips":
                 return (
                     <Container>
-                        <h5>Here you can find good prices for turnips. </h5>
-                        <h5>Believing is seeing</h5>
-                        <h5>The power of... things? bells stonks goody</h5>
+                        <h5>Get instantly all the recent turnips prices from Twitter</h5>
+                        <h5>¡Just sit down and watch!</h5>
+                        <h5>It updates automatically</h5>
                         <Ellipsis />
                     </Container>
                 )
             case "Bugs":
+                return (
+                    <Container>
+                        <h5>The Definitive List of Bugs</h5>
+                        <h5>If it's not that Definitive for you, please send me your <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" >thoughts</a>  </h5>
+                        <h5>Good luck!</h5>
+                        <Ellipsis />
+                    </Container>
+                )
             case "Fish":
                 return (
                     <Container>
-                        <h5>If needed, you can use the search option or order by price / alphabetically</h5>
+                        <h5>A really, like, really cool and Definitive List of Fish</h5>
+                        <h5>Good luck fishing!</h5>
                         <Ellipsis />
                     </Container>
                 )
@@ -79,7 +94,7 @@ const Container = styled.div`
     display: grid;
     padding-top: 20px;
     text-align: center;
-    max-height: 220px;
+    max-height: 320px;
     h5 {
         width: 70%;
         margin: 0 auto;

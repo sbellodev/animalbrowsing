@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
-import { useLocation} from "react-router";
+//import { useLocation} from "react-router";
 
 const Turnip = () => {
-    let location = useLocation();
+    //let location = useLocation();
     const [APIResponse, setAPIResponse] = useState("")
     
     const callServerAPI = () => {
@@ -19,12 +19,16 @@ const Turnip = () => {
         return () => clearInterval(intervalId)
     },[]) 
     
+    let message_wait 
     if(localStorage.getItem("language") === "es") {
-        document.title = 'Precio de nabos - ABBA';
+        message_wait = <div style={{height: "99vh", padding: "10px"}}>Cargando tweets... si tarda mucho, por favor contacta con el webmaster.</div>
+        document.title = 'Precio de Nabos - Animal Browsing';
     }
     else {
-        document.title = 'Turnips Prices - ABBA';
+        message_wait = <div style={{height: "99vh", padding: "10px"}}>Loading tweets... please wait...</div>
+        document.title = 'Turnips Prices - Animal Browsing'
     }
+    
     const renderTwitterAPIContent = (res) =>  {
         let shortUrl = /https:\/\/t\.co\/+.{10}/g
         let showResponse = res.map(tweet => {
@@ -60,7 +64,7 @@ const Turnip = () => {
     return (
         <>
         <TurnipContainer>
-            {!APIResponse && <div style={{height: "99vh"}}>Loading tweets... please wait...</div>}
+            {!APIResponse && message_wait}
             {APIResponse && <TwitterContent dangerouslySetInnerHTML={{__html: renderTwitterAPIContent(APIResponse)}} />}
         </TurnipContainer>
         </>

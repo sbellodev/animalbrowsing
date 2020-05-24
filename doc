@@ -39,6 +39,8 @@ Folder Structure
 Overall
     React Router - Router, Route, Switch, Location, History, UseHistory...  
         https://reacttraining.com/react-router/web/api/history
+    Google Analytics
+        https://levelup.gitconnected.com/using-google-analytics-with-react-3d98d709399b
 
 Twitter API module
     Twitter Official Standard Search API - https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets

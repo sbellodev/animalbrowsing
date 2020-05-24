@@ -8,32 +8,45 @@ import { FishButtons } from './content/FishButtons'
 import { Description } from './content/Description' 
 import { Footer } from './content/Footer'
 import { BrowserRouter as Router, Route, NavLink, Switch } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+//import { useHistory } from "react-router-dom";
+import { createBrowserHistory } from 'history';
+import ReactGA from 'react-ga';
+
+const history = createBrowserHistory();
+history.listen(location => {
+  ReactGA.set({ page: location.pathname }); // Update the user's current page
+  ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
+
+function initializeReactGA() {
+  ReactGA.initialize('UA-162043648-2');
+  ReactGA.pageview('/home');
+}
 
 const GlobalStyles = createGlobalStyle`
-  @font-face {
-    font-family: 'afont';
-    src: url(${afont}) format('opentype');
+@font-face {
+  font-family: 'afont';
+  src: url(${afont}) format('opentype');
+}
+body {
+  background-color: white;
+  background-image: url("../img/bckground2.jpg");
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
   }
-  body {
-    background-color: white;
-    background-image: url("../img/bckground2.jpg");
-
-    p, h1, h2, h3, h4, h5, h6 {
-      margin: 0;
-    }
-    h5 {
-      font-size: 14px;
-    }
-    a {
-      text-decoration: none;
-      color: blue;
-    }
-    button {
-      border: 0;
-    }
+  h5 {
+    font-size: 14px;
   }
- ` 
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+  button {
+    border: 0;
+  }
+}
+` 
 
 if(navigator.language.slice(("es" || "en"))){ // Supported languages
   localStorage.setItem("language", navigator.language.slice(0, 2))
@@ -43,10 +56,11 @@ else {
 }
 
 const App = () => {
-  let history = useHistory();
+  initializeReactGA()
+  //let history = useHistory();
   const [language, setLanguage] = useState(localStorage.getItem("language"))
   let section_names = ["Home", "Turnips", "Bugs", "Fish", "EN/ES"]
-
+  
   function switchLanguage() {
     if(language === "es"){
       setLanguage("en")
