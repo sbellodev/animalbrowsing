@@ -6,8 +6,8 @@ const Turnip = () => {
     //let location = useLocation();
     const [APIResponse, setAPIResponse] = useState("")
     
-    const callServerAPI = () => {
-        const URL = 'http://192.168.0.21:9000/twitter'
+    const callServerAPI = () => { 
+        const URL = 'https://animalbrowsing.com:9000/twitter'
         fetch(URL)
             .then(res => res.json())
             .then(json => setAPIResponse(json))

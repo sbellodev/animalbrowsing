@@ -51,7 +51,7 @@ const Description = ({actualIndex}) => {
             case "Home":
                 return (
                     <Container>
-                        <h5>Henlo! Welcome to Animal Browsing! -also known as AniBro-</h5>
+                        <h5>Henlo! Welcome to Animal Browsing!</h5>
                         <h5>All you need about bugs and fish's list, turnips prices on Twitter... about Animal Crossing: New Horizons </h5>
                         <h5>¡Have a good one! And take care</h5>
                         <Ellipsis />

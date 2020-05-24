@@ -9,7 +9,7 @@ const Home = () => {
         return (
             <HomeContainer>
                 <HomeContent>
-                    <h4>5/18/2020 - Inauguración Animal Browsing (AniBro)</h4>
+                    <h4>5/18/2020 - Inauguración Animal Browsing</h4>
                     <br/>
                     <p>Hola! ¿Cansado de buscar por todas partes islas con buenos precios para vender tus nabos? ¿De buscar listas y listas de bichos y peces con todo lo que buscas? ¡Yo también!</p>
                     <p>Por eso creé Animal Browsing, para tenerlo todo a mano... <p/>
