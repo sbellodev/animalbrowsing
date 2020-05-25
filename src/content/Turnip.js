@@ -77,6 +77,7 @@ const TurnipContainer = styled.div`
     text-align: center;
     white-space: pre-wrap;
     font-size: 18px;
+    font-weight: bold;
     @media (max-width: 570px) {
         font-size: 16px;
     }

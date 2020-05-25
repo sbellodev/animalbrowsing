@@ -27,6 +27,7 @@ const FooterContainer = styled.div`
 `
 const BackToTop = styled.a`
     padding-left: 15px;
+    font-weight: bold;
 `
 const Disclaimer = styled.div`
     background-color: #F5F2E3;

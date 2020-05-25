@@ -9,9 +9,9 @@ const imageURL = {
     Price: "/img/icons/star.svg",
     Hour: "/img/icons/hour.svg", 
     ABC: "/img/icons/abc.png", 
-    Search: "/img/icons/search1.jpg", 
-    Reset: "/img/icons/reset1.png", 
-    Return: "/img/icons/return1.png", 
+    Search: "/img/icons/search.jpg", 
+    Reset: "/img/icons/reset.png", 
+    Return: "/img/icons/return.png", 
 }
 
 const BugsButtons = () => {
@@ -60,7 +60,7 @@ float:right;
 padding-bottom: 18px;
 `
 const SearchInput = styled.input`
-  font-size: 16px;
+  font-size: 12px;
   width: 80px;
   height: 35px;
   margin: 10px 25px 10px 0;
