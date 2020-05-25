@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import styled, { createGlobalStyle } from 'styled-components'
-import afont from './font/afont.otf'
+import afont from './font/afonte.woff'
 import { Home } from './content/Home'
 import { Turnip } from './content/Turnip'
 import { BugsButtons } from './content/BugsButtons'
@@ -24,14 +24,18 @@ function initializeReactGA() {
 }
 
 const GlobalStyles = createGlobalStyle`
-@font-face {
-  font-family: 'afont';
-  src: url(${afont}) format('opentype');
-}
-body {
-  background-color: white;
-  background-image: url("../img/bckground2.jpg");
-  
+  @font-face {
+    font-family: 'afont';
+    src: url(${afont}) format('woff');
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  body { 
+
+  }
+
   p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
   }
@@ -45,7 +49,6 @@ body {
   button {
     border: 0;
   }
-}
 ` 
 
 if(navigator.language.slice(("es" || "en"))){ // Supported languages
@@ -80,6 +83,7 @@ const App = () => {
   return (
     <AppContainer>
       <GlobalStyles/>
+      <BackgroundImage />
       <Router history={history}>
         <NavbarContent id={"top"}>
           <NavLink to="/" exact activeClassName="active" onClick={() => historyPush("/")}>
@@ -127,6 +131,7 @@ const App = () => {
 const NavbarContent = styled.nav`
   height: 60px;
   background-color: tomato;
+  font-size: 18px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -150,7 +155,27 @@ const LangIndex = styled.a`
   font-weight: bold;
   text-align: center;
   color: #F5F2E3;
-  font-size: 10px;
+  font-size: 12px;
+`
+const BackgroundImage = styled.div`
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    background-image: url("../img/bckground2.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+    z-index: -1;
+  }
 `
 const AppContainer = styled.div`
   max-width: 650px;
