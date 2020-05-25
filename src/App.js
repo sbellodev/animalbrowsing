@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import styled, { createGlobalStyle } from 'styled-components'
-import afont from './font/afonte.woff'
+//import afont from './font/afonte.woff'
 import { Home } from './content/Home'
 import { Turnip } from './content/Turnip'
 import { BugsButtons } from './content/BugsButtons'
 import { FishButtons } from './content/FishButtons'
 import { Description } from './content/Description' 
 import { Footer } from './content/Footer'
-import { BrowserRouter as Router, Route, NavLink, Switch } from "react-router-dom";
+import { Router, Route, NavLink, Switch } from "react-router-dom";
 //import { useHistory } from "react-router-dom";
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
@@ -23,19 +23,18 @@ function initializeReactGA() {
   ReactGA.pageview('/home');
 }
 
+// @font-face {
+//   font-family: 'afont';
+//   src: url(${afont}) format('woff');
+// }
 const GlobalStyles = createGlobalStyle`
-  @font-face {
-    font-family: 'afont';
-    src: url(${afont}) format('woff');
-  }
   html, body {
     height: 100%;
     margin: 0;
   }
-  body { 
-
+  body {
+    font-family: Arial, sans-serif;
   }
-
   p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
   }
@@ -181,6 +180,5 @@ const AppContainer = styled.div`
   max-width: 650px;
   background-color: #A0D0E7;
   margin: 0 auto;
-  font-family: afont;
 `
 export default App;
