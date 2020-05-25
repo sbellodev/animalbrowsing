@@ -16,14 +16,14 @@ const Footer = () => {
             <br/><br/>
             <Disclaimer>
                 <p>Created by <a href="https://twitter.com/gattoalaparato" target="_blank" rel="noopener noreferrer">@Gattoalaparato</a></p>
-                <p>2020</p>
+                <p>2020 - Animal Crossing v1.0</p>
             </Disclaimer>
         </FooterContainer>
     )
 }
 const FooterContainer = styled.div`
-font-size: 14px;
-padding-top: 15px;
+    font-size: 14px;
+    padding-top: 15px;
 `
 const BackToTop = styled.a`
     padding-left: 15px;

@@ -6,7 +6,7 @@ const Turnip = () => {
     //let location = useLocation();
     const [APIResponse, setAPIResponse] = useState("")
     
-    const callServerAPI = () => { 
+    const callServerAPI = () => {
         const URL = 'https://animalbrowsing.com:9000/twitter'
         fetch(URL)
             .then(res => res.json())
@@ -76,9 +76,9 @@ const TurnipContainer = styled.div`
     width: 100%;
     text-align: center;
     white-space: pre-wrap;
-    font-size: 16px;
+    font-size: 18px;
     @media (max-width: 570px) {
-        font-size: 14px;
+        font-size: 16px;
     }
 `
 const TwitterContent = styled.div`

@@ -1,5 +1,6 @@
 {
-  "name": "abba",
+  "name": "AnimalBrowsing",
+  "homepage": "http://animalbrowsing.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -98,7 +98,7 @@ const Container = styled.div`
     h5 {
         width: 70%;
         margin: 0 auto;
-        font-size: 16px;
+        font-size: 18px;
     }
     @media (max-width: 420px) {
         h5 {
@@ -107,7 +107,7 @@ const Container = styled.div`
       }
     @media (max-width: 570px) {
         h5 {
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 `

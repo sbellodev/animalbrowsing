@@ -60,7 +60,7 @@ float:right;
 padding-bottom: 18px;
 `
 const SearchInput = styled.input`
-  font-size: 12px;
+  font-size: 16px;
   width: 80px;
   height: 35px;
   margin: 10px 25px 10px 0;

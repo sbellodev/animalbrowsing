@@ -106,7 +106,7 @@ const BugsTable = ({sortBy, actualTable, inputSearch}) => {
 
 
 const TableContainer = styled.table`
-    font-size: 16px;
+    font-size: 18px;
     width: 100%;
     background-color: #A0D0E7;
     border-collapse: collapse;
@@ -147,7 +147,7 @@ const TableContainer = styled.table`
         height: 50px;
     }
     @media (max-width: 570px) {
-        font-size: 14px;
+        font-size: 16px;
     }
 `
 export { BugsTable }

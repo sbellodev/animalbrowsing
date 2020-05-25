@@ -12,6 +12,7 @@ const Home = () => {
                     <h4>5/18/2020 - Inauguración Animal Browsing</h4>
                     <br/>
                     <p>Hola! ¿Cansado de buscar por todas partes islas con buenos precios para vender tus nabos? ¿De buscar listas y listas de bichos y peces con todo lo que buscas? ¡Yo también!</p>
+                    <br/>
                     <p>Por eso creé Animal Browsing, para tenerlo todo a mano... <p/>
                     <p>Aquí encontraréis... 
                     <br/>
@@ -36,10 +37,11 @@ const Home = () => {
                     <br/>
                     <p>Hi! Tired of looking over and over good turnip's prices everywhere?</p>
                     <p>Searching bugs and fish lists with all you need? ¡Me too!</p>
+                    <br/>
                     <p>That's why I made Animal Browsing.</p>
                     <p>Here you can find... 
                     <br/>
-                    <a href="/bugs">The Definitive Bug's List</a>!
+                    <a href="/bugs">The Definitive Bug's List</a>!<br/>
                     <a href="/turnips">The perfect Turnips price section</a>!</p>
                     <br/>
                     <p>Any suggestion, criticism or saying hi please feel free reach me on 
@@ -53,7 +55,7 @@ const Home = () => {
 }
 const HomeContainer = styled.div`
     background-color:  #A0D0E7;
-    font-size: 14px;
+    font-size: 16px;
 `
 const HomeContent = styled.div`
     width: 80%;
