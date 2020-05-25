@@ -85,7 +85,7 @@ const App = () => {
       <BackgroundImage />
       <Router history={history}>
         <NavbarContent id={"top"}>
-          <NavLink to="/" exact activeClassName="active" onClick={() => historyPush("/")}>
+          <NavLink to="/" exact name="Home" activeClassName="active" onClick={() => historyPush("/")}>
             {section_names[0]}
           </NavLink>
           <NavLink to="/turnips" name="Turnips" exact activeClassName="active" onClick={() => {historyPush("/turnips")}}>
@@ -94,7 +94,7 @@ const App = () => {
           <NavLink to="/bugs" name="Bugs" exact activeClassName="active" onClick={() => historyPush("/bugs")}>
             {section_names[2]}
           </NavLink>
-          <NavLink to="/fish" exact activeClassName="active" onClick={() => historyPush("/fish")}>
+          <NavLink to="/fish" name ="Fish" exact activeClassName="active" onClick={() => historyPush("/fish")}>
             {section_names[3]}
           </NavLink>
           <LangIndex className="Language" onClick={() => {switchLanguage()}} href={"#"}>{section_names[4]}</LangIndex>

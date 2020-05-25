@@ -7,10 +7,14 @@ const Turnip = () => {
     const [APIResponse, setAPIResponse] = useState("")
     
     const callServerAPI = () => {
-        const URL = 'https://animalbrowsing.com:9000/twitter'
+        const URL = 'http://localhost:9000/twitter'
+        //const URL = 'https://animalbrowsing.com/abbapi'
         fetch(URL)
             .then(res => res.json())
             .then(json => setAPIResponse(json))
+            .catch(() => {
+                console.error('API fetching error.');
+              })
     }
 
     useEffect(() => {
