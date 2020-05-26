@@ -115,10 +115,10 @@ const TableContainer = styled.table`
         width: 100%;
     }
     tbody {
-        font-family: sans-serif;
+        font-family: arial;
+        font-weight: normal;
         width: 100%;
     }
-    
     tr {
         border-bottom: 3px solid #F5F2E3;
         border-radius: 50%;
@@ -141,11 +141,11 @@ const TableContainer = styled.table`
     td:last-child {
         text-align: left;
     }
-
     img {
         width: 50px;
         height: 50px;
     }
+
     @media (max-width: 570px) {
         font-size: 16px;
     }

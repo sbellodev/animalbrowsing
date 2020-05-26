@@ -1,7 +1,7 @@
 [    
     {
         "Number": 1,
-        "Image": "commonbutterfly.png",
+        "Image": "commonbutterfly.webp",
         "Name": "Mariposa común",
         "Price": "160",
         "PriceInt": 160,
@@ -13,7 +13,7 @@
 
     {
         "Number": 2,
-        "Image": "yellowbutterfly.png", 	 	 
+        "Image": "yellowbutterfly.webp", 	 	 
         "Name": "Mariposa colias",
         "Price": "160",
         "PriceInt": 160,
@@ -25,7 +25,7 @@
 
     {
         "Number": 3,
-        "Image": "tigerbutterfly.png", 	 	 
+        "Image": "tigerbutterfly.webp", 	 	 
         "Name": "Mariposa tigre",
         "Price": "240",
         "PriceInt": 240,
@@ -37,7 +37,7 @@
 
     {
         "Number": 4,
-        "Image": "peacockbutterfly.png", 	 	 
+        "Image": "peacockbutterfly.webp", 	 	 
         "Name": "Mariposa bianor",
         "Price": "2,500",
         "PriceInt": 2500,
@@ -49,7 +49,7 @@
 
     {
         "Number": 5,
-        "Image": "commonbluebottle.png", 	 	 
+        "Image": "commonbluebottle.webp", 	 	 
         "Name": "Mariposa triángulo azul",
         "Price": "300",
         "PriceInt": 300,
@@ -61,7 +61,7 @@
 
     {
         "Number": 6,
-        "Image": "paperkitebutterfly.png", 	 	 
+        "Image": "paperkitebutterfly.webp", 	 	 
         "Name": "Mariposa cometa de papel",
         "Price": "1,000",
         "PriceInt": 1000,
@@ -73,7 +73,7 @@
 
     {
         "Number": 7,
-        "Image": "greatpurpleemperor.png", 	 	 
+        "Image": "greatpurpleemperor.webp", 	 	 
         "Name": "Marip. emperador japonés",
         "Price": "3,000",
         "PriceInt": 3000,
@@ -85,7 +85,7 @@
 
     {
         "Number": 8,
-        "Image": "monarchbutterfly.png", 	 	 
+        "Image": "monarchbutterfly.webp", 	 	 
         "Name": "Mariposa monarca",
         "Price": "140",
         "PriceInt": 140,
@@ -97,7 +97,7 @@
 
     {
         "Number": 9,
-        "Image": "emperorbutterfly.png", 	 	 
+        "Image": "emperorbutterfly.webp", 	 	 
         "Name": "Mariposa celeste",
         "Price": "4,000",
         "PriceInt": 4000,
@@ -109,7 +109,7 @@
 
     {
         "Number": 10,
-        "Image": "agriasbutterfly.png", 	 	 
+        "Image": "agriasbutterfly.webp", 	 	 
         "Name": "Mariposa narciso",
         "Price": "3,000",
         "PriceInt": 3000,
@@ -121,7 +121,7 @@
 
     {
         "Number": 11,
-        "Image": "rajahbrookesbirdwing.png", 	 	 
+        "Image": "rajahbrookesbirdwing.webp", 	 	 
         "Name": "Mariposa alas de Brooke",
         "Price": "2,500",
         "PriceInt": 2500,
@@ -133,7 +133,7 @@
 
     {
         "Number": 12,
-        "Image": "queenalexandrasbirdwing.png", 	 	 
+        "Image": "queenalexandrasbirdwing.webp", 	 	 
         "Name": "Mariposa alas de pájaro",
         "Price": "4,000",
         "PriceInt": 4000,
@@ -145,7 +145,7 @@
 
     {
         "Number": 13,
-        "Image": "moth.png", 	 	 
+        "Image": "moth.webp", 	 	 
         "Name": "Polilla",
         "Price": "130",
         "PriceInt": 130,
@@ -157,7 +157,7 @@
 
     {
         "Number": 14,
-        "Image": "atlasmoth.png", 	 	 
+        "Image": "atlasmoth.webp", 	 	 
         "Name": "Polilla atlas",
         "Price": "3,000",
         "PriceInt": 3000,
@@ -169,7 +169,7 @@
 
     {
         "Number": 15,
-        "Image": "madagascansunsetmoth.png", 	 	 
+        "Image": "madagascansunsetmoth.webp", 	 	 
         "Name": "Polilla crepuscular",
         "Price": "2,500",
         "PriceInt": 2500,
@@ -181,7 +181,7 @@
 
     {
         "Number": 16,
-        "Image": "longlocust.png", 	 	 
+        "Image": "longlocust.webp", 	 	 
         "Name": "Langosta alargada",
         "Price": "200",
         "PriceInt": 200,
@@ -193,7 +193,7 @@
 
     {
         "Number": 17,
-        "Image": "migratorylocust.png", 	 	 
+        "Image": "migratorylocust.webp", 	 	 
         "Name": "Langosta migratoria",
         "Price": "600",
         "PriceInt": 600,
@@ -205,7 +205,7 @@
 
     {
         "Number": 18,
-        "Image": "ricegrasshopper.png", 	 	 
+        "Image": "ricegrasshopper.webp", 	 	 
         "Name": "Langosta",
         "Price": "160",
         "PriceInt": 160,
@@ -217,7 +217,7 @@
 
     {
         "Number": 19,
-        "Image": "grasshopper.png", 	 	 
+        "Image": "grasshopper.webp", 	 	 
         "Name": "Saltamontes",
         "Price": "160",
         "PriceInt": 160,
@@ -229,7 +229,7 @@
 
     {
         "Number": 20,
-        "Image": "cricket.png", 	 	 
+        "Image": "cricket.webp", 	 	 
         "Name": "Grillo común",
         "Price": "130",
         "PriceInt": 130,
@@ -241,7 +241,7 @@
 
     {
         "Number": 21,
-        "Image": "bellcricket.png", 	 	 
+        "Image": "bellcricket.webp", 	 	 
         "Name": "Grillo campana",
         "Price": "430",
         "PriceInt": 430,
@@ -253,7 +253,7 @@
 
     {
         "Number": 22,
-        "Image": "mantis.png", 	 	 
+        "Image": "mantis.webp", 	 	 
         "Name": "Mantis religiosa",
         "Price": "430",
         "PriceInt": 430,
@@ -265,7 +265,7 @@
 
     {
         "Number": 23,
-        "Image": "orchidmantis.png", 	 	 
+        "Image": "orchidmantis.webp", 	 	 
         "Name": "Mantis orquídea",
         "Price": "2,400",
         "PriceInt": 2400,
@@ -277,7 +277,7 @@
 
     {
         "Number": 24,
-        "Image": "honeybee.png", 	 	 
+        "Image": "honeybee.webp", 	 	 
         "Name": "Abeja melífera",
         "Price": "200",
         "PriceInt": 200,
@@ -289,7 +289,7 @@
 
     {
         "Number": 25,
-        "Image": "wasp.png", 	 	 
+        "Image": "wasp.webp", 	 	 
         "Name": "Avispa",
         "Price": "2,500",
         "PriceInt": 2500,
@@ -301,7 +301,7 @@
 
     {
         "Number": 26,
-        "Image": "browncicada.png", 	 	 
+        "Image": "browncicada.webp", 	 	 
         "Name": "Cigarra marrón",
         "Price": "250",
         "PriceInt": 250,
@@ -313,7 +313,7 @@
 
     {
         "Number": 27,
-        "Image": "robustcicada.png", 	 	 
+        "Image": "robustcicada.webp", 	 	 
         "Name": "Cigarra oriental",
         "Price": "300",
         "PriceInt": 300,
@@ -325,7 +325,7 @@
 
     {
         "Number": 28,
-        "Image": "giantcicada.png", 	 	 
+        "Image": "giantcicada.webp", 	 	 
         "Name": "Cigarra gigante",
         "Price": "500",
         "PriceInt": 500,
@@ -337,7 +337,7 @@
 
     {
         "Number": 29,
-        "Image": "walkercicada.png", 	 	 
+        "Image": "walkercicada.webp", 	 	 
         "Name": "Cigarra común",
         "Price": "400",
         "PriceInt": 400,
@@ -349,7 +349,7 @@
 
     {
         "Number": 30,
-        "Image": "eveningcicada.png", 	 	 
+        "Image": "eveningcicada.webp", 	 	 
         "Name": "Cigarrilla",
         "Price": "550",
         "PriceInt": 550,
@@ -361,7 +361,7 @@
 
     {
         "Number": 31,
-        "Image": "cicadashell.png", 	 	 
+        "Image": "cicadashell.webp", 	 	 
         "Name": "Muda de cigarra",
         "Price": "10",
         "PriceInt": 10,
@@ -373,7 +373,7 @@
 
     {
         "Number": 32,
-        "Image": "reddragonfly.png", 	 	 
+        "Image": "reddragonfly.webp", 	 	 
         "Name": "Libélula roja",
         "Price": "180",
         "PriceInt": 180,
@@ -385,7 +385,7 @@
 
     {
         "Number": 33,
-        "Image": "darnerdragonfly.png", 	 	 
+        "Image": "darnerdragonfly.webp", 	 	 
         "Name": "Libélula caballito del diablo",
         "Price": "230",
         "PriceInt": 230,
@@ -397,7 +397,7 @@
 
     {
         "Number": 34,
-        "Image": "bandeddragonfly.png", 	 	 
+        "Image": "bandeddragonfly.webp", 	 	 
         "Name": "Libélula tigre",
         "Price": "4,500",
         "PriceInt": 4500,
@@ -409,7 +409,7 @@
 
     {
         "Number": 35,
-        "Image": "damselfly.png", 	 	 
+        "Image": "damselfly.webp", 	 	 
         "Name": "Libélula damisela",
         "Price": "500",
         "PriceInt": 500,
@@ -421,7 +421,7 @@
 
     {
         "Number": 36,
-        "Image": "firefly.png", 	 	 
+        "Image": "firefly.webp", 	 	 
         "Name": "Luciérnaga",
         "Price": "300",
         "PriceInt": 300,
@@ -433,7 +433,7 @@
 
     {
         "Number": 37,
-        "Image": "molecricket.png", 	 	 
+        "Image": "molecricket.webp", 	 	 
         "Name": "Grillo cebollero",
         "Price": "500",
         "PriceInt": 500,
@@ -445,7 +445,7 @@
 
     {
         "Number": 38,
-        "Image": "pondskater.png", 	 	 
+        "Image": "pondskater.webp", 	 	 
         "Name": "Zapatero",
         "Price": "130",
         "PriceInt": 130,
@@ -457,7 +457,7 @@
 
     {
         "Number": 39,
-        "Image": "divingbeetle.png", 	 	 
+        "Image": "divingbeetle.webp", 	 	 
         "Name": "Escarabajo nadador",
         "Price": "800",
         "PriceInt": 800,
@@ -469,7 +469,7 @@
 
     {
         "Number": 40,
-        "Image": "giantwaterbug.png", 	 	 
+        "Image": "giantwaterbug.webp", 	 	 
         "Name": "Chinche acuática gigante",
         "Price": "2,000",
         "PriceInt": 2000,
@@ -481,7 +481,7 @@
 
     {
         "Number": 41,
-        "Image": "stinkbug.png", 	 	 
+        "Image": "stinkbug.webp", 	 	 
         "Name": "Chinche",
         "Price": "120",
         "PriceInt": 120,
@@ -493,7 +493,7 @@
 
     {
         "Number": 42,
-        "Image": "manfacedstinkbug.png", 	 	 
+        "Image": "manfacedstinkbug.webp", 	 	 
         "Name": "Chinche con rostro humano",
         "Price": "1,000",
         "PriceInt": 1000,
@@ -505,7 +505,7 @@
 
     {
         "Number": 43,
-        "Image": "ladybug.png", 	 	 
+        "Image": "ladybug.webp", 	 	 
         "Name": "Mariquita",
         "Price": "200",
         "PriceInt": 200,
@@ -517,7 +517,7 @@
 
     {
         "Number": 44,
-        "Image": "tigerbeetle.png", 	 	 
+        "Image": "tigerbeetle.webp", 	 	 
         "Name": "Escarabajo tigre",
         "Price": "1,500",
         "PriceInt": 1500,
@@ -529,7 +529,7 @@
 
     {
         "Number": 45,
-        "Image": "jewelbeetle.png", 	 	 
+        "Image": "jewelbeetle.webp", 	 	 
         "Name": "Escarabajo joya",
         "Price": "2,400",
         "PriceInt": 2400,
@@ -541,7 +541,7 @@
 
     {
         "Number": 46,
-        "Image": "violinbeetle.png", 	 	 
+        "Image": "violinbeetle.webp", 	 	 
         "Name": "Escarabajo violín",
         "Price": "450",
         "PriceInt": 450,
@@ -553,7 +553,7 @@
 
     {
         "Number": 47,
-        "Image": "citruslonghornedbeetle.png", 	 	 
+        "Image": "citruslonghornedbeetle.webp", 	 	 
         "Name": "Longicornio asiático",
         "Price": "350",
         "PriceInt": 350,
@@ -565,7 +565,7 @@
 
     {
         "Number": 48,
-        "Image": "rosaliabatesibeetle.png", 	 	 
+        "Image": "rosaliabatesibeetle.webp", 	 	 
         "Name": "Escarabajo rosalia batesi",
         "Price": "3,000",
         "PriceInt": 3000,
@@ -577,7 +577,7 @@
 
     {
         "Number": 49,
-        "Image": "blueweevilbeetle.png", 	 	 
+        "Image": "blueweevilbeetle.webp", 	 	 
         "Name": "Gorgojo azul",
         "Price": "800",
         "PriceInt": 800,
@@ -589,7 +589,7 @@
 
     {
         "Number": 50,
-        "Image": "dungbeetle.png", 	 	 
+        "Image": "dungbeetle.webp", 	 	 
         "Name": "Escarabajo pelotero",
         "Price": "3,000",
         "PriceInt": 3000,
@@ -601,7 +601,7 @@
 
     {
         "Number": 51,
-        "Image": "earthboringdungbeetle.png", 	 	 
+        "Image": "earthboringdungbeetle.webp", 	 	 
         "Name": "Escarabajo geotrúpido",
         "Price": "300",
         "PriceInt": 300,
@@ -613,7 +613,7 @@
 
     {
         "Number": 52,
-        "Image": "scarabbeetle.png", 	 	 
+        "Image": "scarabbeetle.webp", 	 	 
         "Name": "Escarabajo de oro",
         "Price": "10,000",
         "PriceInt": 10000,
@@ -625,7 +625,7 @@
 
     {
         "Number": 53,
-        "Image": "dronebeetle.png", 	 	 
+        "Image": "dronebeetle.webp", 	 	 
         "Name": "Escarabajo verde japonés",
         "Price": "200",
         "PriceInt": 200,
@@ -637,7 +637,7 @@
 
     {
         "Number": 54,
-        "Image": "goliathbeetle.png", 	 	 
+        "Image": "goliathbeetle.webp", 	 	 
         "Name": "Goliat",
         "Price": "8,000",
         "PriceInt": 8000,
@@ -649,7 +649,7 @@
 
     {
         "Number": 55,
-        "Image": "sawstag.png", 	 	 
+        "Image": "sawstag.webp", 	 	 
         "Name": "Escarabajo ciervo sierra",
         "Price": "2,000",
         "PriceInt": 2000,
@@ -661,7 +661,7 @@
 
     {
         "Number": 56,
-        "Image": "miyamastag.png", 	 	 
+        "Image": "miyamastag.webp", 	 	 
         "Name": "Escarabajo ciervo Miyama",
         "Price": "1,000",
         "PriceInt": 1000,
@@ -673,7 +673,7 @@
 
     {
         "Number": 57,
-        "Image": "giantstag.png", 	 	 
+        "Image": "giantstag.webp", 	 	 
         "Name": "Escarabajo ciervo gigante",
         "Price": "10,000",
         "PriceInt": 10000,
@@ -685,7 +685,7 @@
 
     {
         "Number": 58,
-        "Image": "rainbowstag.png", 	 	 
+        "Image": "rainbowstag.webp", 	 	 
         "Name": "Escarabajo ciervo arcoíris",
         "Price": "6,000",
         "PriceInt": 6000,
@@ -697,7 +697,7 @@
 
     {
         "Number": 59,
-        "Image": "cyclommatusstag.png", 	 	 
+        "Image": "cyclommatusstag.webp", 	 	 
         "Name": "Esc. ciervo cyclommatus",
         "Price": "8,000",
         "PriceInt": 8000,
@@ -709,7 +709,7 @@
 
     {
         "Number": 60,
-        "Image": "goldenstag.png", 	 	 
+        "Image": "goldenstag.webp", 	 	 
         "Name": "Escarabajo ciervo tornasol",
         "Price": "12,000",
         "PriceInt": 12000,
@@ -721,7 +721,7 @@
 
     {
         "Number": 61,
-        "Image": "giraffestag.png", 	 	 
+        "Image": "giraffestag.webp", 	 	 
         "Name": "Escarabajo ciervo jirafa",
         "Price": "12,000",
         "PriceInt": 12000,
@@ -733,7 +733,7 @@
 
     {
         "Number": 62,
-        "Image": "horneddynastid.png", 	 	 
+        "Image": "horneddynastid.webp", 	 	 
         "Name": "Escarabajo astado japonés",
         "Price": "1,350",
         "PriceInt": 1350,
@@ -745,7 +745,7 @@
 
     {
         "Number": 63,
-        "Image": "hornedatlas.png", 	 	 
+        "Image": "hornedatlas.webp", 	 	 
         "Name": "Escarabajo astado atlas",
         "Price": "8,000",
         "PriceInt": 8000,
@@ -757,7 +757,7 @@
 
     {
         "Number": 64,
-        "Image": "hornedelephant.png", 	 	 
+        "Image": "hornedelephant.webp", 	 	 
         "Name": "Escarabajo astado elefante",
         "Price": "8,000",
         "PriceInt": 8000,
@@ -769,7 +769,7 @@
 
     {
         "Number": 65,
-        "Image": "hornedhercules.png", 	 	 
+        "Image": "hornedhercules.webp", 	 	 
         "Name": "Escarabajo astado hércules",
         "Price": "12,000",
         "PriceInt": 12000,
@@ -781,7 +781,7 @@
 
     {
         "Number": 66,
-        "Image": "walkingstick.png", 	 	 
+        "Image": "walkingstick.webp", 	 	 
         "Name": "Insecto palo",
         "Price": "600",
         "PriceInt": 600,
@@ -793,7 +793,7 @@
 
     {
         "Number": 67,
-        "Image": "walkingleaf.png", 	 	 
+        "Image": "walkingleaf.webp", 	 	 
         "Name": "Insecto hoja",
         "Price": "600",
         "PriceInt": 600,
@@ -805,7 +805,7 @@
 
     {
         "Number": 68,
-        "Image": "bagworm.png", 	 	 
+        "Image": "bagworm.webp", 	 	 
         "Name": "Oruga de bolsón",
         "Price": "600",
         "PriceInt": 600,
@@ -817,7 +817,7 @@
 
     {
         "Number": 69,
-        "Image": "ant.png", 	 	 
+        "Image": "ant.webp", 	 	 
         "Name": "Hormiga",
         "Price": "80",
         "PriceInt": 80,
@@ -829,7 +829,7 @@
 
     {
         "Number": 70,
-        "Image": "hermitcrab.png", 	 	 
+        "Image": "hermitcrab.webp", 	 	 
         "Name": "Cangrejo ermitaño",
         "Price": "1,000",
         "PriceInt": 1000,
@@ -841,7 +841,7 @@
 
     {
         "Number": 71,
-        "Image": "wharfroach.png", 	 	 
+        "Image": "wharfroach.webp", 	 	 
         "Name": "Cochinilla de arena",
         "Price": "200",
         "PriceInt": 200,
@@ -853,7 +853,7 @@
 
     {
         "Number": 72,
-        "Image": "fly.png", 	 	   	 
+        "Image": "fly.webp", 	 	   	 
         "Name": "Mosca",
         "Price": "60",
         "PriceInt": 60,
@@ -865,7 +865,7 @@
 
     {
         "Number": 73,
-        "Image": "mosquito.png", 	 	   	 
+        "Image": "mosquito.webp", 	 	   	 
         "Name": "Mosquito",
         "Price": "130",
         "PriceInt": 130,
@@ -877,7 +877,7 @@
 
     {
         "Number": 74,
-        "Image": "flea.png", 	 	   	 
+        "Image": "flea.webp", 	 	   	 
         "Name": "Pulga",
         "Price": "70",
         "PriceInt": 70,
@@ -889,7 +889,7 @@
 
     {
         "Number": 75,
-        "Image": "snail.png", 	 	   	 
+        "Image": "snail.webp", 	 	   	 
         "Name": "Caracol",
         "Price": "250",
         "PriceInt": 250,
@@ -901,7 +901,7 @@
 
     {
         "Number": 76,
-        "Image": "pillbug.png", 	 	   	 
+        "Image": "pillbug.webp", 	 	   	 
         "Name": "Cochinilla",
         "Price": "250",
         "PriceInt": 250,
@@ -913,7 +913,7 @@
 
     {
         "Number": 77,
-        "Image": "centipede.png", 	 	   	 
+        "Image": "centipede.webp", 	 	   	 
         "Name": "Ciempiés",
         "Price": "300",
         "PriceInt": 300,
@@ -925,7 +925,7 @@
 
     {
         "Number": 78,
-        "Image": "spider.png", 	 	   	 
+        "Image": "spider.webp", 	 	   	 
         "Name": "Araña",
         "Price": "480",
         "PriceInt": 480,
@@ -937,7 +937,7 @@
 
     {
         "Number": 79,
-        "Image": "tarantula.png", 	 	   	 
+        "Image": "tarantula.webp", 	 	   	 
         "Name": "Tarántula",
         "Price": "8,000",
         "PriceInt": 8000,
@@ -949,7 +949,7 @@
 
     {
         "Number": 80,
-        "Image": "scorpion.png", 	 	   	 
+        "Image": "scorpion.webp", 	 	   	 
         "Name": "Escorpión",
         "Price": "8,000",
         "PriceInt": 8000,

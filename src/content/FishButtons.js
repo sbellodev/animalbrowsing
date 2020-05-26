@@ -3,15 +3,14 @@ import styled from 'styled-components'
 import { FishTable } from '../content/FishTable'
 import fishListEN from '../data/fish-EN.json'
 import fishListES from '../data/fish-ES.json'
-//import { useLocation} from "react-router";
   
 const imageURL = {
     Price: "/img/icons/star.svg",
     Hour: "/img/icons/hour.svg", 
-    ABC: "/img/icons/abc.png", 
-    Search: "/img/icons/search.jpg", 
-    Reset: "/img/icons/reset.png", 
-    Return: "/img/icons/return.png", 
+    ABC: "/img/icons/abc.webp", 
+    Search: "/img/icons/search.webp", 
+    Reset: "/img/icons/reset.webp", 
+    Return: "/img/icons/return.webp", 
 }
 
 const FishButtons = () => {
@@ -29,12 +28,12 @@ const FishButtons = () => {
     if(localStorage.getItem("language") === "es") {
       search_placeholder = "Buscas..."
       actualTable = fishListES 
-      document.title = 'Lista de peces - Animal Browsing';
+      document.title = 'Animal Browsing - Lista de peces';
     }
     else {
       search_placeholder = "Find..."
       actualTable = fishListEN 
-      document.title = 'Fish list - Animal Browsing';
+      document.title = 'Animal Browsing - Fish list';
     }
     return (    
       <>

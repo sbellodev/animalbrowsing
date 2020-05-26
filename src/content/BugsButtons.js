@@ -3,20 +3,17 @@ import styled from 'styled-components'
 import { BugsTable } from '../content/BugsTable'
 import bugListEN from '../data/bug-EN.json'
 import bugListES from '../data/bug-ES.json'
-//import { useLocation} from "react-router";
   
 const imageURL = {
     Price: "/img/icons/star.svg",
     Hour: "/img/icons/hour.svg", 
-    ABC: "/img/icons/abc.png", 
-    Search: "/img/icons/search.jpg", 
-    Reset: "/img/icons/reset.png", 
-    Return: "/img/icons/return.png", 
+    ABC: "/img/icons/abc.webp", 
+    Search: "/img/icons/search.webp", 
+    Reset: "/img/icons/reset.webp", 
+    Return: "/img/icons/return.webp", 
 }
 
 const BugsButtons = () => {
-    //let location = useLocation();
-  
     const [sortBy, setSortBy] = useState("");
     const [inputSearch, setInputSearch] = useState("")
 
@@ -29,13 +26,13 @@ const BugsButtons = () => {
     let search_placeholder = ""
     let actualTable = ""
     if(localStorage.getItem("language") === "es") {
-      document.title = 'Lista de bichos - Animal Browsing';
-      search_placeholder = "Buscar..."
+      document.title = 'Animal Browsing - Lista de bichos';
+      search_placeholder = "Buscar ..."
       actualTable = bugListES 
     }
     else {
-      document.title = 'Bugs List - Animal Browsing';
-      search_placeholder = "Find..."
+      document.title = 'Animal Browsing - Bug list';
+      search_placeholder = "Find ..."
       actualTable = bugListEN 
     }
     return (    

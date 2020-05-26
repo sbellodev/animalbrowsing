@@ -1,36 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
-//import { useLocation} from "react-router";
 
 const Turnip = () => {
-    //let location = useLocation();
     const [APIResponse, setAPIResponse] = useState("")
     
     const callServerAPI = () => {
-        const URL = 'http://localhost:9000/twitter'
-        //const URL = 'https://animalbrowsing.com/abbapi'
+        const URL = 'https://animalbrowsing.com/api'
         fetch(URL)
             .then(res => res.json())
             .then(json => setAPIResponse(json))
             .catch(() => {
                 console.error('API fetching error.');
-              })
+            })
     }
 
     useEffect(() => {
         callServerAPI()
-        const intervalId = setInterval(callServerAPI, 10000)
+        const intervalId = setInterval(callServerAPI, 20000)
         return () => clearInterval(intervalId)
     },[]) 
     
     let message_wait 
     if(localStorage.getItem("language") === "es") {
         message_wait = <div style={{height: "99vh", padding: "10px"}}>Cargando tweets... si tarda mucho, por favor contacta con el webmaster.</div>
-        document.title = 'Precio de Nabos - Animal Browsing';
+        document.title = 'Animal Browsing - Precio de nabos ';
     }
     else {
         message_wait = <div style={{height: "99vh", padding: "10px"}}>Loading tweets... please wait...</div>
-        document.title = 'Turnips Prices - Animal Browsing'
+        document.title = 'Animal Browsing - Turnips prices '
     }
     
     const renderTwitterAPIContent = (res) =>  {
@@ -38,16 +35,17 @@ const Turnip = () => {
         let showResponse = res.map(tweet => {
             if(tweet.text){
                 tweet.text = tweet.text.replace("'\n' +",  "")
-                if(tweet.entities.media){
-                    tweet.text = tweet.text.replace(tweet.entities.media[0].url, "<img src='" +tweet.entities.media[0].media_url_https+ "' />")
+                if(tweet.entities.media){ // has image
+                    tweet.text = tweet.text.replace(tweet.entities.media[0].url, "")
                 }
-                if(tweet.entities.urls && tweet.entities.urls[0]){ // urls[0] needed because API structure
+                // urls[0] needed because API structure
+                if(tweet.entities.urls && tweet.entities.urls[0]){ // has other urls
                     let num_of_urls = tweet.entities.urls.length 
                     let last_url = num_of_urls - 1
-                    if(tweet.entities.urls[last_url].expanded_url.includes("/i/web/status")){
+                    if(tweet.entities.urls[last_url].expanded_url.includes("/i/web/status")){ // remove status url
                         tweet.text = tweet.text.replace(tweet.entities.urls[last_url].url, "")
                     }
-                    tweet.entities.urls.forEach((url)=>{
+                    tweet.entities.urls.forEach((url)=>{ // clickable links
                         tweet.text = tweet.text.replace(shortUrl, "<br/><a href='" +url.expanded_url+ "' target='_blank' rel='noopener noreferrer' >" +url.expanded_url+ "</a><br/>")
                     })
                 }
@@ -81,7 +79,7 @@ const TurnipContainer = styled.div`
     text-align: center;
     white-space: pre-wrap;
     font-size: 18px;
-    font-weight: bold;
+    line-height: 25px;
     @media (max-width: 570px) {
         font-size: 16px;
     }

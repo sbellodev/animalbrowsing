@@ -61,8 +61,8 @@ const Description = ({actualIndex}) => {
                 return (
                     <Container>
                         <h5>Get instantly all the recent turnips prices from Twitter</h5>
-                        <h5>¡Just sit down and watch!</h5>
-                        <h5>It updates automatically</h5>
+                        <h5>¡Just watch!</h5>
+                        <h5>It updates itself automatically</h5>
                         <Ellipsis />
                     </Container>
                 )

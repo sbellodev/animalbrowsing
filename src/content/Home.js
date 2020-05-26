@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components'
-//import { useLocation} from "react-router";
 
 const Home = () => {
 
     if(localStorage.getItem("language") === "es") {
-        document.title = 'Inicio - Animal Browsing';
+        document.title = 'Animal Browsing';
         return (
             <HomeContainer>
                 <HomeContent>
@@ -29,7 +28,7 @@ const Home = () => {
         )
     }
     else {
-        document.title = 'Home - Animal Browsing';
+        document.title = 'Animal Browsing';
         return (
             <HomeContainer>
                 <HomeContent>
@@ -56,6 +55,7 @@ const Home = () => {
 const HomeContainer = styled.div`
     background-color:  #A0D0E7;
     font-size: 16px;
+    line-height: 20px;
 `
 const HomeContent = styled.div`
     width: 80%;

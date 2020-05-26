@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import styled, { createGlobalStyle } from 'styled-components'
-//import afont from './font/afonte.woff'
 import { Home } from './content/Home'
 import { Turnip } from './content/Turnip'
 import { BugsButtons } from './content/BugsButtons'
@@ -8,7 +7,6 @@ import { FishButtons } from './content/FishButtons'
 import { Description } from './content/Description' 
 import { Footer } from './content/Footer'
 import { Router, Route, NavLink, Switch } from "react-router-dom";
-//import { useHistory } from "react-router-dom";
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 
@@ -20,7 +18,7 @@ history.listen(location => {
 
 function initializeReactGA() {
   ReactGA.initialize('UA-162043648-2');
-  ReactGA.pageview('/home');
+  //ReactGA.pageview('/home');
 }
 
 // @font-face {
@@ -33,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
   body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif, Arial;
   }
   p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -59,7 +57,6 @@ else {
 
 const App = () => {
   initializeReactGA()
-  //let history = useHistory();
   const [language, setLanguage] = useState(localStorage.getItem("language"))
   let section_names = ["Home", "Turnips", "Bugs", "Fish", "EN/ES"]
   
@@ -75,26 +72,22 @@ const App = () => {
     }
   }
 
-  function historyPush(url) {
-    console.log(history)
-    if(history) history.push(url)
-  }
   return (
     <AppContainer>
       <GlobalStyles/>
       <BackgroundImage />
       <Router history={history}>
         <NavbarContent id={"top"}>
-          <NavLink to="/" exact name="Home" activeClassName="active" onClick={() => historyPush("/")}>
+          <NavLink to="/" exact name="Home" activeClassName="active" >
             {section_names[0]}
           </NavLink>
-          <NavLink to="/turnips" name="Turnips" exact activeClassName="active" onClick={() => {historyPush("/turnips")}}>
+          <NavLink to="/turnips" name="Turnips" exact activeClassName="active" >
             {section_names[1]}
           </NavLink>
-          <NavLink to="/bugs" name="Bugs" exact activeClassName="active" onClick={() => historyPush("/bugs")}>
+          <NavLink to="/bugs" name="Bugs" exact activeClassName="active" >
             {section_names[2]}
           </NavLink>
-          <NavLink to="/fish" name ="Fish" exact activeClassName="active" onClick={() => historyPush("/fish")}>
+          <NavLink to="/fish" name ="Fish" exact activeClassName="active" >
             {section_names[3]}
           </NavLink>
           <LangIndex className="Language" onClick={() => {switchLanguage()}} href={"#"}>{section_names[4]}</LangIndex>
@@ -142,19 +135,20 @@ const NavbarContent = styled.nav`
     line-height: 2em;
   }
   a {
-    font-weight: bold;
+    width: 25%;
     text-align: center;
     color: #F5F2E3;
+    padding: 15px 0px;
   }
   a.active {
     color: #A05E2B;
   }
 `
 const LangIndex = styled.a`
-  font-weight: bold;
   text-align: center;
   color: #F5F2E3;
   font-size: 12px;
+  
 `
 const BackgroundImage = styled.div`
   min-height: 100%;
@@ -162,7 +156,7 @@ const BackgroundImage = styled.div`
   overflow: hidden;
 
   &::before {
-    background-image: url("../img/bckground2.jpg");
+    background-image: url("../img/bckground2.webp");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -177,6 +171,7 @@ const BackgroundImage = styled.div`
   }
 `
 const AppContainer = styled.div`
+  font-weight: bold;
   max-width: 650px;
   background-color: #A0D0E7;
   margin: 0 auto;
