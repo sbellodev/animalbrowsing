@@ -38,7 +38,7 @@ const FishButtons = () => {
     return (    
       <>
         <ButtonsContainer>
-          <SearchInput onChange={setInput} placeholder={search_placeholder} />
+          <SearchInput  onChange={setInput} placeholder={search_placeholder} />
           <Button onClick={() => setSortBy("Hour")}><IconImage src={imageURL.Hour} alt="Hour" /></Button>
           <Button onClick={() => setSortBy("ABC")}><IconImage src={imageURL.ABC}  alt="ABC" /></Button>
           <Button onClick={() => setSortBy("Price")} style={{backgroundColor: "#FDDD5C"}}><IconImage src={imageURL.Price}  alt="price" /></Button>

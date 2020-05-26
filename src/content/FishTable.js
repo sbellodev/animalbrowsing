@@ -4,7 +4,13 @@ import styled from 'styled-components'
 const FishMobileTable = ({actualTable}) => {
     const row = actualTable.length ? actualTable.map(value =>
          <tr key={value.Number}>
-            <td><img src={"../img/fish/" + value.Image} alt={value.Name} /></td>
+            <td>
+                <picture>
+                    <source srcSet={"../img/fish/" +value.ImageWEBP} type="image/webp" />
+                    <source srcSet={"../img/fish/" +value.ImagePNG} type="image/png" /> 
+                    <img src={"../img/fish/" +value.ImageWEBP} alt={value.Name} />
+                </picture>
+            </td>
             <td>{value.Name} <br/> {value.Price}</td>
             <td>{value.Time} <br/> {value.Location}</td>
             <td dangerouslySetInnerHTML={{ __html: value.Season}}></td>
@@ -30,7 +36,7 @@ const FishTable = ({sortBy, actualTable, inputSearch}) => {
                     v.PriceInt.toString().match(inputSearch) ||
                     v.Location.toLowerCase().match(inputSearch) ||
                     v.Season.toLowerCase().match(inputSearch) ||
-                    v.TimeInterval.toLowerCase().match(inputSearch) 
+                    v.Time.toLowerCase().match(inputSearch) 
                 )
             })
         const sortByHour = (table) => {

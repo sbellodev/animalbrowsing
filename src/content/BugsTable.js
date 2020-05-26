@@ -4,7 +4,13 @@ import styled from 'styled-components'
 const BugMobileTable = ({actualTable}) => {
     const row = actualTable.length ? actualTable.map(value =>
          <tr key={value.Number}>
-            <td><img src={"../img/bug/" + value.Image} alt={value.Name} /></td>
+            <td>
+                <picture>
+                    <source srcSet={"../img/bug/" +value.ImageWEBP} type="image/webp" />
+                    <source srcSet={"../img/bug/" +value.ImagePNG} type="image/png" /> 
+                    <img src={"../img/bug/" +value.ImageWEBP} alt={value.Name} />
+                </picture>
+            </td>
             <td>{value.Name} <br/> {value.Price}</td>
             <td>{value.Time} <br/> {value.Location}</td>
             <td dangerouslySetInnerHTML={{ __html: value.Season}}></td>
@@ -25,12 +31,13 @@ const BugsTable = ({sortBy, actualTable, inputSearch}) => {
         const sortBySearch = (table, inputSearch) => 
             table.filter((v, i, a) => {
                 inputSearch = inputSearch.toLowerCase()
+                console.log(inputSearch)
                 return (
                     v.Name.toLowerCase().match(inputSearch) ||
                     v.PriceInt.toString().match(inputSearch) ||
                     v.Location.toLowerCase().match(inputSearch) ||
                     v.Season.toLowerCase().match(inputSearch) ||
-                    v.TimeInterval.toLowerCase().match(inputSearch) 
+                    v.Time.toLowerCase().match(inputSearch) 
                 )
             })
         const sortByHour = (table) => {
