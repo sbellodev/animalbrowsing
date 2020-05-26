@@ -111,13 +111,10 @@ const TableContainer = styled.table`
     background-color: #A0D0E7;
     border-collapse: collapse;
     padding: 5px;
-    thead {
-        width: 100%;
-    }
+
     tbody {
         font-family: arial;
         font-weight: normal;
-        width: 100%;
     }
     tr {
         border-bottom: 3px solid #F5F2E3;
@@ -145,9 +142,12 @@ const TableContainer = styled.table`
         width: 50px;
         height: 50px;
     }
-    
+
     @media (max-width: 570px) {
         font-size: 16px;
+    }
+    @media (max-width: 340px) {
+        font-size: 14px;
     }
 `
 export { BugsTable }

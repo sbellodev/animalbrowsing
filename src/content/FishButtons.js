@@ -26,7 +26,7 @@ const FishButtons = () => {
     let search_placeholder = ""
     let actualTable = ""
     if(localStorage.getItem("language") === "es") {
-      search_placeholder = "Buscas..."
+      search_placeholder = "Buscar..."
       actualTable = fishListES 
       document.title = 'Animal Browsing - Lista de peces';
     }
@@ -39,9 +39,9 @@ const FishButtons = () => {
       <>
         <ButtonsContainer>
           <SearchInput onChange={setInput} placeholder={search_placeholder} />
-          <HourButton onClick={() => setSortBy("Hour")}><IconImage src={imageURL.Hour} alt="Hour" /></HourButton>
-          <ABCButton onClick={() => setSortBy("ABC")}><IconImage src={imageURL.ABC}  alt="ABC" /></ABCButton>
-          <PriceButton onClick={() => setSortBy("Price")}><IconImage src={imageURL.Price}  alt="price" /></PriceButton>
+          <Button onClick={() => setSortBy("Hour")}><IconImage src={imageURL.Hour} alt="Hour" /></Button>
+          <Button onClick={() => setSortBy("ABC")}><IconImage src={imageURL.ABC}  alt="ABC" /></Button>
+          <Button onClick={() => setSortBy("Price")} style={{backgroundColor: "#FDDD5C"}}><IconImage src={imageURL.Price}  alt="price" /></Button>
           <ResetButton onClick={() => setSortBy("Reset")}><IconImage src={imageURL.Reset}  alt="Reset" /></ResetButton>
         </ButtonsContainer>    
         <FishTable sortBy={sortBy} actualTable={actualTable} inputSearch={inputSearch} />
@@ -49,18 +49,18 @@ const FishButtons = () => {
     )
 } 
 const ButtonsContainer = styled.div`
-background-color: #A0D0E7;
-display: flex;
-flex-direction: row;
-align-items: center;
-float:right;
-padding-bottom: 18px;
+  background-color: #A0D0E7;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  float:right;
+  padding-bottom: 18px;
 `
 const SearchInput = styled.input`
   font-size: 12px;
   width: 80px;
   height: 35px;
-  margin: 10px 25px 10px 0;
+  margin-right: 20px;
   border-radius: 25px;
   padding-left: 10px;
   border: 1px solid white;
@@ -69,29 +69,24 @@ const SearchInput = styled.input`
   img {
     float: right;
   }
+
+  @media (max-width: 340px){
+    width: 60px;
+    height: 25px;
+    margin-right: 10px;
+  }
 `
-const HourButton = styled.button`
+const Button = styled.button`
   width: 35px;
   height: 35px;
-  margin: 10px 25px 10px 0;
   border-radius: 10px;
   box-shadow: 1px 1px #888888;
+  margin-right: 20px;
+  @media (max-width: 340px){
+    margin-right: 10px;
+  }
 `
-const ABCButton = styled.button`
-  width: 35px;
-  height: 35px;
-  margin: 10px 25px 10px 0;
-  border-radius: 10px;
-  box-shadow: 1px 1px #888888;
-`
-const PriceButton = styled.button`
-  width: 35px;
-  height: 35px;
-  margin: 10px 25px 10px 0;
-  border-radius: 10px;
-  background-color: #FDDD5C;
-  box-shadow: 1px 1px #888888;
-`
+
 const ResetButton = styled.button`
   width: 30px;
   height: 30px;
