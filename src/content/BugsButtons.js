@@ -5,12 +5,12 @@ import bugListEN from '../data/bug-EN.json'
 import bugListES from '../data/bug-ES.json'
   
 const imageURL = {
-    Price: "/img/icons/star.svg",
-    Hour: "/img/icons/hour.svg", 
-    ABC: "/img/icons/abc.webp", 
-    Search: "/img/icons/search.webp", 
-    Reset: "/img/icons/reset.webp", 
-    Return: "/img/icons/return.webp", 
+  Price: "/img/icons/star.svg",
+  Hour: "/img/icons/hour.svg",  
+  ABCWEBP: "/img/icons/abc.webp", 
+  ABCPNG: "/img/icons/abc.png", 
+  ResetWEBP: "/img/icons/reset.webp",  
+  ResetPNG: "/img/icons/reset.png",  
 }
 
 const BugsButtons = () => {
@@ -38,12 +38,29 @@ const BugsButtons = () => {
     return (    
       <>
         <ButtonsContainer>
-          <SearchInput onChange={setInput} placeholder={search_placeholder} />
+          <label for="table-search"></label>
+          <SearchInput  id={"table-search"} onChange={setInput} placeholder={search_placeholder} />
           <Button onClick={() => setSortBy("Hour")}><IconImage src={imageURL.Hour} alt="Hour" /></Button>
-          <Button onClick={() => setSortBy("ABC")}><IconImage src={imageURL.ABC}  alt="ABC" /></Button>
-          <Button onClick={() => setSortBy("Price")} style={{backgroundColor: "#FDDD5C"}}><IconImage src={imageURL.Price}  alt="price" /></Button>
-          <ResetButton onClick={() => setSortBy("Reset")}><IconImage src={imageURL.Reset}  alt="Reset" /></ResetButton>
-        </ButtonsContainer>    
+          <Button onClick={() => setSortBy("ABC")}>
+            <picture>
+              <sources srcSet={imageURL.ABCWEBP}/>
+              <sources srcSet={imageURL.ABCPNG}/>
+              <IconImage src={imageURL.ABCPNG} alt="ABC" />
+            </picture>
+          </Button>
+          <Button onClick={() => setSortBy("Price")} style={{backgroundColor: "#FDDD5C"}}>
+            <picture>
+                <IconImage src={imageURL.Price}  alt="price" />
+            </picture>
+          </Button>
+          <ResetButton onClick={() => setSortBy("Reset")}>
+            <picture>
+              <sources srcSet={imageURL.ResetWEBP}/>
+              <sources srcSet={imageURL.ResetPNG}/>
+              <IconImage src={imageURL.ResetPNG}  alt="Reset" />
+            </picture>
+          </ResetButton>
+        </ButtonsContainer>  
         <BugsTable sortBy={sortBy} actualTable={actualTable} inputSearch={inputSearch} />
       </>
     )
@@ -55,6 +72,9 @@ const ButtonsContainer = styled.div`
   align-items: center;
   float:right;
   padding-bottom: 18px;
+  button {
+    background-color: ghostwhite;
+  }
 `
 const SearchInput = styled.input`
   font-size: 12px;

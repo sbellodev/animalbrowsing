@@ -6,11 +6,11 @@ import fishListES from '../data/fish-ES.json'
   
 const imageURL = {
     Price: "/img/icons/star.svg",
-    Hour: "/img/icons/hour.svg", 
-    ABC: "/img/icons/abc.webp", 
-    Search: "/img/icons/search.webp", 
-    Reset: "/img/icons/reset.webp", 
-    Return: "/img/icons/return.webp", 
+    Hour: "/img/icons/hour.svg",  
+    ABCWEBP: "/img/icons/abc.webp", 
+    ABCPNG: "/img/icons/abc.png", 
+    ResetWEBP: "/img/icons/reset.webp",  
+    ResetPNG: "/img/icons/reset.png",  
 }
 
 const FishButtons = () => {
@@ -38,11 +38,28 @@ const FishButtons = () => {
     return (    
       <>
         <ButtonsContainer>
-          <SearchInput  onChange={setInput} placeholder={search_placeholder} />
+          <label for="table-search"></label>
+          <SearchInput  id={"table-search"} onChange={setInput} placeholder={search_placeholder} />
           <Button onClick={() => setSortBy("Hour")}><IconImage src={imageURL.Hour} alt="Hour" /></Button>
-          <Button onClick={() => setSortBy("ABC")}><IconImage src={imageURL.ABC}  alt="ABC" /></Button>
-          <Button onClick={() => setSortBy("Price")} style={{backgroundColor: "#FDDD5C"}}><IconImage src={imageURL.Price}  alt="price" /></Button>
-          <ResetButton onClick={() => setSortBy("Reset")}><IconImage src={imageURL.Reset}  alt="Reset" /></ResetButton>
+          <Button onClick={() => setSortBy("ABC")}>
+            <picture>
+              <sources srcSet={imageURL.ABCWEBP}/>
+              <sources srcSet={imageURL.ABCPNG}/>
+              <IconImage src={imageURL.ABCPNG} alt="ABC" />
+            </picture>
+          </Button>
+          <Button onClick={() => setSortBy("Price")} style={{backgroundColor: "#FDDD5C"}}>
+            <picture>
+                <IconImage src={imageURL.Price}  alt="price" />
+            </picture>
+          </Button>
+          <ResetButton onClick={() => setSortBy("Reset")}>
+            <picture>
+              <sources srcSet={imageURL.ResetWEBP}/>
+              <sources srcSet={imageURL.ResetPNG}/>
+              <IconImage src={imageURL.ResetPNG}  alt="Reset" />
+            </picture>
+          </ResetButton>
         </ButtonsContainer>    
         <FishTable sortBy={sortBy} actualTable={actualTable} inputSearch={inputSearch} />
       </>
@@ -55,13 +72,16 @@ const ButtonsContainer = styled.div`
   align-items: center;
   float:right;
   padding-bottom: 18px;
+  button {
+    background-color: ghostwhite;
+  }
 `
 const SearchInput = styled.input`
   font-size: 12px;
   width: 80px;
   height: 35px;
   margin-right: 20px;
-  border-radius: 25px;
+  border-radius: 5px;
   padding-left: 10px;
   border: 1px solid white;
   box-shadow: 1px 1px black;
@@ -70,7 +90,7 @@ const SearchInput = styled.input`
     float: right;
   }
 
-  @media (max-width: 340px){
+  @media screen and (max-width: 340px){
     width: 60px;
     height: 25px;
     margin-right: 10px;
@@ -82,7 +102,7 @@ const Button = styled.button`
   border-radius: 10px;
   box-shadow: 1px 1px #888888;
   margin-right: 20px;
-  @media (max-width: 340px){
+  @media screen and (max-width: 340px){
     margin-right: 10px;
   }
 `
