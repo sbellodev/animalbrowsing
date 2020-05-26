@@ -6,11 +6,11 @@ import bugListES from '../data/bug-ES.json'
   
 const imageURL = {
   Price: "/img/icons/star.svg",
-  Hour: "/img/icons/hour.svg",  
-  ABCWEBP: "/img/icons/abc.webp", 
-  ABCPNG: "/img/icons/abc.png", 
-  ResetWEBP: "/img/icons/reset.webp",  
-  ResetPNG: "/img/icons/reset.png",  
+  Hour: "/img/icons/hour.svg",
+  ABCWEBP: "/img/icons/abc.webp",
+  ABCPNG: "/img/icons/abc.png",
+  ResetWEBP: "/img/icons/reset.webp",
+  ResetPNG: "/img/icons/reset.png",
 }
 
 const BugsButtons = () => {
@@ -27,12 +27,12 @@ const BugsButtons = () => {
     let actualTable = ""
     if(localStorage.getItem("language") === "es") {
       document.title = 'Animal Browsing - Lista de bichos';
-      search_placeholder = "Buscar ..."
+      search_placeholder = "Buscar..."
       actualTable = bugListES 
     }
     else {
       document.title = 'Animal Browsing - Bug list';
-      search_placeholder = "Find ..."
+      search_placeholder = "Find..."
       actualTable = bugListEN 
     }
     return (    
@@ -60,7 +60,7 @@ const BugsButtons = () => {
               <IconImage src={imageURL.ResetPNG}  alt="Reset" />
             </picture>
           </ResetButton>
-        </ButtonsContainer>  
+        </ButtonsContainer>
         <BugsTable sortBy={sortBy} actualTable={actualTable} inputSearch={inputSearch} />
       </>
     )
@@ -81,7 +81,7 @@ const SearchInput = styled.input`
   width: 80px;
   height: 35px;
   margin-right: 20px;
-  border-radius: 25px;
+  border-radius: 5px;
   padding-left: 10px;
   border: 1px solid white;
   box-shadow: 1px 1px black;

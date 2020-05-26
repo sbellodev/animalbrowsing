@@ -28,7 +28,7 @@ function initializeReactGA() {
 const GlobalStyles = createGlobalStyle`
   html, body {
     height: 100%;
-    margin: 0;
+  
   }
   body {
     font-family: sans-serif, Arial;
@@ -156,7 +156,7 @@ const BackgroundImage = styled.div`
   overflow: hidden;
 
   &::before {
-    background-image: url("../img/bckground2-min.jpeg");
+    background-image: url("../img/bckground3-min.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;

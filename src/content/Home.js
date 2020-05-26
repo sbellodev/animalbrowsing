@@ -48,6 +48,7 @@ const Home = () => {
                     <p>Hope you like it! See ya</p>
                     <br/>
                 </HomeContent>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             </HomeContainer>
         )
     }
@@ -56,9 +57,12 @@ const HomeContainer = styled.div`
     background-color:  #A0D0E7;
     font-size: 16px;
     line-height: 20px;
+    padding-top: 30px;
 `
 const HomeContent = styled.div`
     width: 80%;
     margin: auto;
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 18px;
 `
 export { Home }

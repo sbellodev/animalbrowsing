@@ -5,12 +5,12 @@ import fishListEN from '../data/fish-EN.json'
 import fishListES from '../data/fish-ES.json'
   
 const imageURL = {
-    Price: "/img/icons/star.svg",
-    Hour: "/img/icons/hour.svg",  
-    ABCWEBP: "/img/icons/abc.webp", 
-    ABCPNG: "/img/icons/abc.png", 
-    ResetWEBP: "/img/icons/reset.webp",  
-    ResetPNG: "/img/icons/reset.png",  
+  Price: "/img/icons/star.svg",
+  Hour: "/img/icons/hour.svg",
+  ABCWEBP: "/img/icons/abc.webp",
+  ABCPNG: "/img/icons/abc.png",
+  ResetWEBP: "/img/icons/reset.webp",
+  ResetPNG: "/img/icons/reset.png",
 }
 
 const FishButtons = () => {
@@ -26,14 +26,14 @@ const FishButtons = () => {
     let search_placeholder = ""
     let actualTable = ""
     if(localStorage.getItem("language") === "es") {
+      document.title = 'Animal Browsing - Lista de peces';
       search_placeholder = "Buscar..."
       actualTable = fishListES 
-      document.title = 'Animal Browsing - Lista de peces';
     }
     else {
+      document.title = 'Animal Browsing - Fish list';
       search_placeholder = "Find..."
       actualTable = fishListEN 
-      document.title = 'Animal Browsing - Fish list';
     }
     return (    
       <>
@@ -60,7 +60,7 @@ const FishButtons = () => {
               <IconImage src={imageURL.ResetPNG}  alt="Reset" />
             </picture>
           </ResetButton>
-        </ButtonsContainer>    
+        </ButtonsContainer>
         <FishTable sortBy={sortBy} actualTable={actualTable} inputSearch={inputSearch} />
       </>
     )
