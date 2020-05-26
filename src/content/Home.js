@@ -54,7 +54,7 @@ const Home = () => {
     }
 }
 const HomeContainer = styled.div`
-    background-color:  #A0D0E7;
+    background-color:  #CCE1F2;
     font-size: 16px;
     line-height: 20px;
     padding-top: 30px;

@@ -6,7 +6,10 @@ const primaryColor = {
   Blue-sh: "#A0D0E7", 
   White-sh: #F5F2E3
 
-  NavBackground: "#FFFFFF",
+  new_lighter_blue: #CCE1F2,
+  new_redish_navbar: #ff8361,
+  new_brown_navbar: #836953
+  NavBackground: "tomato",
   BackgroundPrimary: "#F5F2E3", 
   Orangered: "#FFB347"
   Brown: #A05E2B,

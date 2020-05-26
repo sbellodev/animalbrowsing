@@ -66,7 +66,7 @@ const BugsButtons = () => {
     )
 } 
 const ButtonsContainer = styled.div`
-  background-color: #A0D0E7;
+  background-color: #CCE1F2;
   display: flex;
   flex-direction: row;
   align-items: center;

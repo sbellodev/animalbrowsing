@@ -117,6 +117,6 @@ const Ellipsis = styled.div`
     margin-top: 20px;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
-    background-color: #A0D0E7;
+    background-color: #CCE1F2;
 `
 export { Description }

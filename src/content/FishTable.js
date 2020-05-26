@@ -114,7 +114,7 @@ const FishTable = ({sortBy, actualTable, inputSearch}) => {
 const TableContainer = styled.table`
     font-size: 18px;
     width: 100%;
-    background-color: #A0D0E7;
+    background-color: #CCE1F2;
     border-collapse: collapse;
     padding: 5px;
 
@@ -130,7 +130,7 @@ const TableContainer = styled.table`
         padding-top: 12px;
         padding-bottom: 12px;
         width: 25%;
-        background-color: #A0D0E7;
+        background-color: #CCE1F2;
         border-top: 3px solid #F5F2E3;
         text-align: center;
         vertical-align: top;

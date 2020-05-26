@@ -123,7 +123,7 @@ const App = () => {
 const NavbarContent = styled.nav`
   width: 100%;
   height: 60px;
-  background-color: tomato;
+  background-color: #FF8361;
   font-size: 18px;
   display: flex;
   flex-direction: row;
@@ -141,7 +141,7 @@ const NavbarContent = styled.nav`
     padding: 15px 0px;
   }
   a.active {
-    color: #A05E2B;
+    color: #836953;
   }
 `
 const LangIndex = styled.a`
@@ -173,7 +173,7 @@ const BackgroundImage = styled.div`
 const AppContainer = styled.div`
   font-weight: bold;
   max-width: 650px;
-  background-color: #A0D0E7;
+  background-color: #CCE1F2;
   margin: 0 auto;
 `
 export default App;
