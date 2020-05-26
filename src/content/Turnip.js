@@ -80,7 +80,7 @@ const TurnipContainer = styled.div`
     white-space: pre-wrap;
     font-size: 18px;
     line-height: 25px;
-    @media (max-width: 570px) {
+    @media screen and (max-width: 570px) {
         font-size: 16px;
     }
 `

@@ -100,12 +100,12 @@ const Container = styled.div`
         margin: 0 auto;
         font-size: 18px;
     }
-    @media (max-width: 420px) {
+    @media screen and (max-width: 420px) {
         h5 {
             width: 80%;
         }
       }
-    @media (max-width: 570px) {
+    @media screen and (max-width: 570px) {
         h5 {
             font-size: 16px;
         }

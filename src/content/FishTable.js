@@ -149,10 +149,10 @@ const TableContainer = styled.table`
         height: 50px;
     }
 
-    @media (max-width: 570px) {
+    @media screen and (max-width: 570px) {
         font-size: 16px;
     }
-    @media (max-width: 340px) {
+    @media screen and (max-width: 340px) {
         font-size: 14px;
     }
 `

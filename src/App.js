@@ -156,7 +156,7 @@ const BackgroundImage = styled.div`
   overflow: hidden;
 
   &::before {
-    background-image: url("../img/bckground2.webp");
+    background-image: url("../img/bckground2-min.jpeg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;

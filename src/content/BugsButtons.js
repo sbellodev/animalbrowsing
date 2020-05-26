@@ -70,7 +70,7 @@ const SearchInput = styled.input`
     float: right;
   }
 
-  @media (max-width: 340px){
+  @media screen and (max-width: 340px){
     width: 60px;
     height: 25px;
     margin-right: 10px;
@@ -82,7 +82,7 @@ const Button = styled.button`
   border-radius: 10px;
   box-shadow: 1px 1px #888888;
   margin-right: 20px;
-  @media (max-width: 340px){
+  @media screen and (max-width: 340px){
     margin-right: 10px;
   }
 `
