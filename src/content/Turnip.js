@@ -76,7 +76,7 @@ const Turnip = () => {
 const TurnipContainer = styled.main`
     background-color: #CCE1F2;
     width: 100%;
-    text-align: center;
+    text-align: left;
     white-space: pre-wrap;
     font-size: 18px;
     line-height: 25px;

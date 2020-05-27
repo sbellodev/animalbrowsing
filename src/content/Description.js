@@ -7,8 +7,9 @@ const Description = ({actualIndex}) => {
             case "Home":
                 return (
                     <Container>
-                        <h5>Bienvenido a Animal Browsing!!1</h5>
-                        <h5>Todo lo que necesitas acerca de lista de peces, bichos, precios de nabos y más ... en Animal Crossing: New Horizons</h5>
+                        <h5>¡Bienvenid@ a <a href="/">Animal Browsing</a>!</h5>
+                        <h5>Todo lo que necesitas acerca de lista de peces, bichos, precios de nabos y más...</h5>
+                        <h5>en Animal Crossing: New Horizons</h5>
                         <h5>¡Buena suerte! y cuídate</h5>
                         <Ellipsis />
                     </Container>
@@ -17,8 +18,8 @@ const Description = ({actualIndex}) => {
                 return (
                     <Container>
                         <h5>Recibe de forma inmediata los precios de nabos más actuales del mercado de Twitter</h5>
-                        <h5>¡No tienes que hacer nada! Sólo observa...</h5>
                         <h5>Se actualiza automáticamente</h5>
+                        <h5>¡No tienes que hacer nada! Sólo observa...</h5>
                         <br/>
                         <Ellipsis />
                     </Container>
@@ -51,8 +52,9 @@ const Description = ({actualIndex}) => {
             case "Home":
                 return (
                     <Container>
-                        <h5>Henlo! Welcome to Animal Browsing!</h5>
-                        <h5>All you need about bugs and fish's list, turnips prices on Twitter... about Animal Crossing: New Horizons </h5>
+                        <h5>Henlo! Welcome to Animal Browsing</h5>
+                        <h5>Get the latest turnips prices, bugs and fish's list...</h5>
+                        <h5>about Animal Crossing: New Horizons</h5>
                         <h5>¡Have a good one! And take care</h5>
                         <Ellipsis />
                     </Container>
@@ -61,8 +63,8 @@ const Description = ({actualIndex}) => {
                 return (
                     <Container>
                         <h5>Get instantly all the recent turnips prices from Twitter</h5>
-                        <h5>¡Just watch!</h5>
                         <h5>It updates itself automatically</h5>
+                        <h5>¡Just watch!</h5>
                         <Ellipsis />
                     </Container>
                 )

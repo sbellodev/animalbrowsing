@@ -58,7 +58,7 @@ else {
 const App = () => {
   initializeReactGA()
   const [language, setLanguage] = useState(localStorage.getItem("language"))
-  let section_names = ["Home", "Turnips", "Bugs", "Fish", "EN/ES"]
+  let section_names = ["Home", "Turnips", "Bugs", "Fish", "Lang EN"]
   
   function switchLanguage() {
     if(language === "es"){
@@ -68,8 +68,10 @@ const App = () => {
     else if(language === "en"){
       setLanguage("es")
       localStorage.setItem("language", "es")
-      section_names = ["Inicio", "Nabos", "Bichos", "Peces", "EN/ES"]
     }
+  }
+  if(language === "es"){
+    section_names = ["Inicio", "Nabos", "Bichos", "Peces", "Lang ES"]
   }
 
   return (
@@ -141,12 +143,12 @@ const NavbarContent = styled.nav`
     padding: 15px 0px;
   }
   a.active {
-    color: rgb(131, 105, 83);
+    color: rgb(85, 50, 20);
   }
 `
 const LangIndex = styled.a`
   text-align: center;
-  color: #F5F2E3;
+  color: black;
   font-size: 12px;
   
 `

@@ -5,12 +5,12 @@ import bugListEN from '../data/bug-EN.json'
 import bugListES from '../data/bug-ES.json'
   
 const imageURL = {
-  Price: "/img/icons/star.svg",
-  Hour: "/img/icons/hour.svg",
-  ABCWEBP: "/img/icons/abc.webp",
-  ABCPNG: "/img/icons/abc.png",
-  ResetWEBP: "/img/icons/reset.webp",
-  ResetPNG: "/img/icons/reset.png",
+  Price: "/icons/star.svg",
+  Hour: "/icons/hour.svg",
+  ABCWEBP: "/icons/abc.webp",
+  ABCPNG: "/icons/abc.png",
+  ResetWEBP: "/icons/reset.webp",
+  ResetPNG: "/icons/reset.png",
 }
 
 const BugsButtons = () => {
