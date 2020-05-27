@@ -8,6 +8,13 @@ const Home = () => {
         return (
             <HomeContainer>
                 <HomeContent>
+                    <p>Novedades en camino:</p>
+                    <ul>
+                        <li>Lista de fósiles</li>
+                        <li>Lista de obras de arte</li>
+                        <li>Lista de esculturas</li>
+                    </ul>
+                    <br/>
                     <h4>5/18/2020 - Inauguración Animal Browsing</h4>
                     <br/>
                     <picture>
@@ -42,6 +49,13 @@ const Home = () => {
         return (
             <HomeContainer>
                 <HomeContent>
+                <p>Upcoming features:</p>
+                    <ul>
+                        <li>Fossil list</li>
+                        <li>Paintings list</li>
+                        <li>Statues list</li>
+                    </ul>
+                <br/>
                 <h4>5/18/2020 - Animal Browsing inauguration</h4>
                 <br/>
                 <picture>
