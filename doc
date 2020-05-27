@@ -6,17 +6,16 @@ const primaryColor = {
   Blue-sh: "#A0D0E7", 
   White-sh: #F5F2E3
 
-  new_lighter_blue: #CCE1F2,
-  new_redish_navbar: #ff8361,
-  new_brown_navbar: #836953
-  NavBackground: "tomato",
-  BackgroundPrimary: "#F5F2E3", 
-  Orangered: "#FFB347"
-  Brown: #A05E2B,
+  new_blue_background: #CCE1F2
+  navbar_background_orange: rgb(255,131,97)
+  navbar_active_brown: rgb(131,105,83)
+  white: ghostwhite
 }
-margins: 18px;
-
-font: 16px and 14px
+padding, margin sizes: 5, 10, 20, 30px
+    big padding (description, navbar and below description) 30
+    mid padding 20
+    very small padding (tables) 5
+font: 14, 16, 18, 20px
 
 
 Media Queries - 

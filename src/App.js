@@ -123,7 +123,7 @@ const App = () => {
 const NavbarContent = styled.nav`
   width: 100%;
   height: 60px;
-  background-color: #FF8361;
+  background-color: rgb(255, 131, 97);
   font-size: 18px;
   display: flex;
   flex-direction: row;
@@ -137,11 +137,11 @@ const NavbarContent = styled.nav`
   }
   a {
     text-align: center;
-    color: #F5F2E3;
+    color: ghostwhite;
     padding: 15px 0px;
   }
   a.active {
-    color: #836953;
+    color: rgb(131, 105, 83);
   }
 `
 const LangIndex = styled.a`

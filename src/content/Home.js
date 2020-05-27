@@ -21,8 +21,10 @@ const Home = () => {
                     <p>A medida que pase el tiempo y según vuestro interés iré añadiendo más y más cositas ^^</p>
                     <p>Cualquier sugerencia, crítica o saludarme, podéis contactarme en
                          <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" > twitter </a> a @Gattoalaparato</p>
+                    <p>o un email a <a href = "mailto:gatto@animalbrowsing.com">gatto@animalbrowsing.com</a></p>
                     <p>Espero que os guste, hasta la próxima</p>
                     <br/>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </HomeContent>
             </HomeContainer>
         )
@@ -45,16 +47,18 @@ const Home = () => {
                     <br/>
                     <p>Any suggestion, criticism or saying hi please feel free reach me on 
                     <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" > twitter </a> at @Gattoalaparato</p>
+                    <p>or send me an email to <a href = "mailto:gatto@animalbrowsing.com">gatto@animalbrowsing.com</a></p>
                     <p>Hope you like it! See ya</p>
                     <br/>
                 </HomeContent>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             </HomeContainer>
         )
     }
 }
-const HomeContainer = styled.div`
-    background-color:  #CCE1F2;
+const HomeContainer = styled.main`
+    background-color: #CCE1F2;
     font-size: 16px;
     line-height: 20px;
     padding-top: 30px;
@@ -62,7 +66,7 @@ const HomeContainer = styled.div`
 const HomeContent = styled.div`
     width: 80%;
     margin: auto;
-    border-bottom: 1px solid whitesmoke;
-    padding-bottom: 18px;
+    border-bottom: 1px solid ghostwhite;
+    padding-bottom: 20px;
 `
 export { Home }

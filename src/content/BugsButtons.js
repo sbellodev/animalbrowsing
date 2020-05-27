@@ -36,7 +36,7 @@ const BugsButtons = () => {
       actualTable = bugListEN 
     }
     return (    
-      <>
+      <main>
         <ButtonsContainer>
           <label for="table-search"></label>
           <SearchInput  id={"table-search"} onChange={setInput} placeholder={search_placeholder} />
@@ -62,7 +62,7 @@ const BugsButtons = () => {
           </ResetButton>
         </ButtonsContainer>
         <BugsTable sortBy={sortBy} actualTable={actualTable} inputSearch={inputSearch} />
-      </>
+      </main>
     )
 } 
 const ButtonsContainer = styled.div`
@@ -71,7 +71,8 @@ const ButtonsContainer = styled.div`
   flex-direction: row;
   align-items: center;
   float:right;
-  padding-bottom: 18px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   button {
     background-color: ghostwhite;
   }

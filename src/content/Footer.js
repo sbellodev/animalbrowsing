@@ -12,7 +12,6 @@ const Footer = () => {
             <br/>
             <BackToTop href="#top">{backTo_str}</BackToTop>
             <br/>
-            <br/>
             <br/><br/>
             <Disclaimer>
                 <p>Created by <a href="https://twitter.com/gattoalaparato" target="_blank" rel="noopener noreferrer">@Gattoalaparato</a></p>
@@ -21,19 +20,19 @@ const Footer = () => {
         </FooterContainer>
     )
 }
-const FooterContainer = styled.div`
+const FooterContainer = styled.footer`
     font-size: 14px;
-    padding-top: 15px;
+    padding-top: 20px;
 `
 const BackToTop = styled.a`
-    padding-left: 15px;
+    padding-left: 20px;
 `
 const Disclaimer = styled.div`
     font-weight: normal;
     background-color: #F5F2E3;
-    padding: 15px 10px 10px 10px;
+    padding: 20px 10px 20px 10px;
     border-radius: 4px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 `
 
 export { Footer }

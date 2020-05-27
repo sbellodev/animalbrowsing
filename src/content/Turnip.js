@@ -22,11 +22,11 @@ const Turnip = () => {
     
     let message_wait 
     if(localStorage.getItem("language") === "es") {
-        message_wait = <div style={{height: "99vh", padding: "10px"}}>Cargando tweets... si tarda mucho, por favor contacta con el webmaster.</div>
+        message_wait = <p className="tweet_individual" style={{height: "99vh"}}>Cargando tweets... si tarda mucho, por favor contacta con el webmaster.</p>
         document.title = 'Animal Browsing - Precio de nabos ';
     }
     else {
-        message_wait = <div style={{height: "99vh", padding: "10px"}}>Loading tweets... please wait...</div>
+        message_wait = <p className="tweet_individual" style={{height: "99vh"}}>Loading tweets... please wait... if it lasts too much please contact the webmaster</p>
         document.title = 'Animal Browsing - Turnips prices '
     }
     
@@ -66,14 +66,14 @@ const Turnip = () => {
     return (
         <>
         <TurnipContainer>
-            {!APIResponse && message_wait}
+            {!APIResponse && <TwitterContent>{message_wait}</TwitterContent>}
             {APIResponse && <TwitterContent dangerouslySetInnerHTML={{__html: renderTwitterAPIContent(APIResponse)}} />}
         </TurnipContainer>
         </>
     )
 }
 
-const TurnipContainer = styled.div`
+const TurnipContainer = styled.main`
     background-color: #CCE1F2;
     width: 100%;
     text-align: center;
@@ -100,7 +100,7 @@ const TwitterContent = styled.div`
         width: 80%;
         max-width: 350px;
         margin: 0 auto;
-        padding-top: 25px;
+        padding-top: 30px;
         border-bottom: 3px solid #F5F2E3;
     }
 `

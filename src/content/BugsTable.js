@@ -124,12 +124,12 @@ const TableContainer = styled.table`
         font-weight: normal;
     }
     tr {
-        border-bottom: 3px solid #F5F2E3;
+        border-bottom: 3px solid ghostwhite;
         border-radius: 50%;
     }
     th {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         width: 25%;
         background-color: #CCE1F2;
         border-top: 3px solid #F5F2E3;
@@ -138,8 +138,8 @@ const TableContainer = styled.table`
     }
     td {
         text-align: center;
-        padding-bottom: 18px;
-        padding-top: 18px;        
+        padding-bottom: 20px;
+        padding-top: 20px;        
         vertical-align: top;
     }
     td:last-child {

@@ -89,10 +89,10 @@ const Description = ({actualIndex}) => {
     }
 }
 
-const Container = styled.div`
+const Container = styled.header`
     background-color: #F5F2E3;
     display: grid;
-    padding-top: 20px;
+    padding-top: 30px;
     text-align: center;
     max-height: 320px;
     h5 {
@@ -114,7 +114,7 @@ const Container = styled.div`
 const Ellipsis = styled.div`
     width: 100%;
     height: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
     background-color: #CCE1F2;
