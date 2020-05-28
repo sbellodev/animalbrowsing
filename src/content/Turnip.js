@@ -51,7 +51,7 @@ const Turnip = () => {
                 }
             }
 
-            return  '<div class="tweet_individual">'
+            return   '<div class="tweet_individual">'
                      + '<p><a href="https://twitter.com/'+tweet.screen_name+'" target="_blank" rel="noopener noreferrer">@' +tweet.screen_name+ '</a></p>'
                      + '<p>' +tweet.text+ '</p>'
                      + '<p><a href="https://twitter.com/i/web/status/'+tweet.id+'" target="_blank" rel="noopener noreferrer">View Tweet</a></p>'
@@ -60,7 +60,7 @@ const Turnip = () => {
             }
         ).join('')
 
-        return showResponse                
+        return '<div class="blob_container"><div class="blob red"></div></div>' + showResponse                
     }
 
     return (
@@ -103,5 +103,46 @@ const TwitterContent = styled.div`
         padding-top: 30px;
         border-bottom: 3px solid ghostwhite;
     }
+    
+    .blob_container {
+        width: 80%;
+        max-width: 350px;
+        padding-top: 20px;
+        margin: 0 auto;
+    }
+    .blob {
+        background: black;
+        border-radius: 50%;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+        margin: 10px;
+        height: 20px;
+        width: 20px;
+        transform: scale(1);
+        animation: pulse-black 2s infinite;
+    }
+
+    .blob.red {
+        background: rgba(255, 82, 82, 1);
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);
+        animation: pulse-red 2s infinite;
+    }
+
+    @keyframes pulse-red {
+        0% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+        }
+        
+        70% {
+            transform: scale(1);
+            box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+        }
+        
+        100% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+        }
+    }
 `
+
 export { Turnip }
