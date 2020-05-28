@@ -12,7 +12,7 @@ const FishMobileTable = ({actualTable}) => {
                 </picture>
             </td>
             <td>{value.Name} <br/> {value.Price}</td>
-            <td>{value.Time} <br/> {value.Location}</td>
+            <td>{value.Time} <br/> {value.Location} <br/> {value.Size}</td>
             <td dangerouslySetInnerHTML={{ __html: value.Season}}></td>
          </tr>
      ) : emptyRow
@@ -27,16 +27,17 @@ const emptyRow = <tr>
                 </tr>
     
 const FishTable = ({sortBy, actualTable, inputSearch}) => {
-    if(sortBy) {
+    if(sortBy){
         const sortBySearch = (table, inputSearch) => 
-            table.filter((v, i, a) => {
-                inputSearch = inputSearch.toLowerCase()
+            table.filter((v) => {
+                inputSearch = inputSearch.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
                 return (
-                    v.Name.toLowerCase().match(inputSearch) ||
-                    v.PriceInt.toString().match(inputSearch) ||
-                    v.Location.toLowerCase().match(inputSearch) ||
-                    v.Season.toLowerCase().match(inputSearch) ||
-                    v.Time.toLowerCase().match(inputSearch) 
+                    v.Name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
+                    v.PriceInt.toString().includes(inputSearch) ||
+                    v.Location.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
+                    v.Size.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
+                    v.Season.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
+                    v.Time.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) 
                 )
             })
         const sortByHour = (table) => {
@@ -69,7 +70,7 @@ const FishTable = ({sortBy, actualTable, inputSearch}) => {
                                         a.Name < b.Name ? -1 : 0)
         const sortByReset = (table) => table.sort((a, b) => a.Number - b.Number)
 
-        switch (sortBy) {
+        switch (sortBy){
             case "Search":
                 actualTable = sortBySearch(actualTable, inputSearch)
                 break
@@ -90,7 +91,7 @@ const FishTable = ({sortBy, actualTable, inputSearch}) => {
     }
 
     let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)", "Size"]
-    if(localStorage.getItem("language") === "es") {
+    if(localStorage.getItem("language") === "es"){
         table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)", "Tamaño"]
     }
     return ( 
@@ -149,10 +150,10 @@ const TableContainer = styled.table`
         height: 50px;
     }
 
-    @media screen and (max-width: 570px) {
+    @media screen and (max-width: 570px){
         font-size: 16px;
     }
-    @media screen and (max-width: 340px) {
+    @media screen and (max-width: 340px){
         font-size: 14px;
     }
 `

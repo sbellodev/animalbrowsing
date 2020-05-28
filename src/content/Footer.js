@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Footer = () => {
     let backTo_str = "Back to top"
-    if(localStorage.getItem("language") === "es") {
+    if(localStorage.getItem("language") === "es"){
         backTo_str = "Volver parriba"
     }
     return (

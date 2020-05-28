@@ -25,7 +25,7 @@ const FishButtons = () => {
 
     let search_placeholder = ""
     let actualTable = ""
-    if(localStorage.getItem("language") === "es") {
+    if(localStorage.getItem("language") === "es"){
       document.title = 'Animal Browsing - Lista de peces';
       search_placeholder = "Buscar..."
       actualTable = fishListES 

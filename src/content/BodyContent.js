@@ -4,7 +4,7 @@ import { Turnip } from './Turnip'
 import { TableButtons } from './TableButtons'
 
 const BodyContent = ({index}) => {
-    switch (index) {
+    switch (index){
       case "Home":
         return <Home />
       case "Turnips":

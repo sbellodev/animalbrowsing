@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Home = () => {
 
-    if(localStorage.getItem("language") === "es") {
+    if(localStorage.getItem("language") === "es"){
         document.title = 'Animal Browsing';
         return (
             <HomeContainer>

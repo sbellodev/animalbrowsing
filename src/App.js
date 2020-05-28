@@ -17,7 +17,7 @@ history.listen(location => {
   ReactGA.pageview(location.pathname); // Record a pageview for the given page
 });
 
-function initializeReactGA() {
+function initializeReactGA(){
   ReactGA.initialize('UA-162043648-2');
   //ReactGA.pageview('/home');
 }
@@ -61,7 +61,7 @@ const App = () => {
   const [language, setLanguage] = useState(localStorage.getItem("language"))
   let section_names = ["Home", "Turnips", "Bugs", "Fish", "Fossil", "Lang EN"]
   
-  function switchLanguage() {
+  function switchLanguage(){
     if(language === "es"){
       setLanguage("en")
       localStorage.setItem("language", "en")
@@ -155,10 +155,10 @@ const NavbarContent = styled.nav`
     color: rgb(85, 50, 20);
   }
   
-  @media screen and (max-width: 570px) {
+  @media screen and (max-width: 570px){
     font-size: 16px;
   }
-  @media screen and (max-width: 340px) {
+  @media screen and (max-width: 340px){
       font-size: 14px;
   }
 `

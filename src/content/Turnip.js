@@ -21,7 +21,7 @@ const Turnip = () => {
     },[]) 
     
     let message_wait 
-    if(localStorage.getItem("language") === "es") {
+    if(localStorage.getItem("language") === "es"){
         message_wait = <p className="tweet_individual" style={{height: "99vh"}}>Cargando tweets... si tarda mucho, por favor contacta con el webmaster.</p>
         document.title = 'Animal Browsing - Precio de nabos ';
     }
@@ -80,7 +80,7 @@ const TurnipContainer = styled.main`
     white-space: pre-wrap;
     font-size: 18px;
     line-height: 25px;
-    @media screen and (max-width: 570px) {
+    @media screen and (max-width: 570px){
         font-size: 16px;
     }
 `

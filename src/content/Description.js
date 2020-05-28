@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components'
 
 const Description = ({actualIndex}) => {
-    if(localStorage.getItem("language") === "es") {
-        switch (actualIndex) {
+    if(localStorage.getItem("language") === "es"){
+        switch (actualIndex){
             case "Home":
                 return (
                     <Container>
@@ -17,10 +17,9 @@ const Description = ({actualIndex}) => {
             case "Turnips":
                 return (
                     <Container>
-                        <h5>Recibe de forma inmediata los precios de nabos más actuales del mercado de Twitter</h5>
-                        <h5>Se actualiza automáticamente</h5>
+                        <h5>Recibe *automáticamente* los mejores precios de nabos del mercado</h5>
+                        <h5>Sin SPAM, sin tonterías</h5>
                         <h5>¡No tienes que hacer nada! Sólo observa...</h5>
-                        <br/>
                         <Ellipsis />
                     </Container>
                 )
@@ -30,7 +29,6 @@ const Description = ({actualIndex}) => {
                         <h5>Lista Definitiva de bichos e insectos.</h5>
                         <h5>Si ves que no es tan Definivita, no dudes en enviarme una <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" >sugerencia</a> </h5>
                         <h5>¡Suerte!</h5>
-                        <br/>
                         <Ellipsis />
                     </Container>
                 )
@@ -39,7 +37,6 @@ const Description = ({actualIndex}) => {
                     <Container>
                         <h5>Lista Definitiva chulísima de peces</h5>
                         <h5>¡Mucha suerte en tu pesca!</h5>
-                        <br/>
                         <Ellipsis />
                     </Container>
                 )
@@ -56,7 +53,7 @@ const Description = ({actualIndex}) => {
         }
     }
     else {
-        switch (actualIndex) {
+        switch (actualIndex){
             case "Home":
                 return (
                     <Container>
@@ -70,8 +67,8 @@ const Description = ({actualIndex}) => {
             case "Turnips":
                 return (
                     <Container>
-                        <h5>Get instantly all the recent turnips prices from Twitter</h5>
-                        <h5>It updates itself automatically</h5>
+                        <h5>Get *automatically* the best turnips prices from Twitter</h5>
+                        <h5>You don't need to search anything...</h5>
                         <h5>¡Just watch!</h5>
                         <Ellipsis />
                     </Container>
@@ -118,12 +115,12 @@ const Container = styled.header`
         margin: 0 auto;
         font-size: 18px;
     }
-    @media screen and (max-width: 570px) {
+    @media screen and (max-width: 570px){
         h5 {
             font-size: 16px;
         }
     }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 420px){
         h5 {
             width: 80%;
         }
