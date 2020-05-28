@@ -46,7 +46,7 @@ const Turnip = () => {
                         tweet.text = tweet.text.replace(tweet.entities.urls[last_url].url, "")
                     }
                     tweet.entities.urls.forEach((url)=>{ // clickable links
-                        tweet.text = tweet.text.replace(shortUrl, "<br/><a href='" +url.expanded_url+ "' target='_blank' rel='noopener noreferrer' >" +url.expanded_url+ "</a><br/>")
+                        tweet.text = tweet.text.replace(shortUrl, "<br/><a href='" +url.expanded_url+ "' target='_blank' rel='noopener noreferrer' >" +url.expanded_url.slice(0, 23)+ "...</a><br/>")
                     })
                 }
             }
