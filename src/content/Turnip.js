@@ -101,7 +101,7 @@ const TwitterContent = styled.div`
         max-width: 350px;
         margin: 0 auto;
         padding-top: 30px;
-        border-bottom: 3px solid #F5F2E3;
+        border-bottom: 3px solid ghostwhite;
     }
 `
 export { Turnip }

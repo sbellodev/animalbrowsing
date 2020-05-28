@@ -15,10 +15,13 @@ padding, margin sizes: 5, 10, 20, 30px
     big padding (description, navbar and below description) 30
     mid padding 20
     very small padding (tables) 5
+borders-white  3px solid ghostwhite
+
 font: 14, 16, 18, 20px
 
 
 Media Queries - 
+actualmente: 340, 420, 570
 320, 380, 420, 480, 540, 600, 660, 720, 768, 1024
 doc - https://stackoverflow.com/questions/13637106/what-are-the-best-width-ranges-for-media-queries
 

@@ -1,0 +1,236 @@
+[    
+    {
+        "Number": 1,
+        "Name": "Acanthostega"
+    },
+
+    {
+        "Number": 2,
+        "Name": "Amber"
+    },
+
+    {
+        "Number": 3,
+        "Name": "Ammonite"
+    },
+
+    {
+        "Number": 4,
+        "Name": "Ankylosaurus",
+        "First": "Ankylo Skull",
+        "Second": "Ankylo Torso",
+        "Third": "Ankylo Tail"
+    },
+
+    {
+        "Number": 5,
+        "Name": "Anomalocaris"
+    },
+
+    {
+        "Number": 6,
+        "Name": "Archaeopteryx"
+    },
+
+    {
+        "Number": 7,
+        "Name": "Archaelon",
+        "First": "Archelon Skull",
+        "Second": "Archelon Tail"
+    },
+
+    {
+        "Number": 8,
+        "Name": "Australopith"
+    },
+
+    {
+        "Number": 9,
+        "Name": "Branchiosaurus",
+        "First": "Branchio Skull",
+        "Second": "Brachio Chest",
+        "Third": "Brachio Pelvis",
+        "Fourth": "Brachio Tail"
+    },
+
+    {
+        "Number": 10,
+        "Name": "Coprolite"
+    },
+
+    {
+        "Number": 11,
+        "Name": "Deinonychus",
+        "First": "Deinony Torso",
+        "Second": "Deinony Tail"
+    },
+
+    {
+        "Number": 12,
+        "Name": "Dimetrodon",
+        "First": "Dimetrodon Skull",
+        "Second": "Dimetrodon Torso"
+    },
+
+    {
+        "Number": 13,
+        "Name": "Dinosaur track"
+    },
+
+    {
+        "Number": 14,
+        "Name": "Diplodocus",
+        "First": "Diplo Skull",
+        "Second": "Diplo Neck",
+        "Third": "Diplo Chest",
+        "Fourth": "Diplo Pelvis",
+        "Fiveth": "Diplo Tail",
+        "Sixth": "Diplo Tail Tip"
+    },
+
+    {
+        "Number": 15,
+        "Name": "Dunkleosteus"
+    },
+
+    {
+        "Number": 16,
+        "Name": "Eusthenopteron"
+    },
+
+    {
+        "Number": 17,
+        "Name": "Iguanodon",
+        "First": "Iguanodon Skull",
+        "Second": "Iguanodon Torso",
+        "Third": "Iguanodon Tail"
+    },
+
+    {
+        "Number": 18,
+        "Name": "Juramaia"
+    },
+
+    {
+        "Number": 19,
+        "Name": "Mammoth",
+        "First": "Mammoth Skull",
+        "Second": "Mammoth Torso"
+    },
+
+    {
+        "Number": 20,
+        "Name": "Megacerops",
+        "First": "Megacero Skull",
+        "Second": "Megacero Torso",
+        "Third": "Megacero Tail"
+    },
+
+    {
+        "Number": 21,
+        "Name": "Megaloceros",
+        "First": "Megalo Left Side",
+        "Second": "Megalo Right Side"
+    },
+
+    {
+        "Number": 22,
+        "Name": "Myllokunmingia"
+    },
+
+    {
+        "Number": 23,
+        "Name": "Ophthalmosaurus",
+        "First": "Ophthalmo Skull",
+        "Second": "Ophthalmo Torso"
+    },
+
+    {
+        "Number": 24,
+        "Name": "Pachycephalosaurus",
+        "First": "Pachy Skull",
+        "Second": "Pachy Tail"
+    },
+
+    {
+        "Number": 25,
+        "Name": "Parasaurolophus",
+        "First": "Parasaur Skull",
+        "Second": "Parasaur Torso",
+        "Third": "Parasaur Tail"
+    },
+
+    {
+        "Number": 26,
+        "Name": "Plesiosaurus",
+        "First": "Plesio Skull",
+        "Second": "Plesio Neck",
+        "Third": "Plesio Body"
+    },
+
+    {
+        "Number": 27,
+        "Name": "Pteranodon",
+        "First": "Ptera Body",
+        "Second": "Left Ptera Wing",
+        "Third": "Right Ptera Wing"
+    },
+
+    {
+        "Number": 28,
+        "Name": "Quetzalcoatlus",
+        "First": "Quetzal Torso",
+        "Second": "Left Quetzal Wing",
+        "Third": "Right Quetzal Wing"
+    },
+
+    {
+        "Number": 29,
+        "Name": "Sabertooth tiger",
+        "First": "Sabertooth Skull",
+        "Second": "Sabertooth Tail"
+    },
+
+    {
+        "Number": 30,
+        "Name": "Shark-tooth pattern"
+    },
+
+    {
+        "Number": 31,
+        "Name": "Spinosaurus",
+        "First": "Spino Skull",
+        "Second": "Spino Torso",
+        "Third": "Spino Tail"
+    },
+
+    {
+        "Number": 32,
+        "Name": "Stegosaurus",
+        "First": "Stego Skull",
+        "Second": "Stego Torso",
+        "Third": "Stego Tail"
+    },
+
+    {
+        "Number": 33,
+        "Name": "Tyrannosaurus Rex",
+        "First": "T. Rex Skull",
+        "Second": "T. Rex Torso",
+        "Third": "T. Rex Tail"
+    },
+
+    {
+        "Number": 34,
+        "Name": "Triceratops",
+        "First": "Tricera Skull",
+        "Second": "Tricera Torso",
+        "Third": "Tricera Tail"
+    },
+
+    {
+        "Number": 35,
+        "Name": "Trilobite"
+    }
+]
+

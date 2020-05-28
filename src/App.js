@@ -4,6 +4,7 @@ import { Home } from './content/Home'
 import { Turnip } from './content/Turnip'
 import { BugsButtons } from './content/BugsButtons'
 import { FishButtons } from './content/FishButtons'
+import { FossilTable } from './content/FossilTable'
 import { Description } from './content/Description' 
 import { Footer } from './content/Footer'
 import { Router, Route, NavLink, Switch } from "react-router-dom";
@@ -58,7 +59,7 @@ else {
 const App = () => {
   initializeReactGA()
   const [language, setLanguage] = useState(localStorage.getItem("language"))
-  let section_names = ["Home", "Turnips", "Bugs", "Fish", "Lang EN"]
+  let section_names = ["Home", "Turnips", "Bugs", "Fish", "Fossil", "Lang EN"]
   
   function switchLanguage() {
     if(language === "es"){
@@ -71,13 +72,13 @@ const App = () => {
     }
   }
   if(language === "es"){
-    section_names = ["Inicio", "Nabos", "Bichos", "Peces", "Lang ES"]
+    section_names = ["Inicio", "Nabos", "Bichos", "Peces", "Fósiles", "Lang ES"]
   }
 
   return (
     <AppContainer>
       <GlobalStyles/>
-      <BackgroundImage />
+      <BackgroundImage/>
       <Router history={history}>
         <NavbarContent id={"top"}>
           <NavLink to="/" exact name="Home" activeClassName="active" >
@@ -92,28 +93,36 @@ const App = () => {
           <NavLink to="/fish" name ="Fish" exact activeClassName="active" >
             {section_names[3]}
           </NavLink>
-          <LangIndex className="Language" onClick={() => {switchLanguage()}} href={"#"}>{section_names[4]}</LangIndex>
+          <NavLink to="/fossil" name ="Fossil" exact activeClassName="active" >
+            {section_names[4]}
+          </NavLink>
+          <LangIndex className="Language" onClick={() => {switchLanguage()}} href={"#"}>{section_names[5]}</LangIndex>
         </NavbarContent> 
 
         <Switch>
           <Route path="/turnips">
-            <Description actualIndex={"Turnips"} />
-            <Turnip />
+            <Description actualIndex={"Turnips"}/>
+            <Turnip/>
             <Footer/>
           </Route>
           <Route path="/bugs">
-            <Description actualIndex={"Bugs"} />
-            <BugsButtons />
+            <Description actualIndex={"Bugs"}/>
+            <BugsButtons/>
             <Footer/>
           </Route>
           <Route path="/fish">
-            <Description actualIndex={"Fish"} />
+            <Description actualIndex={"Fish"}/>
             <FishButtons/>
             <Footer/>
-            </Route>
+          </Route>
+          <Route path="/fossil">
+            <Description actualIndex={"Fossil"}/>
+            <FossilTable/>
+            <Footer/>
+          </Route>
           <Route path="/">
-            <Description actualIndex={"Home"} />
-            <Home />
+            <Description actualIndex={"Home"}/>
+            <Home/>
             <Footer/>
           </Route>
         </Switch>
@@ -144,6 +153,13 @@ const NavbarContent = styled.nav`
   }
   a.active {
     color: rgb(85, 50, 20);
+  }
+  
+  @media screen and (max-width: 570px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 340px) {
+      font-size: 14px;
   }
 `
 const LangIndex = styled.a`

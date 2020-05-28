@@ -43,6 +43,14 @@ const Description = ({actualIndex}) => {
                         <Ellipsis />
                     </Container>
                 )
+            case "Fossil":
+                return (
+                    <Container>
+                        <h5>Lista de todos los fósiles disponibles hasta ahora</h5>
+                        <h5>Fosile in domine</h5>
+                        <Ellipsis />
+                    </Container>
+                )
             default: 
                 return <div>Hubo un fallo en la Matrix. Por favor, contacta al webmaster.</div>
         }
@@ -85,6 +93,14 @@ const Description = ({actualIndex}) => {
                         <Ellipsis />
                     </Container>
                 )
+            case "Fossil":
+                return (
+                    <Container>
+                        <h5>Search for the latest oldest fossils in the town</h5>
+                        <h5>So smalls</h5>
+                        <Ellipsis />
+                    </Container>
+                )
             default: 
                 return <div>Error loading description. Please contact the webmaster</div>
         }
@@ -102,16 +118,16 @@ const Container = styled.header`
         margin: 0 auto;
         font-size: 18px;
     }
-    @media screen and (max-width: 420px) {
-        h5 {
-            width: 80%;
-        }
-      }
     @media screen and (max-width: 570px) {
         h5 {
             font-size: 16px;
         }
     }
+    @media screen and (max-width: 420px) {
+        h5 {
+            width: 80%;
+        }
+      }
 `
 const Ellipsis = styled.div`
     width: 100%;

@@ -1,0 +1,236 @@
+[    
+    {
+        "Number": 1,
+        "Name": "Acantostega"
+    },
+
+    {
+        "Number": 2,
+        "Name": "Ámbar"
+    },
+
+    {
+        "Number": 3,
+        "Name": "Amonite"
+    },
+
+    {
+        "Number": 4,
+        "Name": "Anquilosaurio",
+        "First": "Cráneo de Anquilo",
+        "Second": "Tórax de Anquilo",
+        "Third": "Cola de Anquilo"
+    },
+
+    {
+        "Number": 5,
+        "Name": "Anomalocaris"
+    },
+    
+    {
+        "Number": 6,
+        "Name": "Archelon",
+        "First": "Cráneo de Archelon",
+        "Second": "Cola de Archelon"
+    },
+
+    {
+        "Number": 7,
+        "Name": "Arqueoptérix"
+    },
+
+    {
+        "Number": 8,
+        "Name": "Australopiteco"
+    },
+
+    {
+        "Number": 9,
+        "Name": "Branquioraurio",
+        "First": "Cráneo de Branquio",
+        "Second": "Tórax de Brachio",
+        "Third": "Pelvis de Brachio",
+        "Fourth": "Cola de Brachio"
+    },
+
+    {
+        "Number": 10,
+        "Name": "Brontoterio",
+        "First": "Cráneo de Bronto",
+        "Second": "Tórax de Bronto",
+        "Third": "Cola de Bronto"
+    },
+
+    {
+        "Number": 11,
+        "Name": "Copriolito"
+    },
+
+    {
+        "Number": 12,
+        "Name": "Deinonico",
+        "First": "Tórax de Deinonico",
+        "Second": "Cola de Deinonico"
+    },
+
+    {
+        "Number": 13,
+        "Name": "Dimetrodonte",
+        "First": "Cráneo de Dimetro",
+        "Second": "Tórax de Dimetro"
+    },
+
+    {
+        "Number": 14,
+        "Name": "Diplodocus",
+        "First": "Cráneo de Diplo",
+        "Second": "Cuello de Diplo",
+        "Third": "Tórax de Diplo ",
+        "Fourth": "Pelvis de Diplo",
+        "Fiveth": "Cola de Diplo",
+        "Sixth": "Punta de la cola de Diplo"
+    },
+
+    {
+        "Number": 15,
+        "Name": "Dunkeosteo"
+    },
+
+    {
+        "Number": 16,
+        "Name": "Espinosaurio",
+        "First": "Cráneo de Espino",
+        "Second": "Tórax de Espino",
+        "Third": "Cola de Spino"
+    },
+
+    {
+        "Number": 17,
+        "Name": "Estegosaurio",
+        "First": "Cráneo de Estego",
+        "Second": "Tórax de Estego",
+        "Third": "Cola de Estego"
+    },
+
+    {
+        "Number": 18,
+        "Name": "Eustenopteron"
+    },
+
+    {
+        "Number": 19,
+        "Name": "Huella de dinosaurio"
+    },
+
+    {
+        "Number": 20,
+        "Name": "Iguanodonte",
+        "First": "Cráneo de Iguanodon",
+        "Second": "Tórax de Iguanodon",
+        "Third": "Cola de Iguanodon"
+    },
+
+    {
+        "Number": 21,
+        "Name": "Juramaia"
+    },
+
+    {
+        "Number": 22,
+        "Name": "Mandíbula de tiburón"
+    },
+
+    {
+        "Number": 23,
+        "Name": "Mamut",
+        "First": "Cráneo de Mamut",
+        "Second": "Tórax de Mamut"
+    },
+
+    {
+        "Number": 24,
+        "Name": "Megaloceros",
+        "First": "Mitad izquierda de Megalo",
+        "Second": "Mitad derecha de Megalo"
+    },
+
+    {
+        "Number": 25,
+        "Name": "Myllokunmingia"
+    },
+
+    {
+        "Number": 26,
+        "Name": "Oftalmosaurio",
+        "First": "Cráneo de Oftalmo",
+        "Second": "Tórax de Oftalmo"
+    },
+
+    {
+        "Number": 27,
+        "Name": "Paquicefalosaurio",
+        "First": "Cráneo de Paqui",
+        "Second": "Cola de Paqui"
+    },
+
+    {
+        "Number": 28,
+        "Name": "Parasaurio",
+        "First": "Cráneo de Parasaurio",
+        "Second": "Tórax de Parasaurio",
+        "Third": "Cola de Parasaurio"
+    },
+
+    {
+        "Number": 29,
+        "Name": "Plesiosaurio",
+        "First": "Cráneo de Plesio",
+        "Second": "Cuello de Plesio",
+        "Third": "Cuerpo de Plesio"
+    },
+
+    {
+        "Number": 30,
+        "Name": "Pteranodonte",
+        "First": "Cuerpo de Ptera",
+        "Second": "Ala izquierda de Ptera",
+        "Third": "Ala derecha de Ptera"
+    },
+
+    {
+        "Number": 31,
+        "Name": "Quetzalcoatlus",
+        "First": "Tórax de Quetzal",
+        "Second": "Ala izquierda de Quetzal",
+        "Third": "Ala derecha de Quetzal"
+    },
+
+    {
+        "Number": 32,
+        "Name": "Tigre Dientes de sable",
+        "First": "Cráneo de Tigre",
+        "Second": "Cola de Tigre"
+    },
+
+    {
+        "Number": 33,
+        "Name": "Tiranosaurio",
+        "First": "Cráneo de Tirano",
+        "Second": "Tórax de Tirano",
+        "Third": "Cola de Tirano"
+    },
+
+    {
+        "Number": 34,
+        "Name": "Triceratops",
+        "First": "Cráneo de Tricera",
+        "Second": "Tórax de Tricera",
+        "Third": "Cola de Tricera"
+    },
+
+    {
+        "Number": 35,
+        "Name": "Trilobites"
+    }
+]
+

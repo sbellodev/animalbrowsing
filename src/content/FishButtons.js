@@ -38,13 +38,13 @@ const FishButtons = () => {
     return (    
       <main>
         <ButtonsContainer>
-          <label for="table-search"></label>
+          <label htmlFor="table-search"></label>
           <SearchInput  id={"table-search"} onChange={setInput} placeholder={search_placeholder} />
           <Button onClick={() => setSortBy("Hour")}><IconImage src={imageURL.Hour} alt="Hour" /></Button>
           <Button onClick={() => setSortBy("ABC")}>
             <picture>
-              <sources srcSet={imageURL.ABCWEBP}/>
-              <sources srcSet={imageURL.ABCPNG}/>
+              <source srcSet={imageURL.ABCWEBP}/>
+              <source srcSet={imageURL.ABCPNG}/>
               <IconImage src={imageURL.ABCPNG} alt="ABC" />
             </picture>
           </Button>
@@ -55,8 +55,8 @@ const FishButtons = () => {
           </Button>
           <ResetButton onClick={() => setSortBy("Reset")}>
             <picture>
-              <sources srcSet={imageURL.ResetWEBP}/>
-              <sources srcSet={imageURL.ResetPNG}/>
+              <source srcSet={imageURL.ResetWEBP}/>
+              <source srcSet={imageURL.ResetPNG}/>
               <IconImage src={imageURL.ResetPNG}  alt="Reset" />
             </picture>
           </ResetButton>
