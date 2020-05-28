@@ -10,7 +10,7 @@ const Home = () => {
                 <HomeContent>
                     <p>Novedades en camino:</p>
                     <ul>
-                        <li>Lista de fósiles</li>
+                        <li><span>Lista de fósiles</span> <a href="/fossil">¡Nuevo!</a></li>
                         <li>Lista de obras de arte</li>
                         <li>Lista de esculturas</li>
                     </ul>
@@ -26,11 +26,11 @@ const Home = () => {
                     <p>¿Cansado de buscar por todas partes buenos precios para vender tus nabos?</p>
                     <br/>
                     <p>¿De buscar listas y listas de bichos y peces con todo lo que buscas? ¡Yo también!</p>
-                    <p>Por eso creé Animal Browsing, para tenerlo todo a mano... <p/>
-                    <p>Aquí puedes encontrar... 
-                    <br/><br/>
-                    ¡<a href="/bugs">Lista</a> de bichos Definitiva!</p>
-                    ¡<a href="/turnips">Sección</a> de precio de nabos Perfecta!</p>
+                    <p>Por eso creé Animal Browsing, para tenerlo todo a mano... </p>
+                    <p>Aquí puedes encontrar... </p>
+                    <br/>
+                    <p>¡<a href="/bugs">Lista</a> de bichos Definitiva!</p>
+                    <p>¡<a href="/turnips">Sección</a> de precio de nabos Perfecta!</p>
                     <br/>
                     <p>A medida que pase el tiempo y según el interés iré añadiendo más y más cosas ^^</p>
                     <p>Cualquier sugerencia, crítica o saludarme, puedes contactarme</p>
@@ -51,7 +51,7 @@ const Home = () => {
                 <HomeContent>
                 <p>Upcoming features:</p>
                     <ul>
-                        <li>Fossil list</li>
+                        <li><span>Fossils list</span><a href="/fossil"> New!</a></li>
                         <li>Paintings list</li>
                         <li>Statues list</li>
                     </ul>
@@ -68,10 +68,10 @@ const Home = () => {
                 <br/>
                 <p>Searching bugs and fish lists with all you need? ¡Me too!</p>
                 <p>That's why I made Animal Browsing.</p>
-                <p>Here you can find... 
+                <p>Here you can find... </p>
                 <br/>
-                <a href="/bugs">The Definitive Bug's List</a>!<br/>
-                <a href="/turnips">The perfect Turnips price section</a>!</p>
+                <p><a href="/bugs">The Definitive Bug's List</a>!</p>
+                <p><a href="/turnips">The perfect Turnips price section</a>!</p>
                 <br/>
                 <p>Any suggestion, criticism or saying hi please feel free reach me on 
                 <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" > twitter </a> at @Gattoalaparato</p>
@@ -97,6 +97,9 @@ const HomeContent = styled.div`
     margin: auto;
     border-bottom: 1px solid ghostwhite;
     padding-bottom: 20px;
+    span {
+        color: green;
+    }
 `
 const ImageProfile = styled.img`
     width: 60px;
