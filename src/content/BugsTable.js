@@ -6,8 +6,8 @@ const BugMobileTable = ({actualTable}) => {
          <tr key={value.Number}>
             <td>
                 <picture>
-                    <source srcSet={"../img/bug/" +value.ImageWEBP} type="image/webp" />
-                    <source srcSet={"../img/bug/" +value.ImagePNG} type="image/png" /> 
+                    <source type="image/webp" srcSet={"../img/bug/" +value.ImageWEBP} />
+                    <source type="image/png" srcSet={"../img/bug/" +value.ImagePNG} /> 
                     <img src={"../img/bug/" +value.ImageWEBP} alt={value.Name} />
                 </picture>
             </td>

@@ -43,8 +43,8 @@ const FishButtons = () => {
           <Button onClick={() => setSortBy("Hour")}><IconImage src={imageURL.Hour} alt="Hour" /></Button>
           <Button onClick={() => setSortBy("ABC")}>
             <picture>
-              <source srcSet={imageURL.ABCWEBP}/>
-              <source srcSet={imageURL.ABCPNG}/>
+              <source type="image/webp" srcSet={imageURL.ABCWEBP}/>
+              <source type="image/png" srcSet={imageURL.ABCPNG}/>
               <IconImage src={imageURL.ABCPNG} alt="ABC" />
             </picture>
           </Button>

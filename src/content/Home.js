@@ -18,8 +18,8 @@ const Home = () => {
                     <h4>5/18/2020 - Inauguración Animal Browsing</h4>
                     <br/>
                     <picture>
-                        <source srcSet={"tw_profile_webp.webp"} />
-                        <source srcSet={"tw_profile.jpg"} />
+                        <source type="image/webp" srcSet={"tw_profile_webp.webp"} />
+                        <source type="image/jpeg" srcSet={"tw_profile.jpg"} />
                         <ImageProfile src={"tw_profile.jpg"} alt="twitter profile"/>
                     </picture>
                     <br/>
@@ -59,8 +59,8 @@ const Home = () => {
                 <h4>5/18/2020 - Animal Browsing inauguration</h4>
                 <br/>
                 <picture>
-                    <source srcSet={"tw_profile_webp.webp"} />
-                    <source srcSet={"tw_profile.jpg"} />
+                    <source type="image/webp" srcSet={"tw_profile_webp.webp"} />
+                    <source type="image/jpeg" srcSet={"tw_profile.jpg"} />
                     <ImageProfile src={"tw_profile.jpg"} alt="twitter profile"/>
                 </picture>
                 <br/>

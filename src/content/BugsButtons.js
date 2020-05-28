@@ -43,8 +43,8 @@ const BugsButtons = () => {
           <Button onClick={() => setSortBy("Hour")}><IconImage src={imageURL.Hour} alt="Hour" /></Button>
           <Button onClick={() => setSortBy("ABC")}>
             <picture>
-              <source srcSet={imageURL.ABCWEBP}/>
-              <source srcSet={imageURL.ABCPNG}/>
+              <source type="image/webp" srcSet={imageURL.ABCWEBP}/>
+              <source type="image/png" srcSet={imageURL.ABCPNG}/>
               <IconImage src={imageURL.ABCPNG} alt="ABC" />
             </picture>
           </Button>
@@ -55,8 +55,8 @@ const BugsButtons = () => {
           </Button>
           <ResetButton onClick={() => setSortBy("Reset")}>
             <picture>
-              <source srcSet={imageURL.ResetWEBP}/>
-              <source srcSet={imageURL.ResetPNG}/>
+              <source type="image/webp" srcSet={imageURL.ResetWEBP}/>
+              <source type="image/png" srcSet={imageURL.ResetPNG}/>
               <IconImage src={imageURL.ResetPNG}  alt="Reset" />
             </picture>
           </ResetButton>

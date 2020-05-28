@@ -6,8 +6,8 @@ const FishMobileTable = ({actualTable}) => {
          <tr key={value.Number}>
             <td>
                 <picture>
-                    <source srcSet={"../img/fish/" +value.ImageWEBP} type="image/webp" />
-                    <source srcSet={"../img/fish/" +value.ImagePNG} type="image/png" /> 
+                    <source type="image/webp" srcSet={"../img/fish/" +value.ImageWEBP} />
+                    <source type="image/png" srcSet={"../img/fish/" +value.ImagePNG} /> 
                     <img src={"../img/fish/" +value.ImageWEBP} alt={value.Name} />
                 </picture>
             </td>
