@@ -52,7 +52,7 @@ const FossilTable = () => {
                 (v.Fiveth && v.Fiveth.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) )||
                 (v.Sixth && v.Sixth.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch)) 
             )
-    })
+        })
     
     return ( 
         <FossilContainer>
