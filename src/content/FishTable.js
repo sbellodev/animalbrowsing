@@ -65,9 +65,12 @@ const FishTable = ({sortBy, actualTable, inputSearch}) => {
             })
         } 
         const sortByPrice = (table) => table.sort((a, b) => b.PriceInt - a.PriceInt)
-        const sortByABC = (table) => table.sort((a, b) => 
-                                        a.Name > b.Name ? 1 :
-                                        a.Name < b.Name ? -1 : 0)
+        const sortByABC = (table) => table.sort((a, b) => {
+                                                let a_clean = a.Name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
+                                                let b_clean = b.Name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
+                                                return a_clean > b_clean ? 1 :
+                                                a_clean < b_clean ? -1 : 0
+                                            })
         const sortByReset = (table) => table.sort((a, b) => a.Number - b.Number)
 
         switch (sortBy){
