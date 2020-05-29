@@ -43,17 +43,20 @@ const BugsTable = () => {
 
     let search_placeholder = ""
     let actualTable = ""
-    let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)"]   
+    let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)"]  
+    let hemisphere = []
     if(localStorage.getItem("language") === "es"){
         table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)"]
         document.title = 'Animal Browsing - Lista de bichos';
         search_placeholder = "Buscar..."
         actualTable = bugListES 
+        hemisphere = ["Norte", "Sur"]
     }
     else {
         document.title = 'Animal Browsing - Bug list';
         search_placeholder = "Find..."
         actualTable = bugListEN 
+        hemisphere = ["North", "South"]
     }
 
     const sortBySeason = (table) => {
@@ -169,28 +172,32 @@ const BugsTable = () => {
     return (    
       <main>
         <ButtonsContainer>
-          <label htmlFor={"table-search"}></label>
-          <SearchInput  id={"table-search"} onChange={(e) => sortBySearch(actualTable, e.target.value)} placeholder={search_placeholder} />
-          <Button onClick={() => setNewTable(sortBySeason(actualTable))}><IconImage src={imageURL.Hour} alt="Season" /></Button>
-          <Button onClick={() => setNewTable(sortByABC(actualTable))}>
-            <picture>
-              <source type="image/webp" srcSet={imageURL.ABCWEBP}/>
-              <source type="image/png" srcSet={imageURL.ABCPNG}/>
-              <IconImage src={imageURL.ABCPNG} alt="ABC" />
-            </picture>
-          </Button>
-          <Button onClick={() => setNewTable(sortByPrice(actualTable))} style={{backgroundColor: "#FDDD5C"}}>
-            <picture>
-                <IconImage src={imageURL.Price}  alt="Price" />
-            </picture>
-          </Button>
-          <ResetButton onClick={() => setNewTable(sortByReset(actualTable))}>
-            <picture>
-              <source type="image/webp" srcSet={imageURL.ResetWEBP}/>
-              <source type="image/png" srcSet={imageURL.ResetPNG}/>
-              <IconImage src={imageURL.ResetPNG}  alt="Reset" />
-            </picture>
-          </ResetButton>
+            <div>
+                <label htmlFor={"table-search"}></label>
+                <SearchInput  id={"table-search"} onChange={(e) => sortBySearch(actualTable, e.target.value)} placeholder={search_placeholder} />
+            </div>
+            <BtnSortContainer>
+                <Button onClick={() => setNewTable(sortBySeason(actualTable))}><IconImage src={imageURL.Hour} alt="Season" /></Button>
+                <Button onClick={() => setNewTable(sortByABC(actualTable))}>
+                    <picture>
+                    <source type="image/webp" srcSet={imageURL.ABCWEBP}/>
+                    <source type="image/png" srcSet={imageURL.ABCPNG}/>
+                    <IconImage src={imageURL.ABCPNG} alt="ABC" />
+                    </picture>
+                </Button>
+                <Button onClick={() => setNewTable(sortByPrice(actualTable))} style={{backgroundColor: "#FDDD5C"}}>
+                    <picture>
+                        <IconImage src={imageURL.Price}  alt="Price" />
+                    </picture>
+                </Button>
+                <ResetButton onClick={() => setNewTable(sortByReset(actualTable))}>
+                    <picture>
+                    <source type="image/webp" srcSet={imageURL.ResetWEBP}/>
+                    <source type="image/png" srcSet={imageURL.ResetPNG}/>
+                    <IconImage src={imageURL.ResetPNG}  alt="Reset" />
+                    </picture>
+                </ResetButton>
+            </BtnSortContainer>
         </ButtonsContainer>
         <TableContainer>
             <thead>            
@@ -199,10 +206,10 @@ const BugsTable = () => {
                     <th>{table_head[1]}<br/>{table_head[2]}</th>
                     <th>{table_head[3]}<br/>{table_head[4]}</th>
                     <th>{table_head[5]}<br/>{table_head[6]}
-                        <ButtoneContainer>
-                            <Buttone onClick={() => sortHem(actualTable, "North")}>N</Buttone>
-                            <Buttone onClick={() => sortHem(actualTable, "South")}>S</Buttone>
-                        </ButtoneContainer>
+                        <BtnHemContainer>
+                            <BtnHem onClick={() => sortHem(actualTable, hemisphere[0])}>N</BtnHem>
+                            <BtnHem onClick={() => sortHem(actualTable, hemisphere[1])}>S</BtnHem>
+                        </BtnHemContainer>
                     </th>
                 </tr>
             </thead>
@@ -212,10 +219,10 @@ const BugsTable = () => {
         </TableContainer> 
       </main>
     )
-} 
+}
 
-const ButtoneContainer = styled.div``
-const Buttone = styled.button`
+const BtnHemContainer = styled.div``
+const BtnHem = styled.button`
     width: 50px;
     height: 35px;
     background-color: ghostwhite;    
@@ -270,19 +277,24 @@ const ButtonsContainer = styled.div`
   background-color: #CCE1F2;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  float:right;
   padding-top: 30px;
   padding-bottom: 20px;
+  padding-left: 10px;
   button {
     background-color: ghostwhite;
   }
 `
+const BtnSortContainer = styled.div`
+  display: flex;
+  align-items: center;
+`
 const SearchInput = styled.input`
   font-size: 12px;
-  width: 80px;
+  width: 70px;
   height: 35px;
-  margin-right: 20px;
+  margin-right: 10px;
   border-radius: 5px;
   padding-left: 10px;
   border: 1px solid white;
@@ -293,18 +305,17 @@ const SearchInput = styled.input`
   }
 
   @media screen and (max-width: 340px){
-    width: 60px;
-    height: 25px;
-    margin-right: 10px;
+    
+    height: 35px;
   }
 `
 const Button = styled.button`
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
   box-shadow: 1px 1px #888888;
   margin-right: 20px;
-  @media screen and (max-width: 340px){
+  @media screen and (max-width: 380px){
     margin-right: 10px;
   }
 `
