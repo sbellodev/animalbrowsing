@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import styled, { createGlobalStyle } from 'styled-components'
 import { Home } from './content/Home'
 import { Turnip } from './content/Turnip'
-import { BugsButtons } from './content/BugsButtons'
-import { FishButtons } from './content/FishButtons'
+import { BugsTable } from './content/BugsTable'
+import { FishTable } from './content/FishTable'
 import { FossilTable } from './content/FossilTable'
 import { Description } from './content/Description' 
 import { Footer } from './content/Footer'
@@ -107,12 +107,12 @@ const App = () => {
           </Route>
           <Route path="/bugs">
             <Description actualIndex={"Bugs"}/>
-            <BugsButtons/>
+            <BugsTable/>
             <Footer/>
           </Route>
           <Route path="/fish">
             <Description actualIndex={"Fish"}/>
-            <FishButtons/>
+            <FishTable/>
             <Footer/>
           </Route>
           <Route path="/fossil">

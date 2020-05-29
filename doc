@@ -26,7 +26,10 @@ actualmente: 340, 420, 570
 doc - https://stackoverflow.com/questions/13637106/what-are-the-best-width-ranges-for-media-queries
 
 
-
+--- Functionality
+Buttons 
+    Sorting : useState setSort to the buttons which function is to reorder
+                function > usestate to buttons which filter, like search inputs
 
 Folder Structure
 

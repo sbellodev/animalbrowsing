@@ -1,5 +1,16 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components'
+import fishListEN from '../data/fish-EN.json'
+import fishListES from '../data/fish-ES.json'
+
+const imageURL = {
+  Price: "/icons/star.svg",
+  Hour: "/icons/hour.svg",
+  ABCWEBP: "/icons/abc.webp",
+  ABCPNG: "/icons/abc.png",
+  ResetWEBP: "/icons/reset.webp",
+  ResetPNG: "/icons/reset.png",
+}
 
 const FishMobileTable = ({actualTable}) => {
     const row = actualTable.length ? actualTable.map(value =>
@@ -26,98 +37,85 @@ const emptyRow = <tr>
                     <td></td>
                 </tr>
     
-const FishTable = ({sortBy, actualTable, inputSearch}) => {
-    if(sortBy){
-        const sortBySearch = (table, inputSearch) => 
-            table.filter((v) => {
-                inputSearch = inputSearch.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
-                return (
-                    v.Name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
-                    v.PriceInt.toString().includes(inputSearch) ||
-                    v.Location.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
-                    v.Size.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
-                    v.Season.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
-                    v.Time.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) 
-                )
-            })
-        // const sortByHour = (table) => {
-        //     var time = new Date();
-        //     let currentTime = time.getHours() // i.e 18 (from 18:00)
-    
-        //     return table.filter((v, i, a) => {
-        //         if(v.TimeInterval[0] > v.TimeInterval[1]){ 
-        //             if(currentTime >=  v.TimeInterval[0] || currentTime <=  v.TimeInterval[1]){
-        //                 return currentTime
-        //             }
-        //         }
-        //         else {
-        //             if(currentTime >=  v.TimeInterval[0] && currentTime <=  v.TimeInterval[1]){
-        //                 return currentTime
-        //             }
-        //         }
-        //         return false
-        //     })
-        // } 
-        const sortBySeason = (table) => {
-            var time = new Date();
-            let currentSeason = time.getMonth()
+const FishTable = () => {
+    const [newTable, setNewTable] = useState("")
+    const [sortBy, setSortBy] = useState("")
 
-            return table.filter((v) => {
-                if(v.SeasonInterval.length === 2){ // ex: All year (0, 12) 
-                    if(v.SeasonInterval[0] < v.SeasonInterval[1]) { 
-                        if(currentSeason >=  v.SeasonInterval[0] && currentSeason <=  v.SeasonInterval[1]){
-                            return currentSeason
-                        }
-                    }
-                }
-                else if(v.SeasonInterval.length === 4){ // ex: "Mar-Jun (North) Sep-Dec (North)"
-                    // Month X < Y
-                    if(v.SeasonInterval[0] < v.SeasonInterval[1] || v.SeasonInterval[2] < v.SeasonInterval[3]) { // Between A and B
-                        if(    (currentSeason >=  v.SeasonInterval[0] && currentSeason <=  v.SeasonInterval[1]) 
-                            || (currentSeason >=  v.SeasonInterval[2] && currentSeason <=  v.SeasonInterval[3])){
-                                return currentSeason
-                            }
-                    }
-                    // Month X > Y
-                    else if(v.SeasonInterval[0] > v.SeasonInterval[1] || v.SeasonInterval[2] > v.SeasonInterval[3]) {  
-                        if(    currentSeason >=  (v.SeasonInterval[0] || v.SeasonInterval[2]) 
-                            || currentSeason <=  (v.SeasonInterval[1] || v.SeasonInterval[3])){
-                                return currentSeason
-                            }
-                    }
-                }
-                else if(v.SeasonInterval.length === 6){ // ex: "Mar-Jun, Oct (North) Sep-Dec, Apr (North)"
-                    // Concrete Months
-                    if(currentSeason === v.SeasonInterval[2] || currentSeason === v.SeasonInterval[5]){
+    let search_placeholder = ""
+    let actualTable = ""
+    let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)", "Size"]   
+    if(localStorage.getItem("language") === "es"){
+        table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)", "Tamaño"]
+        document.title = 'Animal Browsing - Lista de peces';
+        search_placeholder = "Buscar..."
+        actualTable = fishListES 
+    }
+    else {
+        document.title = 'Animal Browsing - Fish list';
+        search_placeholder = "Find..."
+        actualTable = fishListEN 
+    }
+
+    const sortBySeason = (table) => {
+        var time = new Date();
+        let currentSeason = time.getMonth()
+        
+        return table.filter((v) => {
+            if(v.SeasonInterval.length === 2){ // ex: All year (0, 12) 
+                if(v.SeasonInterval[0] < v.SeasonInterval[1]) { 
+                    if(currentSeason >=  v.SeasonInterval[0] && currentSeason <=  v.SeasonInterval[1]){
                         return currentSeason
                     }
-                    // Month X < Y
-                    if(v.SeasonInterval[0] < v.SeasonInterval[1] || v.SeasonInterval[3] < v.SeasonInterval[4]) { // Between A and B
-                        if(    (currentSeason >=  v.SeasonInterval[0] && currentSeason <=  v.SeasonInterval[1]) 
-                            || (currentSeason >=  v.SeasonInterval[3] && currentSeason <=  v.SeasonInterval[4])){
-                                return currentSeason
-                        }
-                    }
-                    // Month X > Y
-                    if(v.SeasonInterval[0] > v.SeasonInterval[1] || v.SeasonInterval[3] > v.SeasonInterval[4]) {  
-                        if(    currentSeason >=  v.SeasonInterval[0] || currentSeason <=  v.SeasonInterval[1] 
-                            || currentSeason >=  v.SeasonInterval[3] || currentSeason <=  v.SeasonInterval[4]){
-                                return currentSeason
-                            }
+                }
+            }
+            else if(v.SeasonInterval.length === 4){ // ex: "Mar-Jun (North) Sep-Dec (North)"
+            // Month X < Y
+                if(v.SeasonInterval[0] < v.SeasonInterval[1] || v.SeasonInterval[2] < v.SeasonInterval[3]) { // Between A and B
+                    if(    (currentSeason >=  v.SeasonInterval[0] && currentSeason <=  v.SeasonInterval[1]) 
+                    || (currentSeason >=  v.SeasonInterval[2] && currentSeason <=  v.SeasonInterval[3])){
+                        return currentSeason
                     }
                 }
-                else if(v.SeasonInterval.length === 8){ // ex: "May-Jun, Sep-Nov (North) Nov-Dec, Mar-Apr (South)"
-                    // Month X < Y
-                    if(    v.SeasonInterval[0] < v.SeasonInterval[1]
-                        || v.SeasonInterval[2] < v.SeasonInterval[3]
-                        || v.SeasonInterval[4] < v.SeasonInterval[5]
-                        || v.SeasonInterval[6] < v.SeasonInterval[7]) {
-                            if(    (currentSeason >=  v.SeasonInterval[0] && currentSeason <=  v.SeasonInterval[1]) 
-                                || (currentSeason >=  v.SeasonInterval[2] && currentSeason <=  v.SeasonInterval[3])
-                                || (currentSeason >=  v.SeasonInterval[4] && currentSeason <=  v.SeasonInterval[5])
-                                || (currentSeason >=  v.SeasonInterval[6] && currentSeason <=  v.SeasonInterval[7])){
+                // Month X > Y
+                else if(v.SeasonInterval[0] > v.SeasonInterval[1] || v.SeasonInterval[2] > v.SeasonInterval[3]) {  
+                    if(    currentSeason >=  (v.SeasonInterval[0] || v.SeasonInterval[2]) 
+                    || currentSeason <=  (v.SeasonInterval[1] || v.SeasonInterval[3])){
+                        return currentSeason
+                    }
+                }
+            }
+            else if(v.SeasonInterval.length === 6){ // ex: "Mar-Jun, Oct (North) Sep-Dec, Apr (North)"
+                // Concrete Months
+                if(currentSeason === v.SeasonInterval[2] || currentSeason === v.SeasonInterval[5]){
+                    return currentSeason
+                }
+                // Month X < Y
+                if(v.SeasonInterval[0] < v.SeasonInterval[1] || v.SeasonInterval[3] < v.SeasonInterval[4]) { // Between A and B
+                    if(    (currentSeason >=  v.SeasonInterval[0] && currentSeason <=  v.SeasonInterval[1]) 
+                    || (currentSeason >=  v.SeasonInterval[3] && currentSeason <=  v.SeasonInterval[4])){
+                        return currentSeason
+                    }
+                }
+                // Month X > Y
+                if(v.SeasonInterval[0] > v.SeasonInterval[1] || v.SeasonInterval[3] > v.SeasonInterval[4]) {  
+                    if(    currentSeason >=  v.SeasonInterval[0] || currentSeason <=  v.SeasonInterval[1] 
+                        || currentSeason >=  v.SeasonInterval[3] || currentSeason <=  v.SeasonInterval[4]){
                                     return currentSeason
-                            }
+                    }
+                }
+            }
+            else if(v.SeasonInterval.length === 8){ // ex: "May-Jun, Sep-Nov (North) Nov-Dec, Mar-Apr (South)"
+                // Month X < Y
+                if(    v.SeasonInterval[0] < v.SeasonInterval[1]
+                    || v.SeasonInterval[2] < v.SeasonInterval[3]
+                    || v.SeasonInterval[4] < v.SeasonInterval[5]
+                    || v.SeasonInterval[6] < v.SeasonInterval[7]) {
+                        if(    (currentSeason >=  v.SeasonInterval[0] && currentSeason <=  v.SeasonInterval[1]) 
+                        || (currentSeason >=  v.SeasonInterval[2] && currentSeason <=  v.SeasonInterval[3])
+                        || (currentSeason >=  v.SeasonInterval[4] && currentSeason <=  v.SeasonInterval[5])
+                        || (currentSeason >=  v.SeasonInterval[6] && currentSeason <=  v.SeasonInterval[7])){
+                            return currentSeason
+                        }
                     }
                     // Month X > Y
                     if(    v.SeasonInterval[0] > v.SeasonInterval[1] || v.SeasonInterval[2] > v.SeasonInterval[3]
@@ -129,59 +127,100 @@ const FishTable = ({sortBy, actualTable, inputSearch}) => {
                     }
                 }
                 return false
+            }
+        )}
+    const sortBySearch = (table, inputSearch) => {
+        let toble = table.filter((v) => {
+            inputSearch = inputSearch.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
+            return (
+                v.Name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
+                v.PriceInt.toString().includes(inputSearch) ||
+                v.Location.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
+                v.Season.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
+                v.Size.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
+                v.Time.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) 
+                )
             })
-        }
-        const sortByPrice = (table) => table.sort((a, b) => b.PriceInt - a.PriceInt)
-        const sortByABC = (table) => table.sort((a, b) => {
-                                        let a_clean = a.Name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
-                                        let b_clean = b.Name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
-                                        return a_clean > b_clean ? 1 :
-                                        a_clean < b_clean ? -1 : 0
-                                    })
-        const sortByReset = (table) => table.sort((a, b) => a.Number - b.Number)
-
-        switch (sortBy){
-            case "Search":
-                actualTable = sortBySearch(actualTable, inputSearch)
-                break
-            case "Season":
-                actualTable = sortBySeason(actualTable)
-                break
-            case "Price":
-                sortByPrice(actualTable)
-                break
-            case "ABC":
-                sortByABC(actualTable)
-                break
-            case "Reset":
-                sortByReset(actualTable)
-                break
-            default:
-        }
+        setNewTable(toble)
     }
 
-    let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)", "Size"]
-    if(localStorage.getItem("language") === "es"){
-        table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)", "Tamaño"]
+    const sortHem = (table, hem) => {
+        setSortBy("Hemis")
+        let toble = table.filter((v) => v.Season.includes(hem))
+        setNewTable(toble)
     }
-    return ( 
+    const sortByABC = (table) => { 
+        setSortBy("ABC")
+        return table.sort((a, b) => 
+                                a.Name > b.Name ? 1 :
+                                a.Name < b.Name ? -1 : 0)
+    }
+    const sortByPrice = (table) => { 
+        setSortBy("Price")
+        return table.sort((a, b) => b.PriceInt - a.PriceInt)
+    }
+    const sortByReset = (table) => { 
+        setSortBy("Reset")
+        return table.sort((a, b) => a.Number - b.Number)
+    }
+
+    useEffect(() => {
+    }, [sortBy])
+
+    return (    
+      <main>
+        <ButtonsContainer>
+          <label htmlFor={"table-search"}></label>
+          <SearchInput  id={"table-search"} onChange={(e) => sortBySearch(actualTable, e.target.value)} placeholder={search_placeholder} />
+          <Button onClick={() => setNewTable(sortBySeason(actualTable))}><IconImage src={imageURL.Hour} alt="Season" /></Button>
+          <Button onClick={() => setNewTable(sortByABC(actualTable))}>
+            <picture>
+              <source type="image/webp" srcSet={imageURL.ABCWEBP}/>
+              <source type="image/png" srcSet={imageURL.ABCPNG}/>
+              <IconImage src={imageURL.ABCPNG} alt="ABC" />
+            </picture>
+          </Button>
+          <Button onClick={() => setNewTable(sortByPrice(actualTable))} style={{backgroundColor: "#FDDD5C"}}>
+            <picture>
+                <IconImage src={imageURL.Price}  alt="Price" />
+            </picture>
+          </Button>
+          <ResetButton onClick={() => setNewTable(sortByReset(actualTable))}>
+            <picture>
+              <source type="image/webp" srcSet={imageURL.ResetWEBP}/>
+              <source type="image/png" srcSet={imageURL.ResetPNG}/>
+              <IconImage src={imageURL.ResetPNG}  alt="Reset" />
+            </picture>
+          </ResetButton>
+        </ButtonsContainer>
         <TableContainer>
             <thead>            
                 <tr>
                     <th>{table_head[0]}</th>
                     <th>{table_head[1]}<br/>{table_head[2]}</th>
                     <th>{table_head[3]}<br/>{table_head[4]}<br/>{table_head[7]}</th>
-                    <th>{table_head[5]}<br/>{table_head[6]}</th>
+                    <th>{table_head[5]}<br/>{table_head[6]}
+                        <ButtoneContainer>
+                            <Buttone onClick={() => sortHem(actualTable, "North")}>N</Buttone>
+                            <Buttone onClick={() => sortHem(actualTable, "South")}>S</Buttone>
+                        </ButtoneContainer>
+                    </th>
                 </tr>
             </thead>
             <tbody>
-                <FishMobileTable actualTable={actualTable}/>
+                <FishMobileTable actualTable={ newTable ? newTable : actualTable}/>
             </tbody>
         </TableContainer> 
+      </main>
     )
-}
+} 
 
-
+const ButtoneContainer = styled.div``
+const Buttone = styled.button`
+    width: 50px;
+    height: 35px;
+    background-color: ghostwhite;    
+`
 const TableContainer = styled.table`
     font-size: 18px;
     width: 100%;
@@ -227,4 +266,61 @@ const TableContainer = styled.table`
         font-size: 14px;
     }
 `
+
+const ButtonsContainer = styled.div`
+  background-color: #CCE1F2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  float:right;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  button {
+    background-color: ghostwhite;
+  }
+`
+const SearchInput = styled.input`
+  font-size: 12px;
+  width: 80px;
+  height: 35px;
+  margin-right: 20px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 1px solid white;
+  box-shadow: 1px 1px black;
+
+  img {
+    float: right;
+  }
+
+  @media screen and (max-width: 340px){
+    width: 60px;
+    height: 25px;
+    margin-right: 10px;
+  }
+`
+const Button = styled.button`
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  box-shadow: 1px 1px #888888;
+  margin-right: 20px;
+  @media screen and (max-width: 340px){
+    margin-right: 10px;
+  }
+`
+
+const ResetButton = styled.button`
+  width: 30px;
+  height: 30px;
+  margin: 10px 25px 10px 0;
+  border-radius: 50%;
+  box-shadow: 1px 1px #888888;
+`
+const IconImage = styled.img`
+  width: 100%;
+  display: block;
+  margin: auto;
+`
+
 export { FishTable }

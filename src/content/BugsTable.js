@@ -37,12 +37,9 @@ const emptyRow = <tr>
                     <td></td>
                 </tr>
     
-const BugsButtons = () => {
-    const [inputSearch, setInputSearch] = useState("")
-    const [Result, setResult] = useState(inputSearch);
-    const [newTable, setNewTable] = useState(inputSearch)
-    const [sortBy, setSortBy] = useState("");
-    const [hemis, setHemis] = useState("") 
+const BugsTable = () => {
+    const [newTable, setNewTable] = useState("")
+    const [sortBy, setSortBy] = useState("")
 
     let search_placeholder = ""
     let actualTable = ""
@@ -73,41 +70,41 @@ const BugsButtons = () => {
             }
             else if(v.SeasonInterval.length === 4){ // ex: "Mar-Jun (North) Sep-Dec (North)"
             // Month X < Y
-            if(v.SeasonInterval[0] < v.SeasonInterval[1] || v.SeasonInterval[2] < v.SeasonInterval[3]) { // Between A and B
-                if(    (currentSeason >=  v.SeasonInterval[0] && currentSeason <=  v.SeasonInterval[1]) 
-                || (currentSeason >=  v.SeasonInterval[2] && currentSeason <=  v.SeasonInterval[3])){
-                    return currentSeason
-                }
-            }
-            // Month X > Y
-            else if(v.SeasonInterval[0] > v.SeasonInterval[1] || v.SeasonInterval[2] > v.SeasonInterval[3]) {  
-                if(    currentSeason >=  (v.SeasonInterval[0] || v.SeasonInterval[2]) 
-                || currentSeason <=  (v.SeasonInterval[1] || v.SeasonInterval[3])){
-                    return currentSeason
-                }
-            }
-        }
-        else if(v.SeasonInterval.length === 6){ // ex: "Mar-Jun, Oct (North) Sep-Dec, Apr (North)"
-        // Concrete Months
-        if(currentSeason === v.SeasonInterval[2] || currentSeason === v.SeasonInterval[5]){
-            return currentSeason
-        }
-        // Month X < Y
-        if(v.SeasonInterval[0] < v.SeasonInterval[1] || v.SeasonInterval[3] < v.SeasonInterval[4]) { // Between A and B
-            if(    (currentSeason >=  v.SeasonInterval[0] && currentSeason <=  v.SeasonInterval[1]) 
-            || (currentSeason >=  v.SeasonInterval[3] && currentSeason <=  v.SeasonInterval[4])){
-                return currentSeason
-            }
-        }
-        // Month X > Y
-        if(v.SeasonInterval[0] > v.SeasonInterval[1] || v.SeasonInterval[3] > v.SeasonInterval[4]) {  
-            if(    currentSeason >=  v.SeasonInterval[0] || currentSeason <=  v.SeasonInterval[1] 
-                || currentSeason >=  v.SeasonInterval[3] || currentSeason <=  v.SeasonInterval[4]){
-                            return currentSeason
-                        }
+                if(v.SeasonInterval[0] < v.SeasonInterval[1] || v.SeasonInterval[2] < v.SeasonInterval[3]) { // Between A and B
+                    if(    (currentSeason >=  v.SeasonInterval[0] && currentSeason <=  v.SeasonInterval[1]) 
+                    || (currentSeason >=  v.SeasonInterval[2] && currentSeason <=  v.SeasonInterval[3])){
+                        return currentSeason
                     }
                 }
-                else if(v.SeasonInterval.length === 8){ // ex: "May-Jun, Sep-Nov (North) Nov-Dec, Mar-Apr (South)"
+                // Month X > Y
+                else if(v.SeasonInterval[0] > v.SeasonInterval[1] || v.SeasonInterval[2] > v.SeasonInterval[3]) {  
+                    if(    currentSeason >=  (v.SeasonInterval[0] || v.SeasonInterval[2]) 
+                    || currentSeason <=  (v.SeasonInterval[1] || v.SeasonInterval[3])){
+                        return currentSeason
+                    }
+                }
+            }
+            else if(v.SeasonInterval.length === 6){ // ex: "Mar-Jun, Oct (North) Sep-Dec, Apr (North)"
+                // Concrete Months
+                if(currentSeason === v.SeasonInterval[2] || currentSeason === v.SeasonInterval[5]){
+                    return currentSeason
+                }
+                // Month X < Y
+                if(v.SeasonInterval[0] < v.SeasonInterval[1] || v.SeasonInterval[3] < v.SeasonInterval[4]) { // Between A and B
+                    if(    (currentSeason >=  v.SeasonInterval[0] && currentSeason <=  v.SeasonInterval[1]) 
+                    || (currentSeason >=  v.SeasonInterval[3] && currentSeason <=  v.SeasonInterval[4])){
+                        return currentSeason
+                    }
+                }
+                // Month X > Y
+                if(v.SeasonInterval[0] > v.SeasonInterval[1] || v.SeasonInterval[3] > v.SeasonInterval[4]) {  
+                    if(    currentSeason >=  v.SeasonInterval[0] || currentSeason <=  v.SeasonInterval[1] 
+                        || currentSeason >=  v.SeasonInterval[3] || currentSeason <=  v.SeasonInterval[4]){
+                                    return currentSeason
+                    }
+                }
+            }
+            else if(v.SeasonInterval.length === 8){ // ex: "May-Jun, Sep-Nov (North) Nov-Dec, Mar-Apr (South)"
                 // Month X < Y
                 if(    v.SeasonInterval[0] < v.SeasonInterval[1]
                     || v.SeasonInterval[2] < v.SeasonInterval[3]
@@ -127,54 +124,54 @@ const BugsButtons = () => {
                             || currentSeason <= (v.SeasonInterval[1] || v.SeasonInterval[3] || v.SeasonInterval[5] || v.SeasonInterval[7])){
                                 return currentSeason
                             }
-                        }
                     }
-                    return false
-                })
+                }
+                return false
             }
-    const sortBySearch = (table, inputSearch) => 
-        table.filter((v) => {
+        )}
+    const sortBySearch = (table, inputSearch) => {
+        let toble = table.filter((v) => {
             inputSearch = inputSearch.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
-            console.log(inputSearch)
-            console.log(table)
             return (
                 v.Name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
                 v.PriceInt.toString().includes(inputSearch) ||
                 v.Location.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
                 v.Season.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
                 v.Time.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) 
-            )
-        })
-    const sortHem = (table, hem) => { 
-        setSortBy("Hem")
-        return table.filter((v) => v.Season.includes(hem))}
+                )
+            })
+        setNewTable(toble)
+    }
+
+    const sortHem = (table, hem) => {
+        setSortBy("Hemis")
+        let toble = table.filter((v) => v.Season.includes(hem))
+        setNewTable(toble)
+    }
     const sortByABC = (table) => { 
         setSortBy("ABC")
         return table.sort((a, b) => 
                                 a.Name > b.Name ? 1 :
-                                a.Name < b.Name ? -1 : 0)}
+                                a.Name < b.Name ? -1 : 0)
+    }
     const sortByPrice = (table) => { 
         setSortBy("Price")
-        return table.sort((a, b) => b.PriceInt - a.PriceInt)}
+        return table.sort((a, b) => b.PriceInt - a.PriceInt)
+    }
     const sortByReset = (table) => { 
         setSortBy("Reset")
-        return table.sort((a, b) => a.Number - b.Number)}
-
-    const setInput = (e) => {
-        setInputSearch(e.target.value)
+        return table.sort((a, b) => a.Number - b.Number)
     }
 
     useEffect(() => {
-    }, [newTable])
+    }, [sortBy])
 
     return (    
       <main>
-          {console.log(newTable)}
-          {console.log(Result)}
         <ButtonsContainer>
           <label htmlFor={"table-search"}></label>
-          <SearchInput  id={"table-search"} onChange={(e) => setNewTable(sortBySearch(actualTable, e.target.value))} placeholder={search_placeholder} />
-          <Button onClick={() => setNewTable(sortBySeason(actualTable))}><IconImage src={imageURL.Hour} alt="Hour" /></Button>
+          <SearchInput  id={"table-search"} onChange={(e) => sortBySearch(actualTable, e.target.value)} placeholder={search_placeholder} />
+          <Button onClick={() => setNewTable(sortBySeason(actualTable))}><IconImage src={imageURL.Hour} alt="Season" /></Button>
           <Button onClick={() => setNewTable(sortByABC(actualTable))}>
             <picture>
               <source type="image/webp" srcSet={imageURL.ABCWEBP}/>
@@ -184,7 +181,7 @@ const BugsButtons = () => {
           </Button>
           <Button onClick={() => setNewTable(sortByPrice(actualTable))} style={{backgroundColor: "#FDDD5C"}}>
             <picture>
-                <IconImage src={imageURL.Price}  alt="price" />
+                <IconImage src={imageURL.Price}  alt="Price" />
             </picture>
           </Button>
           <ResetButton onClick={() => setNewTable(sortByReset(actualTable))}>
@@ -201,7 +198,12 @@ const BugsButtons = () => {
                     <th>{table_head[0]}</th>
                     <th>{table_head[1]}<br/>{table_head[2]}</th>
                     <th>{table_head[3]}<br/>{table_head[4]}</th>
-                    <th>{table_head[5]}<br/>{table_head[6]}<Buttone onClick={() => sortHem(actualTable, "North")}>N</Buttone></th>
+                    <th>{table_head[5]}<br/>{table_head[6]}
+                        <ButtoneContainer>
+                            <Buttone onClick={() => sortHem(actualTable, "North")}>N</Buttone>
+                            <Buttone onClick={() => sortHem(actualTable, "South")}>S</Buttone>
+                        </ButtoneContainer>
+                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -212,7 +214,7 @@ const BugsButtons = () => {
     )
 } 
 
-
+const ButtoneContainer = styled.div``
 const Buttone = styled.button`
     width: 50px;
     height: 35px;
@@ -320,4 +322,4 @@ const IconImage = styled.img`
   margin: auto;
 `
 
-export { BugsButtons }
+export { BugsTable }
