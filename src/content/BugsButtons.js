@@ -165,15 +165,15 @@ const BugsButtons = () => {
     }
 
     useEffect(() => {
-        //setResult(sortBySearch(actualTable, inputSearch))
-    }, [actualTable, newTable, inputSearch])
+    }, [newTable])
 
     return (    
       <main>
           {console.log(newTable)}
+          {console.log(Result)}
         <ButtonsContainer>
           <label htmlFor={"table-search"}></label>
-          <SearchInput  id={"table-search"} onChange={(e) => setInputSearch(e.target.value)} placeholder={search_placeholder} />
+          <SearchInput  id={"table-search"} onChange={(e) => setNewTable(sortBySearch(actualTable, e.target.value))} placeholder={search_placeholder} />
           <Button onClick={() => setNewTable(sortBySeason(actualTable))}><IconImage src={imageURL.Hour} alt="Hour" /></Button>
           <Button onClick={() => setNewTable(sortByABC(actualTable))}>
             <picture>
