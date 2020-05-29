@@ -20,8 +20,8 @@
         "Name": "Cacho",
         "Location": "Río",
         "Size": "Muy pequeño",
-        "Price": "160",
-        "PriceInt": 160,
+        "Price": "200",
+        "PriceInt": 200,
         "Season": "Todo el año",
         "Time": "9AM - 4PM",
         "TimeInterval": [21, 4]

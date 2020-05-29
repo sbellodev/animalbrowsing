@@ -20,8 +20,8 @@
         "Name": "Pale chub",
         "Location": "River",
         "Size": "Smallest",
-        "Price": "160",
-        "PriceInt": 160,
+        "Price": "200",
+        "PriceInt": 200,
         "Season": "Year-round",
         "Time": "9AM - 4PM",
         "TimeInterval": [21, 4]
