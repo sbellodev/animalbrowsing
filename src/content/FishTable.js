@@ -12,7 +12,7 @@ const FishMobileTable = ({actualTable}) => {
                 </picture>
             </td>
             <td>{value.Name} <br/> {value.Price}</td>
-            <td>{value.Time} <br/> {value.Location} <br/> {value.Size}</td>
+            <td dangerouslySetInnerHTML={{ __html: value.Time + "<br/>" + value.Location + "<br/>" + value.Size}}></td>
             <td dangerouslySetInnerHTML={{ __html: value.Season}}></td>
          </tr>
      ) : emptyRow
@@ -40,45 +40,112 @@ const FishTable = ({sortBy, actualTable, inputSearch}) => {
                     v.Time.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) 
                 )
             })
-        const sortByHour = (table) => {
+        // const sortByHour = (table) => {
+        //     var time = new Date();
+        //     let currentTime = time.getHours() // i.e 18 (from 18:00)
+    
+        //     return table.filter((v, i, a) => {
+        //         if(v.TimeInterval[0] > v.TimeInterval[1]){ 
+        //             if(currentTime >=  v.TimeInterval[0] || currentTime <=  v.TimeInterval[1]){
+        //                 return currentTime
+        //             }
+        //         }
+        //         else {
+        //             if(currentTime >=  v.TimeInterval[0] && currentTime <=  v.TimeInterval[1]){
+        //                 return currentTime
+        //             }
+        //         }
+        //         return false
+        //     })
+        // } 
+        const sortBySeason = (table) => {
             var time = new Date();
-            let currentTime = time.getHours() // i.e 18 (from 18:00)
+            let currentSeason = time.getMonth()
 
-            return table.filter((v, i, a) => {
-                /* i.e. case time interval A: 4AM to 17PM, case time interval B: 17PM to 4AM
-                *  with var 2AM
-                */
-                if(v.TimeInterval[0] > v.TimeInterval[1]){ // A dont, B pass
-                    if(currentTime >=  v.TimeInterval[0]){ //  B dont
-                        return (currentTime >=  v.TimeInterval[0])
-                    }
-                    if(currentTime <=  v.TimeInterval[1]){ //  B pass
-                        return (currentTime <=  v.TimeInterval[1])
+            return table.filter((v) => {
+                if(v.SeasonInterval.length === 2){ // ex: All year (0, 12) 
+                    if(v.SeasonInterval[0] < v.SeasonInterval[1]) { 
+                        if(currentSeason >=  v.SeasonInterval[0] && currentSeason <=  v.SeasonInterval[1]){
+                            return currentSeason
+                        }
                     }
                 }
-                else {
-                    if(currentTime >=  v.TimeInterval[0] && currentTime <=  v.TimeInterval[1]){ //  A pass, B dont
-                        return (currentTime >=  v.TimeInterval[0] && currentTime <=  v.TimeInterval[1])
+                else if(v.SeasonInterval.length === 4){ // ex: "Mar-Jun (North) Sep-Dec (North)"
+                    // Month X < Y
+                    if(v.SeasonInterval[0] < v.SeasonInterval[1] || v.SeasonInterval[2] < v.SeasonInterval[3]) { // Between A and B
+                        if(    (currentSeason >=  v.SeasonInterval[0] && currentSeason <=  v.SeasonInterval[1]) 
+                            || (currentSeason >=  v.SeasonInterval[2] && currentSeason <=  v.SeasonInterval[3])){
+                                return currentSeason
+                            }
+                    }
+                    // Month X > Y
+                    else if(v.SeasonInterval[0] > v.SeasonInterval[1] || v.SeasonInterval[2] > v.SeasonInterval[3]) {  
+                        if(    currentSeason >=  (v.SeasonInterval[0] || v.SeasonInterval[2]) 
+                            || currentSeason <=  (v.SeasonInterval[1] || v.SeasonInterval[3])){
+                                return currentSeason
+                            }
+                    }
+                }
+                else if(v.SeasonInterval.length === 6){ // ex: "Mar-Jun, Oct (North) Sep-Dec, Apr (North)"
+                    // Concrete Months
+                    if(currentSeason === v.SeasonInterval[2] || currentSeason === v.SeasonInterval[5]){
+                        return currentSeason
+                    }
+                    // Month X < Y
+                    if(v.SeasonInterval[0] < v.SeasonInterval[1] || v.SeasonInterval[3] < v.SeasonInterval[4]) { // Between A and B
+                        if(    (currentSeason >=  v.SeasonInterval[0] && currentSeason <=  v.SeasonInterval[1]) 
+                            || (currentSeason >=  v.SeasonInterval[3] && currentSeason <=  v.SeasonInterval[4])){
+                                return currentSeason
+                        }
+                    }
+                    // Month X > Y
+                    if(v.SeasonInterval[0] > v.SeasonInterval[1] || v.SeasonInterval[3] > v.SeasonInterval[4]) {  
+                        if(    currentSeason >=  v.SeasonInterval[0] || currentSeason <=  v.SeasonInterval[1] 
+                            || currentSeason >=  v.SeasonInterval[3] || currentSeason <=  v.SeasonInterval[4]){
+                                return currentSeason
+                            }
+                    }
+                }
+                else if(v.SeasonInterval.length === 8){ // ex: "May-Jun, Sep-Nov (North) Nov-Dec, Mar-Apr (South)"
+                    // Month X < Y
+                    if(    v.SeasonInterval[0] < v.SeasonInterval[1]
+                        || v.SeasonInterval[2] < v.SeasonInterval[3]
+                        || v.SeasonInterval[4] < v.SeasonInterval[5]
+                        || v.SeasonInterval[6] < v.SeasonInterval[7]) {
+                            if(    (currentSeason >=  v.SeasonInterval[0] && currentSeason <=  v.SeasonInterval[1]) 
+                                || (currentSeason >=  v.SeasonInterval[2] && currentSeason <=  v.SeasonInterval[3])
+                                || (currentSeason >=  v.SeasonInterval[4] && currentSeason <=  v.SeasonInterval[5])
+                                || (currentSeason >=  v.SeasonInterval[6] && currentSeason <=  v.SeasonInterval[7])){
+                                    return currentSeason
+                            }
+                    }
+                    // Month X > Y
+                    if(    v.SeasonInterval[0] > v.SeasonInterval[1] || v.SeasonInterval[2] > v.SeasonInterval[3]
+                        || v.SeasonInterval[4] > v.SeasonInterval[5] || v.SeasonInterval[6] > v.SeasonInterval[7]){  
+                            if(currentSeason >= (v.SeasonInterval[0] || v.SeasonInterval[2] || v.SeasonInterval[4] || v.SeasonInterval[6]) 
+                            || currentSeason <= (v.SeasonInterval[1] || v.SeasonInterval[3] || v.SeasonInterval[5] || v.SeasonInterval[7])){
+                                return currentSeason
+                            }
                     }
                 }
                 return false
             })
-        } 
+        }
         const sortByPrice = (table) => table.sort((a, b) => b.PriceInt - a.PriceInt)
         const sortByABC = (table) => table.sort((a, b) => {
-                                                let a_clean = a.Name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
-                                                let b_clean = b.Name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
-                                                return a_clean > b_clean ? 1 :
-                                                a_clean < b_clean ? -1 : 0
-                                            })
+                                        let a_clean = a.Name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
+                                        let b_clean = b.Name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
+                                        return a_clean > b_clean ? 1 :
+                                        a_clean < b_clean ? -1 : 0
+                                    })
         const sortByReset = (table) => table.sort((a, b) => a.Number - b.Number)
 
         switch (sortBy){
             case "Search":
                 actualTable = sortBySearch(actualTable, inputSearch)
                 break
-            case "Hour":
-                actualTable = sortByHour(actualTable)
+            case "Season":
+                actualTable = sortBySeason(actualTable)
                 break
             case "Price":
                 sortByPrice(actualTable)

@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import styled from 'styled-components'
-import { FishTable } from '../content/FishTable'
-import fishListEN from '../data/fish-EN.json'
-import fishListES from '../data/fish-ES.json'
+import { BugsTable } from '../content/BugsTable'
+import bugListEN from '../data/bug-EN.json'
+import bugListES from '../data/bug-ES.json'
   
 const imageURL = {
   Price: "/icons/star.svg",
@@ -13,7 +13,7 @@ const imageURL = {
   ResetPNG: "/icons/reset.png",
 }
 
-const FishButtons = () => {
+const BugsButtons = () => {
     const [sortBy, setSortBy] = useState("");
     const [inputSearch, setInputSearch] = useState("")
 
@@ -26,19 +26,19 @@ const FishButtons = () => {
     let search_placeholder = ""
     let actualTable = ""
     if(localStorage.getItem("language") === "es"){
-      document.title = 'Animal Browsing - Lista de peces';
+      document.title = 'Animal Browsing - Lista de bichos';
       search_placeholder = "Buscar..."
-      actualTable = fishListES 
+      actualTable = bugListES 
     }
     else {
-      document.title = 'Animal Browsing - Fish list';
+      document.title = 'Animal Browsing - Bug list';
       search_placeholder = "Find..."
-      actualTable = fishListEN 
+      actualTable = bugListEN 
     }
     return (    
       <main>
         <ButtonsContainer>
-          <label htmlFor="table-search"></label>
+          <label htmlFor={"table-search"}></label>
           <SearchInput  id={"table-search"} onChange={setInput} placeholder={search_placeholder} />
           <Button onClick={() => setSortBy("Season")}><IconImage src={imageURL.Hour} alt="Season" /></Button>
           <Button onClick={() => setSortBy("ABC")}>
@@ -55,13 +55,13 @@ const FishButtons = () => {
           </Button>
           <ResetButton onClick={() => setSortBy("Reset")}>
             <picture>
-              <source srcSet={imageURL.ResetWEBP}/>
-              <source srcSet={imageURL.ResetPNG}/>
+              <source type="image/webp" srcSet={imageURL.ResetWEBP}/>
+              <source type="image/png" srcSet={imageURL.ResetPNG}/>
               <IconImage src={imageURL.ResetPNG}  alt="Reset" />
             </picture>
           </ResetButton>
         </ButtonsContainer>
-        <FishTable sortBy={sortBy} actualTable={actualTable} inputSearch={inputSearch} />
+        <BugsTable sortBy={sortBy} actualTable={actualTable} inputSearch={inputSearch} />
       </main>
     )
 } 
@@ -121,4 +121,4 @@ const IconImage = styled.img`
   margin: auto;
 `
 
-export { FishButtons } 
+export { BugsButtons } 

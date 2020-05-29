@@ -7,7 +7,7 @@
         "Price": "160",
         "PriceInt": 160,
         "Location": "Flying",
-        "Season": "Sep-Jun (North)<br/>Mar-Dec (South)",
+        "Season": "Sep-Jun ()<br/>Mar-Dec (South)",
         "SeasonInterval": [9, 6, 3, 12],
         "Time": "4AM - 7PM",
         "TimeInterval": [4, 19]
@@ -415,7 +415,7 @@
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
         "SeasonInterval": [7, 8, 1, 2],
-        "Time": "4AM - 8AM \n 4PM - 7PM",
+        "Time": "4AM - 8AM <br/> 4PM - 7PM",
         "TimeInterval": [4, 8, 16, 19]
     },
 
@@ -919,7 +919,7 @@
         "Location": "On Trees",
         "Season": "Jul-Nov (North)<br/>Jan-May (South)",
         "SeasonInterval": [7, 11, 1, 5],
-        "Time": "4AM - 8AM \n 5PM - 7PM",
+        "Time": "4AM - 8AM <br/> 5PM - 7PM",
         "TimeInterval": [4, 8, 17, 19]
     },
 
