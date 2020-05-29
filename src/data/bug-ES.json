@@ -9,6 +9,8 @@
         "Location": "Volando",
         "Season": "Sep-Jun (Norte)<br/>Mar-Dic (Sur)",
         "SeasonInterval": [9, 6, 3, 12],
+        "SeasonNorth": [9, 6], 
+        "SeasonSouth": [3, 12], 
         "Time": "4AM - 7PM",
         "TimeInterval": [4, 19]
     },
@@ -23,6 +25,8 @@
         "Location": "Volando",
         "Season": "Mar-Jun, Sep-Oct (Norte)<br/>Mar-Abr, Sep-Dic (Sur)",
         "SeasonInterval": [3, 6, 9, 10, 3, 4, 9, 12],
+        "SeasonNorth": [3, 6, 9, 10], 
+        "SeasonSouth": [3, 4, 9, 12], 
         "Time": "4AM - 7PM",
         "TimeInterval": [4, 19]
     },
@@ -37,6 +41,8 @@
         "Location": "Volando",
         "Season": "Mar-Sep (Norte)<br/>Sep-Mar (Sur)",
         "SeasonInterval": [3, 9, 9, 3],
+        "SeasonNorth": [3, 9], 
+        "SeasonSouth": [9, 3], 
         "Time": "4AM - 7PM",
         "TimeInterval": [4, 19]
     },
@@ -51,6 +57,8 @@
         "Location": "Flores",
         "Season": "Mar-Jun (Norte)<br/>Sep-Dic (Sur)",
         "SeasonInterval": [3, 6, 9, 12],
+        "SeasonNorth": [3, 6], 
+        "SeasonSouth": [9, 12], 
         "Time": "4AM - 7PM",
         "TimeInterval": [4, 19]
     },
@@ -65,6 +73,8 @@
         "Location": "Volando",
         "Season": "Abr-Ago (Norte)<br/>Oct-Feb (Sur)",
         "SeasonInterval": [4, 8, 10, 2],
+        "SeasonNorth": [4, 8], 
+        "SeasonSouth": [10, 2], 
         "Time": "4AM - 7PM",
         "TimeInterval": [4, 19]
     },
@@ -79,6 +89,8 @@
         "Location": "Volando",
         "Season": "Todo el año",
         "SeasonInterval": [1, 12],
+        "SeasonNorth": [1, 12], 
+        "SeasonSouth": [1, 12], 
         "Time": "8AM - 7PM",
         "TimeInterval": [8, 19]
     },
@@ -93,6 +105,8 @@
         "Location": "Volando",
         "Season": "May-Ago (Norte)<br/>Nov-Feb (Sur)",
         "SeasonInterval": [5, 8, 11, 2],
+        "SeasonNorth": [5, 8], 
+        "SeasonSouth": [11, 2], 
         "Time": "4AM - 7PM",
         "TimeInterval": [4, 19]
     },
@@ -107,6 +121,8 @@
         "Location": "Volando",
         "Season": "Sep-Nov (Norte)<br/>Mar-May (Sur)",
         "SeasonInterval": [9, 11, 3, 5],
+        "SeasonNorth": [9, 11], 
+        "SeasonSouth": [3, 5], 
         "Time": "4AM - 5PM",
         "TimeInterval": [4, 17]
     },
@@ -121,6 +137,8 @@
         "Location": "Volando",
         "Season": "Jun-Sep, Dic-Mar (Norte)<br/>Dic-Mar, Jun-Sep (Sur)",
         "SeasonInterval": [6, 9, 12, 3, 12, 3, 6, 9],
+        "SeasonNorth": [6, 9, 12, 3], 
+        "SeasonSouth": [12, 3, 6, 9], 
         "Time": "5PM - 8AM",
         "TimeInterval": [17, 8]
     },
@@ -135,6 +153,8 @@
         "Location": "Volando",
         "Season": "Abr-Sep (Norte)<br/>Nov-Mar (Sur)",
         "SeasonInterval": [4, 9, 11, 3],
+        "SeasonNorth": [4, 9], 
+        "SeasonSouth": [11, 3], 
         "Time": "8AM - 5PM",
         "TimeInterval": [8, 17]
     },
@@ -149,6 +169,8 @@
         "Location": "Flores",
         "Season": "Abr-Sep, Dic-Feb (Norte)<br/>Nov-Mar, Jun-Ago (Sur)",
         "SeasonInterval": [4, 9, 12, 2, 11, 3, 6, 8],
+        "SeasonNorth": [4, 9, 12, 2], 
+        "SeasonSouth": [11, 3, 6, 8], 
         "Time": "8AM - 5PM",
         "TimeInterval": [8, 17]
     },
@@ -163,6 +185,8 @@
         "Location": "Volando",
         "Season": "May-Sep (Norte)<br/>Nov-Mar (Sur)",
         "SeasonInterval": [5, 9, 11, 3],
+        "SeasonNorth": [5, 9], 
+        "SeasonSouth": [11, 3], 
         "Time": "8AM - 4PM",
         "TimeInterval": [8, 16]
     },
@@ -177,6 +201,8 @@
         "Location": "Volando en la luz",
         "Season": "Todo el año",
         "SeasonInterval": [1, 12],
+        "SeasonNorth": [1, 12], 
+        "SeasonSouth": [1, 12], 
         "Time": "7PM - 4AM",
         "TimeInterval": [19, 4]
     },
@@ -191,6 +217,8 @@
         "Location": "En árboles",
         "Season": "Abr-Sep (Norte)<br/>Oct-Mar (Sur)",
         "SeasonInterval": [4, 9, 10, 3],
+        "SeasonNorth": [4, 9], 
+        "SeasonSouth": [10, 3], 
         "Time": "7PM - 4AM",
         "TimeInterval": [19, 4]
     },
@@ -205,6 +233,8 @@
         "Location": "Volando",
         "Season": "Abr-Sep (Norte)<br/>Oct-Mar (Sur)",
         "SeasonInterval": [4, 9, 10, 3],
+        "SeasonNorth": [4, 9], 
+        "SeasonSouth": [10, 3], 
         "Time": "8AM - 4PM",
         "TimeInterval": [8, 16]
     },
@@ -219,6 +249,8 @@
         "Location": "Suelo",
         "Season": "Abr-Nov (Norte)<br/>Nov-May (Sur)",
         "SeasonInterval": [4, 11, 11, 5],
+        "SeasonNorth": [4, 11], 
+        "SeasonSouth": [11, 5], 
         "Time": "8AM - 7PM",
         "TimeInterval": [8, 19]
     },
@@ -233,6 +265,8 @@
         "Location": "Suelo",
         "Season": "Ago-Nov (Norte)<br/>Feb-May (Sur)",
         "SeasonInterval": [8, 11, 2, 5],
+        "SeasonNorth": [8, 11], 
+        "SeasonSouth": [2, 5], 
         "Time": "8AM - 7PM",
         "TimeInterval": [8, 19]
     },
@@ -247,6 +281,8 @@
         "Location": "Suelo",
         "Season": "Ago-Nov (Norte)<br/>Feb-May (Sur)",
         "SeasonInterval": [8, 11, 2, 5],
+        "SeasonNorth": [8, 11], 
+        "SeasonSouth": [2, 5], 
         "Time": "8AM - 7PM",
         "TimeInterval": [8, 19]
     },
@@ -261,6 +297,8 @@
         "Location": "Suelo",
         "Season": "Jul-Sep (Norte)<br/>Ene-Mar (Sur)",
         "SeasonInterval": [7, 9, 1, 3],
+        "SeasonNorth": [7, 9], 
+        "SeasonSouth": [1, 3], 
         "Time": "8AM - 5PM",
         "TimeInterval": [8, 17]
     },
@@ -275,6 +313,8 @@
         "Location": "Suelo",
         "Season": "Sep-Nov (Norte)<br/>Mar-May (Sur)",
         "SeasonInterval": [9, 11, 3, 5],
+        "SeasonNorth": [9, 11], 
+        "SeasonSouth": [3, 5], 
         "Time": "5PM - 8AM",
         "TimeInterval": [17, 8]
     },
@@ -289,6 +329,8 @@
         "Location": "Suelo (usar pala donde suene)",
         "Season": "Sep-Oct (Norte)<br/>Mar-Abr (Sur)",
         "SeasonInterval": [9, 10, 3, 4],
+        "SeasonNorth": [9, 10], 
+        "SeasonSouth": [3, 4], 
         "Time": "5PM - 8AM",
         "TimeInterval": [17, 8]
     },
@@ -303,6 +345,8 @@
         "Location": "Flores",
         "Season": "Mar-Nov (Norte)<br/>Sep-May (Sur)",
         "SeasonInterval": [3, 11, 9, 5],
+        "SeasonNorth": [3, 11], 
+        "SeasonSouth": [9, 5], 
         "Time": "8AM - 5PM",
         "TimeInterval": [8, 17]
     },
@@ -317,6 +361,8 @@
         "Location": "Flores",
         "Season": "Mar-Nov (Norte)<br/>Sep-May (Sur)",
         "SeasonInterval": [3, 11, 9, 5],
+        "SeasonNorth": [3, 11], 
+        "SeasonSouth": [9, 5], 
         "Time": "8AM - 5PM",
         "TimeInterval": [8, 17]
     },
@@ -331,6 +377,8 @@
         "Location": "Volando",
         "Season": "Mar-Jul (Norte)<br/>Mar-Jul (Sur)",
         "SeasonInterval": [3, 7, 3, 7],
+        "SeasonNorth": [3, 7], 
+        "SeasonSouth": [3, 7], 
         "Time": "8AM - 5PM",
         "TimeInterval": [8, 17]
     },
@@ -345,6 +393,8 @@
         "Location": "Sacudiendo árboles",
         "Season": "Todo el año",
         "SeasonInterval": [1, 12],
+        "SeasonNorth": [1, 12], 
+        "SeasonSouth": [1, 12], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -359,6 +409,8 @@
         "Location": "En árboles",
         "Season": "Jul-Ago (Norte)<br/>Ene-Feb (Sur)",
         "SeasonInterval": [7, 8, 1, 2],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 2], 
         "Time": "8AM - 5PM",
         "TimeInterval": [8, 17]
     },
@@ -373,6 +425,8 @@
         "Location": "En árboles",
         "Season": "Jul-Ago (Norte)<br/>Ene-Feb (Sur)",
         "SeasonInterval": [7, 8, 1, 2],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 2], 
         "Time": "8AM - 5PM",
         "TimeInterval": [8, 17]
     },
@@ -387,6 +441,8 @@
         "Location": "En árboles",
         "Season": "Jul-Ago (Norte)<br/>Ene-Feb (Sur)",
         "SeasonInterval": [7, 8, 1, 2],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 2], 
         "Time": "8AM - 5PM",
         "TimeInterval": [8, 17]
     },
@@ -401,6 +457,8 @@
         "Location": "En árboles",
         "Season": "Ago-Sep (Norte)<br/>Feb-Mar (Sur)",
         "SeasonInterval": [8, 9, 2, 3],
+        "SeasonNorth": [8, 9], 
+        "SeasonSouth": [2, 3], 
         "Time": "8AM - 5PM",
         "TimeInterval": [8, 17]
     },
@@ -415,6 +473,8 @@
         "Location": "En árboles",
         "Season": "Jul-Ago (Norte)<br/>Ene-Feb (Sur)",
         "SeasonInterval": [7, 8, 1, 2],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 2], 
         "Time": "4AM - 8AM <br/> 4PM - 7PM",
         "TimeInterval": [4, 8, 16, 19]
     },
@@ -429,6 +489,8 @@
         "Location": "En árboles",
         "Season": "Jul-Ago (Norte)<br/>Ene-Feb (Sur)",
         "SeasonInterval": [7, 8, 1, 2],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 2], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -443,6 +505,8 @@
         "Location": "Volando",
         "Season": "Sep-Oct (Norte)<br/>Mar-Abr (Sur)",
         "SeasonInterval": [9, 10, 3, 4],
+        "SeasonNorth": [9, 10], 
+        "SeasonSouth": [3, 4], 
         "Time": "8AM - 7PM",
         "TimeInterval": [8, 19]
     },
@@ -457,6 +521,8 @@
         "Location": "Volando",
         "Season": "Abr-Oct (Norte)<br/>Oct-Abr (Sur)",
         "SeasonInterval": [4, 10, 10, 4],
+        "SeasonNorth": [4, 10], 
+        "SeasonSouth": [10, 4], 
         "Time": "8AM - 5PM",
         "TimeInterval": [8, 17]
     },
@@ -471,6 +537,8 @@
         "Location": "Volando",
         "Season": "May-Oct (Norte)<br/>Nov-Abr (Sur)",
         "SeasonInterval": [5, 10, 11, 4],
+        "SeasonNorth": [5, 10], 
+        "SeasonSouth": [11, 4], 
         "Time": "8AM - 5PM",
         "TimeInterval": [8, 17]
     },
@@ -485,6 +553,8 @@
         "Location": "Volando",
         "Season": "Nov-Feb (Norte)<br/>May-Ago (Sur)",
         "SeasonInterval": [11, 2, 5, 8],
+        "SeasonNorth": [11, 2], 
+        "SeasonSouth": [5, 8], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -499,6 +569,8 @@
         "Location": "Volando en estanques",
         "Season": "Jun (Norte)<br/>Dic (Sur)",
         "SeasonInterval": [6, 12],
+        "SeasonNorth": [6, 12], 
+        "SeasonSouth": [6, 12], 
         "Time": "7PM - 4AM",
         "TimeInterval": [19, 4]
     },
@@ -513,6 +585,8 @@
         "Location": "Debajo de la tierra",
         "Season": "Nov-May (Norte)<br/>May-Nov (Sur)",
         "SeasonInterval": [11, 5, 5, 11],
+        "SeasonNorth": [11, 5], 
+        "SeasonSouth": [5, 11], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -527,6 +601,8 @@
         "Location": "Estanques o ríos",
         "Season": "May-Sep (Norte)<br/>Nov-Mar (Sur)",
         "SeasonInterval": [5, 9, 11, 3],
+        "SeasonNorth": [5, 9], 
+        "SeasonSouth": [11, 3], 
         "Time": "8AM - 7PM",
         "TimeInterval": [8, 19]
     },
@@ -541,6 +617,8 @@
         "Location": "Estanques o ríos",
         "Season": "May-Sep (Norte)<br/>Nov-Mar (Sur)",
         "SeasonInterval": [5, 9, 11, 3],
+        "SeasonNorth": [5, 9], 
+        "SeasonSouth": [11, 3], 
         "Time": "8AM - 7PM",
         "TimeInterval": [8, 19]
     },
@@ -555,6 +633,8 @@
         "Location": "Estanques o ríos",
         "Season": "Abr-Sep (Norte)<br/>Oct-Mar (Sur)",
         "SeasonInterval": [4, 9, 10, 3],
+        "SeasonNorth": [4, 9], 
+        "SeasonSouth": [10, 3], 
         "Time": "7PM - 8AM",
         "TimeInterval": [19, 8]
     },
@@ -569,6 +649,8 @@
         "Location": "Flores",
         "Season": "Mar-Nov (Norte)<br/>Sep-May (Sur)",
         "SeasonInterval": [3, 11, 9, 5],
+        "SeasonNorth": [3, 11], 
+        "SeasonSouth": [9, 5], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -583,6 +665,8 @@
         "Location": "Flores",
         "Season": "Mar-Nov (Norte)<br/>Sep-May (Sur)",
         "SeasonInterval": [3, 11, 9, 5],
+        "SeasonNorth": [3, 11], 
+        "SeasonSouth": [9, 5], 
         "Time": "7PM - 8AM",
         "TimeInterval": [19, 8]
     },
@@ -597,6 +681,8 @@
         "Location": "Flores",
         "Season": "Mar-Jun, Oct (Norte)<br/>Sep-Dic, Abr (Sur)",
         "SeasonInterval": [3, 6, 10, 9, 12, 4],
+        "SeasonNorth": [3, 6, 10], 
+        "SeasonSouth": [9, 12, 4], 
         "Time": "8AM - 5PM",
         "TimeInterval": [8, 17]
     },
@@ -611,6 +697,8 @@
         "Location": "Suelo",
         "Season": "Feb-Nov (Norte)<br/>Ago-May (Sur)",
         "SeasonInterval": [2, 11, 8, 5],
+        "SeasonNorth": [2, 11], 
+        "SeasonSouth": [8, 5], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -625,6 +713,8 @@
         "Location": "Arboles cortados",
         "Season": "Abr-Ago (Norte)<br/>Oct-Feb (Sur)",
         "SeasonInterval": [4, 8, 10, 2],
+        "SeasonNorth": [4, 8], 
+        "SeasonSouth": [10, 2], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -639,6 +729,8 @@
         "Location": "Arboles cortados",
         "Season": "May-Jun, Sep-Nov (Norte)<br/>Nov-Dic, Mar-Abr (Sur)",
         "SeasonInterval": [5, 6, 9, 11, 11, 12, 3, 4],
+        "SeasonNorth": [5, 6, 9, 11], 
+        "SeasonSouth": [11, 12, 3, 4], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -653,6 +745,8 @@
         "Location": "Arboles cortados",
         "Season": "Todo el año",
         "SeasonInterval": [1, 12],
+        "SeasonNorth": [1, 12], 
+        "SeasonSouth": [1, 12], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -667,6 +761,8 @@
         "Location": "Arboles cortados",
         "Season": "May-Sep (Norte)<br/>Nov-Mar (Sur)",
         "SeasonInterval": [5, 9, 11, 3],
+        "SeasonNorth": [5, 9], 
+        "SeasonSouth": [11, 3], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -681,6 +777,8 @@
         "Location": "En árboles",
         "Season": "Jul-Ago (Norte)<br/>Ene-Feb (Sur)",
         "SeasonInterval": [7, 8, 1, 2],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 2], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -695,6 +793,8 @@
         "Location": "Suelo (bolas de nieve)",
         "Season": "Dic-Feb (Norte)<br/>Jun-Ago (Sur)",
         "SeasonInterval": [12, 2, 6, 8],
+        "SeasonNorth": [12, 2], 
+        "SeasonSouth": [6, 8], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -709,6 +809,8 @@
         "Location": "Suelo",
         "Season": "Jul-Sep (Norte)<br/>Ene-Mar (Sur)",
         "SeasonInterval": [7, 9, 1, 3],
+        "SeasonNorth": [7, 9], 
+        "SeasonSouth": [1, 3], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -723,6 +825,8 @@
         "Location": "En árboles",
         "Season": "Jul-Ago (Norte)<br/>Ene-Feb (Sur)",
         "SeasonInterval": [7, 8, 1, 2],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 2], 
         "Time": "11PM - 8AM",
         "TimeInterval": [23, 8]
     },
@@ -737,6 +841,8 @@
         "Location": "En árboles",
         "Season": "Jun-Ago (Norte)<br/>Dic-Feb (Sur)",
         "SeasonInterval": [6, 8, 12, 2],
+        "SeasonNorth": [6, 8], 
+        "SeasonSouth": [12, 2], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -751,6 +857,8 @@
         "Location": "En árboles (cocotero)",
         "Season": "Jun-Sep (Norte)<br/>Dic-Mar (Sur)",
         "SeasonInterval": [6, 9, 12, 3],
+        "SeasonNorth": [6, 9], 
+        "SeasonSouth": [12, 3], 
         "Time": "5PM - 8AM",
         "TimeInterval": [17, 8]
     },
@@ -765,6 +873,8 @@
         "Location": "En árboles",
         "Season": "Jul-Ago (Norte)<br/>Ene-Feb (Sur)",
         "SeasonInterval": [7, 8, 1, 2],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 2], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -779,6 +889,8 @@
         "Location": "En árboles",
         "Season": "Jul-Ago (Norte)<br/>Ene-Feb (Sur)",
         "SeasonInterval": [7, 8, 1, 2],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 2], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -793,6 +905,8 @@
         "Location": "En árboles",
         "Season": "Jul-Ago (Norte)<br/>Ene-Feb (Sur)",
         "SeasonInterval": [7, 8, 1, 2],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 2], 
         "Time": "11PM - 8AM",
         "TimeInterval": [23, 8]
     },
@@ -807,6 +921,8 @@
         "Location": "En árboles",
         "Season": "Jun-Sep (Norte)<br/>Dic-Mar (Sur)",
         "SeasonInterval": [6, 9, 12, 3],
+        "SeasonNorth": [6, 9], 
+        "SeasonSouth": [12, 3], 
         "Time": "7PM - 8AM",
         "TimeInterval": [19, 8]
     },
@@ -821,6 +937,8 @@
         "Location": "En árboles",
         "Season": "Jul-Ago (Norte)<br/>Ene-Feb (Sur)",
         "SeasonInterval": [7, 8, 1, 2],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 2], 
         "Time": "5PM - 8AM",
         "TimeInterval": [17, 8]
     },
@@ -835,6 +953,8 @@
         "Location": "En árboles",
         "Season": "Jul-Ago (Norte)<br/>Ene-Feb (Sur)",
         "SeasonInterval": [7, 8, 1, 2],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 2], 
         "Time": "5PM - 8AM",
         "TimeInterval": [17, 8]
     },
@@ -849,6 +969,8 @@
         "Location": "En árboles",
         "Season": "Jul-Ago (Norte)<br/>Ene-Feb (Sur)",
         "SeasonInterval": [7, 8, 1, 2],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 2], 
         "Time": "5PM - 8AM",
         "TimeInterval": [17, 8]
     },
@@ -863,6 +985,8 @@
         "Location": "En árboles",
         "Season": "Jul-Ago (Norte)<br/>Ene-Feb (Sur)",
         "SeasonInterval": [7, 8, 1, 2],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 2], 
         "Time": "5PM - 8AM",
         "TimeInterval": [17, 8]
     },
@@ -877,6 +1001,8 @@
         "Location": "En árboles",
         "Season": "Jul-Ago (Norte)<br/>Ene-Feb (Sur)",
         "SeasonInterval": [7, 8, 1, 2],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 2], 
         "Time": "5PM - 8AM",
         "TimeInterval": [17, 8]
     },
@@ -891,6 +1017,8 @@
         "Location": "En árboles",
         "Season": "Jul-Ago (Norte)<br/>Ene-Feb (Sur)",
         "SeasonInterval": [7, 8, 1, 2],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 2], 
         "Time": "5PM - 8AM",
         "TimeInterval": [17, 8]
     },
@@ -905,6 +1033,8 @@
         "Location": "En árboles",
         "Season": "Jul-Ago (Norte)<br/>Ene-Feb (Sur)",
         "SeasonInterval": [7, 8, 1, 2],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 2], 
         "Time": "5PM - 8AM",
         "TimeInterval": [17, 8]
     },
@@ -919,6 +1049,8 @@
         "Location": "En árboles",
         "Season": "Jul-Nov (Norte)<br/>Ene-May (Sur)",
         "SeasonInterval": [7, 11, 1, 5],
+        "SeasonNorth": [7, 11], 
+        "SeasonSouth": [1, 5], 
         "Time": "4AM - 8AM <br/> 5PM - 7PM",
         "TimeInterval": [4, 8, 17, 19]
     },
@@ -933,6 +1065,8 @@
         "Location": "Bajo árboles en forma de hoja",
         "Season": "Jul-Ago (Norte)<br/>Ene-Mar (Sur)",
         "SeasonInterval": [7, 8, 1, 3],
+        "SeasonNorth": [7, 8], 
+        "SeasonSouth": [1, 3], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -947,6 +1081,8 @@
         "Location": "Sacudiendo árboles",
         "Season": "Todo el año",
         "SeasonInterval": [1, 12],
+        "SeasonNorth": [1, 12], 
+        "SeasonSouth": [1, 12], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -961,6 +1097,8 @@
         "Location": "Comida podrida",
         "Season": "Todo el año",
         "SeasonInterval": [1, 12],
+        "SeasonNorth": [1, 12], 
+        "SeasonSouth": [1, 12], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -975,6 +1113,8 @@
         "Location": "Playa, camuflado en conchas",
         "Season": "Todo el año",
         "SeasonInterval": [1, 12],
+        "SeasonNorth": [1, 12], 
+        "SeasonSouth": [1, 12], 
         "Time": "7PM - 8AM",
         "TimeInterval": [19, 8]
     },
@@ -989,6 +1129,8 @@
         "Location": "Rocas de playa",
         "Season": "Todo el año",
         "SeasonInterval": [1, 12],
+        "SeasonNorth": [1, 12], 
+        "SeasonSouth": [1, 12], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -1003,6 +1145,8 @@
         "Location": "Comida podrida y basura",
         "Season": "Todo el año",
         "SeasonInterval": [1, 12],
+        "SeasonNorth": [1, 12], 
+        "SeasonSouth": [1, 12], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -1017,6 +1161,8 @@
         "Location": "Volando",
         "Season": "Jun-Sep (Norte)<br/>Dic-Mar (Sur)",
         "SeasonInterval": [6, 9, 12, 3],
+        "SeasonNorth": [6, 9], 
+        "SeasonSouth": [12, 3], 
         "Time": "5PM - 4AM",
         "TimeInterval": [17, 4]
     },
@@ -1031,6 +1177,8 @@
         "Location": "Revoloteando aldeanos",
         "Season": "Abr-Nov (Norte)<br/>Oct-May (Sur)",
         "SeasonInterval": [4, 11, 10, 5],
+        "SeasonNorth": [4, 11], 
+        "SeasonSouth": [10, 5], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -1045,6 +1193,8 @@
         "Location": "Piedras (Lluvia)",
         "Season": "Todo el año",
         "SeasonInterval": [1, 12],
+        "SeasonNorth": [1, 12], 
+        "SeasonSouth": [1, 12], 
         "Time": "Todo el día",
         "TimeInterval": [0, 23]
     },
@@ -1059,6 +1209,8 @@
         "Location": "Rompiendo piedras",
         "Season": "Sep-Jun (Norte)<br/>Mar-Dic (Sur)",
         "SeasonInterval": [9, 6, 3, 12],
+        "SeasonNorth": [9, 6], 
+        "SeasonSouth": [3, 12], 
         "Time": "11PM - 4PM",
         "TimeInterval": [23, 16]
     },
@@ -1073,6 +1225,8 @@
         "Location": "Rompiendo piedras",
         "Season": "Sep-Jun (Norte)<br/>Mar-Dic (Sur)",
         "SeasonInterval": [9, 6, 3, 12],
+        "SeasonNorth": [9, 6], 
+        "SeasonSouth": [3, 12], 
         "Time": "4PM - 11PM",
         "TimeInterval": [16, 23]
     },
@@ -1087,6 +1241,8 @@
         "Location": "Sacudiendo árboles",
         "Season": "Todo el año",
         "SeasonInterval": [1, 12],
+        "SeasonNorth": [1, 12], 
+        "SeasonSouth": [1, 12], 
         "Time": "7PM - 8AM",
         "TimeInterval": [19, 8]
     },
@@ -1101,6 +1257,8 @@
         "Location": "Suelo",
         "Season": "Nov-Abr (Norte)<br/>May-Oct (Sur)",
         "SeasonInterval": [11, 4, 5, 10],
+        "SeasonNorth": [11, 4], 
+        "SeasonSouth": [5, 10], 
         "Time": "7PM - 4AM",
         "TimeInterval": [19, 4]
     },
@@ -1115,6 +1273,8 @@
         "Location": "Suelo",
         "Season": "May-Oct (Norte)<br/>Nov-Abr (Sur)",
         "SeasonInterval": [5, 10, 11, 4],
+        "SeasonNorth": [5, 10], 
+        "SeasonSouth": [11, 4], 
         "Time": "7PM - 4AM",
         "TimeInterval": [19, 4]
     }
