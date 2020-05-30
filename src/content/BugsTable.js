@@ -30,7 +30,7 @@ const BugMobileTable = ({actualTable}) => {
             </td>
             <td>{value.Name} <br/> {value.Price}</td>
             <td dangerouslySetInnerHTML={{ __html: value.Time + "<br/>" + value.Location}}></td>
-            <td dangerouslySetInnerHTML={{ __html: value.Season}}></td>
+            <td dangerouslySetInnerHTML={{ __html: value.Temp ? value.Temp : value.Season}}></td>
          </tr>
      ) : emptyRow
      return row
@@ -47,24 +47,14 @@ const BugsTable = () => {
     const [newTable, setNewTable] = useState("")
     const [hem, setHem] = useState("Default")
     const [sortBy, setSortBy] = useState("")
-
-    let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)"]  
-    let hemisphere = ["North", "South"]
-    let search_placeholder = "Find..."
-    let actualTable = ""
-    if(localStorage.getItem("language") === "es") {
-        table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)"]
-        search_placeholder = "Buscar..."
-        hemisphere = ["Norte", "Sur"]
-        actualTable = bugListES 
-    }
-    else {
-        actualTable = bugListEN 
-    }
-    const sortBySeason = (table) => {
+    const sortBySeason = (table, reset) => {
         setSortBy("Season")
         var botone = document.getElementsByClassName("btn-season")[0]
         let hemi = "Default"
+        // if(reset){
+        //     botone.src = imageURL.Earth
+        //     setHem("South")
+        // }
         if(hem === "Default"){
             botone.src = imageURL.EarthNPNG
             setHem(hemisphere[0])
@@ -79,81 +69,88 @@ const BugsTable = () => {
             botone.src = imageURL.Earth
             setHem("Default")
         }
+        else {
+            console.log("hem ERRORE")
+        }
         var time = new Date();
         let currentMonth = time.getMonth() + 1
 
-        if(hemi !== "Default"){
-            let toble =  table.filter((v) => {       
-                let Season
-                if(hemi.includes(hemisphere[0])) {
-                    Season = v.SeasonNorth
+        let toble =  table.filter((v) => {
+            console.log(hemisphere, hemi, hem) 
+            v.Temp = hemi === hemisphere[0] ? v.SeasonN : hemi === hemisphere[1] ? v.SeasonS : ""  
+            let Season
+            if(hemi.includes(hemisphere[0])) {
+                Season = v.SeasonIntN
+            }
+            else if(hemi.includes(hemisphere[1])) {
+                Season = v.SeasonIntS
+            }
+            else {
+                console.log("hemi error")
+                console.log(hem)
+                return v
+            }
+            
+            if(Season.length === 1) { // ex: Firefly
+                if(currentMonth === Season[0]) {
+                    return true
                 }
-                else if(hemi.includes(hemisphere[1])) {
-                    Season = v.SeasonSouth
-                }
-                
-                if(Season.length === 1) { // ex: Firefly
-                    if(currentMonth === Season[0]) {
+            }
+            else if(Season.length === 2) { // ex: Mar-Apr (3, 4)
+                if(Season[0] < Season[1]) {
+                    if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
                         return true
                     }
                 }
-                else if(Season.length === 2) { // ex: Mar-Apr (3, 4)
-                    if(Season[0] < Season[1]) {
-                        if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
-                            return true
-                        }
-                    }
-                    else if(Season[0] > Season[1]) {
-                        if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
-                            return true
-                        } 
-                    }
+                else if(Season[0] > Season[1]) {
+                    if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
+                        return true
+                    } 
                 }
-                else if(Season.length === 3) { // ex: Mar-Apr, Jun (3, 4, 6) 
-                    if(currentMonth === Season[2]) {
+            }
+            else if(Season.length === 3) { // ex: Mar-Apr, Jun (3, 4, 6) 
+                if(currentMonth === Season[2]) {
+                    return true
+                }
+                if(Season[0] < Season[1]) {
+                    if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
                         return true
                     }
-                    if(Season[0] < Season[1]) {
-                        if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
-                            return true
-                        }
-                    }
-                    else if(Season[0] > Season[1]) {
-                        if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
-                            return true
-                        } 
+                }
+                else if(Season[0] > Season[1]) {
+                    if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
+                        return true
+                    } 
+                }
+            }
+            else if(Season.length === 4) { // ex: Mar-Apr, Jun-Jul (3, 4, 6, 7) 
+                if(Season[0] < Season[1]) {
+                    if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
+                        return true
                     }
                 }
-                else if(Season.length === 4) { // ex: Mar-Apr, Jun-Jul (3, 4, 6, 7) 
-                    if(Season[0] < Season[1]) {
-                        if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
-                            return true
-                        }
-                    }
-                    else if(Season[2] < Season[3]) {
-                        if(currentMonth >=  Season[2] && currentMonth <=  Season[3]) {
-                            return true
-                        }
-                    }
-                    else if(Season[0] > Season[1]) {
-                        if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
-                            return true
-                        }
-                    }
-                    else if(Season[2] > Season[3]) {
-                        if(currentMonth >=  Season[2] || currentMonth <=  Season[3]) {
-                            return true
-                        }
+                else if(Season[2] < Season[3]) {
+                    if(currentMonth >=  Season[2] && currentMonth <=  Season[3]) {
+                        return true
                     }
                 }
-                return false
-            })
-            setNewTable(toble)
-            return
-        }
-        setNewTable(table)
+                else if(Season[0] > Season[1]) {
+                    if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
+                        return true
+                    }
+                }
+                else if(Season[2] > Season[3]) {
+                    if(currentMonth >=  Season[2] || currentMonth <=  Season[3]) {
+                        return true
+                    }
+                }
+            }
+            return false
+        })
+        setNewTable(toble)
         return
     }
+
     
     const sortBySearch = (table, inputSearch) => {
         let toble = table.filter((v) => {
@@ -187,6 +184,18 @@ const BugsTable = () => {
     useEffect(() => {
     }, [sortBy])
 
+    let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)"]  
+    let hemisphere = ["North", "South"]
+    let search_placeholder = "Find..."
+    let actualTable = bugListEN 
+    if(localStorage.getItem("language") === "es") {
+        table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)"]
+        search_placeholder = "Buscar..."
+        hemisphere = ["Norte", "Sur"]
+        actualTable = bugListES 
+    }
+    else {
+    }
     return (    
       <main>
         <ButtonsContainer>
@@ -195,7 +204,7 @@ const BugsTable = () => {
                 <SearchInput  id={"table-search"} onChange={(e) => sortBySearch(actualTable, e.target.value)} placeholder={search_placeholder} />
             </div>
             <BtnSortContainer>
-                <BtnSeason onClick={(e) => sortBySeason(actualTable)}  alt="North Season">
+                <BtnSeason onClick={(e) => sortBySeason(actualTable, false)}  alt="Actual Season">
                         <IconImage className={"btn-season"} src={imageURL.Earth} alt="Hemisphere" />
                 </BtnSeason>
                 <Button onClick={() => setNewTable(sortByABC(actualTable))}>
@@ -230,7 +239,7 @@ const BugsTable = () => {
                 </tr>
             </thead>
             <tbody>
-                <BugMobileTable actualTable={ newTable ? newTable : actualTable}/>
+                <BugMobileTable actualTable={ newTable ? newTable : actualTable }/>
             </tbody>
         </TableContainer> 
       </main>
