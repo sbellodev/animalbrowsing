@@ -64,30 +64,31 @@ const BugsTable = () => {
     const sortBySeason = (table) => {
         setSortBy("Season")
         var botone = document.getElementsByClassName("btn-season")[0]
-        console.log(hemisphere)
+        let hemi = "Default"
         if(hem === "Default"){
             botone.src = imageURL.EarthNPNG
             setHem(hemisphere[0])
+            hemi = hemisphere[0]
         }
         else if(hem === hemisphere[0]){
             botone.src = imageURL.EarthSPNG
             setHem(hemisphere[1])
+            hemi = hemisphere[1]
         }
         else if(hem === hemisphere[1]){
             botone.src = imageURL.Earth
             setHem("Default")
         }
-        console.log("this is hem: " + hem)
         var time = new Date();
         let currentMonth = time.getMonth() + 1
 
-        if(hem !== "Default"){
+        if(hemi !== "Default"){
             let toble =  table.filter((v) => {       
                 let Season
-                if(hem.includes(hemisphere[0])) {
+                if(hemi.includes(hemisphere[0])) {
                     Season = v.SeasonNorth
                 }
-                else if(hem.includes(hemisphere[1])) {
+                else if(hemi.includes(hemisphere[1])) {
                     Season = v.SeasonSouth
                 }
                 
@@ -147,15 +148,13 @@ const BugsTable = () => {
                 }
                 return false
             })
-            console.log(toble)
             setNewTable(toble)
             return
         }
         setNewTable(table)
-        console.log(table)
-        return //setNewTable(table)
+        return
     }
-
+    
     const sortBySearch = (table, inputSearch) => {
         let toble = table.filter((v) => {
             inputSearch = inputSearch.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
