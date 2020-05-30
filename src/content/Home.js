@@ -10,6 +10,7 @@ const Home = () => {
                     <p>Novedades en camino:</p>
                     <ul>
                         <li><span>Lista de fósiles</span> <a href="/fossil">¡Nuevo!</a></li>
+                        <li>Buscar bichos y peces por Temporada y Hemisferio actual</li>
                         <li>Lista de obras de arte</li>
                         <li>Lista de esculturas</li>
                     </ul>
@@ -50,6 +51,7 @@ const Home = () => {
                 <p>Upcoming features:</p>
                     <ul>
                         <li><span>Fossils list</span><a href="/fossil"> New!</a></li>
+                        <li>Filter bugs and fish lists by current Season</li>
                         <li>Paintings list</li>
                         <li>Statues list</li>
                     </ul>

@@ -210,10 +210,10 @@ const BugsTable = () => {
                     <th>{table_head[1]}<br/>{table_head[2]}</th>
                     <th>{table_head[3]}<br/>{table_head[4]}</th>
                     <th>{table_head[5]}<br/>{table_head[6]}
-                        <BtnHemContainer>
+                        {/* <BtnHemContainer>
                             <BtnHem onClick={() => sortHem(actualTable, hemisphere[0])}>N</BtnHem>
                             <BtnHem onClick={() => sortHem(actualTable, hemisphere[1])}>S</BtnHem>
-                        </BtnHemContainer>
+                        </BtnHemContainer> */}
                     </th>
                 </tr>
             </thead>
