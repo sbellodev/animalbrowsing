@@ -8,11 +8,14 @@
         "PriceInt": 160,
         "Location": "Flying",
         "Season": "Sep-Jun (North)<br/>Mar-Dec (South)",
+        "SeasonN": "Sep-Jun (North)<br/><b>Available</b>", 
+        "SeasonS": "Mar-Dec (South)<br/><b>Available</b>", 
         "SeasonInterval": [9, 6, 3, 12],
-        "SeasonNorth": [9, 6], 
-        "SeasonSouth": [3, 12], 
+        "SeasonIntN": [9, 6], 
+        "SeasonIntS": [3, 12], 
         "Time": "4AM - 7PM",
-        "TimeInterval": [4, 19]
+        "TimeInterval": [4, 19],
+        "Temp": ""
     },
 
     {
@@ -24,11 +27,14 @@
         "PriceInt": 160,
         "Location": "Flying",
         "Season": "Mar-Jun, Sep-Oct (North)<br/>Mar-Apr, Sep-Dec (South)",
+        "SeasonN": "Mar-Jun, Sep-Oct (North)<br/><b>Available</b>", 
+        "SeasonS": "Mar-Apr, Sep-Dec (South)<br/><b>Available</b>", 
         "SeasonInterval": [3, 6, 9, 10, 3, 4, 9, 12],
-        "SeasonNorth": [3, 6, 9, 10], 
-        "SeasonSouth": [3, 4, 9, 12], 
+        "SeasonIntN": [3, 6, 9, 10], 
+        "SeasonIntS": [3, 4, 9, 12], 
         "Time": "4AM - 7PM",
-        "TimeInterval": [4, 19]
+        "TimeInterval": [4, 19],
+        "Temp": ""
     },
 
     {
@@ -40,11 +46,14 @@
         "PriceInt": 240,
         "Location": "Flying",
         "Season": "Mar-Sep (North)<br/>Sep-Mar (South)",
+        "SeasonN": "Mar-Sep (North)<br/><b>Available</b>", 
+        "SeasonS": "Sep-Mar (South)<br/><b>Available</b>", 
         "SeasonInterval": [3, 9, 9, 3],
-        "SeasonNorth": [3, 9], 
-        "SeasonSouth": [9, 3], 
+        "SeasonIntN": [3, 9], 
+        "SeasonIntS": [9, 3], 
         "Time": "4AM - 7PM",
-        "TimeInterval": [4, 19]
+        "TimeInterval": [4, 19],
+        "Temp": ""
     },
 
     {
@@ -56,11 +65,14 @@
         "PriceInt": 2500,
         "Location": "Flying by Flowers",
         "Season": "Mar-Jun (North)<br/>Sep-Dec (South)",
+        "SeasonN": "Mar-Jun (North)<br/><b>Available</b>", 
+        "SeasonS": "Sep-Dec (South)<br/><b>Available</b>", 
         "SeasonInterval": [3, 6, 9, 12],
-        "SeasonNorth": [3, 6], 
-        "SeasonSouth": [9, 12], 
+        "SeasonIntN": [3, 6], 
+        "SeasonIntS": [9, 12], 
         "Time": "4AM - 7PM",
-        "TimeInterval": [4, 19]
+        "TimeInterval": [4, 19],
+        "Temp": ""
     },
 
     {
@@ -72,11 +84,14 @@
         "PriceInt": 300,
         "Location": "Flying",
         "Season": "Apr-Aug (North)<br/>Oct-Feb (South)",
+        "SeasonN": "Apr-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Oct-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [4, 8, 10, 2],
-        "SeasonNorth": [4, 8], 
-        "SeasonSouth": [10, 2], 
+        "SeasonIntN": [4, 8], 
+        "SeasonIntS": [10, 2], 
         "Time": "4AM - 7PM",
-        "TimeInterval": [4, 19]
+        "TimeInterval": [4, 19],
+        "Temp": ""
     },
 
     {
@@ -88,11 +103,14 @@
         "PriceInt": 1000,
         "Location": "Flying",
         "Season": "Year-round",
+        "SeasonN": "Year-round<br/><b>Available</b>", 
+        "SeasonS": "Year-round<br/><b>Available</b>", 
         "SeasonInterval": [1, 12],
-        "SeasonNorth": [1, 12], 
-        "SeasonSouth": [1, 12], 
+        "SeasonIntN": [1, 12], 
+        "SeasonIntS": [1, 12], 
         "Time": "8AM - 7PM",
-        "TimeInterval": [8, 19]
+        "TimeInterval": [8, 19],
+        "Temp": ""
     },
 
     {
@@ -104,11 +122,14 @@
         "PriceInt": 3000,
         "Location": "Flying",
         "Season": "May-Aug (North)<br/>Nov-Feb (South)",
+        "SeasonN": "May-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Nov-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [5, 8, 11, 2],
-        "SeasonNorth": [5, 8], 
-        "SeasonSouth": [11, 2], 
+        "SeasonIntN": [5, 8], 
+        "SeasonIntS": [11, 2], 
         "Time": "4AM - 7PM",
-        "TimeInterval": [4, 19]
+        "TimeInterval": [4, 19],
+        "Temp": ""
     },
 
     {
@@ -120,11 +141,14 @@
         "PriceInt": 140,
         "Location": "Flying",
         "Season": "Sep-Nov (North)<br/>Mar-May (South)",
+        "SeasonN": "Sep-Nov (North)<br/><b>Available</b>", 
+        "SeasonS": "Mar-May (South)<br/><b>Available</b>", 
         "SeasonInterval": [9, 11, 3, 5],
-        "SeasonNorth": [9, 11], 
-        "SeasonSouth": [3, 5], 
+        "SeasonIntN": [9, 11], 
+        "SeasonIntS": [3, 5], 
         "Time": "4AM - 5PM",
-        "TimeInterval": [4, 17]
+        "TimeInterval": [4, 17],
+        "Temp": ""
     },
 
     {
@@ -136,11 +160,14 @@
         "PriceInt": 4000,
         "Location": "Flying",
         "Season": "Jun-Sep, Dec-Mar (North)<br/>Dec-Mar, Jun-Sep (South)",
+        "SeasonN": "Jun-Sep, Dec-Mar (North)<br/><b>Available</b>", 
+        "SeasonS": "Dec-Mar, Jun-Sep (South)<br/><b>Available</b>", 
         "SeasonInterval": [6, 9, 12, 3, 12, 3, 6, 9],
-        "SeasonNorth": [6, 9, 12, 3], 
-        "SeasonSouth": [12, 3, 6, 9], 
+        "SeasonIntN": [6, 9, 12, 3], 
+        "SeasonIntS": [12, 3, 6, 9], 
         "Time": "5PM - 8AM",
-        "TimeInterval": [17, 8]
+        "TimeInterval": [17, 8],
+        "Temp": ""
     },
 
     {
@@ -152,11 +179,14 @@
         "PriceInt": 3000,
         "Location": "Flying",
         "Season": "Apr-Sep (North)<br/>Nov-Mar (South)",
+        "SeasonN": "Apr-Sep (North)<br/><b>Available</b>", 
+        "SeasonS": "Nov-Mar (South)<br/><b>Available</b>", 
         "SeasonInterval": [4, 9, 11, 3],
-        "SeasonNorth": [4, 9], 
-        "SeasonSouth": [11, 3], 
+        "SeasonIntN": [4, 9], 
+        "SeasonIntS": [11, 3], 
         "Time": "8AM - 5PM",
-        "TimeInterval": [8, 17]
+        "TimeInterval": [8, 17],
+        "Temp": ""
     },
 
     {
@@ -168,11 +198,14 @@
         "PriceInt": 2500,
         "Location": "Flying by Flowers",
         "Season": "Apr-Sep, Dec-Feb (North)<br/>Nov-Mar, Jun-Aug (South)",
+        "SeasonN": "Apr-Sep, Dec-Feb (North)<br/><b>Available</b>", 
+        "SeasonS": "Nov-Mar, Jun-Aug (South)<br/><b>Available</b>", 
         "SeasonInterval": [4, 9, 12, 2, 11, 3, 6, 8],
-        "SeasonNorth": [4, 9, 12, 2], 
-        "SeasonSouth": [11, 3, 6, 8], 
+        "SeasonIntN": [4, 9, 12, 2], 
+        "SeasonIntS": [11, 3, 6, 8], 
         "Time": "8AM - 5PM",
-        "TimeInterval": [8, 17]
+        "TimeInterval": [8, 17],
+        "Temp": ""
     },
 
     {
@@ -184,11 +217,14 @@
         "PriceInt": 4000,
         "Location": "Flying",
         "Season": "May-Sep (North)<br/>Nov-Mar (South)",
+        "SeasonN": "May-Sep (North)<br/><b>Available</b>", 
+        "SeasonS": "Nov-Mar (South)<br/><b>Available</b>", 
         "SeasonInterval": [5, 9, 11, 3],
-        "SeasonNorth": [5, 9], 
-        "SeasonSouth": [11, 3], 
+        "SeasonIntN": [5, 9], 
+        "SeasonIntS": [11, 3], 
         "Time": "8AM - 4PM",
-        "TimeInterval": [8, 16]
+        "TimeInterval": [8, 16],
+        "Temp": ""
     },
 
     {
@@ -200,11 +236,14 @@
         "PriceInt": 130,
         "Location": "Flying by Light",
         "Season": "Year-round",
+        "SeasonN": "Year-round<br/><b>Available</b>", 
+        "SeasonS": "Year-round<br/><b>Available</b>", 
         "SeasonInterval": [1, 12],
-        "SeasonNorth": [1, 12], 
-        "SeasonSouth": [1, 12], 
+        "SeasonIntN": [1, 12], 
+        "SeasonIntS": [1, 12], 
         "Time": "7PM - 4AM",
-        "TimeInterval": [19, 4]
+        "TimeInterval": [19, 4],
+        "Temp": ""
     },
 
     {
@@ -216,11 +255,14 @@
         "PriceInt": 3000,
         "Location": "On Trees",
         "Season": "Apr-Sep (North)<br/>Oct-Mar (South)",
+        "SeasonN": "Apr-Sep (North)<br/><b>Available</b>", 
+        "SeasonS": "Oct-Mar (South)<br/><b>Available</b>", 
         "SeasonInterval": [4, 9, 10, 3],
-        "SeasonNorth": [4, 9], 
-        "SeasonSouth": [10, 3], 
+        "SeasonIntN": [4, 9], 
+        "SeasonIntS": [10, 3], 
         "Time": "7PM - 4AM",
-        "TimeInterval": [19, 4]
+        "TimeInterval": [19, 4],
+        "Temp": ""
     },
 
     {
@@ -232,11 +274,14 @@
         "PriceInt": 2500,
         "Location": "Flying",
         "Season": "Apr-Sep (North)<br/>Oct-Mar (South)",
+        "SeasonN": "Apr-Sep (North)<br/><b>Available</b>", 
+        "SeasonS": "Oct-Mar (South)<br/><b>Available</b>", 
         "SeasonInterval": [4, 9, 10, 3],
-        "SeasonNorth": [4, 9], 
-        "SeasonSouth": [10, 3], 
+        "SeasonIntN": [4, 9], 
+        "SeasonIntS": [10, 3], 
         "Time": "8AM - 4PM",
-        "TimeInterval": [8, 16]
+        "TimeInterval": [8, 16],
+        "Temp": ""
     },
 
     {
@@ -248,11 +293,14 @@
         "PriceInt": 200,
         "Location": "On the Ground",
         "Season": "Apr-Nov (North)<br/>Nov-May (South)",
+        "SeasonN": "Apr-Nov (North)<br/><b>Available</b>", 
+        "SeasonS": "Nov-May (South)<br/><b>Available</b>", 
         "SeasonInterval": [4, 11, 11, 5],
-        "SeasonNorth": [4, 11], 
-        "SeasonSouth": [11, 5], 
+        "SeasonIntN": [4, 11], 
+        "SeasonIntS": [11, 5], 
         "Time": "8AM - 7PM",
-        "TimeInterval": [8, 19]
+        "TimeInterval": [8, 19],
+        "Temp": ""
     },
 
     {
@@ -264,11 +312,14 @@
         "PriceInt": 600,
         "Location": "On the Ground",
         "Season": "Aug-Nov (North)<br/>Feb-May (South)",
+        "SeasonN": "Aug-Nov (North)<br/><b>Available</b>", 
+        "SeasonS": "Feb-May (South)<br/><b>Available</b>", 
         "SeasonInterval": [8, 11, 2, 5],
-        "SeasonNorth": [8, 11], 
-        "SeasonSouth": [2, 5], 
+        "SeasonIntN": [8, 11], 
+        "SeasonIntS": [2, 5], 
         "Time": "8AM - 7PM",
-        "TimeInterval": [8, 19]
+        "TimeInterval": [8, 19],
+        "Temp": ""
     },
 
     {
@@ -280,11 +331,14 @@
         "PriceInt": 160,
         "Location": "On the Ground",
         "Season": "Aug-Nov (North)<br/>Feb-May (South)",
+        "SeasonN": "Aug-Nov (North)<br/><b>Available</b>", 
+        "SeasonS": "Feb-May (South)<br/><b>Available</b>", 
         "SeasonInterval": [8, 11, 2, 5],
-        "SeasonNorth": [8, 11], 
-        "SeasonSouth": [2, 5], 
+        "SeasonIntN": [8, 11], 
+        "SeasonIntS": [2, 5], 
         "Time": "8AM - 7PM",
-        "TimeInterval": [8, 19]
+        "TimeInterval": [8, 19],
+        "Temp": ""
     },
 
     {
@@ -296,11 +350,14 @@
         "PriceInt": 160,
         "Location": "On the Ground",
         "Season": "Jul-Sep (North)<br/>Jan-Mar (South)",
+        "SeasonN": "Jul-Sep (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Mar (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 9, 1, 3],
-        "SeasonNorth": [7, 9], 
-        "SeasonSouth": [1, 3], 
+        "SeasonIntN": [7, 9], 
+        "SeasonIntS": [1, 3], 
         "Time": "8AM - 5PM",
-        "TimeInterval": [8, 17]
+        "TimeInterval": [8, 17],
+        "Temp": ""
     },
 
     {
@@ -312,11 +369,14 @@
         "PriceInt": 130,
         "Location": "On the Ground",
         "Season": "Sep-Nov (North)<br/>Mar-May (South)",
+        "SeasonN": "Sep-Nov (North)<br/><b>Available</b>", 
+        "SeasonS": "Mar-May (South)<br/><b>Available</b>", 
         "SeasonInterval": [9, 11, 3, 5],
-        "SeasonNorth": [9, 11], 
-        "SeasonSouth": [3, 5], 
+        "SeasonIntN": [9, 11], 
+        "SeasonIntS": [3, 5], 
         "Time": "5PM - 8AM",
-        "TimeInterval": [17, 8]
+        "TimeInterval": [17, 8],
+        "Temp": ""
     },
 
     {
@@ -328,11 +388,14 @@
         "PriceInt": 430,
         "Location": "On the Ground",
         "Season": "Sep-Oct (North)<br/>Mar-Apr (South)",
+        "SeasonN": "Sep-Oct (North)<br/><b>Available</b>", 
+        "SeasonS": "Mar-Apr (South)<br/><b>Available</b>", 
         "SeasonInterval": [9, 10, 3, 4],
-        "SeasonNorth": [9, 10], 
-        "SeasonSouth": [3, 4], 
+        "SeasonIntN": [9, 10], 
+        "SeasonIntS": [3, 4], 
         "Time": "5PM - 8AM",
-        "TimeInterval": [17, 8]
+        "TimeInterval": [17, 8],
+        "Temp": ""
     },
 
     {
@@ -344,11 +407,14 @@
         "PriceInt": 430,
         "Location": "On Flowers",
         "Season": "Mar-Nov (North)<br/>Sep-May (South)",
+        "SeasonN": "Mar-Nov (North)<br/><b>Available</b>", 
+        "SeasonS": "Sep-May (South)<br/><b>Available</b>", 
         "SeasonInterval": [3, 11, 9, 5],
-        "SeasonNorth": [3, 11], 
-        "SeasonSouth": [9, 5], 
+        "SeasonIntN": [3, 11], 
+        "SeasonIntS": [9, 5], 
         "Time": "8AM - 5PM",
-        "TimeInterval": [8, 17]
+        "TimeInterval": [8, 17],
+        "Temp": ""
     },
 
     {
@@ -360,11 +426,14 @@
         "PriceInt": 2400,
         "Location": "On Flowers (White)",
         "Season": "Mar-Nov (North)<br/>Sep-May (South)",
+        "SeasonN": "Mar-Nov (North)<br/><b>Available</b>", 
+        "SeasonS": "Sep-May (South)<br/><b>Available</b>", 
         "SeasonInterval": [3, 11, 9, 5],
-        "SeasonNorth": [3, 11], 
-        "SeasonSouth": [9, 5], 
+        "SeasonIntN": [3, 11], 
+        "SeasonIntS": [9, 5], 
         "Time": "8AM - 5PM",
-        "TimeInterval": [8, 17]
+        "TimeInterval": [8, 17],
+        "Temp": ""
     },
 
     {
@@ -376,11 +445,14 @@
         "PriceInt": 200,
         "Location": "Flying",
         "Season": "Mar-Jul (North)<br/>Mar-Jul (South)",
+        "SeasonN": "Mar-Jul (North)<br/><b>Available</b>", 
+        "SeasonS": "Mar-Jul (South)<br/><b>Available</b>", 
         "SeasonInterval": [3, 7, 3, 7],
-        "SeasonNorth": [3, 7], 
-        "SeasonSouth": [3, 7], 
+        "SeasonIntN": [3, 7], 
+        "SeasonIntS": [3, 7], 
         "Time": "8AM - 5PM",
-        "TimeInterval": [8, 17]
+        "TimeInterval": [8, 17],
+        "Temp": ""
     },
 
     {
@@ -392,11 +464,14 @@
         "PriceInt": 2500,
         "Location": "Shaking Trees",
         "Season": "Year-round",
+        "SeasonN": "Year-round<br/><b>Available</b>", 
+        "SeasonS": "Year-round<br/><b>Available</b>", 
         "SeasonInterval": [1, 12],
-        "SeasonNorth": [1, 12], 
-        "SeasonSouth": [1, 12], 
+        "SeasonIntN": [1, 12], 
+        "SeasonIntS": [1, 12], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -408,11 +483,14 @@
         "PriceInt": 250,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 2],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 2], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 2], 
         "Time": "8AM - 5PM",
-        "TimeInterval": [8, 17]
+        "TimeInterval": [8, 17],
+        "Temp": ""
     },
 
     {
@@ -424,11 +502,14 @@
         "PriceInt": 300,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 2],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 2], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 2], 
         "Time": "8AM - 5PM",
-        "TimeInterval": [8, 17]
+        "TimeInterval": [8, 17],
+        "Temp": ""
     },
 
     {
@@ -440,11 +521,14 @@
         "PriceInt": 500,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 2],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 2], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 2], 
         "Time": "8AM - 5PM",
-        "TimeInterval": [8, 17]
+        "TimeInterval": [8, 17],
+        "Temp": ""
     },
 
     {
@@ -456,11 +540,14 @@
         "PriceInt": 400,
         "Location": "On Trees",
         "Season": "Aug-Sep (North)<br/>Feb-Mar (South)",
+        "SeasonN": "Aug-Sep (North)<br/><b>Available</b>", 
+        "SeasonS": "Feb-Mar (South)<br/><b>Available</b>", 
         "SeasonInterval": [8, 9, 2, 3],
-        "SeasonNorth": [8, 9], 
-        "SeasonSouth": [2, 3], 
+        "SeasonIntN": [8, 9], 
+        "SeasonIntS": [2, 3], 
         "Time": "8AM - 5PM",
-        "TimeInterval": [8, 17]
+        "TimeInterval": [8, 17],
+        "Temp": ""
     },
 
     {
@@ -472,11 +559,14 @@
         "PriceInt": 550,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 2],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 2], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 2], 
         "Time": "4AM - 8AM <br/> 4PM - 7PM",
-        "TimeInterval": [4, 8, 16, 19]
+        "TimeInterval": [4, 8, 16, 19],
+        "Temp": ""
     },
 
     {
@@ -488,59 +578,71 @@
         "PriceInt": 10,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 2],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 2], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 2], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
         "Number": 32,
-        "ImageWEBP": "reddragonfly.webp", 	 	 
-        "ImagePNG": "reddragonfly.png", 	 	 
-        "Name": "Red dragonfly",
+        "ImageWEBP": "reddrAugnfly.webp", 	 	 
+        "ImagePNG": "reddrAugnfly.png", 	 	 
+        "Name": "Red drAugnfly",
         "Price": "180",
         "PriceInt": 180,
         "Location": "Flying",
         "Season": "Sep-Oct (North)<br/>Mar-Apr (South)",
+        "SeasonN": "Sep-Oct (North)<br/><b>Available</b>", 
+        "SeasonS": "Mar-Apr (South)<br/><b>Available</b>", 
         "SeasonInterval": [9, 10, 3, 4],
-        "SeasonNorth": [9, 10], 
-        "SeasonSouth": [3, 4], 
+        "SeasonIntN": [9, 10], 
+        "SeasonIntS": [3, 4], 
         "Time": "8AM - 7PM",
-        "TimeInterval": [8, 19]
+        "TimeInterval": [8, 19],
+        "Temp": ""
     },
 
     {
         "Number": 33,
-        "ImageWEBP": "darnerdragonfly.webp", 	 	 
-        "ImagePNG": "darnerdragonfly.png", 	 	 
-        "Name": "Darner dragonfly",
+        "ImageWEBP": "darnerdrAugnfly.webp", 	 	 
+        "ImagePNG": "darnerdrAugnfly.png", 	 	 
+        "Name": "Darner drAugnfly",
         "Price": "230",
         "PriceInt": 230,
         "Location": "Flying",
         "Season": "Apr-Oct (North)<br/>Oct-Apr (South)",
+        "SeasonN": "Apr-Oct (North)<br/><b>Available</b>", 
+        "SeasonS": "Oct-Apr (South)<br/><b>Available</b>", 
         "SeasonInterval": [4, 10, 10, 4],
-        "SeasonNorth": [4, 10], 
-        "SeasonSouth": [10, 4], 
+        "SeasonIntN": [4, 10], 
+        "SeasonIntS": [10, 4], 
         "Time": "8AM - 5PM",
-        "TimeInterval": [8, 17]
+        "TimeInterval": [8, 17],
+        "Temp": ""
     },
 
     {
         "Number": 34,
-        "ImageWEBP": "bandeddragonfly.webp", 	 	 
-        "ImagePNG": "bandeddragonfly.png", 	 	 
-        "Name": "Banded dragonfly",
+        "ImageWEBP": "bandeddrAugnfly.webp", 	 	 
+        "ImagePNG": "bandeddrAugnfly.png", 	 	 
+        "Name": "Banded drAugnfly",
         "Price": "4,500",
         "PriceInt": 4500,
         "Location": "Flying",
         "Season": "May-Oct (North)<br/>Nov-Apr (South)",
+        "SeasonN": "May-Oct (North)<br/><b>Available</b>", 
+        "SeasonS": "Nov-Apr (South)<br/><b>Available</b>", 
         "SeasonInterval": [5, 10, 11, 4],
-        "SeasonNorth": [5, 10], 
-        "SeasonSouth": [11, 4], 
+        "SeasonIntN": [5, 10], 
+        "SeasonIntS": [11, 4], 
         "Time": "8AM - 5PM",
-        "TimeInterval": [8, 17]
+        "TimeInterval": [8, 17],
+        "Temp": ""
     },
 
     {
@@ -552,11 +654,14 @@
         "PriceInt": 500,
         "Location": "Flying",
         "Season": "Nov-Feb (North)<br/>May-Aug (South)",
+        "SeasonN": "Nov-Feb (North)<br/><b>Available</b>", 
+        "SeasonS": "May-Aug (South)<br/><b>Available</b>", 
         "SeasonInterval": [11, 2, 5, 8],
-        "SeasonNorth": [11, 2], 
-        "SeasonSouth": [5, 8], 
+        "SeasonIntN": [11, 2], 
+        "SeasonIntS": [5, 8], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -568,11 +673,14 @@
         "PriceInt": 300,
         "Location": "Flying",
         "Season": "Jun (North)<br/>Dec (South)",
+        "SeasonN": "Jun (North)<br/><b>Available</b>", 
+        "SeasonS": "Dec (South)<br/><b>Available</b>", 
         "SeasonInterval": [6, 12],
-        "SeasonNorth": [6, 12], 
-        "SeasonSouth": [6, 12], 
+        "SeasonIntN": [6, 12], 
+        "SeasonIntS": [6, 12], 
         "Time": "7PM - 4AM",
-        "TimeInterval": [19, 4]
+        "TimeInterval": [19, 4],
+        "Temp": ""
     },
 
     {
@@ -584,11 +692,14 @@
         "PriceInt": 500,
         "Location": "Underground",
         "Season": "Nov-May (North)<br/>May-Nov (South)",
+        "SeasonN": "Nov-May (North)<br/><b>Available</b>", 
+        "SeasonS": "May-Nov (South)<br/><b>Available</b>", 
         "SeasonInterval": [11, 5, 5, 11],
-        "SeasonNorth": [11, 5], 
-        "SeasonSouth": [5, 11], 
+        "SeasonIntN": [11, 5], 
+        "SeasonIntS": [5, 11], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -600,11 +711,14 @@
         "PriceInt": 130,
         "Location": "On Ponds and Rivers",
         "Season": "May-Sep (North)<br/>Nov-Mar (South)",
+        "SeasonN": "May-Sep (North)<br/><b>Available</b>", 
+        "SeasonS": "Nov-Mar (South)<br/><b>Available</b>", 
         "SeasonInterval": [5, 9, 11, 3],
-        "SeasonNorth": [5, 9], 
-        "SeasonSouth": [11, 3], 
+        "SeasonIntN": [5, 9], 
+        "SeasonIntS": [11, 3], 
         "Time": "8AM - 7PM",
-        "TimeInterval": [8, 19]
+        "TimeInterval": [8, 19],
+        "Temp": ""
     },
 
     {
@@ -616,11 +730,14 @@
         "PriceInt": 800,
         "Location": "On Pond,s and Rivers",
         "Season": "May-Sep (North)<br/>Nov-Mar (South)",
+        "SeasonN": "May-Sep (North)<br/><b>Available</b>", 
+        "SeasonS": "Nov-Mar (South)<br/><b>Available</b>", 
         "SeasonInterval": [5, 9, 11, 3],
-        "SeasonNorth": [5, 9], 
-        "SeasonSouth": [11, 3], 
+        "SeasonIntN": [5, 9], 
+        "SeasonIntS": [11, 3], 
         "Time": "8AM - 7PM",
-        "TimeInterval": [8, 19]
+        "TimeInterval": [8, 19],
+        "Temp": ""
     },
 
     {
@@ -632,11 +749,14 @@
         "PriceInt": 2000,
         "Location": "On Ponds and Rivers",
         "Season": "Apr-Sep (North)<br/>Oct-Mar (South)",
+        "SeasonN": "Apr-Sep (North)<br/><b>Available</b>", 
+        "SeasonS": "Oct-Mar (South)<br/><b>Available</b>", 
         "SeasonInterval": [4, 9, 10, 3],
-        "SeasonNorth": [4, 9], 
-        "SeasonSouth": [10, 3], 
+        "SeasonIntN": [4, 9], 
+        "SeasonIntS": [10, 3], 
         "Time": "7PM - 8AM",
-        "TimeInterval": [19, 8]
+        "TimeInterval": [19, 8],
+        "Temp": ""
     },
 
     {
@@ -648,11 +768,14 @@
         "PriceInt": 120,
         "Location": "On Flowers",
         "Season": "Mar-Nov (North)<br/>Sep-May (South)",
+        "SeasonN": "Mar-Nov (North)<br/><b>Available</b>", 
+        "SeasonS": "Sep-May (South)<br/><b>Available</b>", 
         "SeasonInterval": [3, 11, 9, 5],
-        "SeasonNorth": [3, 11], 
-        "SeasonSouth": [9, 5], 
+        "SeasonIntN": [3, 11], 
+        "SeasonIntS": [9, 5], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -664,11 +787,14 @@
         "PriceInt": 1000,
         "Location": "On Flowers",
         "Season": "Mar-Nov (North)<br/>Sep-May (South)",
+        "SeasonN": "Mar-Nov (North)<br/><b>Available</b>", 
+        "SeasonS": "Sep-May (South)<br/><b>Available</b>", 
         "SeasonInterval": [3, 11, 9, 5],
-        "SeasonNorth": [3, 11], 
-        "SeasonSouth": [9, 5], 
+        "SeasonIntN": [3, 11], 
+        "SeasonIntS": [9, 5], 
         "Time": "7PM - 8AM",
-        "TimeInterval": [19, 8]
+        "TimeInterval": [19, 8],
+        "Temp": ""
     },
 
     {
@@ -680,11 +806,14 @@
         "PriceInt": 200,
         "Location": "On Flowers",
         "Season": "Mar-Jun, Oct (North)<br/>Sep-Dec, Apr (South)",
+        "SeasonN": "Mar-Jun, Oct<br/><b>Available</b>", 
+        "SeasonS": "Sep-Dec, Apr (South)<br/><b>Available</b>", 
         "SeasonInterval": [3, 6, 10, 9, 12, 4],
-        "SeasonNorth": [3, 6, 10], 
-        "SeasonSouth": [9, 12, 4], 
+        "SeasonIntN": [3, 6, 10], 
+        "SeasonIntS": [9, 12, 4], 
         "Time": "8AM - 5PM",
-        "TimeInterval": [8, 17]
+        "TimeInterval": [8, 17],
+        "Temp": ""
     },
 
     {
@@ -696,11 +825,14 @@
         "PriceInt": 1500,
         "Location": "On the Ground",
         "Season": "Feb-Nov (North)<br/>Aug-May (South)",
+        "SeasonN": "Feb-Nov (North)<br/><b>Available</b>", 
+        "SeasonS": "Aug-May (South)<br/><b>Available</b>", 
         "SeasonInterval": [2, 11, 8, 5],
-        "SeasonNorth": [2, 11], 
-        "SeasonSouth": [8, 5], 
+        "SeasonIntN": [2, 11], 
+        "SeasonIntS": [8, 5], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -712,11 +844,14 @@
         "PriceInt": 2400,
         "Location": "On Tree Stumps",
         "Season": "Apr-Aug (North)<br/>Oct-Feb (South)",
+        "SeasonN": "Apr-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Oct-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [4, 8, 10, 2],
-        "SeasonNorth": [4, 8], 
-        "SeasonSouth": [10, 2], 
+        "SeasonIntN": [4, 8], 
+        "SeasonIntS": [10, 2], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -728,11 +863,14 @@
         "PriceInt": 450,
         "Location": "On Tree Stumps",
         "Season": "May-Jun, Sep-Nov (North)<br/>Nov-Dec, Mar-Apr (South)",
+        "SeasonN": "May-Jun, Sep-Nov (North)<br/><b>Available</b>", 
+        "SeasonS": "Nov-Dec, Mar-Apr (South)<br/><b>Available</b>", 
         "SeasonInterval": [5, 6, 9, 11, 11, 12, 3, 4],
-        "SeasonNorth": [5, 6, 9, 11], 
-        "SeasonSouth": [11, 12, 3, 4], 
+        "SeasonIntN": [5, 6, 9, 11], 
+        "SeasonIntS": [11, 12, 3, 4], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -744,11 +882,14 @@
         "PriceInt": 350,
         "Location": "On Tree Stumps",
         "Season": "Year-round",
+        "SeasonN": "Year-round<br/><b>Available</b>", 
+        "SeasonS": "Year-round<br/><b>Available</b>", 
         "SeasonInterval": [1, 12],
-        "SeasonNorth": [1, 12], 
-        "SeasonSouth": [1, 12], 
+        "SeasonIntN": [1, 12], 
+        "SeasonIntS": [1, 12], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -760,11 +901,14 @@
         "PriceInt": 3000,
         "Location": "On Tree Stumps",
         "Season": "May-Sep (North)<br/>Nov-Mar (South)",
+        "SeasonN": "May-Sep (North)<br/><b>Available</b>", 
+        "SeasonS": "Nov-Mar (South)<br/><b>Available</b>", 
         "SeasonInterval": [5, 9, 11, 3],
-        "SeasonNorth": [5, 9], 
-        "SeasonSouth": [11, 3], 
+        "SeasonIntN": [5, 9], 
+        "SeasonIntS": [11, 3], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -776,11 +920,14 @@
         "PriceInt": 800,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 2],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 2], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 2], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -792,11 +939,14 @@
         "PriceInt": 3000,
         "Location": "On the Ground (rolling snowballs)",
         "Season": "Dec-Feb (North)<br/>Jun-Aug (South)",
+        "SeasonN": "Dec-Feb (North)<br/><b>Available</b>", 
+        "SeasonS": "Jun-Aug (South)<br/><b>Available</b>", 
         "SeasonInterval": [12, 2, 6, 8],
-        "SeasonNorth": [12, 2], 
-        "SeasonSouth": [6, 8], 
+        "SeasonIntN": [12, 2], 
+        "SeasonIntS": [6, 8], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -808,11 +958,14 @@
         "PriceInt": 300,
         "Location": "On the Ground",
         "Season": "Jul-Sep (North)<br/>Jan-Mar (South)",
+        "SeasonN": "Jul-Sep (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Mar (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 9, 1, 3],
-        "SeasonNorth": [7, 9], 
-        "SeasonSouth": [1, 3], 
+        "SeasonIntN": [7, 9], 
+        "SeasonIntS": [1, 3], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -824,11 +977,14 @@
         "PriceInt": 10000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 2],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 2], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 2], 
         "Time": "11PM - 8AM",
-        "TimeInterval": [23, 8]
+        "TimeInterval": [23, 8],
+        "Temp": ""
     },
 
     {
@@ -840,11 +996,14 @@
         "PriceInt": 200,
         "Location": "On Trees",
         "Season": "Jun-Aug (North)<br/>Dec-Feb (South)",
+        "SeasonN": "Jun-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Dec-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [6, 8, 12, 2],
-        "SeasonNorth": [6, 8], 
-        "SeasonSouth": [12, 2], 
+        "SeasonIntN": [6, 8], 
+        "SeasonIntS": [12, 2], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -856,11 +1015,14 @@
         "PriceInt": 8000,
         "Location": "On Trees (Coconut)",
         "Season": "Jun-Sep (North)<br/>Dec-Mar (South)",
+        "SeasonN": "Jun-Sep (North)<br/><b>Available</b>", 
+        "SeasonS": "Dec-Mar (South)<br/><b>Available</b>", 
         "SeasonInterval": [6, 9, 12, 3],
-        "SeasonNorth": [6, 9], 
-        "SeasonSouth": [12, 3], 
+        "SeasonIntN": [6, 9], 
+        "SeasonIntS": [12, 3], 
         "Time": "5PM - 8AM",
-        "TimeInterval": [17, 8]
+        "TimeInterval": [17, 8],
+        "Temp": ""
     },
 
     {
@@ -872,11 +1034,14 @@
         "PriceInt": 2000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 2],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 2], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 2], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -888,11 +1053,14 @@
         "PriceInt": 1000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 2],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 2], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 2], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -904,11 +1072,14 @@
         "PriceInt": 10000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 2],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 2], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 2], 
         "Time": "11PM - 8AM",
-        "TimeInterval": [23, 8]
+        "TimeInterval": [23, 8],
+        "Temp": ""
     },
 
     {
@@ -920,11 +1091,14 @@
         "PriceInt": 6000,
         "Location": "On Trees",
         "Season": "Jun-Sep (North)<br/>Dec-Mar (South)",
+        "SeasonN": "Jun-Sep (North)<br/><b>Available</b>", 
+        "SeasonS": "Dec-Mar (South)<br/><b>Available</b>", 
         "SeasonInterval": [6, 9, 12, 3],
-        "SeasonNorth": [6, 9], 
-        "SeasonSouth": [12, 3], 
+        "SeasonIntN": [6, 9], 
+        "SeasonIntS": [12, 3], 
         "Time": "7PM - 8AM",
-        "TimeInterval": [19, 8]
+        "TimeInterval": [19, 8],
+        "Temp": ""
     },
 
     {
@@ -936,11 +1110,14 @@
         "PriceInt": 8000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 2],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 2], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 2], 
         "Time": "5PM - 8AM",
-        "TimeInterval": [17, 8]
+        "TimeInterval": [17, 8],
+        "Temp": ""
     },
 
     {
@@ -952,11 +1129,14 @@
         "PriceInt": 12000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 2],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 2], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 2], 
         "Time": "5PM - 8AM",
-        "TimeInterval": [17, 8]
+        "TimeInterval": [17, 8],
+        "Temp": ""
     },
 
     {
@@ -968,11 +1148,14 @@
         "PriceInt": 12000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 2],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 2], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 2], 
         "Time": "5PM - 8AM",
-        "TimeInterval": [17, 8]
+        "TimeInterval": [17, 8],
+        "Temp": ""
     },
 
     {
@@ -984,11 +1167,14 @@
         "PriceInt": 1350,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 2],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 2], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 2], 
         "Time": "5PM - 8AM",
-        "TimeInterval": [17, 8]
+        "TimeInterval": [17, 8],
+        "Temp": ""
     },
 
     {
@@ -1000,11 +1186,14 @@
         "PriceInt": 8000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 2],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 2], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 2], 
         "Time": "5PM - 8AM",
-        "TimeInterval": [17, 8]
+        "TimeInterval": [17, 8],
+        "Temp": ""
     },
 
     {
@@ -1016,11 +1205,14 @@
         "PriceInt": 8000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 2],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 2], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 2], 
         "Time": "5PM - 8AM",
-        "TimeInterval": [17, 8]
+        "TimeInterval": [17, 8],
+        "Temp": ""
     },
 
     {
@@ -1032,11 +1224,14 @@
         "PriceInt": 12000,
         "Location": "On Trees",
         "Season": "Jul-Aug (North)<br/>Jan-Feb (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Feb (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 2],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 2], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 2], 
         "Time": "5PM - 8AM",
-        "TimeInterval": [17, 8]
+        "TimeInterval": [17, 8],
+        "Temp": ""
     },
 
     {
@@ -1048,11 +1243,14 @@
         "PriceInt": 600,
         "Location": "On Trees",
         "Season": "Jul-Nov (North)<br/>Jan-May (South)",
+        "SeasonN": "Jul-Nov (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-May (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 11, 1, 5],
-        "SeasonNorth": [7, 11], 
-        "SeasonSouth": [1, 5], 
+        "SeasonIntN": [7, 11], 
+        "SeasonIntS": [1, 5], 
         "Time": "4AM - 8AM <br/> 5PM - 7PM",
-        "TimeInterval": [4, 8, 17, 19]
+        "TimeInterval": [4, 8, 17, 19],
+        "Temp": ""
     },
 
     {
@@ -1064,11 +1262,14 @@
         "PriceInt": 600,
         "Location": "Under Trees Disguised as Leafs",
         "Season": "Jul-Aug (North)<br/>Jan-Mar (South)",
+        "SeasonN": "Jul-Aug (North)<br/><b>Available</b>", 
+        "SeasonS": "Ene-Mar (South)<br/><b>Available</b>", 
         "SeasonInterval": [7, 8, 1, 3],
-        "SeasonNorth": [7, 8], 
-        "SeasonSouth": [1, 3], 
+        "SeasonIntN": [7, 8], 
+        "SeasonIntS": [1, 3], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -1080,11 +1281,14 @@
         "PriceInt": 600,
         "Location": "Shaking Trees",
         "Season": "Year-round",
+        "SeasonN": "Year-round<br/><b>Available</b>", 
+        "SeasonS": "Year-round<br/><b>Available</b>", 
         "SeasonInterval": [1, 12],
-        "SeasonNorth": [1, 12], 
-        "SeasonSouth": [1, 12], 
+        "SeasonIntN": [1, 12], 
+        "SeasonIntS": [1, 12], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -1096,11 +1300,14 @@
         "PriceInt": 80,
         "Location": "On rotten food",
         "Season": "Year-round",
+        "SeasonN": "Year-round<br/><b>Available</b>", 
+        "SeasonS": "Year-round<br/><b>Available</b>", 
         "SeasonInterval": [1, 12],
-        "SeasonNorth": [1, 12], 
-        "SeasonSouth": [1, 12], 
+        "SeasonIntN": [1, 12], 
+        "SeasonIntS": [1, 12], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -1112,11 +1319,14 @@
         "PriceInt": 1000,
         "Location": "Beach disguised as Shells",
         "Season": "Year-round",
+        "SeasonN": "Year-round<br/><b>Available</b>", 
+        "SeasonS": "Year-round<br/><b>Available</b>", 
         "SeasonInterval": [1, 12],
-        "SeasonNorth": [1, 12], 
-        "SeasonSouth": [1, 12], 
+        "SeasonIntN": [1, 12], 
+        "SeasonIntS": [1, 12], 
         "Time": "7PM - 8AM",
-        "TimeInterval": [19, 8]
+        "TimeInterval": [19, 8],
+        "Temp": ""
     },
 
     {
@@ -1128,11 +1338,14 @@
         "PriceInt": 200,
         "Location": "On Beach Rocks",
         "Season": "Year-round",
+        "SeasonN": "Year-round<br/><b>Available</b>", 
+        "SeasonS": "Year-round<br/><b>Available</b>", 
         "SeasonInterval": [1, 12],
-        "SeasonNorth": [1, 12], 
-        "SeasonSouth": [1, 12], 
+        "SeasonIntN": [1, 12], 
+        "SeasonIntS": [1, 12], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -1144,11 +1357,14 @@
         "PriceInt": 60,
         "Location": "On Trash Items",
         "Season": "Year-round",
+        "SeasonN": "Year-round<br/><b>Available</b>", 
+        "SeasonS": "Year-round<br/><b>Available</b>", 
         "SeasonInterval": [1, 12],
-        "SeasonNorth": [1, 12], 
-        "SeasonSouth": [1, 12], 
+        "SeasonIntN": [1, 12], 
+        "SeasonIntS": [1, 12], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -1160,11 +1376,14 @@
         "PriceInt": 130,
         "Location": "Flying",
         "Season": "Jun-Sep (North)<br/>Dec-Mar (South)",
+        "SeasonN": "Jun-Sep (North)<br/><b>Available</b>", 
+        "SeasonS": "Dec-Mar (South)<br/><b>Available</b>", 
         "SeasonInterval": [6, 9, 12, 3],
-        "SeasonNorth": [6, 9], 
-        "SeasonSouth": [12, 3], 
+        "SeasonIntN": [6, 9], 
+        "SeasonIntS": [12, 3], 
         "Time": "5PM - 4AM",
-        "TimeInterval": [17, 4]
+        "TimeInterval": [17, 4],
+        "Temp": ""
     },
 
     {
@@ -1176,11 +1395,14 @@
         "PriceInt": 70,
         "Location": "Villger'sads",
         "Season": "Apr-Nov (North)<br/>Oct-May (South)",
+        "SeasonN": "Apr-Nov (North)<br/><b>Available</b>", 
+        "SeasonS": "Oct-May (South)<br/><b>Available</b>", 
         "SeasonInterval": [4, 11, 10, 5],
-        "SeasonNorth": [4, 11], 
-        "SeasonSouth": [10, 5], 
+        "SeasonIntN": [4, 11], 
+        "SeasonIntS": [10, 5], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -1192,11 +1414,14 @@
         "PriceInt": 250,
         "Location": "On Rocks (Rain)",
         "Season": "Year-round",
+        "SeasonN": "Year-round<br/><b>Available</b>", 
+        "SeasonS": "Year-round<br/><b>Available</b>", 
         "SeasonInterval": [1, 12],
-        "SeasonNorth": [1, 12], 
-        "SeasonSouth": [1, 12], 
+        "SeasonIntN": [1, 12], 
+        "SeasonIntS": [1, 12], 
         "Time": "All day",
-        "TimeInterval": [0, 23]
+        "TimeInterval": [0, 23],
+        "Temp": ""
     },
 
     {
@@ -1208,11 +1433,14 @@
         "PriceInt": 250,
         "Location": "Hitting Rocks",
         "Season": "Sep-Jun (North)<br/>Mar-Dec (South)",
+        "SeasonN": "Sep-Jun (North)<br/><b>Available</b>", 
+        "SeasonS": "Mar-Dec (South)<br/><b>Available</b>", 
         "SeasonInterval": [9, 6, 3, 12],
-        "SeasonNorth": [9, 6], 
-        "SeasonSouth": [3, 12], 
+        "SeasonIntN": [9, 6], 
+        "SeasonIntS": [3, 12], 
         "Time": "11PM - 4PM",
-        "TimeInterval": [23, 16]
+        "TimeInterval": [23, 16],
+        "Temp": ""
     },
 
     {
@@ -1224,11 +1452,14 @@
         "PriceInt": 300,
         "Location": "Hitting Rocks",
         "Season": "Sep-Jun (North)<br/>Mar-Dec (South)",
+        "SeasonN": "Sep-Jun (North)<br/><b>Available</b>", 
+        "SeasonS": "Mar-Dec (South)<br/><b>Available</b>", 
         "SeasonInterval": [9, 6, 3, 12],
-        "SeasonNorth": [9, 6], 
-        "SeasonSouth": [3, 12], 
+        "SeasonIntN": [9, 6], 
+        "SeasonIntS": [3, 12], 
         "Time": "4PM - 11PM",
-        "TimeInterval": [16, 23]
+        "TimeInterval": [16, 23],
+        "Temp": ""
     },
 
     {
@@ -1240,11 +1471,14 @@
         "PriceInt": 600,
         "Location": "Shaking Trees",
         "Season": "Year-round",
+        "SeasonN": "Year-round<br/><b>Available</b>", 
+        "SeasonS": "Year-round<br/><b>Available</b>", 
         "SeasonInterval": [1, 12],
-        "SeasonNorth": [1, 12], 
-        "SeasonSouth": [1, 12], 
+        "SeasonIntN": [1, 12], 
+        "SeasonIntS": [1, 12], 
         "Time": "7PM - 8AM",
-        "TimeInterval": [19, 8]
+        "TimeInterval": [19, 8],
+        "Temp": ""
     },
 
     {
@@ -1256,11 +1490,14 @@
         "PriceInt": 8000,
         "Location": "On the Ground",
         "Season": "Nov-Apr (North)<br/>May-Oct (South)",
+        "SeasonN": "Nov-Apr (North)<br/><b>Available</b>", 
+        "SeasonS": "May-Oct (South)<br/><b>Available</b>", 
         "SeasonInterval": [11, 4, 5, 10],
-        "SeasonNorth": [11, 4], 
-        "SeasonSouth": [5, 10], 
+        "SeasonIntN": [11, 4], 
+        "SeasonIntS": [5, 10], 
         "Time": "7PM - 4AM",
-        "TimeInterval": [19, 4]
+        "TimeInterval": [19, 4],
+        "Temp": ""
     },
 
     {
@@ -1272,10 +1509,13 @@
         "PriceInt": 8000,
         "Location": "On the Ground",
         "Season": "May-Oct (North)<br/>Nov-Apr (South)",
+        "SeasonN": "May-Oct (North)<br/><b>Available</b>", 
+        "SeasonS": "Nov-Apr (South)<br/><b>Available</b>", 
         "SeasonInterval": [5, 10, 11, 4],
-        "SeasonNorth": [5, 10], 
-        "SeasonSouth": [11, 4], 
+        "SeasonIntN": [5, 10], 
+        "SeasonIntS": [11, 4], 
         "Time": "7PM - 4AM",
-        "TimeInterval": [19, 4]
+        "TimeInterval": [19, 4],
+        "Temp": ""
     }
 ]
