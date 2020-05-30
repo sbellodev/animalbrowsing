@@ -47,7 +47,7 @@ const FishTable = () => {
     const [newTable, setNewTable] = useState("")
     const [hem, setHem] = useState("Default")
     const [sortBy, setSortBy] = useState("")
-    const sortBySeason = (table, reset) => {
+    const sortBySeason = (table) => {
         setSortBy("Season")
         var botone = document.getElementsByClassName("btn-season")[0]
         let hemi = "Default"
@@ -57,27 +57,24 @@ const FishTable = () => {
         // }
         if(hem === "Default"){
             botone.src = imageURL.EarthNPNG
-            setHem(hemisphere[0])
+            setHem("North")
             hemi = hemisphere[0]
         }
-        else if(hem === hemisphere[0]){
+        else if(hem === "North"){
             botone.src = imageURL.EarthSPNG
-            setHem(hemisphere[1])
+            setHem("South")
             hemi = hemisphere[1]
         }
-        else if(hem === hemisphere[1]){
+        else if(hem === "South"){
             botone.src = imageURL.Earth
             setHem("Default")
         }
         else {
-            console.log("hem ERRORE")
         }
         var time = new Date();
         let currentMonth = time.getMonth() + 1
 
         let toble =  table.filter((v) => {
-            console.log(hemisphere, hemi, hem) 
-
             v.Temp = hemi === hemisphere[0] ? v.SeasonN : hemi === hemisphere[1] ? v.SeasonS : ""  
             let Season
             if(hemi.includes(hemisphere[0])) {
@@ -87,8 +84,6 @@ const FishTable = () => {
                 Season = v.SeasonIntS
             }
             else {
-                console.log("hemi error")
-                console.log(hem)
                 return v
             }
             
@@ -206,7 +201,7 @@ const FishTable = () => {
                 <SearchInput  id={"table-search"} onChange={(e) => sortBySearch(actualTable, e.target.value)} placeholder={search_placeholder} />
             </div>
             <BtnSortContainer>
-                <BtnSeason onClick={(e) => sortBySeason(actualTable, false)}  alt="Actual Season">
+                <BtnSeason onClick={(e) => sortBySeason(actualTable)}  alt="Actual Season">
                         <IconImage className={"btn-season"} src={imageURL.Earth} alt="Hemisphere" />
                 </BtnSeason>
                 <Button onClick={() => setNewTable(sortByABC(actualTable))}>

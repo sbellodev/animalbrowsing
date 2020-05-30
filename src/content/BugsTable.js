@@ -47,7 +47,7 @@ const BugsTable = () => {
     const [newTable, setNewTable] = useState("")
     const [hem, setHem] = useState("Default")
     const [sortBy, setSortBy] = useState("")
-    const sortBySeason = (table, reset) => {
+    const sortBySeason = (table) => {
         setSortBy("Season")
         var botone = document.getElementsByClassName("btn-season")[0]
         let hemi = "Default"
@@ -70,13 +70,11 @@ const BugsTable = () => {
             setHem("Default")
         }
         else {
-            console.log("hem ERRORE")
         }
         var time = new Date();
         let currentMonth = time.getMonth() + 1
 
         let toble =  table.filter((v) => {
-            console.log(hemisphere, hemi, hem) 
             v.Temp = hemi === hemisphere[0] ? v.SeasonN : hemi === hemisphere[1] ? v.SeasonS : ""  
             let Season
             if(hemi.includes(hemisphere[0])) {
@@ -86,8 +84,6 @@ const BugsTable = () => {
                 Season = v.SeasonIntS
             }
             else {
-                console.log("hemi error")
-                console.log(hem)
                 return v
             }
             
@@ -204,7 +200,7 @@ const BugsTable = () => {
                 <SearchInput  id={"table-search"} onChange={(e) => sortBySearch(actualTable, e.target.value)} placeholder={search_placeholder} />
             </div>
             <BtnSortContainer>
-                <BtnSeason onClick={(e) => sortBySeason(actualTable, false)}  alt="Actual Season">
+                <BtnSeason onClick={(e) => sortBySeason(actualTable)}  alt="Actual Season">
                         <IconImage className={"btn-season"} src={imageURL.Earth} alt="Hemisphere" />
                 </BtnSeason>
                 <Button onClick={() => setNewTable(sortByABC(actualTable))}>
