@@ -7,7 +7,7 @@
         "Price": "160",
         "PriceInt": 160,
         "Location": "Flying",
-        "Season": "Sep-Jun ()<br/>Mar-Dec (South)",
+        "Season": "Sep-Jun (North)<br/>Mar-Dec (South)",
         "SeasonInterval": [9, 6, 3, 12],
         "SeasonNorth": [9, 6], 
         "SeasonSouth": [3, 12], 

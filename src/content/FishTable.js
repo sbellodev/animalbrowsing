@@ -47,13 +47,11 @@ const FishTable = () => {
     let hemisphere = []
     if(localStorage.getItem("language") === "es"){
         table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)", "Tamaño"]
-        document.title = 'Animal Browsing - Lista de peces';
         search_placeholder = "Buscar..."
         actualTable = fishListES 
         hemisphere = ["Norte", "Sur"]
     }
     else {
-        document.title = 'Animal Browsing - Fish list';
         search_placeholder = "Find..."
         actualTable = fishListEN
         hemisphere = ["North", "South"]

@@ -23,11 +23,9 @@ const Turnip = () => {
     let message_wait 
     if(localStorage.getItem("language") === "es"){
         message_wait = <p className="tweet_individual" style={{height: "99vh"}}>Cargando tweets... si tarda mucho, por favor contacta con el webmaster.</p>
-        document.title = 'Animal Browsing - Precio de nabos ';
     }
     else {
         message_wait = <p className="tweet_individual" style={{height: "99vh"}}>Loading tweets... please wait... if it lasts too much please contact the webmaster</p>
-        document.title = 'Animal Browsing - Turnips prices '
     }
     
     const renderTwitterAPIContent = (res) =>  {

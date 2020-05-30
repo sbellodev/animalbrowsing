@@ -47,13 +47,11 @@ const BugsTable = () => {
     let hemisphere = []
     if(localStorage.getItem("language") === "es"){
         table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)"]
-        document.title = 'Animal Browsing - Lista de bichos';
         search_placeholder = "Buscar..."
         actualTable = bugListES 
         hemisphere = ["Norte", "Sur"]
     }
     else {
-        document.title = 'Animal Browsing - Bug list';
         search_placeholder = "Find..."
         actualTable = bugListEN 
         hemisphere = ["North", "South"]
@@ -62,7 +60,13 @@ const BugsTable = () => {
     const sortBySeason = (table) => {
         var time = new Date();
         let currentSeason = time.getMonth()
-        
+        let chosenSeason = ""
+        // sortby(table, hem)
+        // table.filter........ =>
+        //   let chosenSeason = hem === ("North" !! "Norte") ? v.SeasonNorth :  hem === ("South" !! "Sur") ? v.SeasonSouth : ""
+        //   if...SeasonNorth[0]<... return...chosenSeason
+        // }
+
         return table.filter((v) => {
             if(v.SeasonInterval.length === 2){ // ex: All year (0, 12) 
                 if(v.SeasonInterval[0] < v.SeasonInterval[1]) { 
@@ -295,8 +299,9 @@ const SearchInput = styled.input`
   width: 70px;
   height: 35px;
   margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 20px;
   border-radius: 5px;
-  padding-left: 10px;
   border: 1px solid white;
   box-shadow: 1px 1px black;
 

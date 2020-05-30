@@ -4,7 +4,6 @@ import styled from 'styled-components'
 const Home = () => {
 
     if(localStorage.getItem("language") === "es"){
-        document.title = 'Animal Browsing';
         return (
             <HomeContainer>
                 <HomeContent>
@@ -45,7 +44,6 @@ const Home = () => {
         )
     }
     else {
-        document.title = 'Animal Browsing';
         return (
             <HomeContainer>
                 <HomeContent>
