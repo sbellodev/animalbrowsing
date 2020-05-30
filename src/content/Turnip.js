@@ -104,7 +104,6 @@ const TwitterContent = styled.div`
     
     .blob_container {
         width: 80%;
-        max-width: 350px;
         padding-top: 20px;
         margin: 0 auto;
     }

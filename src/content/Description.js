@@ -33,7 +33,7 @@ const Description = ({actualIndex}) => {
             case "Home":
                 return (
                     <Container>
-                        <Helmet htmlAttributes>
+                        <Helmet >
                             <html lang="es" />
                             <title>{helmet.home_title}</title>
                             <meta name="description" content={helmet.home_description} />
@@ -48,7 +48,7 @@ const Description = ({actualIndex}) => {
             case "Turnips":
                 return (
                     <Container>
-                        <Helmet htmlAttributes>
+                        <Helmet >
                             <html lang="es" />
                             <title>{helmet.turnips_title}</title>
                             <meta name="description" content={helmet.turnips_description}/>
@@ -62,7 +62,7 @@ const Description = ({actualIndex}) => {
             case "Bugs":
                 return (
                     <Container>
-                        <Helmet htmlAttributes>
+                        <Helmet >
                             <html lang="es" />
                             <title>{helmet.bugs_title}</title>
                             <meta name="description" content={helmet.bugs_description}/>
@@ -76,7 +76,7 @@ const Description = ({actualIndex}) => {
             case "Fish":
                 return (
                     <Container>
-                        <Helmet htmlAttributes>
+                        <Helmet >
                             <html lang="es" />
                             <title>{helmet.fish_title}</title>
                             <meta name="description" content={helmet.fish_description}/>
@@ -89,7 +89,7 @@ const Description = ({actualIndex}) => {
             case "Fossil":
                 return (
                     <Container>
-                        <Helmet htmlAttributes>
+                        <Helmet >
                             <html lang="es" />
                             <title>{helmet.fossil_title}</title>
                             <meta name="description" content={helmet.fossil_description}/>
@@ -109,7 +109,7 @@ const Description = ({actualIndex}) => {
             case "Home":
                 return (
                     <Container>
-                        <Helmet htmlAttributes>
+                        <Helmet >
                             <html lang="en" />
                             <title>{helmet.home_title}</title>
                             <meta name="description" content={helmet.home_description} />
@@ -124,7 +124,7 @@ const Description = ({actualIndex}) => {
             case "Turnips":
                 return (
                     <Container>
-                        <Helmet htmlAttributes>
+                        <Helmet >
                             <html lang="en" />
                             <title></title>
                             <meta name="description" content=""/>
@@ -138,7 +138,7 @@ const Description = ({actualIndex}) => {
             case "Bugs":
                 return (
                     <Container>
-                        <Helmet htmlAttributes>
+                        <Helmet >
                             <html lang="en" />
                             <title></title>
                             <meta name="description" content=""/>
@@ -152,7 +152,7 @@ const Description = ({actualIndex}) => {
             case "Fish":
                 return (
                     <Container>
-                        <Helmet htmlAttributes>
+                        <Helmet >
                             <html lang="en" />
                             <title></title>
                             <meta name="description" content=""/>
@@ -165,7 +165,7 @@ const Description = ({actualIndex}) => {
             case "Fossil":
                 return (
                     <Container>
-                        <Helmet htmlAttributes>
+                        <Helmet >
                             <html lang="en" />
                             <title></title>
                             <meta name="description" content=""/>

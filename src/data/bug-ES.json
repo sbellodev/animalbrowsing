@@ -569,8 +569,8 @@
         "Location": "Volando en estanques",
         "Season": "Jun (Norte)<br/>Dic (Sur)",
         "SeasonInterval": [6, 12],
-        "SeasonNorth": [6, 12], 
-        "SeasonSouth": [6, 12], 
+        "SeasonNorth": [6], 
+        "SeasonSouth": [12], 
         "Time": "7PM - 4AM",
         "TimeInterval": [19, 4]
     },
