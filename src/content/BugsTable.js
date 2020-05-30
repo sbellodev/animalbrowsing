@@ -4,12 +4,18 @@ import bugListEN from '../data/bug-EN.json'
 import bugListES from '../data/bug-ES.json'
 
 const imageURL = {
-  Price: "/icons/star.svg",
-  Hour: "/icons/hour.svg",
-  ABCWEBP: "/icons/abc.webp",
-  ABCPNG: "/icons/abc.png",
-  ResetWEBP: "/icons/reset.webp",
-  ResetPNG: "/icons/reset.png",
+    Hour: "/icons/hour.svg",
+    Price: "/icons/star.svg",
+    ABCPNG: "/icons/abc.png",
+    ABCWEBP: "/icons/abc.webp",
+    ResetPNG: "/icons/reset.png",
+    HemNorth : "/icons/hemi1.svg", 
+    ResetWEBP: "/icons/reset.webp",
+    Earth: "/icons/earth.svg", 
+    EarthSPNG: "/icons/earthS.png",
+    EarthNPNG: "/icons/earthN.png", 
+    EarthWEBPN: "/icons/earthS.WEBPN",
+    EarthNWEBPN: "/icons/earthN.WEBPN" 
 }
 
 const BugMobileTable = ({actualTable}) => {
@@ -39,95 +45,115 @@ const emptyRow = <tr>
     
 const BugsTable = () => {
     const [newTable, setNewTable] = useState("")
+    const [hem, setHem] = useState("Default")
     const [sortBy, setSortBy] = useState("")
 
-    let search_placeholder = ""
-    let actualTable = ""
     let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)"]  
-    let hemisphere = []
+    let hemisphere = ["North", "South"]
+    let search_placeholder = "Find..."
+    let actualTable = ""
     if(localStorage.getItem("language") === "es") {
         table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)"]
         search_placeholder = "Buscar..."
-        actualTable = bugListES 
         hemisphere = ["Norte", "Sur"]
+        actualTable = bugListES 
     }
     else {
-        search_placeholder = "Find..."
         actualTable = bugListEN 
-        hemisphere = ["North", "South"]
     }
-
-    const sortBySeason = (table, hem) => {
+    const sortBySeason = (table) => {
         setSortBy("Season")
+        var botone = document.getElementsByClassName("btn-season")[0]
+        console.log(hemisphere)
+        if(hem === "Default"){
+            botone.src = imageURL.EarthNPNG
+            setHem(hemisphere[0])
+        }
+        else if(hem === hemisphere[0]){
+            botone.src = imageURL.EarthSPNG
+            setHem(hemisphere[1])
+        }
+        else if(hem === hemisphere[1]){
+            botone.src = imageURL.Earth
+            setHem("Default")
+        }
+        console.log("this is hem: " + hem)
         var time = new Date();
         let currentMonth = time.getMonth() + 1
 
-        let toble =  table.filter((v) => {       
-            let Season
-            if(hem.includes(hemisphere[0])) {
-                Season = v.SeasonNorth
-            }
-            else if(hem.includes(hemisphere[1])) {
-                Season = v.SeasonSouth
-            }
-            
-            if(Season.length === 1) { // ex: Firefly
-                if(currentMonth === Season[0]) {
-                    return true
+        if(hem !== "Default"){
+            let toble =  table.filter((v) => {       
+                let Season
+                if(hem.includes(hemisphere[0])) {
+                    Season = v.SeasonNorth
                 }
-            }
-            else if(Season.length === 2) { // ex: Mar-Apr (3, 4)
-                if(Season[0] < Season[1]) {
-                    if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
+                else if(hem.includes(hemisphere[1])) {
+                    Season = v.SeasonSouth
+                }
+                
+                if(Season.length === 1) { // ex: Firefly
+                    if(currentMonth === Season[0]) {
                         return true
                     }
                 }
-                else if(Season[0] > Season[1]) {
-                    if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
-                        return true
-                    } 
-                }
-            }
-            else if(Season.length === 3) { // ex: Mar-Apr, Jun (3, 4, 6) 
-                if(currentMonth === Season[2]) {
-                    return true
-                }
-                if(Season[0] < Season[1]) {
-                    if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
-                        return true
+                else if(Season.length === 2) { // ex: Mar-Apr (3, 4)
+                    if(Season[0] < Season[1]) {
+                        if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
+                            return true
+                        }
+                    }
+                    else if(Season[0] > Season[1]) {
+                        if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
+                            return true
+                        } 
                     }
                 }
-                else if(Season[0] > Season[1]) {
-                    if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
-                        return true
-                    } 
-                }
-            }
-            else if(Season.length === 4) { // ex: Mar-Apr, Jun-Jul (3, 4, 6, 7) 
-                if(Season[0] < Season[1]) {
-                    if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
+                else if(Season.length === 3) { // ex: Mar-Apr, Jun (3, 4, 6) 
+                    if(currentMonth === Season[2]) {
                         return true
                     }
-                }
-                else if(Season[2] < Season[3]) {
-                    if(currentMonth >=  Season[2] && currentMonth <=  Season[3]) {
-                        return true
+                    if(Season[0] < Season[1]) {
+                        if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
+                            return true
+                        }
+                    }
+                    else if(Season[0] > Season[1]) {
+                        if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
+                            return true
+                        } 
                     }
                 }
-                else if(Season[0] > Season[1]) {
-                    if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
-                        return true
+                else if(Season.length === 4) { // ex: Mar-Apr, Jun-Jul (3, 4, 6, 7) 
+                    if(Season[0] < Season[1]) {
+                        if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
+                            return true
+                        }
+                    }
+                    else if(Season[2] < Season[3]) {
+                        if(currentMonth >=  Season[2] && currentMonth <=  Season[3]) {
+                            return true
+                        }
+                    }
+                    else if(Season[0] > Season[1]) {
+                        if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
+                            return true
+                        }
+                    }
+                    else if(Season[2] > Season[3]) {
+                        if(currentMonth >=  Season[2] || currentMonth <=  Season[3]) {
+                            return true
+                        }
                     }
                 }
-                else if(Season[2] > Season[3]) {
-                    if(currentMonth >=  Season[2] || currentMonth <=  Season[3]) {
-                        return true
-                    }
-                }
-            }
-            return false
-        })
-        setNewTable(toble)
+                return false
+            })
+            console.log(toble)
+            setNewTable(toble)
+            return
+        }
+        setNewTable(table)
+        console.log(table)
+        return //setNewTable(table)
     }
 
     const sortBySearch = (table, inputSearch) => {
@@ -170,15 +196,14 @@ const BugsTable = () => {
                 <SearchInput  id={"table-search"} onChange={(e) => sortBySearch(actualTable, e.target.value)} placeholder={search_placeholder} />
             </div>
             <BtnSortContainer>
-                <BtnSeasonContainer>
-                    <BtnSeason onClick={() => sortBySeason(actualTable, hemisphere[0])} alt="North Season">N</BtnSeason>
-                    <BtnSeason onClick={() => sortBySeason(actualTable, hemisphere[1])} alt="South Season">S</BtnSeason>
-                </BtnSeasonContainer>
+                <BtnSeason onClick={(e) => sortBySeason(actualTable)}  alt="North Season">
+                        <IconImage className={"btn-season"} src={imageURL.Earth} alt="Hemisphere" />
+                </BtnSeason>
                 <Button onClick={() => setNewTable(sortByABC(actualTable))}>
                     <picture>
-                    <source type="image/webp" srcSet={imageURL.ABCWEBP}/>
-                    <source type="image/png" srcSet={imageURL.ABCPNG}/>
-                    <IconImage src={imageURL.ABCPNG} alt="ABC" />
+                        <source type="image/webp" srcSet={imageURL.ABCWEBP}/>
+                        <source type="image/png" srcSet={imageURL.ABCPNG}/>
+                        <IconImage src={imageURL.ABCPNG} alt="ABC" />
                     </picture>
                 </Button>
                 <Button onClick={() => setNewTable(sortByPrice(actualTable))} style={{backgroundColor: "#FDDD5C"}}>
@@ -188,9 +213,9 @@ const BugsTable = () => {
                 </Button>
                 <ResetButton onClick={() => setNewTable(sortByReset(actualTable))}>
                     <picture>
-                    <source type="image/webp" srcSet={imageURL.ResetWEBP}/>
-                    <source type="image/png" srcSet={imageURL.ResetPNG}/>
-                    <IconImage src={imageURL.ResetPNG}  alt="Reset" />
+                        <source type="image/webp" srcSet={imageURL.ResetWEBP}/>
+                        <source type="image/png" srcSet={imageURL.ResetPNG}/>
+                        <IconImage src={imageURL.ResetPNG}  alt="Reset" />
                     </picture>
                 </ResetButton>
             </BtnSortContainer>
@@ -213,23 +238,6 @@ const BugsTable = () => {
     )
 }
 
-const BtnSeasonContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-    font-weight: bold;
-    @media screen and (max-width: 380px) {
-      margin-right: 10px;
-    }  
-`
-const BtnSeason = styled.button`
-    width: 30px;
-    height: 30px;
-    background-color: ghostwhite;  
-    border-radius: 10px;
-    box-shadow: 1px 1px #888888;
-    margin-bottom: 5px;
-`
 const TableContainer = styled.table`
     font-size: 18px;
     width: 100%;
@@ -318,13 +326,26 @@ const Button = styled.button`
   border-radius: 10px;
   box-shadow: 1px 1px #888888;
   margin-right: 20px;
+  padding: 5px;
   @media screen and (max-width: 380px) {
     margin-right: 10px;
     width: 35px;
     height: 35px;
   }
 `
-
+const BtnSeason = styled.button`
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 1px 1px #888888;
+  margin-right: 20px;
+  padding: 1px;
+  @media screen and (max-width: 380px) {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+  }
+`
 const ResetButton = styled.button`
   width: 30px;
   height: 30px;
@@ -334,8 +355,8 @@ const ResetButton = styled.button`
 `
 const IconImage = styled.img`
   width: 100%;
+  height: auto;
   display: block;
-  margin: auto;
 `
 
 export { BugsTable }
