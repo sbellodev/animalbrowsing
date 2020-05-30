@@ -57,15 +57,15 @@ const BugsTable = () => {
         // }
         if(hem === "Default"){
             botone.src = imageURL.EarthNPNG
-            setHem(hemisphere[0])
+            setHem("North")
             hemi = hemisphere[0]
         }
-        else if(hem === hemisphere[0]){
+        else if(hem === "North"){
             botone.src = imageURL.EarthSPNG
-            setHem(hemisphere[1])
+            setHem("South")
             hemi = hemisphere[1]
         }
-        else if(hem === hemisphere[1]){
+        else if(hem === "South"){
             botone.src = imageURL.Earth
             setHem("Default")
         }

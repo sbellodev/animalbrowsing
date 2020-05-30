@@ -8,7 +8,7 @@
         "PriceInt": 160,
         "Location": "Volando",
         "Season": "Sep-Jun (Norte)<br/>Mar-Dic (Sur)",
-        "SeasonN": "Sep-Jun (Norte)<br/><b><b>Disponible</b></b>", 
+        "SeasonN": "Sep-Jun (Norte)<br/><b>Disponible</b>", 
         "SeasonS": "Mar-Dic (Sur)<br/><b>Disponible</b>", 
         "SeasonInterval": [9, 6, 3, 12],
         "SeasonIntN": [9, 6], 
