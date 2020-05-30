@@ -68,10 +68,13 @@ const FossilTable = () => {
 }
 
 const FossilContainer = styled.div`
+    width: 60%;
+    padding-top: 30px;
+    border-top: 3px solid ghostwhite;
+    margin: 0 auto;
     font-size: 18px;
     font-family: arial;
     font-weight: normal;
-    padding-left: 30px;
     
     p {
         padding-bottom: 10px;
