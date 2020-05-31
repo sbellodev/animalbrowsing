@@ -23,8 +23,8 @@ const emptyRow = <ul>
                 </ul>
 
 const FossilTable = () => {
-    const [inputSearch, setInputSearch] = useState("")
-    const [Result, setResult] = useState(inputSearch);
+    //const [inputSearch, setInputSearch] = useState("")
+    const [Result, setResult] = useState("");
 
     let search_placeholder = "Search..."
     let fossilList = {}
@@ -67,22 +67,21 @@ const FossilTable = () => {
 
 const FossilContainer = styled.div`
     width: 60%;
-    padding-top: 30px;
-    border-top: 3px solid ghostwhite;
     margin: 0 auto;
     font-size: 18px;
     font-family: arial;
     font-weight: normal;
     
     p {
-        padding-bottom: 10px;
         font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     ul {
-        
+        padding: 0;
+        padding-bottom: 20px;
         padding-left: 0px;
-        padding-top: 20px;
-        
+        border-bottom: 3px solid ghostwhite;
     }
     li {
         margin-left: 30px;
@@ -96,9 +95,6 @@ const FossilContainer = styled.div`
             margin-left: 20px;
         }
     }
-    @media screen and (max-width: 340px){
-        font-size: 14px;
-    }
 `
 const ButtonsContainer = styled.div`
     background-color: #CCE1F2;
@@ -109,7 +105,7 @@ const ButtonsContainer = styled.div`
     padding-bottom: 20px;
 
     button {
-    background-color: ghostwhite;
+        background-color: ghostwhite;
     }
 `
 const SearchInput = styled.input`
