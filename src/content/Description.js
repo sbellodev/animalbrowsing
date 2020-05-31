@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 
 const Description = ({actualIndex}) => {
     let helmet = {
-            "home_title" : "Animal Browsing!",
+            "home_title" : "Animal Browsing",
             "home_description" : "ENG/ESP - In Animal Browsing you can sell your turnips high, get list of bugs, fish, fossils and more...",
             "turnips_title" : "Turnips Prices - Animal Browsing",
             "turnips_description" : "ENG/ESP - Updated turnips prices for you to sell",
@@ -18,7 +18,7 @@ const Description = ({actualIndex}) => {
     
     if(localStorage.getItem("language") === "es"){
         helmet = {
-            "home_title" : "Animal Browsing!",
+            "home_title" : "Animal Browsing",
             "home_description" : "ENG/ESP - En Animal Browsing podrás vender tus nabos, consultar lista de bichos, peces y fósiles y más... para Animal Crossing.",
             "turnips_title" : "Vender nabos a buen precio - Animal Browsing",
             "turnips_description" : "ENG/ESP - Los precios más recientes del mercado para vender tus nabos en Animal Crossing.",

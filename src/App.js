@@ -11,21 +11,13 @@ import { Router, Route, NavLink, Switch } from "react-router-dom";
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 
+ReactGA.initialize('UA-162043648-2');
 const history = createBrowserHistory();
 history.listen(location => {
-  ReactGA.set({ page: location.pathname }); // Update the user's current page
-  ReactGA.pageview(location.pathname); // Record a pageview for the given page
+  ReactGA.set({ page: location.pathname })
+  ReactGA.pageview(location.pathname)
 });
 
-function initializeReactGA(){
-  ReactGA.initialize('UA-162043648-2');
-  //ReactGA.pageview('/home');
-}
-
-// @font-face {
-//   font-family: 'afont';
-//   src: url(${afont}) format('woff');
-// }
 const GlobalStyles = createGlobalStyle`
   html, body {
     height: 100%;
@@ -49,7 +41,7 @@ const GlobalStyles = createGlobalStyle`
   }
 ` 
 
-if(navigator.language.slice(("es" || "en"))){ // Supported languages
+if(navigator.language.includes(("es" || "en"))){ // Supported languages
   localStorage.setItem("language", navigator.language.slice(0, 2))
 }
 else {
@@ -57,7 +49,6 @@ else {
 }
 
 const App = () => {
-  initializeReactGA()
   const [language, setLanguage] = useState(localStorage.getItem("language"))
   let section_names = ["Home", "Turnips", "Bugs", "Fish", "Fossil", "Lang EN"]
   
