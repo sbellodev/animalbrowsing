@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import fishListEN from '../data/fish-EN.json'
 import fishListES from '../data/fish-ES.json'
 import styled from 'styled-components'
@@ -51,10 +51,7 @@ const FishTable = () => {
         setSortBy("Season")
         var botone = document.getElementsByClassName("btn-season")[0]
         let hemi = "Default"
-        // if(reset){
-        //     botone.src = imageURL.Earth
-        //     setHem("South")
-        // }
+
         if(hem === "Default"){
             botone.src = imageURL.EarthNPNG
             setHem("North")
@@ -178,9 +175,6 @@ const FishTable = () => {
         return table.sort((a, b) => a.Number - b.Number)
     }
 
-    useEffect(() => {
-    }, [sortBy])
-
     let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)", "Size"]   
     let hemisphere = ["North", "South"]
     let search_placeholder = "Find..."
@@ -193,6 +187,7 @@ const FishTable = () => {
     }
     else {
     }
+    
     return (    
       <main>
         <ButtonsContainer>

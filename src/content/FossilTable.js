@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components'
 import fossilListEN from '../data/fossil-EN.json'
 import fossilListES from '../data/fossil-ES.json'
@@ -36,12 +36,8 @@ const FossilTable = () => {
         fossilList = fossilListEN
     }
 
-    useEffect(() => {
-        setResult(sortBySearch(fossilList, inputSearch))
-    }, [fossilList, inputSearch])  
-
-    const sortBySearch = (table, inputSearch) => 
-        table.filter((v) => {
+    const sortBySearch = (table, inputSearch) => {
+        let toble = table.filter((v) => {
             inputSearch = inputSearch.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
             return (
                 v.Name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
@@ -53,12 +49,14 @@ const FossilTable = () => {
                 (v.Sixth && v.Sixth.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch)) 
             )
         })
+        setResult(toble)
+    }
     
     return ( 
         <FossilContainer>
            <ButtonsContainer>
                 <label htmlFor="search-fossil"></label>
-                <SearchInput id={"search-fossil"} onChange={(e) => setInputSearch(e.target.value)} placeholder={search_placeholder}/>
+                <SearchInput id={"search-fossil"} onChange={(e) => sortBySearch(fossilList, e.target.value)} placeholder={search_placeholder}/>
            </ButtonsContainer>
             <FossilTableContainer>
                 <FossilTableContent table_content={Result ? Result : fossilList}/>

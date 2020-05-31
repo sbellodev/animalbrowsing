@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components'
 import bugListEN from '../data/bug-EN.json'
 import bugListES from '../data/bug-ES.json'
@@ -51,10 +51,7 @@ const BugsTable = () => {
         setSortBy("Season")
         var botone = document.getElementsByClassName("btn-season")[0]
         let hemi = "Default"
-        // if(reset){
-        //     botone.src = imageURL.Earth
-        //     setHem("South")
-        // }
+
         if(hem === "Default"){
             botone.src = imageURL.EarthNPNG
             setHem("North")
@@ -177,21 +174,19 @@ const BugsTable = () => {
         return table.sort((a, b) => a.Number - b.Number)
     }
 
-    useEffect(() => {
-    }, [sortBy])
-
     let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)"]  
     let hemisphere = ["North", "South"]
     let search_placeholder = "Find..."
-    let actualTable = bugListEN 
+    let actualTable = bugListEN
     if(localStorage.getItem("language") === "es") {
         table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)"]
         search_placeholder = "Buscar..."
         hemisphere = ["Norte", "Sur"]
-        actualTable = bugListES 
+        actualTable = bugListES
     }
     else {
     }
+    
     return (    
       <main>
         <ButtonsContainer>
