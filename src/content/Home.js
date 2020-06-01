@@ -45,9 +45,9 @@ const Home = () => {
                     <p>o un <a href = "mailto:gatto@animalbrowsing.com">email</a> a gatto@animalbrowsing.com</p>
                     <br/>
                     <p>Espero que os guste ¡nos vemos!</p>
+                </HomeContent>
                     <br/>
                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                </HomeContent>
             </HomeContainer>
         )
     }
@@ -139,9 +139,9 @@ const Ellipsis = styled.div`
 const HomeContent = styled.div`
     width: 80%;
     margin: auto;
-    border-bottom: 1px solid ghostwhite;
+    border-bottom: 3px solid ghostwhite;
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     span {
         color: green;
     }
