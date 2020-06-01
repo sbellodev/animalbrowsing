@@ -58,9 +58,10 @@ const FossilTable = () => {
                 <label htmlFor="search-fossil"></label>
                 <SearchInput id={"search-fossil"} onChange={(e) => sortBySearch(fossilList, e.target.value)} placeholder={search_placeholder}/>
            </ButtonsContainer>
-            <FossilTableContainer>
+            <main>
+                <span style={{display: "hidden"}}>ENG/ESP - List of bugs with all the information you need for Animal Crossing.</span>
                 <FossilTableContent table_content={Result ? Result : fossilList}/>
-            </FossilTableContainer>
+            </main>
         </FossilContainer>
     )
 }
@@ -124,6 +125,4 @@ const SearchInput = styled.input`
     margin-right: 10px;
     }
 `
-
-const FossilTableContainer = styled.div``
 export { FossilTable }

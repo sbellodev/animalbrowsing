@@ -189,7 +189,7 @@ const FishTable = () => {
     }
     
     return (    
-      <main>
+      <>
         <ButtonsContainer>
             <div>
                 <label htmlFor={"table-search"}></label>
@@ -220,21 +220,24 @@ const FishTable = () => {
                 </ResetButton>
             </BtnSortContainer>
         </ButtonsContainer>
-        <TableContainer>
-            <thead>            
-                <tr>
-                    <th>{table_head[0]}</th>
-                    <th>{table_head[1]}<br/>{table_head[2]}</th>
-                    <th>{table_head[3]}<br/>{table_head[4]}<br/>{table_head[7]}</th>
-                    <th>{table_head[5]}<br/>{table_head[6]}
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <FishMobileTable actualTable={ newTable ? newTable : actualTable }/>
-            </tbody>
-        </TableContainer> 
-      </main>
+        <main>
+            <span style={{display: "hidden"}}>ENG/ESP - List of fish with all the information you need for Animal Crossing.</span>
+            <TableContainer>
+                <thead>
+                    <tr>
+                        <th>{table_head[0]}</th>
+                        <th>{table_head[1]}<br/>{table_head[2]}</th>
+                        <th>{table_head[3]}<br/>{table_head[4]}<br/>{table_head[7]}</th>
+                        <th>{table_head[5]}<br/>{table_head[6]}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <FishMobileTable actualTable={ newTable ? newTable : actualTable }/>
+                </tbody>
+            </TableContainer>
+        </main>
+      </>
     )
 }
 
