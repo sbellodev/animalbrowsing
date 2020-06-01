@@ -7,6 +7,7 @@ import { FishTable } from './content/FishTable'
 import { FossilTable } from './content/FossilTable'
 import { Description } from './content/Description' 
 import { Footer } from './content/Footer'
+import { RHelmet } from './content/Helmet'
 import { Router, Route, NavLink, Switch } from "react-router-dom";
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
@@ -68,57 +69,61 @@ const App = () => {
 
   return (
     <AppContainer>
-      <GlobalStyles/>
-      <BackgroundImage/>
+      <GlobalStyles />
+      <BackgroundImage />
       <Router history={history}>
         <NavbarContent id={"top"}>
           <NavLink to="/" exact name="Home" activeClassName="active" >
             {section_names[0]}
-          </NavLink>
+          </ NavLink>
           <NavLink to="/turnips" name="Turnips" exact activeClassName="active" >
             {section_names[1]}
-          </NavLink>
+          </ NavLink>
           <NavLink to="/bugs" name="Bugs" exact activeClassName="active" >
             {section_names[2]}
-          </NavLink>
+          </ NavLink>
           <NavLink to="/fish" name ="Fish" exact activeClassName="active" >
             {section_names[3]}
-          </NavLink>
+          </ NavLink>
           <NavLink to="/fossil" name ="Fossil" exact activeClassName="active" >
             {section_names[4]}
-          </NavLink>
-          <LangIndex className="Language" onClick={() => {switchLanguage()}} href={"#"}>{section_names[5]}</LangIndex>
-        </NavbarContent> 
+          </ NavLink>
+          <LangIndex className="Language" onClick={() => {switchLanguage()}} href={"#"}>{section_names[5]}</ LangIndex>
+        </ NavbarContent> 
 
         <Switch>
           <Route path="/turnips">
-            <Description actualIndex={"Turnips"}/>
-            <Turnip/>
-            <Footer/>
-          </Route>
+            <RHelmet index={"turnips"}  />
+            <Description actualIndex={"Turnips"} />
+            <Turnip />
+            <Footer />
+          </ Route>
           <Route path="/bugs">
-            <Description actualIndex={"Bugs"}/>
-            <BugsTable/>
-            <Footer/>
-          </Route>
+            <RHelmet index={"bugs"}  />
+            <Description actualIndex={"Bugs"} />
+            <BugsTable />
+            <Footer />
+          </ Route>
           <Route path="/fish">
-            <Description actualIndex={"Fish"}/>
-            <FishTable/>
-            <Footer/>
-          </Route>
+            <RHelmet index={"fish"}  />
+            <Description actualIndex={"Fish"} />
+            <FishTable />
+            <Footer />
+          </ Route>
           <Route path="/fossil">
-            <Description actualIndex={"Fossil"}/>
-            <FossilTable/>
-            <Footer/>
-          </Route>
+            <RHelmet index={"fossil"}  />
+            <Description actualIndex={"Fossil"} />
+            <FossilTable />
+            <Footer />
+          </ Route>
           <Route path="/">
-            <Description actualIndex={"Home"}/>
-            <Home/>
-            <Footer/>
-          </Route>
-        </Switch>
-      </Router>
-    </AppContainer>
+            <RHelmet index={"home"}  />
+            <Home />
+            <Footer />
+          </ Route>
+        </ Switch>
+      </ Router>
+    </ AppContainer>
   );
 }
 
