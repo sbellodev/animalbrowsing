@@ -6,6 +6,13 @@ const Home = () => {
     if(localStorage.getItem("language") === "es"){
         return (
             <HomeContainer>
+                <DescContainer>
+                    <h5>¡Bienvenid@ a <a href="/">Animal Browsing</a>!</h5>
+                    <h5>Todo lo que necesitas acerca de lista de peces, bichos, precios de nabos y más...</h5>
+                    <h5>para Animal Crossing: New Horizons</h5>
+                    <h5>¡Buena suerte! y cuídate</h5>
+                    <Ellipsis />
+                </DescContainer>
                 <HomeContent>
                     <p>Novedades en camino:</p>
                     <ul>
@@ -47,55 +54,93 @@ const Home = () => {
     else {
         return (
             <HomeContainer>
+                <DescContainer>
+                    <h5>Henlo! Welcome to <a href="/">Animal Browsing</a></h5>
+                    <h5>Get the latest turnips prices, bugs and fish's list...</h5>
+                    <h5>about Animal Crossing: New Horizons</h5>
+                    <h5>¡Have a good one! And take care</h5>
+                    <Ellipsis />
+                </DescContainer>
                 <HomeContent>
-                <p>Upcoming features:</p>
-                    <ul>
-                        <li><span>Fossils list</span><a href="/fossil"> New!</a></li>
-                        <li><span>Filter bugs and fish lists by current Season</span></li>
-                        <li>Paintings list</li>
-                        <li>Statues list</li>
-                    </ul>
-                <br/>
-                <h4>5/18/2020 - Animal Browsing inauguration</h4>
-                <br/>
-                <picture>
-                    <source type="image/webp" srcSet={"tw_profile_webp.webp"} />
-                    <source type="image/jpeg" srcSet={"tw_profile.jpg"} />
-                    <ImageProfile src={"tw_profile.jpg"} alt="twitter profile"/>
-                </picture>
-                <br/>
-                <p>Tired of looking over and over good turnip's prices everywhere?</p>
-                <br/>
-                <p>Searching bugs and fish lists with all you need? ¡Me too!</p>
-                <p>That's why I made Animal Browsing.</p>
-                <p>Here you can find... </p>
-                <br/>
-                <p><a href="/bugs">The Definitive Bug's List</a>!</p>
-                <p><a href="/turnips">The perfect Turnips price section</a>!</p>
-                <br/>
-                <p>Any suggestion, criticism or saying hi please feel free reach me on 
-                <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" > twitter </a> at @Gattoalaparato</p>
-                <p>or send me an email to <a href = "mailto:gatto@animalbrowsing.com">gatto@animalbrowsing.com</a></p>
-                <br/>
-                <p>Hope you like it! And have a good one</p>
-                <br/>
+                    <p>Upcoming features:</p>
+                        <ul>
+                            <li><span>Fossils list</span><a href="/fossil"> New!</a></li>
+                            <li><span>Filter bugs and fish lists by current Season</span></li>
+                            <li>Paintings list</li>
+                            <li>Statues list</li>
+                        </ul>
+                    <br/>
+                    <h4>5/18/2020 - Animal Browsing inauguration</h4>
+                    <br/>
+                    <picture>
+                        <source type="image/webp" srcSet={"tw_profile_webp.webp"} />
+                        <source type="image/jpeg" srcSet={"tw_profile.jpg"} />
+                        <ImageProfile src={"tw_profile.jpg"} alt="twitter profile"/>
+                    </picture>
+                    <br/>
+                    <p>Tired of looking over and over good turnip's prices everywhere?</p>
+                    <br/>
+                    <p>Searching bugs and fish lists with all you need? ¡Me too!</p>
+                    <p>That's why I made Animal Browsing.</p>
+                    <p>Here you can find... </p>
+                    <br/>
+                    <p><a href="/bugs">The Definitive Bug's List</a>!</p>
+                    <p><a href="/turnips">The perfect Turnips price section</a>!</p>
+                    <br/>
+                    <p>Any suggestion, criticism or saying hi please feel free reach me on 
+                    <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" > twitter </a> at @Gattoalaparato</p>
+                    <p>or send me an email to <a href = "mailto:gatto@animalbrowsing.com">gatto@animalbrowsing.com</a></p>
+                    <br/>
+                    <p>Hope you like it! And have a good one</p>
+                    <br/>
                 </HomeContent>
-                <br/>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <br/>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             </HomeContainer>
         )
     }
 }
+
 const HomeContainer = styled.main`
     background-color: #CCE1F2;
     font-size: 16px;
     line-height: 20px;
+`
+const DescContainer = styled.header`
+    background-color: #F5F2E3;
+    display: grid;
     padding-top: 30px;
+    text-align: center;
+    max-height: 320px;
+    h5 {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+    @media screen and (max-width: 570px){
+        h5 {
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width: 420px){
+        h5 {
+            width: 80%;
+        }
+    }
+`
+const Ellipsis = styled.div`
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    background-color: #CCE1F2;
 `
 const HomeContent = styled.div`
     width: 80%;
     margin: auto;
     border-bottom: 1px solid ghostwhite;
+    padding-top: 30px;
     padding-bottom: 20px;
     span {
         color: green;
