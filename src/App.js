@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import styled, { createGlobalStyle } from 'styled-components'
 import { Home } from './content/Home'
 import { Turnip } from './content/Turnip'
@@ -26,6 +26,7 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     font-family: sans-serif, Arial;
+    margin: 0;
   }
   p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
