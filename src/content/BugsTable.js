@@ -220,7 +220,7 @@ const BugsTable = () => {
             </BtnSortContainer>
         </ButtonsContainer>
         <main>
-            <span style={{display: "none"}}>ENG/ESP - List of bugs with all the information you need for Animal Crossing.</span>
+            <span style={{color: "#CCE1F2", fontSize: "0px", }}>ENG/ESP - List of bugs with all the information you need for Animal Crossing.</span>
             <TableContainer>
                 <thead>
                     <tr>

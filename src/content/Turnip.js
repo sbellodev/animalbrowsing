@@ -64,7 +64,7 @@ const Turnip = () => {
     return (
         <>
         <TurnipContainer>
-            <span style={{display: "none"}}>ENG/ESP - Updated turnips prices for you to sell for Animal Crossing.</span>
+            <span style={{color: "#CCE1F2", fontSize: "0px"}}>ENG/ESP - Updated turnips prices for you to sell for Animal Crossing.</span>
             {!APIResponse && <TwitterContent>{message_wait}</TwitterContent>}
             {APIResponse && <TwitterContent dangerouslySetInnerHTML={{__html: renderTwitterAPIContent(APIResponse)}} />}
         </TurnipContainer>

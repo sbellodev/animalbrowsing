@@ -32,10 +32,12 @@ const RHelmet = ({index}) => {
         
         return (
                 <Helmet>
+                    {console.log(window.location.pathname)}
                     <html lang="es" />
                     <title>{helmet[index+"_title"]}</title>
                     <meta name="description" content={helmet[index+"_desc"]} />
-                    {index === "home" && <link rel="canonical" href={window.location.href}></link>}
+                    {index === "home" && <link rel="canonical" href={"https://www.animalbrowsing.com"}></link>}
+                    {index === "fish" && <link rel="canonical" href={"https://www.animalbrowsing.com/bugs"}></link>}
                 </Helmet>
         )
     }

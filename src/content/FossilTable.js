@@ -59,7 +59,7 @@ const FossilTable = () => {
                 <SearchInput id={"search-fossil"} onChange={(e) => sortBySearch(fossilList, e.target.value)} placeholder={search_placeholder}/>
            </ButtonsContainer>
             <main>
-                <span style={{display: "none"}}>ENG/ESP - List of bugs with all the information you need for Animal Crossing.</span>
+                <span style={{color: "#CCE1F2", fontSize: "0px"}}>ENG/ESP - List of bugs with all the information you need for Animal Crossing.</span>
                 <FossilTableContent table_content={Result ? Result : fossilList}/>
             </main>
         </FossilContainer>
