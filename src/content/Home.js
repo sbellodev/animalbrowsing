@@ -58,7 +58,7 @@ const Home = () => {
                     <h5>Henlo! Welcome to <a href="/">Animal Browsing</a></h5>
                     <h5>Get the latest turnips prices, bugs and fish's list...</h5>
                     <h5>about Animal Crossing: New Horizons</h5>
-                    <h5>¡Have a good one! And take care</h5>
+                    <h5>Have a good one! And take care</h5>
                     <Ellipsis />
                 </DescContainer>
                 <HomeContent>

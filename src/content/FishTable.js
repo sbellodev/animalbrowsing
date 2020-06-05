@@ -221,7 +221,7 @@ const FishTable = () => {
             </BtnSortContainer>
         </ButtonsContainer>
         <main>
-            <span style={{display: "hidden"}}>ENG/ESP - List of fish with all the information you need for Animal Crossing.</span>
+            <span style={{display: "none"}}>ENG/ESP - List of fish with all the information you need for Animal Crossing.</span>
             <TableContainer>
                 <thead>
                     <tr>

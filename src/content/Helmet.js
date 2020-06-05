@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet'
 
 const RHelmet = ({index}) => {
+
     let helmet =  {
         "home_title" : "Animal Browsing",
         "home_desc" : "ENG/ESP - Do you need to sell your turnips high? List of bugs, fish, fossils...? Find here all you need for Animal Crossing: New Horizons.",
@@ -34,6 +35,7 @@ const RHelmet = ({index}) => {
                     <html lang="es" />
                     <title>{helmet[index+"_title"]}</title>
                     <meta name="description" content={helmet[index+"_desc"]} />
+                    {index === "home" && <link rel="canonical" href={window.location.href}></link>}
                 </Helmet>
         )
     }
@@ -43,6 +45,7 @@ const RHelmet = ({index}) => {
                 <html lang="en" />
                 <title>{helmet[index+"_title"]}</title>
                 <meta name="description" content={helmet[index+"_desc"]} />
+                {index === "home" && <link rel="canonical" href={window.location.href}></link>}
             </Helmet>
         )
     }    
