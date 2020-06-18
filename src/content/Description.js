@@ -49,7 +49,7 @@ const Description = ({actualIndex}) => {
             case "Turnips":
                 return (
                     <Container>
-                        <h5>Get *automatically* the best turnips prices from Twitter</h5>
+                        <h5>Exchange turnips for the latest prices from Twitter</h5>
                         <h5>You don't need to search anything...</h5>
                         <h5>Just watch!</h5>
                         <Ellipsis />
