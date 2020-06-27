@@ -801,9 +801,9 @@
     
     {
         "Number": 41,
-        "ImageWEBP": "arowana.webp",
-        "ImagePNG": "arowana.png",
-        "Name": "Arowana",
+        "ImageWEBP": "arowana2.webp",
+        "ImagePNG": "arowana2.png",
+        "Name": "Arowana Grande",
         "Location": "River",
         "Size": "Large",
         "Price": "10,000",

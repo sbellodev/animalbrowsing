@@ -27,7 +27,7 @@ const Description = ({actualIndex}) => {
                 return (
                     <Container>
                         <h5>Lista Definitiva chulísima de peces</h5>
-                        <h5>¡Mucha suerte en tu pesca!</h5>
+                        <h5>¡Pesca y que no te pesquen!</h5>
                         <Ellipsis />
                     </Container>
                 )
