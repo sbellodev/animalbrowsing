@@ -27,7 +27,15 @@ const Description = ({actualIndex}) => {
                 return (
                     <Container>
                         <h5>Lista Definitiva chulísima de peces</h5>
-                        <h5>¡Mucha suerte en tu pesca!</h5>
+                        <h5>¡Pesca y que no te pesquen!</h5>
+                        <Ellipsis />
+                    </Container>
+                )
+            case "Sea":
+                return (
+                    <Container>
+                        <h5>SEA SEA Description</h5>
+                        <h5>¡Pesca y que no te pesquen!</h5>
                         <Ellipsis />
                     </Container>
                 )
@@ -69,6 +77,14 @@ const Description = ({actualIndex}) => {
                     <Container>
                         <h5>A really, like, really cool and Definitive List of Fish</h5>
                         <h5>Good luck fishing!</h5>
+                        <Ellipsis />
+                    </Container>
+                )
+            case "Sea":
+                return (
+                    <Container>
+                        <h5>Criaturas de Mar</h5>
+                        <h5>Si</h5>
                         <Ellipsis />
                     </Container>
                 )
