@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import seaListEN from '../data/sea-EN.json'
-import fishListES from '../data/fish-ES.json'
+import seaListES from '../data/sea-EN.json'
 import styled from 'styled-components'
 
 const imageURL = {
@@ -23,13 +23,13 @@ const SeaMobileTable = ({actualTable}) => {
          <tr key={value.Number}>
             <td>
                 <picture>
-                    <source type="image/webp" srcSet={"../img/fish/" +value.ImageWEBP} />
-                    <source type="image/png" srcSet={"../img/fish/" +value.ImagePNG} /> 
-                    <img src={"../img/fish/" +value.ImageWEBP} alt={value.Name} />
+                    <source type="image/webp" srcSet={"../img/sea/" +value.ImageWEBP} />
+                    <source type="image/png" srcSet={"../img/sea/" +value.ImagePNG} /> 
+                    <img src={"../img/sea/" +value.ImageWEBP} alt={value.Name} />
                 </picture>
             </td>
             <td>{value.Name} <br/> {value.Price}</td>
-            <td dangerouslySetInnerHTML={{ __html: value.Time + "<br/>" + value.Location + "<br/>" + value.Size}}></td>
+            <td dangerouslySetInnerHTML={{ __html: value.Time + "<br/>" + value.Pattern + "<br/>" + value.Size}}></td>
             <td dangerouslySetInnerHTML={{ __html: value.Temp ? value.Temp : value.Season}}></td>
          </tr>
      ) : emptyRow
@@ -183,7 +183,7 @@ const SeaTable = () => {
         table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)", "Tamaño"]
         search_placeholder = "Buscar..."
         hemisphere = ["Norte", "Sur"]
-        actualTable = fishListES
+        actualTable = seaListES
     }
     else {
     }
@@ -221,7 +221,7 @@ const SeaTable = () => {
             </BtnSortContainer>
         </ButtonsContainer>
         <main>
-            <span style={{color: "#CCE1F2", fontSize: "0px"}}>ENG/ESP - List of fish with all the information you need for Animal Crossing.</span>
+            <span style={{color: "#CCE1F2", fontSize: "0px"}}>ENG/ESP - List of sea creatures with all the information you need for Animal Crossing.</span>
             <TableContainer>
                 <thead>
                     <tr>
