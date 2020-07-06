@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import seaListEN from '../data/sea-EN.json'
-import seaListES from '../data/sea-EN.json'
+import seaListES from '../data/sea-ES.json'
 import styled from 'styled-components'
 
 const imageURL = {
