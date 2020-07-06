@@ -31,11 +31,11 @@ const Description = ({actualIndex}) => {
                         <Ellipsis />
                     </Container>
                 )
-            case "Sea":
+            case "Sea-creatures":
                 return (
                     <Container>
-                        <h5>SEA SEA Description</h5>
-                        <h5>¡Pesca y que no te pesquen!</h5>
+                        <h5>Desde la estrella de mar hasta la alga wakame, dale que dale</h5>
+                        <h5>Encuentra todas las criaturas de mar, incluído yo</h5>
                         <Ellipsis />
                     </Container>
                 )
@@ -80,11 +80,11 @@ const Description = ({actualIndex}) => {
                         <Ellipsis />
                     </Container>
                 )
-            case "Sea":
+            case "Sea-creatures":
                 return (
                     <Container>
-                        <h5>Criaturas de Mar</h5>
-                        <h5>Si</h5>
+                        <h5>Find all the deep-sea creatures in the island.</h5>
+                        <h5>Leave a breadcrumb trail so you don't get lost!</h5>
                         <Ellipsis />
                     </Container>
                 )
