@@ -151,7 +151,7 @@ const SeaTable = () => {
             return (
                 v.Name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
                 v.PriceInt.toString().includes(inputSearch) ||
-                v.Location.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
+                v.Pattern.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
                 v.Season.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
                 v.Size.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
                 v.Time.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) 
@@ -175,12 +175,12 @@ const SeaTable = () => {
         return table.sort((a, b) => a.Number - b.Number)
     }
 
-    let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)", "Size"]   
+    let table_head = ["Image", "Name", "Price", "Time", "Movement", "Season", "(Hemi.)", "Size"]   
     let hemisphere = ["North", "South"]
     let search_placeholder = "Find..."
     let actualTable = seaListEN
     if(localStorage.getItem("language") === "es") {
-        table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)", "Tamaño"]
+        table_head = ["Imagen", "Nombre", "Precio", "Hora", "Movimiento", "Temporada", "(Hemis.)", "Tamaño"]
         search_placeholder = "Buscar..."
         hemisphere = ["Norte", "Sur"]
         actualTable = seaListES

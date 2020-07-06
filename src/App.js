@@ -87,7 +87,7 @@ const App = () => {
           <NavLink to="/fish" name ="Fish" exact activeClassName="active" >
             {section_names[3]}
           </ NavLink>
-          <NavLink to="/sea" name ="Sea" exact activeClassName="active" >
+          <NavLink to="/sea-creatures" name ="Sea-creatures" exact activeClassName="active" >
             {section_names[4]}
           </ NavLink>
           <NavLink to="/fossil" name ="Fossil" exact activeClassName="active" >
@@ -115,9 +115,9 @@ const App = () => {
             <FishTable />
             <Footer />
           </ Route>
-          <Route path="/sea">
-            <RHelmet index={"sea"}  />
-            <Description actualIndex={"Sea"} />
+          <Route path="/sea-creatures">
+            <RHelmet index={"sea-creatures"}  />
+            <Description actualIndex={"Sea-creatures"} />
             <SeaTable />
             <Footer />
           </ Route>
