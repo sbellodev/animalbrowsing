@@ -14,15 +14,16 @@ const Home = () => {
                     <Ellipsis />
                 </DescContainer>
                 <HomeContent>
-                    <p>Novedades en camino:</p>
+                    <p>Novedades en camino <i>(actualizado el 7/7/2020)</i></p>
                     <ul>
                         <li><span>Lista de fósiles</span> <a href="/fossil">¡Nuevo!</a></li>
                         <li><span>Buscar bichos y peces por Temporada actual</span></li>
+                        <li><span>Lista de criaturas del mar</span><a href="/sea-creatures"> Nuevo!</a></li>
                         <li>Lista de obras de arte</li>
                         <li>Lista de esculturas</li>
                     </ul>
                     <br/>
-                    <h4>5/18/2020 - Inauguración Animal Browsing</h4>
+                    <br/>
                     <br/>
                     <picture>
                         <source type="image/webp" srcSet={"tw_profile_webp.webp"} />
@@ -42,7 +43,6 @@ const Home = () => {
                     <p>A medida que pase el tiempo y según el interés iré añadiendo más y más cosas ^^</p>
                     <p>Cualquier sugerencia, crítica o saludarme, puedes contactarme</p>
                     <p>en <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" > twitter </a> a @Gattoalaparato</p>
-                    <p>o un <a href = "mailto:gatto@animalbrowsing.com">email</a> a gatto@animalbrowsing.com</p>
                     <br/>
                     <p>Espero que os guste ¡nos vemos!</p>
                 </HomeContent>
@@ -62,15 +62,16 @@ const Home = () => {
                     <Ellipsis />
                 </DescContainer>
                 <HomeContent>
-                    <p>Upcoming features:</p>
-                        <ul>
-                            <li><span>Fossils list</span><a href="/fossil"> New!</a></li>
-                            <li><span>Filter bugs and fish lists by current Season</span></li>
-                            <li>Paintings list</li>
-                            <li>Statues list</li>
-                        </ul>
+                    <p>Upcoming features <i>(updated 7/7/2020)</i></p>
+                    <ul>
+                        <li><span>Fossils list</span><a href="/fossil"> New!</a></li>
+                        <li><span>Filter bugs and fish lists by current Season</span></li>
+                        <li><span>Sea-creatures list</span><a href="/sea-creatures"> New!</a></li>
+                        <li>Paintings list</li>
+                        <li>Statues list</li>
+                    </ul>
                     <br/>
-                    <h4>5/18/2020 - Animal Browsing inauguration</h4>
+                    <br/>
                     <br/>
                     <picture>
                         <source type="image/webp" srcSet={"tw_profile_webp.webp"} />
@@ -89,7 +90,6 @@ const Home = () => {
                     <br/>
                     <p>Any suggestion, criticism or saying hi please feel free reach me on 
                     <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" > twitter </a> at @Gattoalaparato</p>
-                    <p>or send me an email to <a href = "mailto:gatto@animalbrowsing.com">gatto@animalbrowsing.com</a></p>
                     <br/>
                     <p>Hope you like it! And have a good one</p>
                     <br/>
@@ -144,6 +144,10 @@ const HomeContent = styled.div`
     padding-bottom: 30px;
     span {
         color: green;
+    }
+    ul {
+        border-bottom: 3px solid ghostwhite;
+        padding-bottom: 30px
     }
 `
 const ImageProfile = styled.img`
