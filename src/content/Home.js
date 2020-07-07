@@ -18,7 +18,7 @@ const Home = () => {
                     <ul>
                         <li><span>Lista de fósiles</span> <a href="/fossil">¡Nuevo!</a></li>
                         <li><span>Buscar bichos y peces por Temporada actual</span></li>
-                        <li><span>Lista de criaturas del mar</span><a href="/sea-creatures"> Nuevo!</a></li>
+                        <li><span>Lista de criaturas marinas</span><a href="/sea-creatures"> Nuevo!</a></li>
                         <li>Lista de obras de arte</li>
                         <li>Lista de esculturas</li>
                     </ul>
@@ -66,7 +66,7 @@ const Home = () => {
                     <ul>
                         <li><span>Fossils list</span><a href="/fossil"> New!</a></li>
                         <li><span>Filter bugs and fish lists by current Season</span></li>
-                        <li><span>Sea-creatures list</span><a href="/sea-creatures"> New!</a></li>
+                        <li><span>Sea creatures list</span><a href="/sea-creatures"> New!</a></li>
                         <li>Paintings list</li>
                         <li>Statues list</li>
                     </ul>

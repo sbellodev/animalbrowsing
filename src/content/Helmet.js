@@ -36,7 +36,6 @@ const RHelmet = ({index}) => {
         
         return (
             <Helmet>
-                {console.log(window.location.pathname)}
                 <html lang="es" />
                 <title>{helmet[index+"_title"]}</title>
                 <meta name="description" content={helmet[index+"_desc"]} />

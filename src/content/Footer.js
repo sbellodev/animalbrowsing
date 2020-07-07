@@ -15,7 +15,7 @@ const Footer = () => {
             <br/><br/>
             <Disclaimer>
                 <p>Created by <a href="https://twitter.com/gattoalaparato" target="_blank" rel="noopener noreferrer">@Gattoalaparato</a></p>
-                <p>2020 - Animal Crossing v1.0</p>
+                <p>2020 - Animal Browsing v1.1</p>
             </Disclaimer>
         </FooterContainer>
     )
