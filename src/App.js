@@ -4,6 +4,7 @@ import { Home } from './content/Home'
 import { Turnip } from './content/Turnip'
 import { BugsTable } from './content/BugsTable'
 import { FishTable } from './content/FishTable'
+import { SeaTable } from './content/SeaTable'
 import { FossilTable } from './content/FossilTable'
 import { Description } from './content/Description' 
 import { Footer } from './content/Footer'
@@ -52,7 +53,7 @@ else {
 
 const App = () => {
   const [language, setLanguage] = useState(localStorage.getItem("language"))
-  let section_names = ["Home", "Turnips", "Bugs", "Fish", "Fossil", "Lang EN"]
+  let section_names = ["Home", "Turnips", "Bugs", "Fish", "Sea Creatures", "Fossil", "Lang EN"]
   
   function switchLanguage(){
     if(language === "es"){
@@ -65,7 +66,7 @@ const App = () => {
     }
   }
   if(language === "es"){
-    section_names = ["Inicio", "Nabos", "Bichos", "Peces", "Fósiles", "Lang ES"]
+    section_names = ["Inicio", "Nabos", "Bichos", "Peces", "Criaturas Marinas", "Fósiles", "Lang ES"]
   }
 
   return (
@@ -86,10 +87,13 @@ const App = () => {
           <NavLink to="/fish" name ="Fish" exact activeClassName="active" >
             {section_names[3]}
           </ NavLink>
-          <NavLink to="/fossil" name ="Fossil" exact activeClassName="active" >
+          <NavLink to="/sea-creatures" name ="Sea-creatures" exact activeClassName="active" >
             {section_names[4]}
           </ NavLink>
-          <LangIndex className="Language" onClick={() => {switchLanguage()}} href={"#"}>{section_names[5]}</ LangIndex>
+          <NavLink to="/fossil" name ="Fossil" exact activeClassName="active" >
+            {section_names[5]}
+          </ NavLink>
+          <LangIndex className="Language" onClick={() => {switchLanguage()}} href={"#"}>{section_names[6]}</ LangIndex>
         </ NavbarContent> 
 
         <Switch>
@@ -111,6 +115,12 @@ const App = () => {
             <FishTable />
             <Footer />
           </ Route>
+          <Route path="/sea-creatures">
+            <RHelmet index={"sea-creatures"}  />
+            <Description actualIndex={"Sea-creatures"} />
+            <SeaTable />
+            <Footer />
+          </ Route>
           <Route path="/fossil">
             <RHelmet index={"fossil"}  />
             <Description actualIndex={"Fossil"} />
@@ -130,33 +140,33 @@ const App = () => {
 
 const NavbarContent = styled.nav`
   width: 100%;
-  height: 60px;
+  min-height: 60px;
   background-color: rgb(255, 131, 97);
   font-size: 18px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-auto-flow: column;
   justify-content: space-around;
   align-items: center;
+  padding: 0px 0px 15px 0px;
   
-  p {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 2em;
-  }
   a {
+    max-width: 85px;
     text-align: center;
     color: ghostwhite;
-    padding: 15px 0px;
+    padding: 15px 0px 0px 0px;
   }
   a.active {
     color: rgb(85, 50, 20);
   }
   
-  @media screen and (max-width: 570px){
-    font-size: 16px;
+  @media screen and (max-width: 460px){
+    
+    grid-template-rows: auto auto;
+
+   
   }
   @media screen and (max-width: 340px){
-      font-size: 14px;
+      
   }
 `
 const LangIndex = styled.a`

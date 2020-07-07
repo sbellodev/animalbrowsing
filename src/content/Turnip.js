@@ -31,7 +31,6 @@ const Turnip = () => {
     const renderTwitterAPIContent = (res) =>  {
         let shortUrl = /https:\/\/t\.co\/+.{10}/g
         let showResponse = res.map(tweet => {
-            console.log(tweet)
             if(tweet.text){
                 tweet.text = tweet.text.replace("'\n' +",  "")
                 if(tweet.entities.media){ // has image
@@ -65,7 +64,6 @@ const Turnip = () => {
     return (
         <>
         <TurnipContainer>
-            <span style={{color: "#CCE1F2", fontSize: "0px"}}>ENG/ESP - Exchange your turnips and get dodocodes in Animal Crossing.</span>
             {!APIResponse && <TwitterContent>{message_wait}</TwitterContent>}
             {APIResponse && <TwitterContent dangerouslySetInnerHTML={{__html: renderTwitterAPIContent(APIResponse)}} />}
         </TurnipContainer>
@@ -102,11 +100,13 @@ const TwitterContent = styled.div`
         margin: 0 auto;
         padding-top: 30px;
         border-bottom: 3px solid ghostwhite;
+        p {
+            padding-bottom: 10px;
+        }
     }
     
     .blob_container {
         width: 80%;
-        padding-top: 20px;
         margin: 0 auto;
     }
     .blob {

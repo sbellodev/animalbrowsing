@@ -12,6 +12,8 @@ const RHelmet = ({index}) => {
         "bugs_desc" : "List of bugs with all the information you need for Animal Crossing.", 
         "fish_title" : "Fish complete list | Animal Browsing: All about Animal Crossing", 
         "fish_desc" : "List of fish with all the information you need for Animal Crossing.", 
+        "sea_title" : "Sea Creatures complete list | Animal Browsing: All about Animal Crossing", 
+        "sea_desc" : "List of sea creatures with all the information you need for Animal Crossing.", 
         "fossil_title" : "Fossils complete list | Animal Browsing: All about Animal Crossing", 
         "fossil_desc" : "List of fossils with all the information you need for Animal Crossing." 
     }
@@ -26,13 +28,14 @@ const RHelmet = ({index}) => {
             "bugs_desc" : "Lista de bichos con la información actualizada al día para Animal Crossing.", 
             "fish_title" : "Lista de peces - Animal Browsing: Todo sobre Animal Crossing", 
             "fish_desc" : "Lista de peces con la información actualizada al día para Animal Crossing.", 
+            "sea_title" : "Criaturas marinas complete list | Animal Browsing: All about Animal Crossing", 
+            "sea_desc" : "List of criaturas marinas with all the information you need for Animal Crossing.",     
             "fossil_title" : "Lista de fósiles - Animal Browsing: Todo sobre Animal Crossing", 
             "fossil_desc" : "Lista de fósiles actualizada al día para Animal Crossing." 
         }
         
         return (
             <Helmet>
-                {console.log(window.location.pathname)}
                 <html lang="es" />
                 <title>{helmet[index+"_title"]}</title>
                 <meta name="description" content={helmet[index+"_desc"]} />
