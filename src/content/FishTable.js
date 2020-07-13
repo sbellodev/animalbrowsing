@@ -24,8 +24,7 @@ const FishMobileTable = ({actualTable}) => {
             <td>
                 <picture>
                     <source type="image/webp" srcSet={"../img/fish/" +value.ImageWEBP} />
-                    <source type="image/png" srcSet={"../img/fish/" +value.ImagePNG} /> 
-                    <img src={"../img/fish/" +value.ImageWEBP} alt={value.Name} />
+                    <img src={"../img/fish/" +value.ImagePNG} alt={value.Name} />
                 </picture>
             </td>
             <td>{value.Name} <br/> {value.Price}</td>
@@ -202,7 +201,6 @@ const FishTable = () => {
                 <Button onClick={() => setNewTable(sortByABC(actualTable))}>
                     <picture>
                         <source type="image/webp" srcSet={imageURL.ABCWEBP}/>
-                        <source type="image/png" srcSet={imageURL.ABCPNG}/>
                         <IconImage src={imageURL.ABCPNG} alt="ABC" />
                     </picture>
                 </Button>
@@ -214,7 +212,6 @@ const FishTable = () => {
                 <ResetButton onClick={() => setNewTable(sortByReset(actualTable))}>
                     <picture>
                         <source type="image/webp" srcSet={imageURL.ResetWEBP}/>
-                        <source type="image/png" srcSet={imageURL.ResetPNG}/>
                         <IconImage src={imageURL.ResetPNG}  alt="Reset" />
                     </picture>
                 </ResetButton>

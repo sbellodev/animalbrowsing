@@ -24,8 +24,7 @@ const BugMobileTable = ({actualTable}) => {
             <td>
                 <picture>
                     <source type="image/webp" srcSet={"../img/bug/" +value.ImageWEBP} />
-                    <source type="image/png" srcSet={"../img/bug/" +value.ImagePNG} /> 
-                    <img src={"../img/bug/" +value.ImageWEBP} alt={value.Name} />
+                    <img src={"../img/bug/" +value.ImagePNG} alt={value.Name} />
                 </picture>
             </td>
             <td>{value.Name} <br/> {value.Price}</td>
@@ -200,8 +199,7 @@ const BugsTable = () => {
                 </BtnSeason>
                 <Button onClick={() => setNewTable(sortByABC(actualTable))}>
                     <picture>
-                        <source type="image/webp" srcSet={imageURL.ABCWEBP}/>
-                        <source type="image/png" srcSet={imageURL.ABCPNG}/>
+                        <source type="image/webp" srcSet={imageURL.ABCWEBP} />
                         <IconImage src={imageURL.ABCPNG} alt="ABC" />
                     </picture>
                 </Button>
@@ -213,7 +211,6 @@ const BugsTable = () => {
                 <ResetButton onClick={() => setNewTable(sortByReset(actualTable))}>
                     <picture>
                         <source type="image/webp" srcSet={imageURL.ResetWEBP}/>
-                        <source type="image/png" srcSet={imageURL.ResetPNG}/>
                         <IconImage src={imageURL.ResetPNG}  alt="Reset" />
                     </picture>
                 </ResetButton>

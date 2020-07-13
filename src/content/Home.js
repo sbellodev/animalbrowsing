@@ -27,8 +27,7 @@ const Home = () => {
                     <br/>
                     <picture>
                         <source type="image/webp" srcSet={"tw_profile_webp.webp"} />
-                        <source type="image/jpeg" srcSet={"tw_profile.jpg"} />
-                        <ImageProfile src={"tw_profile.jpg"} alt="twitter profile"/>
+                        <ImageProfile src={"tw_profile.jpg"} alt="twitter profile" />
                     </picture>
                     <br/>
                     <p>¿Cansado de buscar por todas partes buenos precios para vender tus nabos?</p>
@@ -75,8 +74,7 @@ const Home = () => {
                     <br/>
                     <picture>
                         <source type="image/webp" srcSet={"tw_profile_webp.webp"} />
-                        <source type="image/jpeg" srcSet={"tw_profile.jpg"} />
-                        <ImageProfile src={"tw_profile.jpg"} alt="twitter profile"/>
+                        <ImageProfile src={"tw_profile.jpg"} alt="twitter profile" />
                     </picture>
                     <br/>
                     <p>Tired of looking over and over good turnip's prices everywhere?</p>
