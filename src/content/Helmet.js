@@ -36,7 +36,7 @@ const RHelmet = ({index}) => {
         
         return (
             <Helmet>
-                <html lang="es" />
+                <html lang="es" /> 
                 <title>{helmet[index+"_title"]}</title>
                 <meta name="description" content={helmet[index+"_desc"]} />
                 {index === "home" && <link rel="canonical" href={"https://animalbrowsing.com"}></link>}

@@ -190,7 +190,7 @@ const FishTable = () => {
     // }
     
     return (    
-      <>
+      <main>
         <ButtonsContainer>
             <div>
                 <label htmlFor={"table-search"}></label>
@@ -219,7 +219,7 @@ const FishTable = () => {
                 </ResetButton>
             </BtnSortContainer>
         </ButtonsContainer>
-        <main>
+        <div>
             <TableContainer>
                 <thead>
                     <tr>
@@ -234,8 +234,8 @@ const FishTable = () => {
                     <FishMobileTable actualTable={ newTable ? newTable : actualTable }/>
                 </tbody>
             </TableContainer>
-        </main>
-      </>
+        </div>
+      </main>
     )
 }
 

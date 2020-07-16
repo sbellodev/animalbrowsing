@@ -60,14 +60,14 @@ const FossilTable = () => {
                 <label htmlFor="search-fossil"></label>
                 <SearchInput id={"search-fossil"} onChange={(e) => sortBySearch(fossilList, e.target.value)} placeholder={search_placeholder}/>
            </ButtonsContainer>
-            <main>
+            <div>
                 <FossilTableContent table_content={Result ? Result : fossilList}/>
-            </main>
+            </div>
         </FossilContainer>
     )
 }
 
-const FossilContainer = styled.div`
+const FossilContainer = styled.main`
     width: 60%;
     margin: 0 auto;
     font-size: 18px;

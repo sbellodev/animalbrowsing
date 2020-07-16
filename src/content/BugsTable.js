@@ -189,7 +189,7 @@ const BugsTable = () => {
     // }
     
     return (    
-      <>
+      <main>
         <ButtonsContainer>
             <div>
                 <label htmlFor={"table-search"}></label>
@@ -218,7 +218,7 @@ const BugsTable = () => {
                 </ResetButton>
             </BtnSortContainer>
         </ButtonsContainer>
-        <main>
+        <div>
             <TableContainer>
                 <thead>
                     <tr>
@@ -233,8 +233,8 @@ const BugsTable = () => {
                     <BugMobileTable actualTable={ newTable ? newTable : actualTable }/>
                 </tbody>
             </TableContainer>
-        </main>
-      </>
+        </div>
+      </main>
     )
 }
 
