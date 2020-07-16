@@ -44,30 +44,31 @@ const GlobalStyles = createGlobalStyle`
   }
 ` 
 
-if(navigator.language.includes(("es" || "en"))){ // Supported languages
-  localStorage.setItem("language", navigator.language.slice(0, 2))
-}
-else {
-  localStorage.setItem("language", "en") // EN as default
-}
+// if(navigator.language.includes(("es" || "en"))){ // Supported languages
+//   localStorage.setItem("language", navigator.language.slice(0, 2))
+// }
+// else {
+//   localStorage.setItem("language", "en") // EN as default
+// }
 
 const App = () => {
-  const [language, setLanguage] = useState(localStorage.getItem("language"))
-  let section_names = ["Home", "Turnips", "Bugs", "Fish", "Sea Creatures", "Fossil", "Lang EN"]
+  //const [language, setLanguage] = useState(localStorage.getItem("language"))
+  //let section_names = ["Home", "Turnips", "Bugs", "Fish", "Sea Creatures", "Fossil", "Lang EN"]
+  let section_names = ["Inicio", "Nabos", "Bichos", "Peces", "Criaturas Marinas", "Fósiles", "Lang ES"]
   
-  function switchLanguage(){
-    if(language === "es"){
-      setLanguage("en")
-      localStorage.setItem("language", "en")
-    }
-    else if(language === "en"){
-      setLanguage("es")
-      localStorage.setItem("language", "es")
-    }
-  }
-  if(language === "es"){
-    section_names = ["Inicio", "Nabos", "Bichos", "Peces", "Criaturas Marinas", "Fósiles", "Lang ES"]
-  }
+  // function switchLanguage(){
+  //   if(language === "es"){
+  //     setLanguage("en")
+  //     localStorage.setItem("language", "en")
+  //   }
+  //   else if(language === "en"){
+  //     setLanguage("es")
+  //     localStorage.setItem("language", "es")
+  //   }
+  // }
+  // if(language === "es"){
+  //   section_names = ["Inicio", "Nabos", "Bichos", "Peces", "Criaturas Marinas", "Fósiles", "Lang ES"]
+  // }
 
   return (
     <AppContainer>
@@ -84,16 +85,16 @@ const App = () => {
           <NavLink to="/bugs" name="Bugs" exact activeClassName="active" >
             {section_names[2]}
           </ NavLink>
-          <NavLink to="/fish" name ="Fish" exact activeClassName="active" >
+          <NavLink to="/fish" name="Fish" exact activeClassName="active" >
             {section_names[3]}
           </ NavLink>
-          <NavLink to="/sea-creatures" name ="Sea-creatures" exact activeClassName="active" >
+          <NavLink to="/sea-creatures" name="Sea-creatures" exact activeClassName="active" >
             {section_names[4]}
           </ NavLink>
-          <NavLink to="/fossil" name ="Fossil" exact activeClassName="active" >
+          <NavLink to="/fossil" name="Fossil" exact activeClassName="active" >
             {section_names[5]}
           </ NavLink>
-          <LangIndex className="Language" onClick={() => {switchLanguage()}} href={"#"}>{section_names[6]}</ LangIndex>
+          {/* <LangIndex className="Language" onClick={() => {switchLanguage()}} href={"#"}>{section_names[6]}</ LangIndex> */}
         </ NavbarContent> 
 
         <Switch>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import fishListEN from '../data/fish-EN.json'
+//import fishListEN from '../data/fish-EN.json'
 import fishListES from '../data/fish-ES.json'
 import styled from 'styled-components'
 
@@ -174,18 +174,20 @@ const FishTable = () => {
         return table.sort((a, b) => a.Number - b.Number)
     }
 
-    let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)", "Size"]   
-    let hemisphere = ["North", "South"]
-    let search_placeholder = "Find..."
-    let actualTable = fishListEN
-    if(localStorage.getItem("language") === "es") {
-        table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)", "Tamaño"]
-        search_placeholder = "Buscar..."
-        hemisphere = ["Norte", "Sur"]
-        actualTable = fishListES
-    }
-    else {
-    }
+    let table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)", "Tamaño"]
+    let search_placeholder = "Buscar..."
+    let hemisphere = ["Norte", "Sur"]
+    let actualTable = fishListES
+    // let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)", "Size"]   
+    // let hemisphere = ["North", "South"]
+    // let search_placeholder = "Find..."
+    // let actualTable = fishListEN
+    // if(localStorage.getItem("language") === "es") {
+    //     table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)", "Tamaño"]
+    //     search_placeholder = "Buscar..."
+    //     hemisphere = ["Norte", "Sur"]
+    //     actualTable = fishListES
+    // }
     
     return (    
       <>
@@ -218,7 +220,6 @@ const FishTable = () => {
             </BtnSortContainer>
         </ButtonsContainer>
         <main>
-            <span style={{color: "#CCE1F2", fontSize: "0px"}}>ENG/ESP - List of fish with all the information you need for Animal Crossing.</span>
             <TableContainer>
                 <thead>
                     <tr>

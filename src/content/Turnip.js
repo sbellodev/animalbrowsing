@@ -20,13 +20,13 @@ const Turnip = () => {
         return () => clearInterval(intervalId)
     },[]) 
     
-    let message_wait 
-    if(localStorage.getItem("language") === "es"){
-        message_wait = <p className="tweet_individual" style={{height: "99vh"}}>Cargando tweets... si tarda mucho, por favor contacta con el webmaster.</p>
-    }
-    else {
-        message_wait = <p className="tweet_individual" style={{height: "99vh"}}>Loading tweets... please wait... if it lasts too much please contact the webmaster</p>
-    }
+    let message_wait
+    message_wait = <p className="tweet_individual" style={{height: "99vh"}}>Cargando tweets... si tarda mucho, por favor contacta con el webmaster.</p>
+    // if(localStorage.getItem("language") === "es"){
+    // }
+    // else {
+    //     message_wait = <p className="tweet_individual" style={{height: "99vh"}}>Loading tweets... please wait... if it lasts too much please contact the webmaster</p>
+    // }
     
     const renderTwitterAPIContent = (res) =>  {
         let shortUrl = /https:\/\/t\.co\/+.{10}/g

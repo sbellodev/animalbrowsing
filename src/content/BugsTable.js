@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components'
-import bugListEN from '../data/bug-EN.json'
+//import bugListEN from '../data/bug-EN.json'
 import bugListES from '../data/bug-ES.json'
 
 const imageURL = {
@@ -173,18 +173,20 @@ const BugsTable = () => {
         return table.sort((a, b) => a.Number - b.Number)
     }
 
-    let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)"]  
-    let hemisphere = ["North", "South"]
-    let search_placeholder = "Find..."
-    let actualTable = bugListEN
-    if(localStorage.getItem("language") === "es") {
-        table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)"]
-        search_placeholder = "Buscar..."
-        hemisphere = ["Norte", "Sur"]
-        actualTable = bugListES
-    }
-    else {
-    }
+    let table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)"]
+    let search_placeholder = "Buscar..."
+    let hemisphere = ["Norte", "Sur"]
+    let actualTable = bugListES
+    // let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)"]  
+    // let hemisphere = ["North", "South"]
+    // let search_placeholder = "Find..."
+    // let actualTable = bugListEN
+    // if(localStorage.getItem("language") === "es") {
+    //     table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)"]
+    //     search_placeholder = "Buscar..."
+    //     hemisphere = ["Norte", "Sur"]
+    //     actualTable = bugListES
+    // }
     
     return (    
       <>
@@ -217,7 +219,6 @@ const BugsTable = () => {
             </BtnSortContainer>
         </ButtonsContainer>
         <main>
-            <span style={{color: "#CCE1F2", fontSize: "0px", }}>ENG/ESP - List of bugs with all the information you need for Animal Crossing.</span>
             <TableContainer>
                 <thead>
                     <tr>

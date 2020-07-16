@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components'
-import fossilListEN from '../data/fossil-EN.json'
+//import fossilListEN from '../data/fossil-EN.json'
 import fossilListES from '../data/fossil-ES.json'
 
 const FossilTableContent = ({table_content}) => {
@@ -25,16 +25,18 @@ const emptyRow = <ul>
 const FossilTable = () => {
     //const [inputSearch, setInputSearch] = useState("")
     const [Result, setResult] = useState("");
-
-    let search_placeholder = "Search..."
-    let fossilList = {}
-    if(localStorage.getItem("language") === "es"){
-        fossilList = fossilListES
-        search_placeholder = "Buscar..."
-    }
-    else {
-        fossilList = fossilListEN
-    }
+    
+    let fossilList = fossilListES
+    let search_placeholder = "Buscar..."
+    // let search_placeholder = "Search..."
+    // let fossilList = {}
+    // if(localStorage.getItem("language") === "es"){
+    //     fossilList = fossilListES
+    //     search_placeholder = "Buscar..."
+    // }
+    // else {
+    //     fossilList = fossilListEN
+    // }
 
     const sortBySearch = (table, inputSearch) => {
         let toble = table.filter((v) => {
@@ -59,7 +61,6 @@ const FossilTable = () => {
                 <SearchInput id={"search-fossil"} onChange={(e) => sortBySearch(fossilList, e.target.value)} placeholder={search_placeholder}/>
            </ButtonsContainer>
             <main>
-                <span style={{color: "#CCE1F2", fontSize: "0px"}}>ENG/ESP - List of fossils with all the information you need for Animal Crossing.</span>
                 <FossilTableContent table_content={Result ? Result : fossilList}/>
             </main>
         </FossilContainer>

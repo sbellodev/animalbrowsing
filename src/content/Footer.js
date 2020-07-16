@@ -3,10 +3,10 @@ import styled from 'styled-components'
 
 
 const Footer = () => {
-    let backTo_str = "Back to top"
-    if(localStorage.getItem("language") === "es"){
-        backTo_str = "Volver parriba"
-    }
+    //let backTo_str = "Back to top"
+    let backTo_str = "Volver parriba"
+    // if(localStorage.getItem("language") === "es"){
+    // }
     return (
         <FooterContainer>
             <br/>
@@ -15,7 +15,7 @@ const Footer = () => {
             <br/><br/>
             <Disclaimer>
                 <p>Created by <a href="https://twitter.com/gattoalaparato" target="_blank" rel="noopener noreferrer">@Gattoalaparato</a></p>
-                <p>2020 - Animal Browsing v1.1</p>
+                <p>2020 - Animal Browsing v1.2</p>
             </Disclaimer>
         </FooterContainer>
     )
