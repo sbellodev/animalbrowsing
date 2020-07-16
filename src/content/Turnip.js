@@ -34,7 +34,7 @@ const Turnip = () => {
             if(tweet.text){
                 tweet.text = tweet.text.replace("'\n' +",  "")
                 if(tweet.entities.media){ // has image
-                    tweet.text = tweet.text.replace(tweet.entities.media[0].url, "")
+                    tweet.text = tweet.text.replace(tweet.entities.media[0].url, "<img src='" +tweet.entities.media[0].media_url+ "' />")
                 }
                 // urls[0] needed because API structure
                 if(tweet.entities.urls && tweet.entities.urls[0]){ // has other urls
@@ -50,10 +50,9 @@ const Turnip = () => {
             }
 
             return   '<div class="tweet_individual">'
-                     + '<p><a href="https://twitter.com/'+tweet.screen_name+'" target="_blank" rel="noopener noreferrer">@' +tweet.screen_name+ '</a></p>'
+                     + '<a href="https://twitter.com/' +tweet.screen_name+ '" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;"><div style="padding-bottom:0"><img style="width:35px;border-radius:20px;display:inline;margin: 0 auto;" src="' +tweet.profile_image+ '"/></div><span style="margin:10px;">@' +tweet.screen_name+ '</span></a>'
                      + '<p>' +tweet.text+ '</p>'
-                     + '<p><a href="https://twitter.com/i/web/status/'+tweet.id+'" target="_blank" rel="noopener noreferrer">Ver más</a></p>'
-                     + '<br/>'  
+                     + '<p><a href="https://twitter.com/i/web/status/' +tweet.id+ '" target="_blank" rel="noopener noreferrer">Ver más</a></p>'
                      + '</div>'
             }
         ).join('')
@@ -98,9 +97,13 @@ const TwitterContent = styled.div`
         width: 80%;
         max-width: 350px;
         margin: 0 auto;
-        padding-top: 30px;
-        border-bottom: 3px solid ghostwhite;
-        p {
+        padding: 30px;
+        border: 2px solid ghostwhite;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 3px 4px ghostwhite;
+
+        p, div, a {
             padding-bottom: 10px;
         }
     }
