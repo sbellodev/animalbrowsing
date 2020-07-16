@@ -82,8 +82,10 @@ const FossilContainer = styled.main`
     ul {
         padding: 0;
         padding-bottom: 20px;
-        padding-left: 0px;
-        border-bottom: 3px solid ghostwhite;
+        border: 2px solid ghostwhite;
+        box-shadow: 3px 4px ghostwhite;
+        border-radius: 10px;
+        padding-left: 20px;
     }
     li {
         margin-left: 30px;
@@ -121,9 +123,9 @@ const SearchInput = styled.input`
     box-shadow: 1px 1px black;
 
     @media screen and (max-width: 340px){
-    width: 60px;
-    height: 25px;
-    margin-right: 10px;
+        width: 60px;
+        height: 25px;
+        margin-right: 10px;
     }
 `
 export { FossilTable }
