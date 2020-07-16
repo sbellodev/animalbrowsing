@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-
+const HomeVideo = () => <iframe src="https://www.youtube.com/embed/qVdYcOUOoVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 const Home = () => {
 
     //if(localStorage.getItem("language") === "es"){
@@ -8,12 +8,18 @@ const Home = () => {
             <HomeContainer>
                 <DescContainer>
                     <h5>¡Bienvenid@ a <a href="/">Animal Browsing</a>!</h5>
-                    <h5>Todo lo que necesitas acerca de lista de peces, bichos, precios de nabos y más...</h5>
+                    <h5>Todo lo que necesitas acerca de lista de peces, bichos, precios de nabos...</h5>
                     <h5>para Animal Crossing: New Horizons</h5>
                     <h5>¡Buena suerte! y cuídate</h5>
                     <Ellipsis />
                 </DescContainer>
                 <HomeContent>
+                    <p>¡Nueva actualización de verano! Bucea, descubre las criaturas marinas y mucho más</p>
+                    <br />
+                    <HomeVideo/>
+                    <br/>
+                    <br/>
+                    <br/>
                     <p>Novedades en camino <i>(actualizado el 7/7/2020)</i></p>
                     <ul>
                         <li><span>Lista de fósiles</span> <a href="/fossil">¡Nuevo!</a></li>
@@ -146,6 +152,23 @@ const HomeContent = styled.div`
     ul {
         border-bottom: 3px solid ghostwhite;
         padding-bottom: 30px
+    }
+    iframe {
+        display: block;
+        margin: 0 auto;
+        width: 480px;
+        height: 360px;
+        @media screen and (max-width: 570px){
+            width: 360px;
+            height: 280px;
+        }
+        @media screen and (max-width: 420px){
+            width: 280px;
+            height: 200px;
+        }
+    }
+    @media screen and (max-width: 340px){
+        width: 85%;
     }
 `
 const ImageProfile = styled.img`
