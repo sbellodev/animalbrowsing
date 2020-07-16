@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet'
 
-const RHelmet = ({index}) => {
+const RHelmet = () => {
 
     // let helmet =  {
     //     "home_title" : "Animal Browsing | Find everything about Animal Crossing",
@@ -19,6 +19,9 @@ const RHelmet = ({index}) => {
     // }
     
     //if(localStorage.getItem("language") === "es"){
+    let pathname = window.location.pathname.replace("/", "")
+    if(!pathname) pathname = "home"
+    
     let helmet = {
         "home_title" : "Animal Browsing | Encuentra todo sobre Animal Crossing",
         "home_desc" : "Necesitas vender tus nabos a buen precio en Animal Crossing? Consultar listas de bichos, peces y fósiles y más? Aquí lo encontrarás",
@@ -37,10 +40,10 @@ const RHelmet = ({index}) => {
         return (
             <Helmet>
                 <html lang="es" /> 
-                <title>{helmet[index+"_title"]}</title>
-                <meta name="description" content={helmet[index+"_desc"]} />
-                {index === "home" && <link rel="canonical" href={"https://animalbrowsing.com"}></link>}
-                {index !== "home" && <link rel="canonical" href={"https://animalbrowsing.com/" +index}></link>}
+                <title>{helmet[pathname+ "_title"]}</title>
+                <meta name="description" content={helmet[pathname+ "_desc"]} />
+                {pathname === "home" && <link rel="canonical" href={"https://animalbrowsing.com"}></link>}
+                {pathname !== "home" && <link rel="canonical" href={"https://animalbrowsing.com/" +pathname}></link>}
             </Helmet>
         )
     //}

@@ -2,10 +2,11 @@ import React from 'react';
 import styled from 'styled-components'
 //import { Helmet } from 'react-helmet'
 
-const Description = ({actualIndex}) => {  
-    //if(localStorage.getItem("language") === "es"){
-    switch (actualIndex){
-        case "Turnips":
+const Description = () => {  
+    let pathname = window.location.pathname.replace("/", "")
+
+    switch (pathname){
+        case "turnips":
             return (
                 <Container>
                     <h5>Encuentra en vivo buenos precios y PIN Dodo para vender tus nabos</h5>
@@ -13,7 +14,7 @@ const Description = ({actualIndex}) => {
                     <Ellipsis />
                 </Container>
             )
-        case "Bugs":
+        case "bugs":
             return (
                 <Container>
                     <h5>Lista Definitiva de bichos e insectos.</h5>
@@ -21,7 +22,7 @@ const Description = ({actualIndex}) => {
                     <Ellipsis />
                 </Container>
             )
-        case "Fish":
+        case "fish":
             return (
                 <Container>
                     <h5>Lista Definitiva chulísima de peces</h5>
@@ -29,7 +30,7 @@ const Description = ({actualIndex}) => {
                     <Ellipsis />
                 </Container>
             )
-        case "Sea-creatures":
+        case "sea-creatures":
             return (
                 <Container>
                     <h5>Desde la estrella de mar hasta la alga wakame, dale que dale</h5>
@@ -37,7 +38,7 @@ const Description = ({actualIndex}) => {
                     <Ellipsis />
                 </Container>
             )
-        case "Fossil":
+        case "fossil":
             return (
                 <Container>
                     <h5>Lista de todos los fósiles disponibles hasta ahora</h5>
