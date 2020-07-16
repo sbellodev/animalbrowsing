@@ -52,7 +52,7 @@ const Turnip = () => {
             return   '<div class="tweet_individual">'
                      + '<p><a href="https://twitter.com/'+tweet.screen_name+'" target="_blank" rel="noopener noreferrer">@' +tweet.screen_name+ '</a></p>'
                      + '<p>' +tweet.text+ '</p>'
-                     + '<p><a href="https://twitter.com/i/web/status/'+tweet.id+'" target="_blank" rel="noopener noreferrer">View Tweet</a></p>'
+                     + '<p><a href="https://twitter.com/i/web/status/'+tweet.id+'" target="_blank" rel="noopener noreferrer">Ver más</a></p>'
                      + '<br/>'  
                      + '</div>'
             }

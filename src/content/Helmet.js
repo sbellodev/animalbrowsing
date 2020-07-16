@@ -22,16 +22,16 @@ const RHelmet = ({index}) => {
     let helmet = {
         "home_title" : "Animal Browsing | Encuentra todo sobre Animal Crossing",
         "home_desc" : "Necesitas vender tus nabos a buen precio en Animal Crossing? Consultar listas de bichos, peces y fósiles y más? Aquí lo encontrarás",
-        "turnips_title" : "Mejores precios y PIN Dodos para vender tus nabos - Animal Browsing: todo sobre Animal Crossing",
-        "turnips_desc" : "Encuentra isleños con PIN Dodos y vende tus nabos al mejor precio en Animal Crossing.",
-        "bugs_title" : "Lista Completa de bichos - Animal Browsing: todo sobre Animal Crossing", 
-        "bugs_desc" : "Lista de bichos con la información actualizada al día para Animal Crossing.", 
-        "fish_title" : "Lista Completa de peces - Animal Browsing: todo sobre Animal Crossing", 
-        "fish_desc" : "Lista de peces con la información actualizada al día para Animal Crossing.", 
-        "sea-creatures_title" : "Lista Completa de criaturas marinas | Animal Browsing: All about Animal Crossing", 
-        "sea-creatures_desc" : "Lista de criaturas marinas con la información actualizada al día para Animal Crossing.",     
-        "fossil_title" : "Lista de fósiles - Animal Browsing: todo sobre Animal Crossing", 
-        "fossil_desc" : "Lista de fósiles actualizada al día para Animal Crossing." 
+        "turnips_title" : "Consigue vender AHORA tus nabos | Todo sobre Animal Crossing en Animal Browsing.",
+        "turnips_desc" : "Vende tus nabos al mejor precio en Animal Crossing. Encuentra docenas de PIN Dodos, turnip.exchange, tweets...",
+        "bugs_title" : "Lista Completa de Bichos | Todo sobre Animal Crossing en Animal Browsing.", 
+        "bugs_desc" : "Lista de bichos con la información actualizada al día para Animal Crossing. Mariposa colias, bianor, Cigarra gigante, escarabajo ciervo sierra...", 
+        "fish_title" : "Lista Completa de Peces | Todo sobre Animal Crossing en Animal Browsing.", 
+        "fish_desc" : "Lista de peces con la información actualizada al día para Animal Crossing. Amarguillo, Koi, Siluro, Salmón, Arowana, Pirarucú, Pez luna...", 
+        "sea-creatures_title" : "Lista Completa de Criaturas Marinas | Todo sobre Animal Crossing en Animal Browsing.", 
+        "sea-creatures_desc" : "Lista de criaturas marinas con la información actualizada al día para Animal Crossing. Alga wakame, Estrella de mar, Abulón, Buccino...",     
+        "fossil_title" : "Lista Completa de Fósiles | Todo sobre Animal Crossing en Animal Browsing.", 
+        "fossil_desc" : "Lista de fósiles actualizada al día para Animal Crossing. Acantostega, Anquilosaurio, Pteranodonte, Tiranosaurio, Megaloceros, Iguanodonte..." 
     }
         
         return (
