@@ -56,10 +56,10 @@ const FossilTable = () => {
     
     return ( 
         <FossilContainer>
-           <ButtonsContainer>
+            <ButtonsContainer>
                 <label htmlFor="search-fossil"></label>
                 <SearchInput id={"search-fossil"} onChange={(e) => sortBySearch(fossilList, e.target.value)} placeholder={search_placeholder}/>
-           </ButtonsContainer>
+            </ButtonsContainer>
             <div>
                 <FossilTableContent table_content={Result ? Result : fossilList}/>
             </div>

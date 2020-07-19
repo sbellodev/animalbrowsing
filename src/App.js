@@ -54,7 +54,7 @@ const GlobalStyles = createGlobalStyle`
 const App = () => {
   //const [language, setLanguage] = useState(localStorage.getItem("language"))
   //let section_names = ["Home", "Turnips", "Bugs", "Fish", "Sea Creatures", "Fossil", "Lang EN"]
-  let section_names = ["Inicio", "Nabos", "Bichos", "Peces", "Criaturas Marinas", "Fósiles", "Lang ES"]
+  let section_names = ["Inicio ", "Nabos ", "Bichos ", "Peces ", "Criaturas Marinas ", "Fósiles ", "Lang ES"]
   
   // function switchLanguage(){
   //   if(language === "es"){
