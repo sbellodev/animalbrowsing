@@ -5,15 +5,16 @@ const Home = () => {
     return (
         <HomeContainer>
             <DescContainer>
-                <h5>¡Bienvenid@ a <a href="/">Animal Browsing</a>!</h5>
+                <Logo src="logo.png" alt="Animal Browsing's logo" />
+                <h5>¡Bienvenid@ a Animal Browsing!</h5>
                 <h5>Vende tus nabos al instante y encuentra todo sobre bichos, peces, criaturas del mar...</h5>
                 <h5>para Animal Crossing: New Horizons</h5>
                 <h5>¡Buena suerte! y cuídate</h5>
                 <Ellipsis />
+                <br />
             </DescContainer>
             <HomeContent>
-                <p>¡Nueva actualización de verano! Bucea, descubre las criaturas marinas y mucho más</p>
-                <br />
+                <p style={{paddingBottom: "30px"}}>¡Nueva actualización de verano! Bucea, descubre las criaturas marinas y muchas más cosas...</p>
                 <HomeVideo/>
                 <br/>
                 <br/>
@@ -120,6 +121,15 @@ const HomeContent = styled.div`
     }
     @media screen and (max-width: 340px){
         width: 85%;
+    }
+`
+const Logo = styled.img`
+    width: 170px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    @media screen and (max-width: 570px){
+        width: 140px;
     }
 `
 const ImageProfile = styled.img`
