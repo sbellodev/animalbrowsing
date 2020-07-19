@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <HomeContainer>
             <DescContainer>
-                <Logo src="logo.png" alt="Animal Browsing's logo" />
+                <Logo src="logo.PNG" alt="Animal Browsing's logo" />
                 <h5>¡Bienvenid@ a Animal Browsing!</h5>
                 <h5>Vende tus nabos y encuentra bichos, peces, criaturas del mar, fósiles, PIN DODO...</h5>
                 <h5>para Animal Crossing: New Horizons</h5>
