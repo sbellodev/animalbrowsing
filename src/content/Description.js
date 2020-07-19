@@ -9,7 +9,7 @@ const Description = () => {
         case "turnips":
             return (
                 <Container>
-                    <h5>Encuentra en vivo buenos precios y PIN Dodo para vender tus nabos</h5>
+                    <h5>Encuentra gente con PIN Dodo para vender tus nabos</h5>
                     <h5>Sólo observa...</h5>
                     <Ellipsis />
                 </Container>

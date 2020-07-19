@@ -6,10 +6,10 @@ const RHelmet = () => {
     if(!pathname) pathname = "home"
     
     let helmet = {
-        "home_title" : "Animal Browsing: Tu navegador de Animal Crossing: New Horizons.",
-        "home_desc" : "Vende tus nabos o encuentra todo sobre bichos, peces, criaturas del mar... al instante :)",
+        "home_title" : "Animal Browsing: Todo sobre Animal Crossing: New Horizons",
+        "home_desc" : "Vende tus nabos o encuentra todo sobre bichos, peces, criaturas del mar, fósiles, PIN DODO... al instante :)",
         "turnips_title" : "Consigue vender AHORA tus nabos | Browsing Animal Crossing.",
-        "turnips_desc" : "Vende tus nabos al mejor precio en Animal Crossing. Encuentra docenas de PIN Dodos, turnip.exchange, tweets...",
+        "turnips_desc" : "Encuentra gente para vender tus nabos al instante. PIN DODOs",
         "bugs_title" : "Lista Completa de Bichos | Browsing Animal Crossing.", 
         "bugs_desc" : "Toda la información sobre los bichos de Animal Crossing. Mariposa colias, bianor, Cigarra gigante, escarabajo ciervo sierra...", 
         "fish_title" : "Lista Completa de Peces | Browsing Animal Crossing.", 
