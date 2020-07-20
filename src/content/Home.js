@@ -11,7 +11,6 @@ const Home = () => {
                 <h5>para Animal Crossing: New Horizons</h5>
                 <h5>¡Buena suerte! y cuídate</h5>
                 <Ellipsis />
-                <br />
             </DescContainer>
             <HomeContent>
                 <p style={{paddingBottom: "30px"}}>¡Nueva actualización de verano! Bucea, descubre las criaturas marinas y muchas más cosas...</p>
@@ -85,7 +84,7 @@ const DescContainer = styled.header`
 `
 const Ellipsis = styled.div`
     width: 100%;
-    height: 30px;
+    height: 20px;
     margin-top: 30px;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
