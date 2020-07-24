@@ -7,7 +7,7 @@ const Home = () => {
             <DescContainer>
                 <Logo src="logo.PNG" alt="Animal Browsing's logo" />
                 <h5>¡Bienvenid@ a Animal Browsing!</h5>
-                <h5>Vende tus nabos y encuentra bichos, peces, criaturas del mar, fósiles, PIN DODO...</h5>
+                <h5>Encuentra nabos a buen precio, PIN DODOs y todo sobre bichos, peces, criaturas del mar, fósiles...</h5>
                 <h5>para Animal Crossing: New Horizons</h5>
                 <h5>¡Buena suerte! y cuídate</h5>
                 <Ellipsis />

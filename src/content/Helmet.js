@@ -6,17 +6,17 @@ const RHelmet = () => {
     if(!pathname) pathname = "home"
     
     let helmet = {
-        "home_title" : "Animal Browsing: Todo sobre Animal Crossing: New Horizons",
-        "home_desc" : "Vende tus nabos o encuentra todo sobre bichos, peces, criaturas del mar, fósiles, PIN DODO... al instante :)",
-        "turnips_title" : "Consigue vender AHORA tus nabos | Browsing Animal Crossing.",
-        "turnips_desc" : "Encuentra gente para vender tus nabos al instante. PIN DODOs",
-        "bugs_title" : "Lista Completa de Bichos | Browsing Animal Crossing.", 
-        "bugs_desc" : "Toda la información sobre los bichos de Animal Crossing. Mariposa colias, bianor, Cigarra gigante, escarabajo ciervo sierra...", 
-        "fish_title" : "Lista Completa de Peces | Browsing Animal Crossing.", 
-        "fish_desc" : "Todos los peces de Animal Crossing. Amarguillo, Koi, Siluro, Salmón, Arowana, Pirarucú, Pez luna...", 
-        "sea-creatures_title" : "Lista Completa de Criaturas Marinas | Browsing Animal Crossing.", 
-        "sea-creatures_desc" : "Descubre todo sobre criaturas marinas y sus secretos. Alga wakame, Estrella de mar, Abulón, Buccino...",     
-        "fossil_title" : "Lista Completa de Fósiles | Browsing Animal Crossing.", 
+        "home_title" : "Animal Browsing, tu kit para sobrevivir en Animal Crossing.",
+        "home_desc" : "Encuentra aquí nabos a buen precio, PIN DODOs y todo sobre bichos, peces, criaturas del mar, fósiles y mucho más en Animal Crossing: New Horizons.",
+        "turnips_title" : "Encuentra nabos a buen precio y PIN DODO | Animal Crossing.",
+        "turnips_desc" : "Encuentra gente para vender tus nabos con PIN DODOS ahora mismo.",
+        "bugs_title" : "Lista Completa de Bichos | Animal Crossing: New Horizons.", 
+        "bugs_desc" : "Todo sobre Bichos de Animal Crossing: New Horizons. Mariposa colias, bianor, Cigarra gigante, escarabajo ciervo sierra...", 
+        "fish_title" : "Lista Completa de Peces | Animal Crossing: New Horizons.", 
+        "fish_desc" : "Todos los Peces de Animal Crossing. Amarguillo, Koi, Siluro, Salmón, Arowana, Pirarucú, Pez luna...", 
+        "sea-creatures_title" : "Lista Completa de Criaturas Marinas | Animal Crossing: New Horizons.", 
+        "sea-creatures_desc" : "Descubre todo sobre Criaturas Marinas y sus secretos. Alga wakame, Estrella de mar, Abulón, Buccino...",     
+        "fossil_title" : "Lista Completa de Fósiles | Animal Crossing: New Horizons.", 
         "fossil_desc" : "Encuentra aquí todos los fósiles. Acantostega, Anquilosaurio, Pteranodonte, Tiranosaurio, Megaloceros, Iguanodonte..." 
     }
 
