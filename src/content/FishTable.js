@@ -286,17 +286,21 @@ const TableContainer = styled.table`
 `
 
 const ButtonsContainer = styled.div`
-  background-color: #CCE1F2;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  button {
-    background-color: ghostwhite;
-  }
+    background-color: #CCE1F2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+
+    button {
+        background-color: ghostwhite;
+    }
+    button:active {
+        transform: translateY(4px);
+    }
 `
 const BtnSortContainer = styled.div`
   display: flex;
