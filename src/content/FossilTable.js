@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
 //import fossilListEN from '../data/fossil-EN.json'
 import fossilListES from '../data/fossil-ES.json'
@@ -32,28 +32,32 @@ const emptyRow = <ul>
 
 const FossilTable = () => {
     const [Result, setResult] = useState("");
-    const [currentFossils, setCurrentFossiles] = useState(0);
+    const [numFossils, setNumFossils] = useState(0);
     
     let fossilList = fossilListES
     let search_placeholder = "Buscar..."
 
+    var numTimes = 0;
     document.addEventListener("DOMContentLoaded", function(event) { 
         //do work
-        var currentFossiles = 0;
         var allCheckboxes = document.getElementsByTagName('input')
-        console.log(allCheckboxes) //HMTL collection con fosiles
+        
         for(let i = 0; i< allCheckboxes.length; i++){
-            console.log("localstorage: " + localStorage.getItem(allCheckboxes[i].id))
             if(localStorage.getItem(allCheckboxes[i].id)) {
-                console.log("pasó local storage: " + localStorage.getItem(allCheckboxes[i].id))
-                console.log("Existe el elemento: " + allCheckboxes[i].id)
-                console.log("the value is... " + allCheckboxes[i].value)
-
-                console.log(allCheckboxes[i])
                 allCheckboxes[i].checked = true;
+
+                numTimes++
             }
         }
       });
+    // useEffect(() => {
+    //     return numTimes = numFossils
+    // })[checking]
+
+    useEffect(() => {
+        // Update the document title using the browser API
+        setNumFossils(numTimes)
+      }, []);
 
     const checking = (e) => {
 
@@ -62,10 +66,8 @@ const FossilTable = () => {
             for (let i = 0; i < checkboxes.length; i++) {
                 checkboxes[i].addEventListener("change", function(){     
                     if(checkboxes[i].checked === false) {
-                        console.log("it false")
                         localStorage.removeItem(checkboxes[i].id)
                     } else {
-                        console.log("it true")
                         localStorage.setItem(checkboxes[i].id, "checked")                    
                     }         
                 })
@@ -90,7 +92,7 @@ const FossilTable = () => {
     }
     const clearBoxes = (e) => {
         localStorage.clear() 
-        setCurrentFossiles(0) 
+        setNumFossils(0) 
         window.location.reload();
     }
     
@@ -107,7 +109,7 @@ const FossilTable = () => {
                     </picture>
                 </ResetButton>
             </ButtonsContainer>
-            <p>{currentFossils} de 72</p>
+            <p>{numFossils} de 72</p>
             <div onClick={(e) => checking(e)}>
                 <FossilTableContent table_content={Result ? Result : fossilList}/>
             </div>
