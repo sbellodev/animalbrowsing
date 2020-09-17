@@ -51,8 +51,6 @@ const FossilTable = () => {
             }
         }
     }
-    //showCheckeds();
-    //document.addEventListener("DOMContentLoaded", showCheckeds);
     
     const checking = () => {
         var checkboxes = document.querySelectorAll("input[name='checks']")
@@ -91,7 +89,6 @@ const FossilTable = () => {
         localStorage.clear() 
         setNumFossils(0) 
         window.location.reload();
-        //showCheckeds();
     }
     const fillBoxes = () => {
         var checkboxes = document.getElementsByTagName('input')
