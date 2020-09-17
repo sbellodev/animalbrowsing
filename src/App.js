@@ -198,7 +198,7 @@ const BackgroundImage = styled.div`
 `
 const AppContainer = styled.div`
   font-weight: bold;
-  max-width: 650px;
+  max-width: 700px;
   background-color: #CCE1F2;
   margin: 0 auto;
 `
