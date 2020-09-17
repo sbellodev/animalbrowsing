@@ -39,36 +39,27 @@ const FossilTable = () => {
 
     var numTimes = 0;
     document.addEventListener("DOMContentLoaded", function(event) { 
-        //do work
-        var allCheckboxes = document.getElementsByTagName('input')
-        
+        var allCheckboxes = document.getElementsByTagName('input')        
         for(let i = 0; i< allCheckboxes.length; i++){
+            if(allCheckboxes == 0) break
             if(localStorage.getItem(allCheckboxes[i].id)) {
                 allCheckboxes[i].checked = true;
-
                 numTimes++
             }
         }
-      });
-    // useEffect(() => {
-    //     return numTimes = numFossils
-    // })[checking]
+    });
 
-    useEffect(() => {
-        // Update the document title using the browser API
-        setNumFossils(numTimes)
-      }, []);
-
-    const checking = (e) => {
-
+    const checking = () => {
         var checkboxes = document.querySelectorAll("input[name='checks']")
         if(checkboxes){
             for (let i = 0; i < checkboxes.length; i++) {
                 checkboxes[i].addEventListener("change", function(){     
                     if(checkboxes[i].checked === false) {
                         localStorage.removeItem(checkboxes[i].id)
+                        setNumFossils(numFossils - 1)
                     } else {
-                        localStorage.setItem(checkboxes[i].id, "checked")                    
+                        localStorage.setItem(checkboxes[i].id, "checked")
+                        setNumFossils(numFossils + 1)
                     }         
                 })
             }
@@ -90,27 +81,48 @@ const FossilTable = () => {
         })
         setResult(toble)
     }
-    const clearBoxes = (e) => {
+    const clearBoxes = () => {
         localStorage.clear() 
         setNumFossils(0) 
         window.location.reload();
     }
-    
+    const fillBoxes = () => {
+        var checkboxes = document.getElementsByTagName('input')
+        console.log(checkboxes)
+        for(let i = 1; i < checkboxes.length; i++){
+            checkboxes[i].checked = true
+            localStorage.setItem(checkboxes[i].id, "checked")
+        }
+        setNumFossils(72)
+        
+    }
+
+    useEffect(() => {
+        console.log(numTimes)
+        setNumFossils(numTimes)
+    },[])
+
     return ( 
         <FossilContainer>
             <ButtonsContainer>
                 <label htmlFor="search-fossil"></label>
                 <SearchInput id={"search-fossil"} onChange={(e) => sortBySearch(fossilList, e.target.value)} placeholder={search_placeholder}/>
                 <label htmlFor="reset-button"></label>
-                <ResetButton onClick={(e) => clearBoxes(e)}>
+                <ResetButton onClick={() => clearBoxes()}>
+                    <picture>
+                        <source type="image/webp" srcSet={imageURL.ResetWEBP}/>
+                        <IconImage src={imageURL.ResetPNG}  alt="Reset" />
+                    </picture>
+                </ResetButton>
+                <ResetButton onClick={() => fillBoxes()}>
                     <picture>
                         <source type="image/webp" srcSet={imageURL.ResetWEBP}/>
                         <IconImage src={imageURL.ResetPNG}  alt="Reset" />
                     </picture>
                 </ResetButton>
             </ButtonsContainer>
-            <p>{numFossils} de 72</p>
-            <div onClick={(e) => checking(e)}>
+            {<p>{numFossils} de 72</p>}
+            <div onClick={() => checking()}>
                 <FossilTableContent table_content={Result ? Result : fossilList}/>
             </div>
         </FossilContainer>
