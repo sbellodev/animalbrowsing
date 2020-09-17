@@ -6,6 +6,8 @@ import fossilListES from '../data/fossil-ES.json'
 const imageURL = {
     ResetPNG: "/icons/reset.png",
     ResetWEBP: "/icons/reset.webp",
+    CheckPNG: "/icons/check.png", 
+    CheckJPG: "/icons/check.jpg"
 }
 
 const FossilTableContent = ({table_content}) => {
@@ -114,14 +116,14 @@ const FossilTable = () => {
                         <IconImage src={imageURL.ResetPNG}  alt="Reset" />
                     </picture>
                 </ResetButton>
-                <ResetButton onClick={() => fillBoxes()}>
+                <FillButton onClick={() => fillBoxes()}>
                     <picture>
-                        <source type="image/webp" srcSet={imageURL.ResetWEBP}/>
-                        <IconImage src={imageURL.ResetPNG}  alt="Reset" />
+                        <IconImage src={imageURL.CheckJPG}  alt="Fill" />
                     </picture>
-                </ResetButton>
+                </FillButton>
             </ButtonsContainer>
-            {<p>{numFossils} de 72</p>}
+            {<p>{numFossils} de 72 partes.</p>}
+
             <div onClick={() => checking()}>
                 <FossilTableContent table_content={Result ? Result : fossilList}/>
             </div>
@@ -194,6 +196,13 @@ const SearchInput = styled.input`
     }
 `
 const ResetButton = styled.button`
+  width: 30px;
+  height: 30px;
+  margin: 10px 25px 10px 0;
+  border-radius: 50%;
+  box-shadow: 1px 1px #888888;
+`
+const FillButton = styled.button`
   width: 30px;
   height: 30px;
   margin: 10px 25px 10px 0;
