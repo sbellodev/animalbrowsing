@@ -35,22 +35,25 @@ const emptyRow = <ul>
 const FossilTable = () => {
     const [Result, setResult] = useState("");
     const [numFossils, setNumFossils] = useState(0);
-    
+        
     let fossilList = fossilListES
     let search_placeholder = "Buscar..."
 
-    var numTimes = 0;
-    document.addEventListener("DOMContentLoaded", function(event) { 
-        var allCheckboxes = document.getElementsByTagName('input')        
+    var allCheckboxes = document.getElementsByTagName('input')        
+    var numChecks = numFossils
+    console.log("numchecks : " + numChecks)
+    const showCheckeds = () => {
         for(let i = 0; i< allCheckboxes.length; i++){
-            if(allCheckboxes == 0) break
+            if(allCheckboxes === 0) break // input-search button 
             if(localStorage.getItem(allCheckboxes[i].id)) {
                 allCheckboxes[i].checked = true;
-                numTimes++
+                numChecks++
             }
         }
-    });
-
+    }
+    //showCheckeds();
+    //document.addEventListener("DOMContentLoaded", showCheckeds);
+    
     const checking = () => {
         var checkboxes = document.querySelectorAll("input[name='checks']")
         if(checkboxes){
@@ -67,7 +70,7 @@ const FossilTable = () => {
             }
         }
     }
-
+    
     const sortBySearch = (table, inputSearch) => {
         let toble = table.filter((v) => {
             inputSearch = inputSearch.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
@@ -79,33 +82,34 @@ const FossilTable = () => {
                 (v.Fourth && v.Fourth.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) )||
                 (v.Fiveth && v.Fiveth.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) )||
                 (v.Sixth && v.Sixth.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch)) 
-            )
-        })
-        setResult(toble)
+                )
+            })
+            setResult(toble)
     }
+
     const clearBoxes = () => {
         localStorage.clear() 
         setNumFossils(0) 
         window.location.reload();
+        //showCheckeds();
     }
     const fillBoxes = () => {
         var checkboxes = document.getElementsByTagName('input')
-        console.log(checkboxes)
         for(let i = 1; i < checkboxes.length; i++){
             checkboxes[i].checked = true
             localStorage.setItem(checkboxes[i].id, "checked")
         }
         setNumFossils(72)
-        
     }
-
+    
     useEffect(() => {
-        console.log(numTimes)
-        setNumFossils(numTimes)
+        showCheckeds();
+        setNumFossils(numChecks)
     },[])
 
     return ( 
         <FossilContainer>
+            {console.log(numChecks)}
             <ButtonsContainer>
                 <label htmlFor="search-fossil"></label>
                 <SearchInput id={"search-fossil"} onChange={(e) => sortBySearch(fossilList, e.target.value)} placeholder={search_placeholder}/>
