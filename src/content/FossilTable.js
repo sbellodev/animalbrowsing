@@ -60,9 +60,9 @@ const FossilTable = () => {
     }
     const fillBoxes = () => {
         var checkboxes = document.getElementsByTagName('input')
-        for(let i = 1; i < checkboxes.length; i++){
-            checkboxes[i].checked = true
-            localStorage.setItem(checkboxes[i].id, "checked")
+        for(const box of checkboxes){
+            box.checked = true
+            localStorage.setItem(box.id, "checked")
         }
         setNumFossils(72)
     }
@@ -83,6 +83,7 @@ const FossilTable = () => {
                         <IconImage src={imageURL.ResetPNG}  alt="Reset" />
                     </picture>
                 </ResetButton>
+                <label htmlFor="fill-button"></label>
                 <FillButton onClick={() => fillBoxes()}>
                     <picture>
                         <IconImage src={imageURL.CheckJPG}  alt="Fill" />
