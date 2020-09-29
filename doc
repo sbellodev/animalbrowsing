@@ -1,5 +1,14 @@
 TODO -
 
+Fossil - Read localStorage Object like a book
+    const readLocalStorage = () => {
+        Object.keys(localStorage).map(x => console.log(x))
+        Object.values(localStorage).map(x => console.log(x))
+        console.log(Object.keys(localStorage).length)
+    }
+    readLocalStorage()
+
+
 Colors and widths -
 
 const primaryColor = {

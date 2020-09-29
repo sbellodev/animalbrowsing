@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
 //import fossilListEN from '../data/fossil-EN.json'
 import fossilListES from '../data/fossil-ES.json'
+import { showCheckedboxes, checkStorage } from '../logic/fossil.js'
 
 const imageURL = {
     ResetPNG: "/icons/reset.png",
@@ -26,48 +27,16 @@ const FossilTableContent = ({table_content}) => {
      ) : emptyRow
      return row
 }
-
 const emptyRow = <ul>
                     <p>No hay na'</p>
                     <li>u_u'</li>
                 </ul>
 
-const FossilTable = () => {
+const FossilTable = () => {    
     const [Result, setResult] = useState("");
-    const [numFossils, setNumFossils] = useState(0);
-        
+    const [numFossils, setNumFossils] = useState(localStorage.length);
     let fossilList = fossilListES
     let search_placeholder = "Buscar..."
-
-    var allCheckboxes = document.getElementsByTagName('input')        
-    var numChecks = numFossils
-    console.log("numchecks : " + numChecks)
-    const showCheckeds = () => {
-        for(let i = 0; i< allCheckboxes.length; i++){
-            if(allCheckboxes === 0) break // input-search button 
-            if(localStorage.getItem(allCheckboxes[i].id)) {
-                allCheckboxes[i].checked = true;
-                numChecks++
-            }
-        }
-    }
-    
-    const checking = () => {
-        var checkboxes = document.querySelectorAll("input[name='checks']")
-        if(checkboxes){
-            for (let i = 0; i < checkboxes.length; i++) {
-                checkboxes[i].addEventListener("change", function(){     
-                    if(checkboxes[i].checked === false) {
-                        localStorage.removeItem(checkboxes[i].id)
-                        setNumFossils(numFossils - 1)
-                    } else {
-                        localStorage.setItem(checkboxes[i].id, "checked")
-                        setNumFossils(numFossils + 1)
-                    }         
-                })
-            }
-        }
-    }
     
     const sortBySearch = (table, inputSearch) => {
         let toble = table.filter((v) => {
@@ -84,7 +53,6 @@ const FossilTable = () => {
             })
             setResult(toble)
     }
-
     const clearBoxes = () => {
         localStorage.clear() 
         setNumFossils(0) 
@@ -98,15 +66,13 @@ const FossilTable = () => {
         }
         setNumFossils(72)
     }
-    
+
     useEffect(() => {
-        showCheckeds();
-        setNumFossils(numChecks)
+        showCheckedboxes()   
     },[])
 
-    return ( 
+    return (
         <FossilContainer>
-            {console.log(numChecks)}
             <ButtonsContainer>
                 <label htmlFor="search-fossil"></label>
                 <SearchInput id={"search-fossil"} onChange={(e) => sortBySearch(fossilList, e.target.value)} placeholder={search_placeholder}/>
@@ -123,9 +89,9 @@ const FossilTable = () => {
                     </picture>
                 </FillButton>
             </ButtonsContainer>
-            {<p>{numFossils} de 72 partes.</p>}
 
-            <div onClick={() => checking()}>
+            <div onChange={() => setNumFossils(checkStorage())}>
+            {<p>{numFossils} de 72 partes.</p>}
                 <FossilTableContent table_content={Result ? Result : fossilList}/>
             </div>
         </FossilContainer>
