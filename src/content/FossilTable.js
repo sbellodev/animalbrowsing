@@ -38,12 +38,11 @@ const FossilTable = () => {
         
     let fossilList = fossilListES
     let search_placeholder = "Buscar..."
-
-    var allCheckboxes = document.getElementsByTagName('input')        
     var numChecks = numFossils
-    console.log("numchecks : " + numChecks)
+    var allCheckboxes = document.getElementsByTagName('input')        
+
     const showCheckeds = () => {
-        for(let i = 0; i< allCheckboxes.length; i++){
+        for(let i = 1; i< allCheckboxes.length; i++){
             if(allCheckboxes === 0) break // input-search button 
             if(localStorage.getItem(allCheckboxes[i].id)) {
                 allCheckboxes[i].checked = true;
@@ -51,7 +50,6 @@ const FossilTable = () => {
             }
         }
     }
-    
     const checking = () => {
         var checkboxes = document.querySelectorAll("input[name='checks']")
         if(checkboxes){
@@ -68,7 +66,6 @@ const FossilTable = () => {
             }
         }
     }
-    
     const sortBySearch = (table, inputSearch) => {
         let toble = table.filter((v) => {
             inputSearch = inputSearch.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
@@ -84,7 +81,6 @@ const FossilTable = () => {
             })
             setResult(toble)
     }
-
     const clearBoxes = () => {
         localStorage.clear() 
         setNumFossils(0) 
@@ -92,9 +88,9 @@ const FossilTable = () => {
     }
     const fillBoxes = () => {
         var checkboxes = document.getElementsByTagName('input')
-        for(let i = 1; i < checkboxes.length; i++){
-            checkboxes[i].checked = true
-            localStorage.setItem(checkboxes[i].id, "checked")
+        for(const box of checkboxes){
+            box.checked = true
+            localStorage.setItem(box.id, "checked")
         }
         setNumFossils(72)
     }
@@ -106,7 +102,6 @@ const FossilTable = () => {
 
     return ( 
         <FossilContainer>
-            {console.log(numChecks)}
             <ButtonsContainer>
                 <label htmlFor="search-fossil"></label>
                 <SearchInput id={"search-fossil"} onChange={(e) => sortBySearch(fossilList, e.target.value)} placeholder={search_placeholder}/>
@@ -117,13 +112,15 @@ const FossilTable = () => {
                         <IconImage src={imageURL.ResetPNG}  alt="Reset" />
                     </picture>
                 </ResetButton>
+                <label htmlFor="fill-button"></label>
                 <FillButton onClick={() => fillBoxes()}>
                     <picture>
                         <IconImage src={imageURL.CheckJPG}  alt="Fill" />
                     </picture>
                 </FillButton>
             </ButtonsContainer>
-            {<p>{numFossils} de 72 partes.</p>}
+
+            <p>{numFossils} de 72 partes.</p>
 
             <div onClick={() => checking()}>
                 <FossilTableContent table_content={Result ? Result : fossilList}/>
