@@ -2,14 +2,9 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
 //import fossilListEN from '../data/fossil-EN.json'
 import fossilListES from '../data/fossil-ES.json'
-import { showCheckedboxes, checkStorage } from '../logic/fossil.js'
+import { showCheckedboxes, updateStorage, sortBySearch, clearCheckboxes, fillCheckboxes } from '../logic/fossil.js'
+import { btnIMG } from '../images/buttons.js'
 
-const imageURL = {
-    ResetPNG: "/icons/reset.png",
-    ResetWEBP: "/icons/reset.webp",
-    CheckPNG: "/icons/check.png", 
-    CheckJPG: "/icons/check.jpg"
-}
 
 const FossilTableContent = ({table_content}) => {
     const row = table_content.length ? table_content.map(value =>
@@ -28,72 +23,41 @@ const FossilTableContent = ({table_content}) => {
      return row
 }
 const emptyRow = <ul>
-                    <p>No hay na'</p>
+                    <p>No hay nada</p>
                     <li>u_u'</li>
                 </ul>
 
 const FossilTable = () => {    
-    const [Result, setResult] = useState("");
+    const [Result, setResult] = useState(fossilListES);
     const [numFossils, setNumFossils] = useState(localStorage.length);
-    let fossilList = fossilListES
-    let search_placeholder = "Buscar..."
-    
-    const sortBySearch = (table, inputSearch) => {
-        let toble = table.filter((v) => {
-            inputSearch = inputSearch.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
-            return (
-                v.Name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
-                (v.First && v.First.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) )||
-                (v.Second && v.Second.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) )||
-                (v.Third && v.Third.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) )||
-                (v.Fourth && v.Fourth.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) )||
-                (v.Fiveth && v.Fiveth.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) )||
-                (v.Sixth && v.Sixth.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch)) 
-                )
-            })
-            setResult(toble)
-    }
-    const clearBoxes = () => {
-        localStorage.clear() 
-        setNumFossils(0) 
-        window.location.reload();
-    }
-    const fillBoxes = () => {
-        var checkboxes = document.getElementsByTagName('input')
-        for(const box of checkboxes){
-            box.checked = true
-            localStorage.setItem(box.id, "checked")
-        }
-        setNumFossils(72)
-    }
 
     useEffect(() => {
         showCheckedboxes()   
-    },[])
+    })
 
     return (
-        <FossilContainer>
+        <FossilContainer onClick={() => setNumFossils(updateStorage())}>
             <ButtonsContainer>
                 <label htmlFor="search-fossil"></label>
-                <SearchInput id={"search-fossil"} onChange={(e) => sortBySearch(fossilList, e.target.value)} placeholder={search_placeholder}/>
+                <SearchInput id={"search-fossil"} onInput={(e) => setResult(sortBySearch(fossilListES, e.target.value))} placeholder={"Buscar..."}/>
                 <label htmlFor="reset-button"></label>
-                <ResetButton onClick={() => clearBoxes()}>
+                <ResetButton onClick={() => clearCheckboxes()}>
                     <picture>
-                        <source type="image/webp" srcSet={imageURL.ResetWEBP}/>
-                        <IconImage src={imageURL.ResetPNG}  alt="Reset" />
+                        <source type="image/webp" srcSet={btnIMG.ResetWEBP}/>
+                        <IconImage src={btnIMG.ResetPNG}  alt="Reset" />
                     </picture>
                 </ResetButton>
                 <label htmlFor="fill-button"></label>
-                <FillButton onClick={() => fillBoxes()}>
+                <FillButton onClick={() => fillCheckboxes()}>
                     <picture>
-                        <IconImage src={imageURL.CheckJPG}  alt="Fill" />
+                        <IconImage src={btnIMG.FillJPG}  alt="Fill" />
                     </picture>
                 </FillButton>
             </ButtonsContainer>
 
-            <div onChange={() => setNumFossils(checkStorage())}>
-            {<p>{numFossils} de 72 partes.</p>}
-                <FossilTableContent table_content={Result ? Result : fossilList}/>
+            <div>
+                {<p>{numFossils} de 72 partes.</p>}
+                <FossilTableContent table_content={Result ? Result : fossilListES}/>
             </div>
         </FossilContainer>
     )
