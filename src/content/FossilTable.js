@@ -6,9 +6,8 @@ import { showCheckedboxes, updateStorage, sortBySearch, clearCheckboxes, fillChe
 import { btnIMG } from '../images/buttons.js'
 
 
-const FossilTableContent = ({table_content}) => {
-    const row = table_content.length ? table_content.map(value =>
-        (
+const FossilTableContent = ({actualTable}) => {
+    const row = actualTable.length ? actualTable.map(value =>
             <ul key={value.Number}>
                 {!value.First && <p><input name="checks" id={value.Name} type="checkbox" /><label htmlFor={value.Name}>{value.Name}</label></p>}
                 {value.First && <p>{value.Name}</p>}
@@ -18,7 +17,6 @@ const FossilTableContent = ({table_content}) => {
                 {value.Fourth && <li><input name="checks" id={value.Fourth} type="checkbox" /><label htmlFor={value.Fourth}>{value.Fourth}</label></li>}
                 {value.Fiveth && <li><input name="checks" id={value.Fiveth} type="checkbox" /><label htmlFor={value.Fiveth}>{value.Fiveth}</label></li>}
             </ul>
-        )
      ) : emptyRow
      return row
 }
@@ -28,7 +26,7 @@ const emptyRow = <ul>
                 </ul>
 
 const FossilTable = () => {    
-    const [Result, setResult] = useState(fossilListES);
+    const [newTable, setNewTable] = useState(fossilListES);
     const [numFossils, setNumFossils] = useState(localStorage.length);
 
     useEffect(() => {
@@ -39,7 +37,7 @@ const FossilTable = () => {
         <FossilContainer onClick={() => setNumFossils(updateStorage())}>
             <ButtonsContainer>
                 <label htmlFor="search-fossil"></label>
-                <SearchInput id={"search-fossil"} onInput={(e) => setResult(sortBySearch(fossilListES, e.target.value))} placeholder={"Buscar..."}/>
+                <SearchInput id={"search-fossil"} onInput={(e) => setNewTable(sortBySearch(fossilListES, e.target.value))} placeholder={"Buscar..."}/>
                 <label htmlFor="reset-button"></label>
                 <ResetButton onClick={() => clearCheckboxes()}>
                     <picture>
@@ -57,7 +55,7 @@ const FossilTable = () => {
 
             <div>
                 {<p>{numFossils} de 72 partes.</p>}
-                <FossilTableContent table_content={Result ? Result : fossilListES}/>
+                <FossilTableContent actualTable={newTable ? newTable : fossilListES}/>
             </div>
         </FossilContainer>
     )

@@ -1,6 +1,11 @@
 import React from 'react';
 import styled from 'styled-components'
-const HomeVideo = () => <iframe src="https://www.youtube.com/embed/qVdYcOUOoVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+const HomeVideo = ({url}) => <iframe src={url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+const videoIFrame = styled.iframe`
+border-bottom: 3px solid 
+`
+
 const Home = () => {
     return (
         <HomeContainer>
@@ -13,12 +18,12 @@ const Home = () => {
                 <Ellipsis />
             </DescContainer>
             <HomeContent>
-                <p style={{paddingBottom: "30px"}}>¡Nueva actualización de verano! Bucea, descubre las criaturas marinas y muchas más cosas...</p>
-                <HomeVideo/>
+                <p style={{paddingBottom: "30px"}}>¡Halloween ya está aquí! Consigue nuevos muebles y objetos, apariencias de terror y la fiesta de Halloween del 10 al 31 de Octubre...</p>
+                <HomeVideo url={"https://www.youtube.com/embed/rmgN42ewTtE"} />
                 <br/>
                 <br/>
                 <br/>
-                <p>Novedades en camino <i>(actualizado el 7/7/2020)</i></p>
+                <p>Novedades en camino <i>(actualizado el 30/10/2020)</i></p>
                 <ul>
                     <li><span>Lista de fósiles</span> <a href="/fossil">¡Nuevo!</a></li>
                     <li><span>Buscar bichos y peces por Temporada actual</span></li>
@@ -26,6 +31,11 @@ const Home = () => {
                     <li>Lista de obras de arte</li>
                     <li>Lista de esculturas</li>
                 </ul>
+                <br/>
+                <br/>
+                <br/>
+                <p style={{paddingBottom: "30px"}}>¡Nueva actualización de verano! Bucea, descubre las criaturas marinas y muchas más cosas...</p>
+                <HomeVideo url={"https://www.youtube.com/embed/qVdYcOUOoVA"} />
                 <br/>
                 <br/>
                 <br/>

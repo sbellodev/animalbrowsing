@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 //import seaListEN from '../data/sea-EN.json'
 import seaListES from '../data/sea-ES.json'
 import styled from 'styled-components'
+import { sortSearch, sortABC, sortPrice, sortReset } from '../logic/sea.js'
+
 
 const imageURL = {
     Hour: "/icons/hour.svg",
@@ -9,7 +11,7 @@ const imageURL = {
     ABCPNG: "/icons/abc.png",
     ABCWEBP: "/icons/abc.webp",
     ResetPNG: "/icons/reset.png",
-    HemNorth : "/icons/hemi1.svg", 
+    HemNorth : "/icons/current_emi1.svg", 
     ResetWEBP: "/icons/reset.webp",
     Earth: "/icons/earth.svg", 
     EarthSPNG: "/icons/earthS.png",
@@ -18,8 +20,8 @@ const imageURL = {
     EarthNWEBPN: "/icons/earthN.WEBPN" 
 }
 
-const SeaMobileTable = ({actualTable}) => {
-    const row = actualTable.length ? actualTable.map(value =>
+const SeaMobileTable = ({currentTable}) => {
+    const row = currentTable.length ? currentTable.map(value =>
          <tr key={value.Number}>
             <td>
                 <picture>
@@ -34,7 +36,6 @@ const SeaMobileTable = ({actualTable}) => {
      ) : emptyRow
      return row
 }
-
 const emptyRow = <tr>
                     <td>:(</td>
                     <td>Not a thing was found...</td>
@@ -43,175 +44,143 @@ const emptyRow = <tr>
                 </tr>
     
 const SeaTable = () => {
-    const [newTable, setNewTable] = useState("")
+    const [tableContent, setTableContent] = useState(seaListES)
     const [hem, setHem] = useState("Default")
-    const [sortBy, setSortBy] = useState("")
-    const sortBySeason = (table) => {
-        setSortBy("Season")
-        var botone = document.getElementsByClassName("btn-season")[0]
-        let hemi = "Default"
 
-        if(hem === "Default"){
-            botone.src = imageURL.EarthNPNG
-            setHem("North")
-            hemi = hemisphere[0]
-        }
-        else if(hem === "North"){
-            botone.src = imageURL.EarthSPNG
-            setHem("South")
-            hemi = hemisphere[1]
-        }
-        else if(hem === "South"){
-            botone.src = imageURL.Earth
-            setHem("Default")
-        }
-        else {
-        }
+    let table_head = ["Imagen", "Nombre", "Precio", "Hora", "Movimiento", "Temporada", "(current_emis.)", "Tamaño"]
+
+    const sortBySeason = (table) => {
+        var btn_season = document.getElementsByClassName("btn-season")[0]
+        let current_emi = "Default"
         var time = new Date();
-        let currentMonth = time.getMonth() + 1
+        let current_month = time.getMonth() + 1
+
+        switch(hem) {
+            case "North":
+                btn_season.src = imageURL.EarthSPNG
+                setHem("South")
+                current_emi = "South"
+                break;
+            case "South":
+                btn_season.src = imageURL.Earth
+                setHem("Default")
+                break;
+            default:
+                btn_season.src = imageURL.EarthNPNG
+                setHem("North")
+                current_emi = "North"
+                break;
+        }
 
         let toble =  table.filter((v) => {
-            v.Temp = hemi === hemisphere[0] ? v.SeasonN : hemi === hemisphere[1] ? v.SeasonS : ""  
+            v.Temp = current_emi === "North" ? v.SeasonN : current_emi === "South" ? v.SeasonS : ""  
             let Season
-            if(hemi.includes(hemisphere[0])) {
+            if(current_emi.includes("North")) {
                 Season = v.SeasonIntN
-            }
-            else if(hemi.includes(hemisphere[1])) {
+            } else if(current_emi.includes("South")) {
                 Season = v.SeasonIntS
-            }
-            else {
+            } else {
                 return v
             }
             
             if(Season.length === 1) { // ex: Firefly
-                if(currentMonth === Season[0]) {
+                if(current_month === Season[0]) {
                     return true
                 }
             }
             else if(Season.length === 2) { // ex: Mar-Apr (3, 4)
                 if(Season[0] < Season[1]) {
-                    if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
+                    if(current_month >=  Season[0] && current_month <=  Season[1]) {
                         return true
                     }
                 }
                 else if(Season[0] > Season[1]) {
-                    if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
+                    if(current_month >=  Season[0] || current_month <=  Season[1]) {
                         return true
                     } 
                 }
             }
             else if(Season.length === 3) { // ex: Mar-Apr, Jun (3, 4, 6) 
-                if(currentMonth === Season[2]) {
+                if(current_month === Season[2]) {
                     return true
                 }
                 if(Season[0] < Season[1]) {
-                    if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
+                    if(current_month >=  Season[0] && current_month <=  Season[1]) {
                         return true
                     }
                 }
                 else if(Season[0] > Season[1]) {
-                    if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
+                    if(current_month >=  Season[0] || current_month <=  Season[1]) {
                         return true
                     } 
                 }
             }
             else if(Season.length === 4) { // ex: Mar-Apr, Jun-Jul (3, 4, 6, 7) 
                 if(Season[0] < Season[1]) {
-                    if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
+                    if(current_month >=  Season[0] && current_month <=  Season[1]) {
                         return true
                     }
                 }
                 else if(Season[2] < Season[3]) {
-                    if(currentMonth >=  Season[2] && currentMonth <=  Season[3]) {
+                    if(current_month >=  Season[2] && current_month <=  Season[3]) {
                         return true
                     }
                 }
                 else if(Season[0] > Season[1]) {
-                    if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
+                    if(current_month >=  Season[0] || current_month <=  Season[1]) {
                         return true
                     }
                 }
                 else if(Season[2] > Season[3]) {
-                    if(currentMonth >=  Season[2] || currentMonth <=  Season[3]) {
+                    if(current_month >=  Season[2] || current_month <=  Season[3]) {
                         return true
                     }
                 }
             }
             return false
         })
-        setNewTable(toble)
-        return
+        return toble
     }
 
-    
-    const sortBySearch = (table, inputSearch) => {
-        let toble = table.filter((v) => {
-            inputSearch = inputSearch.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
-            return (
-                v.Name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
-                v.PriceInt.toString().includes(inputSearch) ||
-                v.Pattern.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
-                v.Season.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
-                v.Size.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
-                v.Time.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) 
-                )
-            })
-        setNewTable(toble)
-    }
+    useEffect(() => {
+        switch(hem){
+            case "North":
+                //setHem("South")
+                break
+            case "South":
+                //setHem("Default")
+                break
+            default:
+                //setHem("North")
+                break
 
-    const sortByABC = (table) => { 
-        setSortBy("ABC")
-        return table.sort((a, b) => 
-                                a.Name > b.Name ? 1 :
-                                a.Name < b.Name ? -1 : 0)
-    }
-    const sortByPrice = (table) => { 
-        setSortBy("Price")
-        return table.sort((a, b) => b.PriceInt - a.PriceInt)
-    }
-    const sortByReset = (table) => { 
-        setSortBy("Reset")
-        return table.sort((a, b) => a.Number - b.Number)
-    }
-
-    let table_head = ["Imagen", "Nombre", "Precio", "Hora", "Movimiento", "Temporada", "(Hemis.)", "Tamaño"]
-    let search_placeholder = "Buscar..."
-    let hemisphere = ["Norte", "Sur"]
-    let actualTable = seaListES
-    // let table_head = ["Image", "Name", "Price", "Time", "Movement", "Season", "(Hemi.)", "Size"]   
-    // let hemisphere = ["North", "South"]
-    // let search_placeholder = "Find..."
-    // let actualTable = seaListEN
-    // if(localStorage.getItem("language") === "es") {
-    //     table_head = ["Imagen", "Nombre", "Precio", "Hora", "Movimiento", "Temporada", "(Hemis.)", "Tamaño"]
-    //     search_placeholder = "Buscar..."
-    //     hemisphere = ["Norte", "Sur"]
-    //     actualTable = seaListES
-    // }
-    
+        }
+        
+    }, [hem])
+     
     return (    
       <>
         <ButtonsContainer>
             <div>
                 <label htmlFor={"table-search"}></label>
-                <SearchInput  id={"table-search"} onChange={(e) => sortBySearch(actualTable, e.target.value)} placeholder={search_placeholder} />
+                <SearchInput id={"table-search"} onInput={(e) => setTableContent(sortSearch(seaListES, e.target.value))} placeholder={"Buscar..."} />
             </div>
-            <BtnSortContainer>
-                <BtnSeason onClick={(e) => sortBySeason(actualTable)}  alt="Actual Season">
-                        <IconImage className={"btn-season"} src={imageURL.Earth} alt="Hemisphere" />
+                <BtnSortContainer>
+                <BtnSeason onClick={() => setTableContent(sortBySeason(seaListES))}  alt="Actual Season">
+                        <IconImage className={"btn-season"} src={imageURL.Earth} alt="current_emisphere" />
                 </BtnSeason>
-                <Button onClick={() => setNewTable(sortByABC(actualTable))}>
+                <BtnABC onClick={() => setTableContent(sortABC(seaListES))}>
                     <picture>
                         <source type="image/webp" srcSet={imageURL.ABCWEBP}/>
                         <IconImage src={imageURL.ABCPNG} alt="ABC" />
                     </picture>
-                </Button>
-                <Button onClick={() => setNewTable(sortByPrice(actualTable))} style={{backgroundColor: "#FDDD5C"}}>
+                </BtnABC>
+                <BtnPrice onClick={() => setTableContent(sortPrice(seaListES))} style={{backgroundColor: "#FDDD5C"}}>
                     <picture>
                         <IconImage src={imageURL.Price}  alt="Price" />
                     </picture>
-                </Button>
-                <ResetButton onClick={() => setNewTable(sortByReset(actualTable))}>
+                </BtnPrice>
+                <ResetButton onClick={() => setTableContent(sortReset(seaListES))}>
                     <picture>
                         <source type="image/webp" srcSet={imageURL.ResetWEBP}/>
                         <IconImage src={imageURL.ResetPNG}  alt="Reset" />
@@ -231,7 +200,7 @@ const SeaTable = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    <SeaMobileTable actualTable={ newTable ? newTable : actualTable }/>
+                    <SeaMobileTable currentTable={ tableContent } />
                 </tbody>
             </TableContainer>
         </main>
@@ -325,19 +294,6 @@ const SearchInput = styled.input`
     height: 35px;
   }
 `
-const Button = styled.button`
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  box-shadow: 1px 1px #888888;
-  margin-right: 20px;
-  padding: 5px;
-  @media screen and (max-width: 380px) {
-    margin-right: 10px;
-    width: 35px;
-    height: 35px;
-  }
-`
 const BtnSeason = styled.button`
   width: 40px;
   height: 40px;
@@ -345,6 +301,32 @@ const BtnSeason = styled.button`
   box-shadow: 1px 1px #888888;
   margin-right: 20px;
   padding: 1px;
+  @media screen and (max-width: 380px) {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+  }
+`
+const BtnABC = styled.button`
+width: 40px;
+height: 40px;
+border-radius: 10px;
+box-shadow: 1px 1px #888888;
+margin-right: 20px;
+padding: 5px;
+@media screen and (max-width: 380px) {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+}
+`
+const BtnPrice = styled.button`
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 1px 1px #888888;
+  margin-right: 20px;
+  padding: 5px;
   @media screen and (max-width: 380px) {
     margin-right: 10px;
     width: 35px;
