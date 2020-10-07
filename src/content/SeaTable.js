@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 //import seaListEN from '../data/sea-EN.json'
 import seaListES from '../data/sea-ES.json'
 import styled from 'styled-components'
@@ -11,7 +11,6 @@ const imageURL = {
     ABCPNG: "/icons/abc.png",
     ABCWEBP: "/icons/abc.webp",
     ResetPNG: "/icons/reset.png",
-    HemNorth : "/icons/current_emi1.svg", 
     ResetWEBP: "/icons/reset.webp",
     Earth: "/icons/earth.svg", 
     EarthSPNG: "/icons/earthS.png",
@@ -45,45 +44,51 @@ const emptyRow = <tr>
     
 const SeaTable = () => {
     const [tableContent, setTableContent] = useState(seaListES)
-    const [hem, setHem] = useState("Default")
+    const [myCount, setMyCount] = useState(1)
+    let table_head = ["Imagen", "Nombre", "Precio", "Hora", "Movimiento", "Temporada", "(Disponible)", "Tamaño"]
+    //let hemisphere = ["Default", "North", "South"]
+    var count = 0
 
-    let table_head = ["Imagen", "Nombre", "Precio", "Hora", "Movimiento", "Temporada", "(current_emis.)", "Tamaño"]
+    const countClick = (click_count) => {
 
+    }
     const sortBySeason = (table) => {
-        var btn_season = document.getElementsByClassName("btn-season")[0]
-        let current_emi = "Default"
-        var time = new Date();
-        let current_month = time.getMonth() + 1
 
-        switch(hem) {
-            case "North":
-                btn_season.src = imageURL.EarthSPNG
-                setHem("South")
-                current_emi = "South"
-                break;
-            case "South":
-                btn_season.src = imageURL.Earth
-                setHem("Default")
-                break;
-            default:
+        let btn_season = document.getElementsByClassName("btn-season")[0]
+        console.log("pre clickcount/mycount " + myCount)
+       
+        switch(myCount) {
+            case 1:
                 btn_season.src = imageURL.EarthNPNG
-                setHem("North")
-                current_emi = "North"
+                break;
+            case 2:
+                btn_season.src = imageURL.EarthSPNG
+                break;
+            case 0:
+            default:
+                btn_season.src = imageURL.Earth                
                 break;
         }
 
-        let toble =  table.filter((v) => {
-            v.Temp = current_emi === "North" ? v.SeasonN : current_emi === "South" ? v.SeasonS : ""  
+        var time = new Date();
+        let current_month = time.getMonth() + 1
+        //count = counter()
+
+        //return table
+        return table.filter((v) => {
+            v.Temp = myCount === 1 ? v.SeasonN : myCount === 2 ? v.SeasonS : ""  
             let Season
-            if(current_emi.includes("North")) {
+            if(myCount === 1) {
                 Season = v.SeasonIntN
-            } else if(current_emi.includes("South")) {
+            } else if(myCount === 2) {
                 Season = v.SeasonIntS
             } else {
                 return v
             }
-            
+            console.log("we out")
+
             if(Season.length === 1) { // ex: Firefly
+
                 if(current_month === Season[0]) {
                     return true
                 }
@@ -139,25 +144,9 @@ const SeaTable = () => {
             }
             return false
         })
-        return toble
     }
+    
 
-    useEffect(() => {
-        switch(hem){
-            case "North":
-                //setHem("South")
-                break
-            case "South":
-                //setHem("Default")
-                break
-            default:
-                //setHem("North")
-                break
-
-        }
-        
-    }, [hem])
-     
     return (    
       <>
         <ButtonsContainer>
@@ -166,7 +155,9 @@ const SeaTable = () => {
                 <SearchInput id={"table-search"} onInput={(e) => setTableContent(sortSearch(seaListES, e.target.value))} placeholder={"Buscar..."} />
             </div>
                 <BtnSortContainer>
-                <BtnSeason onClick={() => setTableContent(sortBySeason(seaListES))}  alt="Actual Season">
+                <BtnSeason onClick={() => {
+                    myCount === 2 ? setMyCount(0) : setMyCount(myCount + 1) 
+                    setTableContent(sortBySeason(seaListES))}}  alt="Actual Season">
                         <IconImage className={"btn-season"} src={imageURL.Earth} alt="current_emisphere" />
                 </BtnSeason>
                 <BtnABC onClick={() => setTableContent(sortABC(seaListES))}>

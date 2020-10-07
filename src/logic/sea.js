@@ -11,9 +11,7 @@ const sortSearch = (table, inputSearch) => {
             )
         })
 }
-
 const sortABC = (table) => { 
-    //setSortBy("ABC")
     return [...table].sort((a, b) => 
         a.Name > b.Name ? 1 :
         a.Name < b.Name ? -1 : 0)
