@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
-const HomeVideo = ({url}) => <iframe src={url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-const videoIFrame = styled.iframe`
-border-bottom: 3px solid 
-`
+const HomeVideo = ({url}) => 
+    <iframe src={url} title="Animal Crossing Halloween" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 const Home = () => {
     return (
@@ -28,6 +25,7 @@ const Home = () => {
                     <li><span>Lista de fósiles</span> <a href="/fossil">¡Nuevo!</a></li>
                     <li><span>Buscar bichos y peces por Temporada actual</span></li>
                     <li><span>Lista de criaturas marinas</span><a href="/sea-creatures"> Nuevo!</a></li>
+                    <li><span>Guarda tu lista de fósiles!</span><a href="/fossil"> Nuevo!</a></li>
                     <li>Lista de obras de arte</li>
                     <li>Lista de esculturas</li>
                 </ul>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components'
 import { Home } from './content/Home'
 import { Turnip } from './content/Turnip'
@@ -170,12 +170,6 @@ const NavbarContent = styled.nav`
       
   }
 `
-const LangIndex = styled.a`
-  text-align: center;
-  color: black;
-  font-size: 12px;
-  
-`
 const BackgroundImage = styled.div`
   min-height: 100%;
   position: relative;
@@ -202,4 +196,10 @@ const AppContainer = styled.div`
   background-color: #CCE1F2;
   margin: 0 auto;
 `
+// const LangIndex = styled.a`
+//   text-align: center;
+//   color: black;
+//   font-size: 12px;
+  
+// `
 export default App;
