@@ -2,21 +2,8 @@ import React, { useState } from 'react';
 import styled from 'styled-components'
 //import bugListEN from '../data/bug-EN.json'
 import bugListES from '../data/bug-ES.json'
-
-const imageURL = {
-    Hour: "/icons/hour.svg",
-    Price: "/icons/star.svg",
-    ABCPNG: "/icons/abc.png",
-    ABCWEBP: "/icons/abc.webp",
-    ResetPNG: "/icons/reset.png",
-    HemNorth : "/icons/hemi1.svg", 
-    ResetWEBP: "/icons/reset.webp",
-    Earth: "/icons/earth.svg", 
-    EarthSPNG: "/icons/earthS.png",
-    EarthNPNG: "/icons/earthN.png", 
-    EarthWEBPN: "/icons/earthS.WEBPN",
-    EarthNWEBPN: "/icons/earthN.WEBPN" 
-}
+import { btnTable, imgEarth } from '../images/buttons.js'
+import { sortSearch, sortSeason, sortABC, sortPrice, sortReset } from '../logic/table.js'
 
 const BugMobileTable = ({actualTable}) => {
     const row = actualTable.length ? actualTable.map(value =>
@@ -34,186 +21,46 @@ const BugMobileTable = ({actualTable}) => {
      ) : emptyRow
      return row
 }
-
 const emptyRow = <tr>
-                    <td>:(</td>
-                    <td>Not a thing was found...</td>
+                    <td></td>
+                    <td>No hay nada uwu...</td>
                     <td></td>
                     <td></td>
                 </tr>
     
 const BugsTable = () => {
-    const [newTable, setNewTable] = useState("")
-    const [hem, setHem] = useState("Default")
-    const [sortBy, setSortBy] = useState("")
-    const sortBySeason = (table) => {
-        setSortBy("Season")
-        var botone = document.getElementsByClassName("btn-season")[0]
-        let hemi = "Default"
-
-        if(hem === "Default"){
-            botone.src = imageURL.EarthNPNG
-            setHem("North")
-            hemi = hemisphere[0]
-        }
-        else if(hem === "North"){
-            botone.src = imageURL.EarthSPNG
-            setHem("South")
-            hemi = hemisphere[1]
-        }
-        else if(hem === "South"){
-            botone.src = imageURL.Earth
-            setHem("Default")
-        }
-        else {
-        }
-        var time = new Date();
-        let currentMonth = time.getMonth() + 1
-
-        let toble =  table.filter((v) => {
-            v.Temp = hemi === hemisphere[0] ? v.SeasonN : hemi === hemisphere[1] ? v.SeasonS : ""  
-            let Season
-            if(hemi.includes(hemisphere[0])) {
-                Season = v.SeasonIntN
-            }
-            else if(hemi.includes(hemisphere[1])) {
-                Season = v.SeasonIntS
-            }
-            else {
-                return v
-            }
-            
-            if(Season.length === 1) { // ex: Firefly
-                if(currentMonth === Season[0]) {
-                    return true
-                }
-            }
-            else if(Season.length === 2) { // ex: Mar-Apr (3, 4)
-                if(Season[0] < Season[1]) {
-                    if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
-                        return true
-                    }
-                }
-                else if(Season[0] > Season[1]) {
-                    if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
-                        return true
-                    } 
-                }
-            }
-            else if(Season.length === 3) { // ex: Mar-Apr, Jun (3, 4, 6) 
-                if(currentMonth === Season[2]) {
-                    return true
-                }
-                if(Season[0] < Season[1]) {
-                    if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
-                        return true
-                    }
-                }
-                else if(Season[0] > Season[1]) {
-                    if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
-                        return true
-                    } 
-                }
-            }
-            else if(Season.length === 4) { // ex: Mar-Apr, Jun-Jul (3, 4, 6, 7) 
-                if(Season[0] < Season[1]) {
-                    if(currentMonth >=  Season[0] && currentMonth <=  Season[1]) {
-                        return true
-                    }
-                }
-                else if(Season[2] < Season[3]) {
-                    if(currentMonth >=  Season[2] && currentMonth <=  Season[3]) {
-                        return true
-                    }
-                }
-                else if(Season[0] > Season[1]) {
-                    if(currentMonth >=  Season[0] || currentMonth <=  Season[1]) {
-                        return true
-                    }
-                }
-                else if(Season[2] > Season[3]) {
-                    if(currentMonth >=  Season[2] || currentMonth <=  Season[3]) {
-                        return true
-                    }
-                }
-            }
-            return false
-        })
-        setNewTable(toble)
-        return
-    }
-
-    
-    const sortBySearch = (table, inputSearch) => {
-        let toble = table.filter((v) => {
-            inputSearch = inputSearch.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
-            return (
-                v.Name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
-                v.PriceInt.toString().includes(inputSearch) ||
-                v.Location.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
-                v.Season.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) ||
-                v.Time.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(inputSearch) 
-                )
-            })
-        setNewTable(toble)
-    }
-
-    const sortByABC = (table) => { 
-        setSortBy("ABC")
-        return table.sort((a, b) => 
-                                a.Name > b.Name ? 1 :
-                                a.Name < b.Name ? -1 : 0)
-    }
-    const sortByPrice = (table) => { 
-        setSortBy("Price")
-        return table.sort((a, b) => b.PriceInt - a.PriceInt)
-    }
-    const sortByReset = (table) => { 
-        setSortBy("Reset")
-        return table.sort((a, b) => a.Number - b.Number)
-    }
-
+    const [tableContent, setTableContent] = useState(bugListES)
+    const [count, setCount] = useState(1)
     let table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)"]
-    let search_placeholder = "Buscar..."
-    let hemisphere = ["Norte", "Sur"]
-    let actualTable = bugListES
-    // let table_head = ["Image", "Name", "Price", "Time", "Location", "Season", "(Hemi.)"]  
-    // let hemisphere = ["North", "South"]
-    // let search_placeholder = "Find..."
-    // let actualTable = bugListEN
-    // if(localStorage.getItem("language") === "es") {
-    //     table_head = ["Imagen", "Nombre", "Precio", "Hora", "Ubicación", "Temporada", "(Hemis.)"]
-    //     search_placeholder = "Buscar..."
-    //     hemisphere = ["Norte", "Sur"]
-    //     actualTable = bugListES
-    // }
-    
+
     return (    
       <main>
         <ButtonsContainer>
             <div>
                 <label htmlFor={"table-search"}></label>
-                <SearchInput  id={"table-search"} onChange={(e) => sortBySearch(actualTable, e.target.value)} placeholder={search_placeholder} />
+                <SearchInput  id={"table-search"} onInput={(e) => setTableContent(sortSearch(bugListES, e.target.value))} placeholder={"Búscame..."} />
             </div>
             <BtnSortContainer>
-                <BtnSeason onClick={(e) => sortBySeason(actualTable)}  alt="Actual Season">
-                        <IconImage className={"btn-season"} src={imageURL.Earth} alt="Hemisphere" />
+                <BtnSeason onClick={() => {
+                    count === 2 ? setCount(0) : setCount(count + 1) 
+                    setTableContent(sortSeason(bugListES, imgEarth, count))}}  alt="Actual Season">
+                        <IconImage className={"btn-season"} src={imgEarth.Earth} alt="Hemisphere" />
                 </BtnSeason>
-                <Button onClick={() => setNewTable(sortByABC(actualTable))}>
+                <Button onClick={() => setTableContent(sortABC(bugListES))}>
                     <picture>
-                        <source type="image/webp" srcSet={imageURL.ABCWEBP} />
-                        <IconImage src={imageURL.ABCPNG} alt="ABC" />
+                        <source type="image/webp" srcSet={btnTable.ABCWEBP} />
+                        <IconImage src={btnTable.ABCPNG} alt="ABC" />
                     </picture>
                 </Button>
-                <Button onClick={() => setNewTable(sortByPrice(actualTable))} style={{backgroundColor: "#FDDD5C"}}>
+                <Button onClick={() => setTableContent(sortPrice(bugListES))} style={{backgroundColor: "#FDDD5C"}}>
                     <picture>
-                        <IconImage src={imageURL.Price}  alt="Price" />
+                        <IconImage src={btnTable.Price}  alt="Price" />
                     </picture>
                 </Button>
-                <ResetButton onClick={() => setNewTable(sortByReset(actualTable))}>
+                <ResetButton onClick={() => setTableContent(sortReset(bugListES))}>
                     <picture>
-                        <source type="image/webp" srcSet={imageURL.ResetWEBP}/>
-                        <IconImage src={imageURL.ResetPNG}  alt="Reset" />
+                        <source type="image/webp" srcSet={btnTable.ResetWEBP}/>
+                        <IconImage src={btnTable.ResetPNG}  alt="Reset" />
                     </picture>
                 </ResetButton>
             </BtnSortContainer>
@@ -230,7 +77,7 @@ const BugsTable = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    <BugMobileTable actualTable={ newTable ? newTable : actualTable }/>
+                    <BugMobileTable actualTable={ tableContent }/>
                 </tbody>
             </TableContainer>
         </div>

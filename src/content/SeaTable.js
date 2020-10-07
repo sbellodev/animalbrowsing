@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components'
 import seaListES from '../data/sea-ES.json'
 import { btnTable, imgEarth } from '../images/buttons.js'
-import { sortSearch, sortSeason, sortABC, sortPrice, sortReset } from '../logic/sea.js'
+import { sortSearch, sortSeason, sortABC, sortPrice, sortReset } from '../logic/table.js'
 
 const SeaMobileTable = ({currentTable}) => {
     const row = currentTable.length ? currentTable.map(value =>
@@ -29,7 +29,7 @@ const emptyRow = <tr>
     
 const SeaTable = () => {
     const [tableContent, setTableContent] = useState(seaListES)
-    const [myCount, setMyCount] = useState(1)
+    const [count, setCount] = useState(1)
     let table_head = ["Imagen", "Nombre", "Precio", "Hora", "Movimiento", "Temporada", "(Disponible)", "Tamaño"]
 
     return (    
@@ -37,12 +37,12 @@ const SeaTable = () => {
         <ButtonsContainer>
             <div>
                 <label htmlFor={"table-search"}></label>
-                <SearchInput id={"table-search"} onInput={(e) => setTableContent(sortSearch(seaListES, e.target.value))} placeholder={"Buscar..."} />
+                <SearchInput id={"table-search"} onInput={(e) => setTableContent(sortSearch(seaListES, e.target.value))} placeholder={"Búscame..."} />
             </div>
                 <BtnSortContainer>
                 <BtnSeason onClick={() => {
-                    myCount === 2 ? setMyCount(0) : setMyCount(myCount + 1) 
-                    setTableContent(sortSeason(seaListES, imgEarth, myCount))}}  alt="Actual Season">
+                    count === 2 ? setCount(0) : setCount(count + 1) 
+                    setTableContent(sortSeason(seaListES, imgEarth, count))}}  alt="Actual Season">
                     <IconImage className={"btn-season"} src={imgEarth.Earth} alt="current_emisphere" />
                 </BtnSeason>
                 <BtnABC onClick={() => setTableContent(sortABC(seaListES))}>
