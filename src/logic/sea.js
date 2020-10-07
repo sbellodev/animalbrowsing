@@ -12,10 +12,7 @@ const sortSearch = (table, inputSearch) => {
         })
 }
 const sortSeason = (table, imgEarth, clickCount) => {
-
     let btn_season = document.getElementsByClassName("btn-season")[0]
-    console.log("pre clickcount/clickCount " + clickCount)
-   
     switch(clickCount) {
         case 1:
             btn_season.src = imgEarth.EarthNPNG
