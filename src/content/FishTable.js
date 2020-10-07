@@ -22,8 +22,8 @@ const FishMobileTable = ({actualTable}) => {
      return row
 }
 const emptyRow = <tr>
-                    <td>:(</td>
-                    <td>Not a thing was found...</td>
+                    <td></td>
+                    <td>No hay nada uwu...</td>
                     <td></td>
                     <td></td>
                 </tr>
