@@ -1,23 +1,8 @@
 import React, { useState } from 'react';
-//import seaListEN from '../data/sea-EN.json'
-import seaListES from '../data/sea-ES.json'
 import styled from 'styled-components'
-import { sortSearch, sortABC, sortPrice, sortReset } from '../logic/sea.js'
-
-
-const imageURL = {
-    Hour: "/icons/hour.svg",
-    Price: "/icons/star.svg",
-    ABCPNG: "/icons/abc.png",
-    ABCWEBP: "/icons/abc.webp",
-    ResetPNG: "/icons/reset.png",
-    ResetWEBP: "/icons/reset.webp",
-    Earth: "/icons/earth.svg", 
-    EarthSPNG: "/icons/earthS.png",
-    EarthNPNG: "/icons/earthN.png", 
-    EarthWEBPN: "/icons/earthS.WEBPN",
-    EarthNWEBPN: "/icons/earthN.WEBPN" 
-}
+import seaListES from '../data/sea-ES.json'
+import { btnTable, imgEarth } from '../images/buttons.js'
+import { sortSearch, sortSeason, sortABC, sortPrice, sortReset } from '../logic/sea.js'
 
 const SeaMobileTable = ({currentTable}) => {
     const row = currentTable.length ? currentTable.map(value =>
@@ -46,106 +31,6 @@ const SeaTable = () => {
     const [tableContent, setTableContent] = useState(seaListES)
     const [myCount, setMyCount] = useState(1)
     let table_head = ["Imagen", "Nombre", "Precio", "Hora", "Movimiento", "Temporada", "(Disponible)", "Tamaño"]
-    //let hemisphere = ["Default", "North", "South"]
-    var count = 0
-
-    const countClick = (click_count) => {
-
-    }
-    const sortBySeason = (table) => {
-
-        let btn_season = document.getElementsByClassName("btn-season")[0]
-        console.log("pre clickcount/mycount " + myCount)
-       
-        switch(myCount) {
-            case 1:
-                btn_season.src = imageURL.EarthNPNG
-                break;
-            case 2:
-                btn_season.src = imageURL.EarthSPNG
-                break;
-            case 0:
-            default:
-                btn_season.src = imageURL.Earth                
-                break;
-        }
-
-        var time = new Date();
-        let current_month = time.getMonth() + 1
-        //count = counter()
-
-        //return table
-        return table.filter((v) => {
-            v.Temp = myCount === 1 ? v.SeasonN : myCount === 2 ? v.SeasonS : ""  
-            let Season
-            if(myCount === 1) {
-                Season = v.SeasonIntN
-            } else if(myCount === 2) {
-                Season = v.SeasonIntS
-            } else {
-                return v
-            }
-            console.log("we out")
-
-            if(Season.length === 1) { // ex: Firefly
-
-                if(current_month === Season[0]) {
-                    return true
-                }
-            }
-            else if(Season.length === 2) { // ex: Mar-Apr (3, 4)
-                if(Season[0] < Season[1]) {
-                    if(current_month >=  Season[0] && current_month <=  Season[1]) {
-                        return true
-                    }
-                }
-                else if(Season[0] > Season[1]) {
-                    if(current_month >=  Season[0] || current_month <=  Season[1]) {
-                        return true
-                    } 
-                }
-            }
-            else if(Season.length === 3) { // ex: Mar-Apr, Jun (3, 4, 6) 
-                if(current_month === Season[2]) {
-                    return true
-                }
-                if(Season[0] < Season[1]) {
-                    if(current_month >=  Season[0] && current_month <=  Season[1]) {
-                        return true
-                    }
-                }
-                else if(Season[0] > Season[1]) {
-                    if(current_month >=  Season[0] || current_month <=  Season[1]) {
-                        return true
-                    } 
-                }
-            }
-            else if(Season.length === 4) { // ex: Mar-Apr, Jun-Jul (3, 4, 6, 7) 
-                if(Season[0] < Season[1]) {
-                    if(current_month >=  Season[0] && current_month <=  Season[1]) {
-                        return true
-                    }
-                }
-                else if(Season[2] < Season[3]) {
-                    if(current_month >=  Season[2] && current_month <=  Season[3]) {
-                        return true
-                    }
-                }
-                else if(Season[0] > Season[1]) {
-                    if(current_month >=  Season[0] || current_month <=  Season[1]) {
-                        return true
-                    }
-                }
-                else if(Season[2] > Season[3]) {
-                    if(current_month >=  Season[2] || current_month <=  Season[3]) {
-                        return true
-                    }
-                }
-            }
-            return false
-        })
-    }
-    
 
     return (    
       <>
@@ -157,24 +42,24 @@ const SeaTable = () => {
                 <BtnSortContainer>
                 <BtnSeason onClick={() => {
                     myCount === 2 ? setMyCount(0) : setMyCount(myCount + 1) 
-                    setTableContent(sortBySeason(seaListES))}}  alt="Actual Season">
-                        <IconImage className={"btn-season"} src={imageURL.Earth} alt="current_emisphere" />
+                    setTableContent(sortSeason(seaListES, imgEarth, myCount))}}  alt="Actual Season">
+                    <IconImage className={"btn-season"} src={imgEarth.Earth} alt="current_emisphere" />
                 </BtnSeason>
                 <BtnABC onClick={() => setTableContent(sortABC(seaListES))}>
                     <picture>
-                        <source type="image/webp" srcSet={imageURL.ABCWEBP}/>
-                        <IconImage src={imageURL.ABCPNG} alt="ABC" />
+                        <source type="image/webp" srcSet={btnTable.ABCWEBP}/>
+                        <IconImage src={btnTable.ABCPNG} alt="ABC" />
                     </picture>
                 </BtnABC>
                 <BtnPrice onClick={() => setTableContent(sortPrice(seaListES))} style={{backgroundColor: "#FDDD5C"}}>
                     <picture>
-                        <IconImage src={imageURL.Price}  alt="Price" />
+                        <IconImage src={btnTable.Price}  alt="Price" />
                     </picture>
                 </BtnPrice>
                 <ResetButton onClick={() => setTableContent(sortReset(seaListES))}>
                     <picture>
-                        <source type="image/webp" srcSet={imageURL.ResetWEBP}/>
-                        <IconImage src={imageURL.ResetPNG}  alt="Reset" />
+                        <source type="image/webp" srcSet={btnTable.ResetWEBP}/>
+                        <IconImage src={btnTable.ResetPNG}  alt="Reset" />
                     </picture>
                 </ResetButton>
             </BtnSortContainer>
