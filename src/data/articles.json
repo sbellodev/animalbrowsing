@@ -1,0 +1,26 @@
+[
+    {
+        "Number" : 4, 
+        "Titulo" : "<p>¡Halloween ya está aquí! Consigue nuevos muebles y objetos, apariencias de terror y la fiesta de Halloween del 10 al 31 de Octubre...</p>", 
+        "hasVideo" : true,
+        "videoUrl" : "https://www.youtube.com/embed/rmgN42ewTtE"
+    },
+    {
+        "Number": 3,
+        "Titulo" : "<p>¡Nueva actualización de verano! Bucea, descubre las criaturas marinas y muchas más cosas...</p>",
+        "hasVideo" : true, 
+        "videoUrl" : "https://www.youtube.com/embed/qVdYcOUOoVA"
+    },
+    {
+        "Number": 2,
+        "Titulo" : "<p>Novedades en camino <i>(actualizado el 30/10/2020)</i></p><ul><li><span>Lista de fósiles</span> <a href='/fossil'>¡Nuevo!</a></li><li><span>Buscar bichos y peces por Temporada actual</span></li><li><span>Lista de criaturas marinas</span><a href='/sea-creatures'> Nuevo!</a></li><li><span>Guarda tu lista de fósiles!</span><a href='/fossil'> Nuevo!</a></li><li>Lista de obras de arte</li><li>Lista de esculturas</li></ul>", 
+        "hasVideo" : false, 
+        "videoUrl" : ""
+    },
+    { 
+        "Number": 1,
+        "Titulo" : "<p>¿Cansado de buscar por todas partes buenos precios para vender tus nabos?</p><br/><p>¿De buscar listas y listas de bichos y peces con todo lo que buscas? ¡Yo también!</p><p>Por eso creé Animal Browsing, para tenerlo todo a mano... </p><p>Aquí puedes encontrar... </p><br/><p>¡<a href='/bugs'>Lista</a> de bichos Definitiva!</p><p>¡<a href='/turnips'>Sección</a> de precio de nabos Perfecta!</p><br/><p>A medida que pase el tiempo y según el interés iré añadiendo más y más cosas ^^</p><p>Cualquier sugerencia, crítica o saludarme, puedes contactarme</p><p>en <a href={'https:\/\/www.twitter.com/gattoalaparato'} target='_blank' rel='noopener noreferrer' > twitter </a> a @Gattoalaparato</p><br/><p>Espero que os guste ¡nos vemos!</p>", 
+        "hasVideo" : false, 
+        "videoUrl" : ""
+    }   
+]

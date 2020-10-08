@@ -1,5 +1,17 @@
 import React from 'react';
 import styled from 'styled-components'
+import articles from '../data/articles.json'
+
+const RenderArticle = ({articles}) => {
+    return articles.map(v => {
+        return (<Article>
+                    <br/><br/><br/>
+                    <div dangerouslySetInnerHTML={{ __html:v.Titulo}}></div>
+                    {(v.hasVideo && <HomeVideo url={v.videoUrl} />)}
+                    <br/><br/><br/>
+                </Article>)    
+    })
+}
 const HomeVideo = ({url}) => 
     <iframe src={url} title="Animal Crossing Halloween" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
@@ -15,50 +27,9 @@ const Home = () => {
                 <Ellipsis />
             </DescContainer>
             <HomeContent>
-                <p style={{paddingBottom: "30px"}}>¡Halloween ya está aquí! Consigue nuevos muebles y objetos, apariencias de terror y la fiesta de Halloween del 10 al 31 de Octubre...</p>
-                <HomeVideo url={"https://www.youtube.com/embed/rmgN42ewTtE"} />
-                <br/>
-                <br/>
-                <br/>
-                <p>Novedades en camino <i>(actualizado el 30/10/2020)</i></p>
-                <ul>
-                    <li><span>Lista de fósiles</span> <a href="/fossil">¡Nuevo!</a></li>
-                    <li><span>Buscar bichos y peces por Temporada actual</span></li>
-                    <li><span>Lista de criaturas marinas</span><a href="/sea-creatures"> Nuevo!</a></li>
-                    <li><span>Guarda tu lista de fósiles!</span><a href="/fossil"> Nuevo!</a></li>
-                    <li>Lista de obras de arte</li>
-                    <li>Lista de esculturas</li>
-                </ul>
-                <br/>
-                <br/>
-                <br/>
-                <p style={{paddingBottom: "30px"}}>¡Nueva actualización de verano! Bucea, descubre las criaturas marinas y muchas más cosas...</p>
-                <HomeVideo url={"https://www.youtube.com/embed/qVdYcOUOoVA"} />
-                <br/>
-                <br/>
-                <br/>
-                <picture>
-                    <source type="image/webp" srcSet={"tw_profile_webp.webp"} />
-                    <ImageProfile src={"tw_profile.jpg"} alt="twitter profile" />
-                </picture>
-                <br/>
-                <p>¿Cansado de buscar por todas partes buenos precios para vender tus nabos?</p>
-                <br/>
-                <p>¿De buscar listas y listas de bichos y peces con todo lo que buscas? ¡Yo también!</p>
-                <p>Por eso creé Animal Browsing, para tenerlo todo a mano... </p>
-                <p>Aquí puedes encontrar... </p>
-                <br/>
-                <p>¡<a href="/bugs">Lista</a> de bichos Definitiva!</p>
-                <p>¡<a href="/turnips">Sección</a> de precio de nabos Perfecta!</p>
-                <br/>
-                <p>A medida que pase el tiempo y según el interés iré añadiendo más y más cosas ^^</p>
-                <p>Cualquier sugerencia, crítica o saludarme, puedes contactarme</p>
-                <p>en <a href={"https://www.twitter.com/gattoalaparato"} target="_blank" rel="noopener noreferrer" > twitter </a> a @Gattoalaparato</p>
-                <br/>
-                <p>Espero que os guste ¡nos vemos!</p>
+                <RenderArticle articles={articles}/>
             </HomeContent>
-                <br/>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            
         </HomeContainer>
     )
 }
@@ -101,19 +72,15 @@ const Ellipsis = styled.div`
 const HomeContent = styled.div`
     width: 80%;
     margin: auto;
-    border-bottom: 3px solid ghostwhite;
     padding-top: 30px;
-    padding-bottom: 30px;
+    
     span {
         color: green;
-    }
-    ul {
-        border-bottom: 3px solid ghostwhite;
-        padding-bottom: 30px
     }
     iframe {
         display: block;
         margin: 0 auto;
+        margin-top: 30px;
         width: 480px;
         height: 360px;
         border-radius: 18px;
@@ -130,6 +97,9 @@ const HomeContent = styled.div`
         width: 85%;
     }
 `
+const Article = styled.div`
+    border-bottom: 3px solid ghostwhite;
+`
 const Logo = styled.img`
     width: 170px;
     display: block;
@@ -139,11 +109,11 @@ const Logo = styled.img`
         width: 140px;
     }
 `
-const ImageProfile = styled.img`
-    width: 60px;
-    border-radius: 10%;
-    display: block;
-    float: left;
-    margin-right: 10px
-`
+// const ImageProfile = styled.img`
+//     width: 60px;
+//     border-radius: 10%;
+//     display: block;
+//     float: left;
+//     margin-right: 10px
+// `
 export { Home }
