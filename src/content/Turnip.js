@@ -85,6 +85,7 @@ const TwitterContent = styled.div`
         border-radius: 10px;
         margin-top: 20px;
         box-shadow: 3px 4px ghostwhite;
+        word-break: break-word;
 
         p, div, a {
             padding-bottom: 10px;
