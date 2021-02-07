@@ -25,6 +25,9 @@ const Turnip = () => {
     return (
         <>
         <TurnipContainer>
+            <BtnTweet>
+                <a href="https://twitter.com/intent/tweet?hashtags=AnimalCrossing,Turnip" target="_blanck" rel="noopener noreferrer"class="twitter-hashtag-button" data-show-count="false" data-size="large"> </a>
+                </BtnTweet>
             {!APIResponse && <TwitterContent>{message_wait}</TwitterContent>}
             {APIResponse && <TwitterContent dangerouslySetInnerHTML={{__html: contentAPI(APIResponse)}} />}
         </TurnipContainer>
@@ -32,6 +35,11 @@ const Turnip = () => {
     )
 }
 
+const BtnTweet = styled.div`
+    display: block;
+    max-width: 420px;
+    margin: 0 auto;
+`
 const TurnipContainer = styled.main`
     background-color: #CCE1F2;
     width: 100%;
@@ -89,11 +97,6 @@ const TwitterContent = styled.div`
         background: rgba(255, 82, 82, 1);
         box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);
         animation: pulse-red 2s infinite;
-    }
-    .tweet-container {
-        display: block;
-        max-width: 420px;
-        margin: 0 auto;
     }
 
     @keyframes pulse-red {
