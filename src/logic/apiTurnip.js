@@ -27,7 +27,8 @@ const contentAPI = (res) =>  {
         }
     ).join('')
 
-    return '<div class="blob_container"><div class="blob red"></div></div>' + showResponse                
+    return '<div class="blob_container"><div class="blob red"></div></div><div class="tweet-container"><a href="https://twitter.com/intent/tweet?hashtags=AnimalCrossing,Turnip" class="twitter-hashtag-button" data-show-count="false" data-size="large"></a></div>'
+            + showResponse                
 }
 
 export { contentAPI }

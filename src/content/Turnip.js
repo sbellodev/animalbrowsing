@@ -7,7 +7,7 @@ const Turnip = () => {
     let message_wait = <p className="tweet_individual" style={{height: "99vh"}}>Cargando tweets... si tarda mucho, por favor contacta con el webmaster.</p>
     
     const callServerAPI = () => {
-        const URL = 'https://animalbrowsing.com/api'
+        const URL = 'https://animalbrowsing.com/paco'
         fetch(URL)
             .then(res => res.json())
             .then(json => setAPIResponse(json))
@@ -71,7 +71,7 @@ const TwitterContent = styled.div`
     }
     
     .blob_container {
-        width: 80%;
+        display: table;
         margin: 0 auto;
     }
     .blob {
@@ -89,6 +89,11 @@ const TwitterContent = styled.div`
         background: rgba(255, 82, 82, 1);
         box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);
         animation: pulse-red 2s infinite;
+    }
+    .tweet-container {
+        display: block;
+        max-width: 420px;
+        margin: 0 auto;
     }
 
     @keyframes pulse-red {
