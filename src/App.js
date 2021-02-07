@@ -7,6 +7,8 @@ import { FishTable } from './content/FishTable'
 import { SeaTable } from './content/SeaTable'
 import { FossilTable } from './content/FossilTable'
 import { Description } from './content/Description' 
+import { Policy } from './content/Policy' 
+import { Popup } from './content/Popup'
 import { Footer } from './content/Footer'
 import { RHelmet } from './content/Helmet'
 import { Router, Route, NavLink, Switch } from "react-router-dom";
@@ -52,24 +54,7 @@ const GlobalStyles = createGlobalStyle`
 // }
 
 const App = () => {
-  //const [language, setLanguage] = useState(localStorage.getItem("language"))
-  //let section_names = ["Home", "Turnips", "Bugs", "Fish", "Sea Creatures", "Fossil", "Lang EN"]
   let section_names = ["Inicio ", "Nabos ", "Bichos ", "Peces ", "Criaturas Marinas ", "Fósiles ", "Lang ES"]
-  
-  // function switchLanguage(){
-  //   if(language === "es"){
-  //     setLanguage("en")
-  //     localStorage.setItem("language", "en")
-  //   }
-  //   else if(language === "en"){
-  //     setLanguage("es")
-  //     localStorage.setItem("language", "es")
-  //   }
-  // }
-  // if(language === "es"){
-  //   section_names = ["Inicio", "Nabos", "Bichos", "Peces", "Criaturas Marinas", "Fósiles", "Lang ES"]
-  // }
-
   return (
     <AppContainer>
       <GlobalStyles />
@@ -94,7 +79,6 @@ const App = () => {
           <NavLink to="/fossil" name="fossil" exact activeClassName="active" >
             {section_names[5]}
           </ NavLink>
-          {/* <LangIndex className="Language" onClick={() => {switchLanguage()}} href={"#"}>{section_names[6]}</ LangIndex> */}
         </ NavbarContent> 
 
         <Switch>
@@ -128,6 +112,10 @@ const App = () => {
             <FossilTable />
             <Footer />
           </ Route>
+          <Route path="/policy">
+            <Policy />
+            <Footer />
+          </ Route>
           <Route path="/">
             <RHelmet />
             <Home />
@@ -135,6 +123,7 @@ const App = () => {
           </ Route>
         </ Switch>
       </ Router>
+      <Popup/>
     </ AppContainer>
   );
 }
@@ -196,10 +185,4 @@ const AppContainer = styled.div`
   background-color: #CCE1F2;
   margin: 0 auto;
 `
-// const LangIndex = styled.a`
-//   text-align: center;
-//   color: black;
-//   font-size: 12px;
-  
-// `
 export default App;
