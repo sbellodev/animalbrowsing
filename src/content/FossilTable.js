@@ -48,7 +48,7 @@ const FossilTable = () => {
                 <label htmlFor="fill-button"></label>
                 <FillButton onClick={() => fillCheckboxes()}>
                     <picture>
-                        <IconImage src={btnIMG.FillJPG}  alt="Fill" />
+                        <IconImage src={btnIMG.FillPNG}  alt="Fill" />
                     </picture>
                 </FillButton>
             </ButtonsContainer>
