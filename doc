@@ -30,8 +30,8 @@ font: 14, 16, 18, 20px
 
 
 Media Queries - 
-actualmente: 340, 420, 460, 570
-320, 380, 420, 480, 540, 600, 660, 720, 768, 1024
+actualmente: 340, 420, 460, 570, 900
+320, 380, 420, 480, 540, 600, 660, 720, 768,, 1024
 doc - https://stackoverflow.com/questions/13637106/what-are-the-best-width-ranges-for-media-queries
 
 
@@ -72,4 +72,7 @@ Twitter API module
         Update with useEffect - https://reactjs.org/docs/hooks-effect.html
     Server Node.js - https://github.com/tombaranowicz/TwitterMonitoringJavaScript/blob/master/index.js
 
+Twitter Timeline
+    https://github.com/saurabhnemade/react-twitter-embed
+    https://developer.twitter.com/en/docs/twitter-for-websites/javascript-api/overview
 

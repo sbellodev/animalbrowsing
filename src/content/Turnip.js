@@ -26,7 +26,7 @@ const Turnip = () => {
         <>
         <TurnipContainer>
             <BtnTweet>
-                <a href="https://twitter.com/intent/tweet?hashtags=AnimalCrossing,Turnip" target="_blank" rel="noopener noreferrer"  data-show-count="false" data-size="large">Twittear</a>
+                <a href="https://twitter.com/intent/tweet?hashtags=AnimalCrossing,Turnip" target="_blank" rel="noopener noreferrer" data-show-count="false" data-size="large">Twittear</a>
             </BtnTweet>
             {!APIResponse && <TwitterContent>{message_wait}</TwitterContent>}
             {APIResponse && <TwitterContent dangerouslySetInnerHTML={{__html: contentAPI(APIResponse)}} />}

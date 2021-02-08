@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import articles from '../data/articles.json'
+import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
 
 const RenderArticle = ({articles}) => {
     return articles.map(v => {
@@ -15,6 +16,16 @@ const RenderArticle = ({articles}) => {
 const HomeVideo = ({url}) => 
     <iframe src={url} title="Animal Crossing Halloween" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
+const Timeline = () => {
+    return (
+        <TwitterTimelineEmbed
+        sourceType="profile"
+        screenName="AC_canela"
+        options={{height: 400, width: 350, tweetLimit: 4}}
+        />
+    )
+}
+
 const Home = () => {
     return (
         <HomeContainer>
@@ -26,20 +37,37 @@ const Home = () => {
                 <h5>¡Buena suerte! y cuídate</h5>
                 <Ellipsis />
             </DescContainer>
+            <SideBar>
+                <br/><br/><br/>
+                <Timeline/>
+            </SideBar>
             <HomeContent>
                 <RenderArticle articles={articles}/>
             </HomeContent>
-            
         </HomeContainer>
     )
 }
 
 const HomeContainer = styled.main`
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "a a"
+    "b c"
+    "b c";
     background-color: #CCE1F2;
     font-size: 16px;
     line-height: 20px;
+    @media screen and (max-width: 900px){
+        grid-template-areas:
+        "a a"
+        "b b"
+        "c c";
+    }
 `
 const DescContainer = styled.header`
+    grid-area: a;
     background-color: #F5F2E3;
     display: grid;
     padding-top: 30px;
@@ -70,6 +98,7 @@ const Ellipsis = styled.div`
     background-color: #CCE1F2;
 `
 const HomeContent = styled.div`
+    grid-area: b;
     width: 80%;
     margin: auto;
     padding-top: 30px;
@@ -99,6 +128,12 @@ const HomeContent = styled.div`
 `
 const Article = styled.div`
     border-bottom: 3px solid ghostwhite;
+`
+const SideBar = styled.aside`
+    grid-area c;
+    padding-top: 30px;
+    padding-right: 10px;
+    margin: 0 auto;
 `
 const Logo = styled.img`
     width: 170px;
