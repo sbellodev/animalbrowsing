@@ -26,7 +26,7 @@ const Turnip = () => {
         <>
         <TurnipContainer>
             <BtnTweet>
-                <a href="https://twitter.com/intent/tweet?hashtags=AnimalCrossing,Turnip" target="_blank" rel="noopener noreferrer" data-show-count="false" data-size="large">Twittear</a>
+                <a href="https://twitter.com/intent/tweet?hashtags=AnimalCrossing,Turnip" target="_blank" rel="noopener noreferrer" data-show-count="false" data-size="large"><img src="https://cdn.cms-twdigitalassets.com/content/dam/developer-twitter/images/Twitter_logo_white_16.png"/>Twittear</a>
             </BtnTweet>
             {!APIResponse && <TwitterContent>{message_wait}</TwitterContent>}
             {APIResponse && <TwitterContent dangerouslySetInnerHTML={{__html: contentAPI(APIResponse)}} />}
@@ -48,9 +48,12 @@ const BtnTweet = styled.div`
         padding: 12px 14px;
         color: white;
         font-weight: bold;
-        
         font-family: Arial;
         text-decoration: none;
+        img {
+            padding: 0 5px;
+            vertical-align: middle;
+        }
     }
 `
 const TurnipContainer = styled.main`
