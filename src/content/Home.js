@@ -16,12 +16,19 @@ const RenderArticle = ({articles}) => {
 const HomeVideo = ({url}) => 
     <iframe src={url} title="Animal Crossing Halloween" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
-const Timeline = () => {
-    return (
+    const Timeline = () => {
+        return (
         <TwitterTimelineEmbed
-        sourceType="profile"
-        screenName="AC_canela"
-        options={{height: 400, width: 350, tweetLimit: 4}}
+            sourceType="profile"
+            screenName="AC_canela"
+            borderColor="#FFFFFF"
+            noHeader
+            noFooter
+            noScroolbar
+            transparent
+            placeholder="Cargando contenido..."
+            chrome="nofooter transparent noheader transparent"
+            options={{height: 400, width: 600, tweetLimit: 3}}
         />
     )
 }
@@ -38,10 +45,10 @@ const Home = () => {
                 <Ellipsis />
             </DescContainer>
             <SideBar>
-                <br/><br/><br/>
-                <Timeline/>
+                <p>Hola, gente a la que seguir:</p>
             </SideBar>
             <HomeContent>
+                <Timeline/>
                 <RenderArticle articles={articles}/>
             </HomeContent>
         </HomeContainer>
@@ -73,6 +80,7 @@ const DescContainer = styled.header`
     padding-top: 30px;
     text-align: center;
     max-height: 320px;
+    margin-bottom 70px;
     h5 {
         width: 70%;
         margin: 0 auto;
@@ -99,10 +107,10 @@ const Ellipsis = styled.div`
 `
 const HomeContent = styled.div`
     grid-area: b;
-    width: 80%;
-    margin: auto;
-    padding-top: 30px;
-    
+    display: grid;
+    justify-items: center;
+    border-right: 1px solid white;
+
     span {
         color: green;
     }
@@ -127,12 +135,10 @@ const HomeContent = styled.div`
     }
 `
 const Article = styled.div`
-    border-bottom: 3px solid ghostwhite;
+    border-bottom: 1px solid ghostwhite;
 `
 const SideBar = styled.aside`
     grid-area c;
-    padding-top: 30px;
-    padding-right: 10px;
     margin: 0 auto;
 `
 const Logo = styled.img`
@@ -144,11 +150,4 @@ const Logo = styled.img`
         width: 140px;
     }
 `
-// const ImageProfile = styled.img`
-//     width: 60px;
-//     border-radius: 10%;
-//     display: block;
-//     float: left;
-//     margin-right: 10px
-// `
 export { Home }
