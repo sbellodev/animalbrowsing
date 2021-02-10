@@ -1,5 +1,23 @@
 [
     {
+        "Number" : 5, 
+        "Titulo" : "<p>¿Te gusta la nieve? Con Diciembre llegan nuevos bichos y la ansiada Navidad... ¡Crea tu propio árbol o un muñeco de nieve!</p>", 
+        "hasVideo" : true,
+        "videoUrl" : "https://www.youtube.com/embed/HkLLweY90yo"
+    },
+    {
+        "Number" : 4, 
+        "Titulo" : "<p>¡Halloween ya está aquí! Consigue nuevos muebles y objetos, apariencias de terror y la fiesta de Halloween del 10 al 31 de Octubre...</p>", 
+        "hasVideo" : true,
+        "videoUrl" : "https://www.youtube.com/embed/rmgN42ewTtE"
+    },
+    {
+        "Number": 3,
+        "Titulo" : "<p>¡Nueva actualización de verano! Bucea, descubre las criaturas marinas y muchas más cosas...</p>",
+        "hasVideo" : true, 
+        "videoUrl" : "https://www.youtube.com/embed/qVdYcOUOoVA"
+    },
+    {
         "Number": 2,
         "Titulo" : "<p>Novedades en camino <i>(actualizado el 30/10/2020)</i></p><ul><li><span>Lista de fósiles</span> <a href='/fossil'>¡Nuevo!</a></li><li><span>Buscar bichos y peces por Temporada actual</span></li><li><span>Lista de criaturas marinas</span><a href='/sea-creatures'> Nuevo!</a></li><li><span>Guarda tu lista de fósiles!</span><a href='/fossil'> Nuevo!</a></li><li>Lista de obras de arte</li><li>Lista de esculturas</li></ul>", 
         "hasVideo" : false, 
