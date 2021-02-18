@@ -11,6 +11,7 @@ import { Policy } from './content/Policy'
 import { Popup } from './content/Popup'
 import { Footer } from './content/Footer'
 import { RHelmet } from './content/Helmet'
+import { Shop } from './content/Shop'
 import { Router, Route, NavLink, Switch } from "react-router-dom";
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
@@ -54,7 +55,7 @@ const GlobalStyles = createGlobalStyle`
 // }
 
 const App = () => {
-  let section_names = ["Inicio ", "Nabos ", "Bichos ", "Peces ", "Criaturas Marinas ", "Fósiles ", "Lang ES"]
+  let section_names = ["Inicio ", "Nabos ", "Bichos ", "Peces ", "Criaturas Marinas ", "Fósiles ", "Tienda ", "Lang ES"]
   return (
     <AppContainer>
       <GlobalStyles />
@@ -78,6 +79,9 @@ const App = () => {
           </ NavLink>
           <NavLink to="/fossil" name="fossil" exact activeClassName="active" >
             {section_names[5]}
+          </ NavLink>
+          <NavLink to="/shop" name="shop" exact activeClassName="active" >
+            {section_names[6]}
           </ NavLink>
         </ NavbarContent> 
 
@@ -110,6 +114,11 @@ const App = () => {
             <RHelmet />
             <Description />
             <FossilTable />
+            <Footer />
+          </ Route>
+          <Route path="/shop">
+            <RHelmet />
+            <Shop />
             <Footer />
           </ Route>
           <Route path="/policy">

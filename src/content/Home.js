@@ -18,18 +18,18 @@ const HomeVideo = ({url}) =>
 
     const Timeline = () => {
         return (
-        <TwitterTimelineEmbed
-            sourceType="profile"
-            screenName="AC_canela"
-            borderColor="#FFFFFF"
-            noHeader
-            noFooter
-            noScroolbar
-            transparent
-            placeholder="Cargando contenido..."
-            chrome="nofooter transparent noheader transparent"
-            options={{height: 400, width: 600, tweetLimit: 3}}
-        />
+            <TwitterTimelineEmbed
+                sourceType="profile"
+                screenName="AC_canela"
+                borderColor="#FFFFFF"
+                noHeader
+                noFooter
+                noScroolbar
+                transparent
+                placeholder="Cargando contenido..."
+                chrome="nofooter transparent noheader transparent"
+                options={{height: 400, width: 600, tweetLimit: 3}}
+            />
     )
 }
 
@@ -45,7 +45,7 @@ const Home = () => {
                 <Ellipsis />
             </DescContainer>
             <SideBar>
-                <p>Hola, gente a la que seguir:</p>
+                <p></p>
             </SideBar>
             <HomeContent>
                 <Timeline/>
