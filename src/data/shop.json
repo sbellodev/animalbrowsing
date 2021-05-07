@@ -1,15 +1,15 @@
 [
     {
         "link" : "https://amzn.to/3qxVucZ",
-        "img" : "https://m.media-amazon.com/images/I/61P1qqnj6NL._AC_UL320_.jpg",
+        "img" : "https://m.media-amazon.com/images/I/61gVKyVvXFL._AC_UL320_.jpg",
         "title" : "KINGEAR Mandos para Nintendo Switch / Switch Lite, Regalos Originales para Mujer y los Niño Mandos de Nintendo Switch Juegos Animal Crossing, Fortnite, Gatos",
-        "price_str" : "45,12 EUR"
+        "price_str" : "39,99 EUR"
     },
     {
         "link" : "https://amzn.to/2Zuovuk",
         "img" : "https://m.media-amazon.com/images/I/71sH7Wx+-aL._AC_UL320_.jpg",
         "title" : "Estuche Protector PowerA para Nintendo Switch o Nintendo Switch Lite: Animal Crossing (Nintendo Switch)",
-        "price_str" : "24,90 EUR"
+        "price_str" : "15,99 EUR"
     },
     {
         "link" : "https://amzn.to/3av8BWN",
@@ -21,7 +21,7 @@
         "link" : "https://amzn.to/2N9YONn",
         "img" : "https://m.media-amazon.com/images/I/51fe2QCqdBL._AC_UL320_.jpg",
         "title" : "20,5 cm Animal Crossing New Horizons Plush Soft Stuffed Doll Tom Nook Stitches Marshal Bob Keke Judy Ketchup Moe Bunnie Zucker Muñeco de Peluche Figura de Juguete",
-        "price_str" : "14,99 EUR"
+        "price_str" : "10,99 EUR"
     },
     {
         "link" : "https://amzn.to/3k2uAaJ",
@@ -70,5 +70,29 @@
         "img" : "https://m.media-amazon.com/images/I/81YIb2ztlyL._AC_UL320_.jpg",
         "title" : "Funlab Ultra Delgado Funda de Transporte para Nintendo Switch, Bolsa de Cuero Portátil con Cartuchos de Juego Estuche - Marrón",
         "price_str" : "18,99 EUR"
-    }
+    },
+    {
+        "link" : "https://amzn.to/33n7S5E",
+        "img" : "https://m.media-amazon.com/images/I/71nXHkVZnVL._AC_UL320_.jpg",
+        "title" : "Club Mocchi Mocchi Mocchi Mega Isabelle T12765 - Peluche de 40 cm, Accesorios de Dormitorio, diseño de",
+        "price_str" : "33,84 EUR"
+    },
+    {
+        "link" : "https://amzn.to/2R5trVT",
+        "img" : "https://images-na.ssl-images-amazon.com/images/I/81C2xadupgL._AC_SY355_.jpg",
+        "title" : "Club Mocchi Mocchi - Peluche de Animales cruzando Tom Nook",
+        "price_str" : "33,50 EUR"
+    },
+    {
+        "link" : "https://amzn.to/3f3sh5q",
+        "img" : "https://images-na.ssl-images-amazon.com/images/I/51Eivt5addL._SX355_BO1,204,203,200_.jpg",
+        "title" : "ANIMAL CROSSING 01 Tapa",
+        "price_str" : "7,60 EUR"
+    },
+        {
+        "link" : "https://amzn.to/33vo4Sp",
+        "img" : "https://m.media-amazon.com/images/I/71wqYfxYduL._AC_UL320_.jpg",
+        "title" : "Animal Crossing : New Horizons - La Guía Oficial Tapa blanda – 3",
+        "price_str" : "28,49 EUR"
+    }    
 ]
