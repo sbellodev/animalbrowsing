@@ -6,10 +6,10 @@ const Shop = () => {
     return (
         <HomeContainer>
             <DescContainer>
-                <h5>SHOP SHOP SHOP SHOP</h5>
-                <h5>Encuentra nabos a buen precio, PIN DODOs y todo sobre bichos, peces, criaturas del mar, fósiles...</h5>
-                <h5>para Animal Crossing: New Horizons</h5>
-                <h5>¡Buena suerte! y cuídate</h5>
+                <h5>Tienda de Animal Crossing</h5>
+                <h5>Consigue todos los tipos de peluches de Animal Crossing en nuestra tienda afiliada.</h5>
+                <h5>Fundas, mandos... y el videojuego para regalarle a quien más quieras.</h5>
+                <h5 style={{fontSize: 14}}>*No estamos afiliados de ninguna manera a Tom Nook.</h5>
                 <Ellipsis />
             </DescContainer>
             <HomeContent>
@@ -32,8 +32,7 @@ const Shop = () => {
 
 
 const HomeContainer = styled.main`
-    background-color: white;
-    padding-bottom: 50px;
+    background-color: #CCE1F2;
 `
 const DescContainer = styled.header`
     grid-area: a;
@@ -42,7 +41,7 @@ const DescContainer = styled.header`
     padding-top: 30px;
     text-align: center;
     max-height: 320px;
-    margin-bottom: 70px;
+    margin-bottom: 35px;
     h5 {
         width: 70%;
         margin: 0 auto;
@@ -65,7 +64,7 @@ const Ellipsis = styled.div`
     margin-top: 30px;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
-    background-color: white;
+    background-color: #CCE1F2;
 `
 const HomeContent = styled.div`
     display: grid;
@@ -75,6 +74,7 @@ const HomeContent = styled.div`
     padding: 32px 0px;
     align-content: center;
     align-items: baseline;
+    background: #CCE1F2;
 
     @media screen and (max-width: 900px){
         grid-template-columns: auto auto;
@@ -99,12 +99,22 @@ const Product = styled.a`
         max-height: 200px;
         margin-bottom: 10px;
         object-fit: contain;
+        border-radius: 20px;
+        box-shadow: 4px 4px 1px white;
     }
 
     @media screen and (max-width: 900px){
+        font-size: 16px;
         img {
             width: 42vw;
+            box-shadow: 0px 0px 0px white;
         }
+    }
+    @media screen and (max-width: 420px){
+        font-size: 14px;
+    }
+    @media screen and (max-width: 360px){
+        font-size: 12px;
     }
 `
 const Text = styled.div``
@@ -124,10 +134,10 @@ const Price = styled.figcaption`
 
 const Btn = styled.button`
     display: block;
-    margin: auto;
+    margin: 32px auto;
     padding: 15px 15px 15px 15px;
     font-size: 16px;
-    background-color: var(--secondaryColor);
+    background-color: white;
     font-weight: bold;
     border-radius: 12px;
     border: 1px solid black;
