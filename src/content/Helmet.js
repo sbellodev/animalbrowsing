@@ -8,8 +8,8 @@ const RHelmet = () => {
     let helmet = {
         "home_title" : "Animal Browsing, tu kit para sobrevivir en Animal Crossing.",
         "home_desc" : "Encuentra aquí nabos a buen precio, PIN DODOs y todo sobre bichos, peces, criaturas del mar, fósiles y mucho más en Animal Crossing: New Horizons.",
-        "turnips_title" : "Encuentra nabos a buen precio y PIN DODO | Animal Crossing.",
-        "turnips_desc" : "Encuentra gente para vender tus nabos con PIN DODOS ahora mismo.",
+        "turnips_title" : "✓ Los Nabos de HOY con PIN DODO | Animal Crossing",
+        "turnips_desc" : "Encuentra nabos de hoy con PIN Dodo y al mejor precio.",
         "bugs_title" : "Lista Completa de Bichos | Animal Crossing: New Horizons.", 
         "bugs_desc" : "Todo sobre Bichos de Animal Crossing: New Horizons. Mariposa colias, bianor, Cigarra gigante, escarabajo ciervo sierra...", 
         "fish_title" : "Lista Completa de Peces | Animal Crossing: New Horizons.", 
