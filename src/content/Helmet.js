@@ -8,8 +8,8 @@ const RHelmet = () => {
     let helmet = {
         "home_title" : "Animal Browsing, tu kit para sobrevivir en Animal Crossing.",
         "home_desc" : "Encuentra aquí nabos a buen precio, PIN DODOs y todo sobre bichos, peces, criaturas del mar, fósiles y mucho más en Animal Crossing: New Horizons.",
-        "turnips_title" : "🌱 Nabos de Hoy con Pin DODO | Animal Crossing",
-        "turnips_desc" : "Encuentra códigos DODO de islas con nabos de hoy al mejor precio. ",
+        "turnips_title" : "Nabos de Hoy con Pin DODO | Animal Crossing",
+        "turnips_desc" : "🌱 Encuentra códigos DODO de islas con nabos de hoy al mejor precio. ",
         "bugs_title" : "Lista Completa de Bichos | Animal Crossing: New Horizons.", 
         "bugs_desc" : "Todo sobre Bichos de Animal Crossing: New Horizons. Mariposa colias, bianor, Cigarra gigante, escarabajo ciervo sierra...", 
         "fish_title" : "🐟 Todos los Peces | Animal Crossing: New Horizons.", 
@@ -18,7 +18,7 @@ const RHelmet = () => {
         "sea-creatures_desc" : "Descubre todo sobre Criaturas Marinas y sus secretos. Alga wakame, Estrella de mar, Abulón, Buccino...",     
         "fossil_title" : "Lista Completa de Fósiles | Animal Crossing: New Horizons.", 
         "fossil_desc" : "Encuentra aquí todos los fósiles. Acantostega, Anquilosaurio, Pteranodonte, Tiranosaurio, Megaloceros, Iguanodonte...",
-        "shop_title": "Tienda Online de Animal Crossing: New Horizons",
+        "shop_title": "Tienda Online de Animal Crossing: Juegos, peluches, fundas...",
         "shop_desc": "Desde peluches hasta videojuegos, encuentra lo que buscas y mucho más en nuestra tienda online." 
     }
 
