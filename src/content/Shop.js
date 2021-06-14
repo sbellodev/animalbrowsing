@@ -1,8 +1,17 @@
 import React from 'react';
 import styled from 'styled-components'
 import products from '../data/shop.json'
+import ReactGA from 'react-ga';
 
 const Shop = () => {
+
+    const ClickHandler = (prod) => {
+        ReactGA.event({
+            category: 'Shop Product',
+            action: "Clicked "+ prod.substring(0, 70)
+        })
+        console.log(prod.substring(0, 20))
+    }
     return (
         <HomeContainer>
             <DescContainer>
@@ -14,7 +23,7 @@ const Shop = () => {
             </DescContainer>
             <HomeContent>
             {products.map((prod, ind) => (
-                    <Product key={ind} href={prod.link} rel="noopener noreferrer" target="_blank"><img src={prod.img} alt={prod.alt} />
+                    <Product onClick={e => ClickHandler(prod.title)} key={ind} href={prod.link} rel="noopener noreferrer" target="_blank"><img src={prod.img} alt={prod.alt} />
                         <figure>
                             <Title>{prod.title}</Title>
                             <Price>{prod.price_str}</Price>
