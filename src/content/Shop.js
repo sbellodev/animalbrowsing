@@ -11,7 +11,7 @@ const Shop = () => {
             action: "Clicked "+ prod.substring(0, 70)
         })
         console.log(prod.substring(0, 20))
-        console.log("clicked")
+        console.log("clicked 2")
     }
     return (
         <HomeContainer>
