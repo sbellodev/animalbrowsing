@@ -12,6 +12,7 @@ const Shop = () => {
         })
         console.log(prod.substring(0, 20))
         console.log("clicked 2")
+        console.log("clicked again")
     }
     return (
         <HomeContainer>
