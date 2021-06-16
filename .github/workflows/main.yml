@@ -11,6 +11,9 @@ jobs:
 
     - name: Use Node.js 12.x
       uses: actions/setup-node@v1
+      env: 
+        GIT_TRACE : 1
+        GIT_CURL_VERBOSE: 1
       with:
         node-version: '12.x'
         
