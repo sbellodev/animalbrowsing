@@ -11,12 +11,13 @@ const Shop = () => {
             action: "Clicked "+ prod.substring(0, 70)
         })
         console.log(prod.substring(0, 20))
-        console.log("Clicked")
+        
         
     }
     return (
         <HomeContainer>
             <DescContainer>
+                {console.log("Entered")}
                 <h5>Tienda de Animal Crossing</h5>
                 <h5>Consigue todos los tipos de peluches de Animal Crossing en nuestra tienda afiliada.</h5>
                 <h5>Fundas, mandos... y el videojuego para regalarle a quien más quieras.</h5>
