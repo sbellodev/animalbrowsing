@@ -16,6 +16,7 @@ jobs:
         
     - name: Build Project
       run: |
+        npm install
         npm run build --if-present
         
     - name: List output files
