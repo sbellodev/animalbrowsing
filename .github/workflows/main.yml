@@ -11,9 +11,6 @@ jobs:
 
     - name: Use Node.js 12.x
       uses: actions/setup-node@v1
-      env: 
-        GIT_TRACE : 1
-        GIT_CURL_VERBOSE: 1
       with:
         node-version: '12.x'
         
@@ -31,4 +28,4 @@ jobs:
         ftp-server: ${{ secrets.FTP_SERVER}}
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: build/
+        local-dir: build
