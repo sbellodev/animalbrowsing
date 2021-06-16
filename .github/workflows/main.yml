@@ -16,7 +16,6 @@ jobs:
         
     - name: Build Project
       run: |
-        npm install
         npm run build --if-present
         
     - name: List output files
@@ -25,7 +24,7 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: ${{ secrets.FTP_SERVER}}
+        ftp-server: ftp.animalbrowsing.com
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
         local-dir: /
