@@ -1,18 +1,17 @@
 on: push
 name: Build and Publish Front End Framework Website
 jobs:
-  FTP-Deploy-Action:
+  web-deploy:
     name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
+    - name: Get latest code
     - uses: actions/checkout@master
-      with:
-        fetch-depth: 2
 
-    - name: Use Node.js 12.x
-      uses: actions/setup-node@v1
+    - name: Use Node.js 12
+      uses: actions/setup-node@v2-beta
       with:
-        node-version: '12.x'
+        node-version: '12'
         
     - name: Build Project
       run: |
@@ -23,8 +22,14 @@ jobs:
       run: find build/ -print
       
     - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        ftp-server: ftp.animalbrowsing.com
-        ftp-username: ${{ secrets.FTP_USERNAME }}
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        server: ftp.animalbrowsing.com
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        exclude: .git*
+          - **.git*
+          - .git*/**
+          -  **/.git*/**
+          - node_modules/**
+          - node_modules/**/*
