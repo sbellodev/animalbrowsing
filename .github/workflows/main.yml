@@ -30,3 +30,5 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: build/
         server-dir: public_html/
+        exclude: img/
+          - icons/
