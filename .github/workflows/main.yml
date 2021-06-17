@@ -28,4 +28,3 @@ jobs:
         ftp-server: ftp.animalbrowsing.com
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: /
