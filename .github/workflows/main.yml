@@ -27,9 +27,4 @@ jobs:
         server: ftp.animalbrowsing.com
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        exclude: .git*
-          - **.git*
-          - .git*/**
-          -  **/.git*/**
-          - node_modules/**
-          - node_modules/**/*
+        exclude: 'node_modules/**'
