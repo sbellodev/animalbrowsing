@@ -25,9 +25,9 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ftp.animalbrowsing.com
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        server: ${{ secrets.SERVER}}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
         local-dir: build/
         server-dir: public_html/
         exclude: img/**
