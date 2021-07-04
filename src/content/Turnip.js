@@ -18,7 +18,7 @@ const Turnip = () => {
 
     useEffect(() => {
         callServerAPI()
-        const intervalId = setInterval(callServerAPI, 40000)
+        const intervalId = setInterval(callServerAPI, 100000)
         return () => clearInterval(intervalId)
     },[]) 
     
