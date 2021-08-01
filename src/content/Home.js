@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components'
 import articles from '../data/articles.json'
-import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
 const RenderArticle = ({articles}) => {
-    return articles.map(v => {
-        return (<Article>
+    return articles.map((v, ind) => {
+        return (<Article key={ind}>
                     <br/><br/><br/>
                     <div dangerouslySetInnerHTML={{ __html:v.Titulo}}></div>
                     {(v.hasVideo && <HomeVideo url={v.videoUrl} />)}
@@ -28,7 +28,7 @@ const HomeVideo = ({url}) =>
                 transparent
                 placeholder="Cargando contenido..."
                 chrome="nofooter transparent noheader transparent"
-                options={{height: 400, width: 600, tweetLimit: 3}}
+                options={{id: "profile:AC_canela", height: 400, width: 600, tweetLimit: 3}}
             />
     )
 }
