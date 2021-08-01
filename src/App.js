@@ -80,9 +80,9 @@ const App = () => {
           <NavLink to="/fossil" name="fossil" exact activeClassName="active" >
             {section_names[5]}
           </ NavLink>
-          <NavLink to="/shop" name="shop" exact activeClassName="active" >
+          {/* <NavLink to="/shop" name="shop" exact activeClassName="active" >
             {section_names[6]}
-          </ NavLink>
+          </ NavLink> */}
         </ NavbarContent> 
 
         <Switch>
