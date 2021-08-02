@@ -14,7 +14,7 @@ const Footer = () => {
             <br/>
             <br/><br/>
             <Disclaimer>
-                <p>Created by <a href="https://twitter.com/gattoalaparato" target="_blank" rel="noopener noreferrer">@Gattoalaparato</a></p>
+                {/* <p>Created by <a href="https://twitter.com/gattoalaparato" target="_blank" rel="noopener noreferrer">@Gattoalaparato</a></p> */}
                 <p>2020 - Animal Browsing v1.2</p>
             </Disclaimer>
         </FooterContainer>
