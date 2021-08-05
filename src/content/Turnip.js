@@ -118,6 +118,10 @@ const TwitterContent = styled.div`
         box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);
         animation: pulse-red 2s infinite;
     }
+    .tweet-date {
+        color: blue;
+        font-size: 14px;
+    }
 
     @keyframes pulse-red {
         0% {

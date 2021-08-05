@@ -3,6 +3,7 @@ const contentAPI = (res) =>  {
     let showResponse = res.map(tweet => {
         if(tweet.text){
             tweet.text = tweet.text.replace("'\n' +",  "")
+            tweet.date = new Date(tweet.date).toLocaleString('es-ES')
             if(tweet.entities.media){ // has image
                 tweet.text = tweet.text.replace(tweet.entities.media[0].url, "<img src='" +tweet.entities.media[0].media_url+ "' />")
             }
@@ -22,6 +23,7 @@ const contentAPI = (res) =>  {
         return   '<div class="tweet_individual">'
                     + '<a href="https://twitter.com/' +tweet.screen_name+ '" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;"><div style="padding-bottom:0"><img style="width:35px;border-radius:20px;display:inline;margin: 0 auto;" src="' +tweet.profile_image+ '"/></div><span style="margin:10px;">@' +tweet.screen_name+ '</span></a>'
                     + '<p>' +tweet.text+ '</p>'
+                    + '<p class="tweet-date"><a href="https://twitter.com/i/web/status/' +tweet.id+ '" target="_blank" rel="noopener noreferrer">' +tweet.date+ '</a></p>' 
                     + '<p><a href="https://twitter.com/i/web/status/' +tweet.id+ '" target="_blank" rel="noopener noreferrer">Ver más</a></p>'
                     + '</div>'
         }
