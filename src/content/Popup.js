@@ -5,6 +5,7 @@ const Popup = () =>  {
     function acceptPolicy(e){
         let popup = e.target.parentNode
         popup.style.display = "none"
+        sessionStorage.setItem("CookieAccepted", 1)
     }
     return(
       <Container>

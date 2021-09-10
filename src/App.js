@@ -56,6 +56,8 @@ const GlobalStyles = createGlobalStyle`
 
 const App = () => {
   let section_names = ["Inicio ", "Nabos ", "Bichos ", "Peces ", "Criaturas Marinas ", "Fósiles ", "Tienda ", "Lang ES"]
+  let cookieAccepted = () => sessionStorage.getItem("CookieAccepted")
+
   return (
     <AppContainer>
       <GlobalStyles />
@@ -132,7 +134,7 @@ const App = () => {
           </ Route>
         </ Switch>
       </ Router>
-      <Popup/>
+      {!cookieAccepted() && <Popup/>}
     </ AppContainer>
   );
 }
