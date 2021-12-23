@@ -69,7 +69,6 @@ const Home = () => {
         <p></p>
       </SideBar>
       <HomeContent>
-        <Timeline />
         <RenderArticle articles={articles} />
       </HomeContent>
     </HomeContainer>
@@ -78,7 +77,7 @@ const Home = () => {
 
 const HomeContainer = styled.main`
   display: grid;
-  height: 100vh;
+  height: 100%;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
   grid-template-areas:
