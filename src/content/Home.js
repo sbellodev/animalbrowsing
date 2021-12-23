@@ -69,6 +69,7 @@ const Home = () => {
         <p></p>
       </SideBar>
       <HomeContent>
+        <Timeline />
         <RenderArticle articles={articles} />
       </HomeContent>
     </HomeContainer>
