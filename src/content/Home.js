@@ -158,6 +158,7 @@ const HomeContent = styled.div`
 `;
 const Article = styled.div`
   border-bottom: 1px solid ghostwhite;
+  padding: 10px;
 `;
 const SideBar = styled.aside`
     grid-area c;
