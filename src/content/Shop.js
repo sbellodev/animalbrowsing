@@ -30,9 +30,7 @@ const Shop = () => {
                     </Product>
                 ))}
             </HomeContent>
-
             <Btn><a rel="noopener noreferrer" target="_blank" href="https://amzn.to/3k2Gamr">Ver más ofertas en AMAZON</a></Btn>
-
         </HomeContainer>
     )
 }

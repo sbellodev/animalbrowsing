@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import articles from "../data/articles.json";
-import { TwitterTimelineEmbed } from "react-twitter-embed";
+import { Timeline } from "../logic/Timeline";
 
 const RenderArticle = ({ articles }) => {
   return articles.map((v, ind) => {
@@ -19,6 +19,7 @@ const RenderArticle = ({ articles }) => {
     );
   });
 };
+
 const HomeVideo = ({ url }) => (
   <iframe
     src={url}
@@ -28,28 +29,6 @@ const HomeVideo = ({ url }) => (
     allowFullScreen
   ></iframe>
 );
-
-const Timeline = () => {
-  return (
-    <TwitterTimelineEmbed
-      sourceType="profile"
-      screenName="AC_canela"
-      borderColor="#FFFFFF"
-      noHeader
-      noFooter
-      noScroolbar
-      transparent
-      placeholder="Cargando contenido..."
-      chrome="nofooter transparent noheader transparent"
-      options={{
-        id: "profile:AC_canela",
-        height: 400,
-        width: 600,
-        tweetLimit: 3,
-      }}
-    />
-  );
-};
 
 const Home = () => {
   return (
@@ -152,8 +131,12 @@ const HomeContent = styled.div`
       height: 200px;
     }
   }
-  @media screen and (max-width: 340px) {
+  @media screen and (max-width: 420px) {
     width: 85%;
+  }
+
+  img {
+    width: 50%;
   }
 `;
 const Article = styled.div`
@@ -173,4 +156,5 @@ const Logo = styled.img`
     width: 140px;
   }
 `;
+
 export { Home };
