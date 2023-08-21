@@ -16,7 +16,7 @@ import { Router, Route, NavLink, Switch } from "react-router-dom";
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 
-ReactGA.initialize('UA-162043648-2');
+ReactGA.initialize('G-602L6CMEHR');
 const history = createBrowserHistory();
 history.listen(location => {
   ReactGA.set({ page: location.pathname })
