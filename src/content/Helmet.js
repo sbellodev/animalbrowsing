@@ -15,7 +15,7 @@ const RHelmet = () => {
         "fish_title" : "Todos los Peces | Animal Crossing: New Horizons.", 
         "fish_desc" : "Lista de Todos los Peces de Animal Crossing. Amarguillo, Koi, Siluro, Salmón, Arowana, Pirarucú, Pez luna...", 
         "sea-creatures_title" : "Lista Completa de Criaturas Marinas | Animal Crossing: New Horizons.", 
-        "sea-creatures_desc" : "Descubre todo sobre Criaturas Marinas y sus secretos. Alga wakame, Estrella de mar, Abulón, Buccino...",     
+        "sea-creatures_desc" : "Lista de las criaturas marinas que puedes encontrarte en New Horizons. Calamar vampiro, cerdo de mar, abulón, buccino...",     
         "fossil_title" : "Lista Completa de Fósiles | Animal Crossing: New Horizons.", 
         "fossil_desc" : "Encuentra aquí todos los fósiles. Acantostega, Anquilosaurio, Pteranodonte, Tiranosaurio, Megaloceros, Iguanodonte...",
         "shop_title": "Tienda Online de Animal Crossing: Juegos, peluches, fundas...",
