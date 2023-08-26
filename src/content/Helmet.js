@@ -11,7 +11,7 @@ const RHelmet = () => {
         "turnips_title" : "Nabos de Hoy con Pin DODO | Animal Crossing",
         "turnips_desc" : "Encuentra códigos DODO de islas con nabos de hoy al mejor precio. ",
         "bugs_title" : "Lista Completa de Bichos | Animal Crossing: New Horizons.", 
-        "bugs_desc" : "Todo sobre Bichos de Animal Crossing: New Horizons. Mariposa colias, bianor, Cigarra gigante, escarabajo ciervo sierra...", 
+        "bugs_desc" : "Lista sobre los bichos de Animal Crossing: New Horizons. Mariposa colias, bianor, Cigarra gigante, escarabajo ciervo sierra...", 
         "fish_title" : "Todos los Peces | Animal Crossing: New Horizons.", 
         "fish_desc" : "Lista de Todos los Peces de Animal Crossing. Amarguillo, Koi, Siluro, Salmón, Arowana, Pirarucú, Pez luna...", 
         "sea-creatures_title" : "Lista Completa de Criaturas Marinas | Animal Crossing: New Horizons.", 
