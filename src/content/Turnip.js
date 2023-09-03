@@ -4,10 +4,16 @@ import { contentAPI } from '../logic/apiTurnip.js'
 
 const Turnip = () => {
     const [APIResponse, setAPIResponse] = useState("")
-    let message_wait = <p className="tweet_individual" style={{height: "99vh"}}>Cargando tweets... si tarda mucho, por favor contacta con el webmaster.</p>
+    let message_wait =
+        <p className="tweet_individual" style={{height: "99vh"}}>
+        Dados los últimos cambios en Twitter / X ya no podemos mostrar tweets... ¡Pero no desanimarse! Puedes encontrarlos 
+            <br/>
+            <a style={{textAlign: "center"}} href="https://twitter.com/search?q=%23AnimalCrossing%20turnip%20-DodocodesN%20-TurnipsExchange%20-%40%20-rt%20-rts%20-appreciated%20-like%20-reply%20-filter%3Anativeretweets&src=typed_query&f=live">
+            ¡AQUI!</a>
+        </p>
     
     const callServerAPI = () => {
-        const URL = 'https://animalbrowsing.com/paco'
+        const URL = ''
         fetch(URL)
             .then(res => res.json())
             .then(json => setAPIResponse(json))
@@ -17,9 +23,9 @@ const Turnip = () => {
     }
 
     useEffect(() => {
-        callServerAPI()
-        const intervalId = setInterval(callServerAPI, 100000)
-        return () => clearInterval(intervalId)
+        // callServerAPI()
+        // const intervalId = setInterval(callServerAPI, 100000)
+        // return () => clearInterval(intervalId)
     },[]) 
     
     return (
