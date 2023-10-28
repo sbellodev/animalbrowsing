@@ -1,30 +1,43 @@
-on: push
-name: Build and Publish Front End Framework Website
-jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
+on: 
+  pull_request_target:
+    name: Auto approve PRs by dependabot
+    jobs:
+      autoapprove:
+        name: Auto-Approve a PR by dependabot
+        runs-on: ubuntu-latest
+        steps:
+          - name: Auto approve
+            uses: cognitedata/auto-approve-dependabot-action@v3.0.1
+            if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
+            with:
+              github-token: ${{ secrets.APPROVER_TOKEN }}
 
-    - name: Use Node.js 12.x
-      uses: actions/setup-node@v1
-      with:
-        node-version: '12.x'
+  push:
+    name: Build and Publish Front End Framework Website
+    jobs:
+      FTP-Deploy-Action:
+        name: FTP-Deploy-Action
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@master
+        - name: Use Node.js 12.x
+          uses: actions/setup-node@v1
+          with:
+            node-version: '12.x'
         
-    - name: Build Project
-      run: |
-        npm install
-        npm run build --if-present
+        - name: Build Project
+          run: |
+            npm install
+            npm run build --if-present
         
-    - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@4.0.0
-      with:
-        server: ${{ secrets.SERVER }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        local-dir: build/
-        server-dir: public_html/
-        exclude: img/**
-          - img/**/*
-          - icons/*
+        - name: FTP-Deploy-Action
+          uses: SamKirkland/FTP-Deploy-Action@4.0.0
+          with:
+            server: ${{ secrets.SERVER }}
+            username: ${{ secrets.USERNAME }}
+            password: ${{ secrets.PASSWORD }}
+            local-dir: build/
+            server-dir: public_html/
+            exclude: img/**
+              - img/**/*
+              - icons/*
