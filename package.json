@@ -15,6 +15,7 @@
     "react-scripts": "^5.0.1",
     "react-twitter-embed": "^3.0.3",
     "react-twitter-embedded-timeline": "^0.5.1",
+    "resolve-url-loader": "^5.0.0",
     "styled-components": "^5.0.1"
   },
   "scripts": {
