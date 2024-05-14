@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/animalbrowsing/static/js/main.5923a8cd.js",
+    "index.html": "/animalbrowsing/index.html",
+    "main.5923a8cd.js.map": "/animalbrowsing/static/js/main.5923a8cd.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.5923a8cd.js"
+  ]
+}
